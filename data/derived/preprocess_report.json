@@ -1,0 +1,40 @@
+{
+ "sources": {
+  "upwork_50k": {
+   "rows_raw": 53058,
+   "rows_with_description": 53058
+  },
+  "upwork_60k": {
+   "rows_raw": 63950,
+   "rows_with_description": 63947
+  },
+  "upwork_200k": {
+   "rows_raw": 826328
+  },
+  "contracts_1_3m": {
+   "rows_raw": 1292791,
+   "sampled_frac": 0.25
+  },
+  "freelancer_success": {
+   "rows_raw": 12000
+  },
+  "trial_1": {
+   "rows_raw": 54391,
+   "usage": "aggregate term statistics only"
+  }
+ },
+ "dedup_removed": 6554,
+ "real_jobs": {
+  "rows": 106920,
+  "by_category": {
+   "other": 29081,
+   "web_dev": 26215,
+   "marketing": 21932,
+   "design": 10769,
+   "writing": 5840,
+   "data_analysis": 5806,
+   "mobile": 4021,
+   "ai_ml": 3256
+  }
+ }
+}

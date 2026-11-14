@@ -1,0 +1,306 @@
+{
+ "n_fraud": 12523,
+ "n_legit": 31522,
+ "top_terms": [
+  {
+   "term": "hotmailcom",
+   "lift": 1102.5,
+   "count": 438
+  },
+  {
+   "term": "yahoocom",
+   "lift": 1099.99,
+   "count": 437
+  },
+  {
+   "term": "gmailcom",
+   "lift": 994.27,
+   "count": 395
+  },
+  {
+   "term": "overviewaker",
+   "lift": 274.37,
+   "count": 109
+  },
+  {
+   "term": "aker",
+   "lift": 246.68,
+   "count": 98
+  },
+  {
+   "term": "wife",
+   "lift": 206.4,
+   "count": 82
+  },
+  {
+   "term": "suddenly",
+   "lift": 198.85,
+   "count": 79
+  },
+  {
+   "term": "incomeour",
+   "lift": 191.3,
+   "count": 76
+  },
+  {
+   "term": "brother",
+   "lift": 183.75,
+   "count": 73
+  },
+  {
+   "term": "lawyerswe",
+   "lift": 183.75,
+   "count": 73
+  },
+  {
+   "term": "distractionsmust",
+   "lift": 181.23,
+   "count": 72
+  },
+  {
+   "term": "accessquiet",
+   "lift": 181.23,
+   "count": 72
+  },
+  {
+   "term": "democrat",
+   "lift": 176.2,
+   "count": 70
+  },
+  {
+   "term": "daughter",
+   "lift": 176.2,
+   "count": 70
+  },
+  {
+   "term": "husband",
+   "lift": 163.61,
+   "count": 65
+  },
+  {
+   "term": "republican",
+   "lift": 161.1,
+   "count": 64
+  },
+  {
+   "term": "election",
+   "lift": 161.1,
+   "count": 64
+  },
+  {
+   "term": "homesthe",
+   "lift": 158.58,
+   "count": 63
+  },
+  {
+   "term": "democratic",
+   "lift": 156.06,
+   "count": 62
+  },
+  {
+   "term": "administrativethese",
+   "lift": 151.03,
+   "count": 60
+  },
+  {
+   "term": "schedulelegitimate",
+   "lift": 151.03,
+   "count": 60
+  },
+  {
+   "term": "futureaker",
+   "lift": 140.96,
+   "count": 56
+  },
+  {
+   "term": "subsea",
+   "lift": 128.37,
+   "count": 51
+  },
+  {
+   "term": "boutiques",
+   "lift": 110.75,
+   "count": 44
+  },
+  {
+   "term": "dayno",
+   "lift": 110.75,
+   "count": 44
+  },
+  {
+   "term": "yearsdescriptionvalidate",
+   "lift": 105.72,
+   "count": 42
+  },
+  {
+   "term": "perdetermined",
+   "lift": 105.72,
+   "count": 42
+  },
+  {
+   "term": "onlyclick",
+   "lift": 105.72,
+   "count": 42
+  },
+  {
+   "term": "interactiondedicated",
+   "lift": 105.72,
+   "count": 42
+  },
+  {
+   "term": "positionshospitality",
+   "lift": 105.72,
+   "count": 42
+  },
+  {
+   "term": "coppy",
+   "lift": 105.72,
+   "count": 42
+  },
+  {
+   "term": "boardhousekeeping",
+   "lift": 105.72,
+   "count": 42
+  },
+  {
+   "term": "permsailing",
+   "lift": 105.72,
+   "count": 42
+  },
+  {
+   "term": "cruisecertification",
+   "lift": 105.72,
+   "count": 42
+  },
+  {
+   "term": "jobsoffice",
+   "lift": 105.72,
+   "count": 42
+  },
+  {
+   "term": "nanniesvessel",
+   "lift": 105.72,
+   "count": 42
+  },
+  {
+   "term": "widebenefits",
+   "lift": 105.72,
+   "count": 42
+  },
+  {
+   "term": "addresswe",
+   "lift": 105.72,
+   "count": 42
+  },
+  {
+   "term": "proccessif",
+   "lift": 105.72,
+   "count": 42
+  },
+  {
+   "term": "flexiblecandidate",
+   "lift": 105.72,
+   "count": 42
+  },
+  {
+   "term": "boardretail",
+   "lift": 105.72,
+   "count": 42
+  },
+  {
+   "term": "westdept",
+   "lift": 105.72,
+   "count": 42
+  },
+  {
+   "term": "jobsother",
+   "lift": 105.72,
+   "count": 42
+  },
+  {
+   "term": "aboardadrian",
+   "lift": 105.72,
+   "count": 42
+  },
+  {
+   "term": "hourslooking",
+   "lift": 105.72,
+   "count": 42
+  },
+  {
+   "term": "dropdown",
+   "lift": 98.17,
+   "count": 39
+  },
+  {
+   "term": "imtkz",
+   "lift": 98.17,
+   "count": 39
+  },
+  {
+   "term": "instil",
+   "lift": 95.65,
+   "count": 76
+  },
+  {
+   "term": "discourage",
+   "lift": 95.65,
+   "count": 38
+  },
+  {
+   "term": "soulutions",
+   "lift": 95.65,
+   "count": 38
+  },
+  {
+   "term": "dfef",
+   "lift": 93.13,
+   "count": 111
+  },
+  {
+   "term": "requiredfollows",
+   "lift": 90.62,
+   "count": 36
+  },
+  {
+   "term": "suppliescomputer",
+   "lift": 90.62,
+   "count": 72
+  },
+  {
+   "term": "requiredzero",
+   "lift": 90.62,
+   "count": 36
+  },
+  {
+   "term": "cashyou",
+   "lift": 90.62,
+   "count": 36
+  },
+  {
+   "term": "nightperfect",
+   "lift": 90.62,
+   "count": 36
+  },
+  {
+   "term": "placespend",
+   "lift": 90.62,
+   "count": 36
+  },
+  {
+   "term": "immediatelycan",
+   "lift": 90.62,
+   "count": 36
+  },
+  {
+   "term": "crginfo",
+   "lift": 85.58,
+   "count": 34
+  },
+  {
+   "term": "soldier",
+   "lift": 83.07,
+   "count": 66
+  }
+ ]
+}

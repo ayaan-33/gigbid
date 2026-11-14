@@ -1,0 +1,605 @@
+{
+ "persona_id": "ai_ml_engineer",
+ "name": "Maya Okafor",
+ "headline": "Applied AI/ML engineer: LLM apps, retrieval, classical ML in production",
+ "location": "Lagos, Nigeria (remote, UTC+1)",
+ "years": 6,
+ "hourly_rate": 55,
+ "fixed_floor": 300,
+ "categories": [
+  "ai_ml"
+ ],
+ "secondary": [
+  "data_analysis"
+ ],
+ "voice": "direct, technical, short sentences, leads with the client's problem",
+ "education": "MSc Computer Science (Machine Learning), University of Lagos, 2019",
+ "synthetic": true,
+ "skills": [
+  "Chatbot",
+  "Computer Vision",
+  "Data Visualization",
+  "Docker",
+  "FastAPI",
+  "Fine-tuning",
+  "Hugging Face",
+  "LLM",
+  "LangChain",
+  "MLOps",
+  "NLP",
+  "PyTorch",
+  "Python",
+  "RAG",
+  "Recommendation Systems",
+  "Speech",
+  "Statistics",
+  "Testing",
+  "Time Series",
+  "Vector DB",
+  "XGBoost",
+  "scikit-learn"
+ ],
+ "capabilities": [
+  "AWS",
+  "Airflow",
+  "CI/CD",
+  "Chatbot",
+  "Computer Vision",
+  "Data Visualization",
+  "Docker",
+  "FastAPI",
+  "Fine-tuning",
+  "Hugging Face",
+  "Kubernetes",
+  "LLM",
+  "LangChain",
+  "MLOps",
+  "NLP",
+  "PostgreSQL",
+  "PyTorch",
+  "Python",
+  "RAG",
+  "REST API",
+  "Recommendation Systems",
+  "Redis",
+  "SQL",
+  "Speech",
+  "Statistics",
+  "Testing",
+  "Time Series",
+  "Vector DB",
+  "XGBoost",
+  "pandas",
+  "scikit-learn"
+ ],
+ "category_skills": [
+  "Chatbot",
+  "Computer Vision",
+  "Fine-tuning",
+  "Hugging Face",
+  "LLM",
+  "LangChain",
+  "MLOps",
+  "NLP",
+  "PyTorch",
+  "RAG",
+  "Recommendation Systems",
+  "Speech",
+  "TensorFlow",
+  "Time Series",
+  "Vector DB",
+  "XGBoost",
+  "scikit-learn"
+ ],
+ "projects": [
+  {
+   "key": "support_rag",
+   "names": [
+    "Support-desk answer engine",
+    "RAG assistant for customer support",
+    "help-centre chatbot grounded in docs"
+   ],
+   "skills": [
+    "Python",
+    "RAG",
+    "LLM",
+    "Vector DB",
+    "FastAPI"
+   ],
+   "implied": [
+    "LangChain",
+    "Docker"
+   ],
+   "industry": "SaaS",
+   "client": "Pine Partners",
+   "date": "2020-10-13",
+   "metrics_filled": [
+    "first-response time fell 41%",
+    "75% of tickets answered without escalation",
+    "answer accuracy 90% on a 300-question eval set"
+   ]
+  },
+  {
+   "key": "invoice_extract",
+   "names": [
+    "Invoice field extraction pipeline",
+    "document AI for accounts payable",
+    "PDF-to-JSON extraction service"
+   ],
+   "skills": [
+    "Python",
+    "LLM",
+    "NLP",
+    "FastAPI"
+   ],
+   "implied": [
+    "Docker",
+    "PostgreSQL"
+   ],
+   "industry": "logistics",
+   "client": "Granite Studio",
+   "date": "2021-04-25",
+   "metrics_filled": [
+    "manual entry time cut by 73%",
+    "field-level accuracy 96%",
+    "20k invoices processed per month"
+   ]
+  },
+  {
+   "key": "churn_model",
+   "names": [
+    "Subscription churn model",
+    "retention risk scoring",
+    "customer churn prediction baseline"
+   ],
+   "skills": [
+    "Python",
+    "scikit-learn",
+    "XGBoost",
+    "Statistics"
+   ],
+   "implied": [
+    "pandas",
+    "SQL"
+   ],
+   "industry": "fitness app",
+   "client": "Juniper Analytics",
+   "date": "2021-05-11",
+   "metrics_filled": [
+    "recall at top decile 3.5x random",
+    "saved accounts up 23% in the pilot",
+    "AUC 0.86"
+   ]
+  },
+  {
+   "key": "ticket_classifier",
+   "names": [
+    "Ticket triage classifier",
+    "support ticket routing model",
+    "NLP intent classifier"
+   ],
+   "skills": [
+    "Python",
+    "NLP",
+    "Hugging Face",
+    "Fine-tuning"
+   ],
+   "implied": [
+    "PyTorch",
+    "MLOps"
+   ],
+   "industry": "travel",
+   "client": "Willow Retail",
+   "date": "2021-11-30",
+   "metrics_filled": [
+    "routing accuracy 95%",
+    "median triage delay down from 4 hours to minutes",
+    "macro-F1 0.86"
+   ]
+  },
+  {
+   "key": "demand_forecast",
+   "names": [
+    "Store demand forecasting",
+    "weekly sales forecast for retail",
+    "inventory forecasting models"
+   ],
+   "skills": [
+    "Python",
+    "Time Series",
+    "XGBoost"
+   ],
+   "implied": [
+    "pandas",
+    "Airflow"
+   ],
+   "industry": "pharmacy chain",
+   "client": "Vertex Labs",
+   "date": "2022-03-01",
+   "metrics_filled": [
+    "MAPE improved from 30% to 16%",
+    "stock-outs down 18%",
+    "64 stores covered"
+   ]
+  },
+  {
+   "key": "resume_matcher",
+   "names": [
+    "Candidate-job matching engine",
+    "semantic resume screening",
+    "recruiting search with embeddings"
+   ],
+   "skills": [
+    "Python",
+    "NLP",
+    "Vector DB",
+    "RAG"
+   ],
+   "implied": [
+    "Hugging Face",
+    "FastAPI"
+   ],
+   "industry": "HR tech",
+   "client": "Orchid Co.",
+   "date": "2022-07-15",
+   "metrics_filled": [
+    "recruiter shortlist time down 60%",
+    "nDCG@10 0.78 on labelled searches",
+    "146k resumes indexed"
+   ]
+  },
+  {
+   "key": "defect_vision",
+   "names": [
+    "Visual defect detection",
+    "computer-vision QA line",
+    "image classifier for product defects"
+   ],
+   "skills": [
+    "Python",
+    "Computer Vision",
+    "PyTorch"
+   ],
+   "implied": [
+    "MLOps",
+    "Docker"
+   ],
+   "industry": "packaging",
+   "client": "Cobalt Studio",
+   "date": "2022-10-02",
+   "metrics_filled": [
+    "defect recall 95%",
+    "false rejects under 4%",
+    "inspection at 35 items per second"
+   ]
+  },
+  {
+   "key": "llm_eval",
+   "names": [
+    "LLM evaluation harness",
+    "prompt regression test suite",
+    "evals for an LLM product"
+   ],
+   "skills": [
+    "Python",
+    "LLM",
+    "Testing"
+   ],
+   "implied": [
+    "CI/CD",
+    "Statistics"
+   ],
+   "industry": "edtech",
+   "client": "Maple Analytics",
+   "date": "2022-12-09",
+   "metrics_filled": [
+    "judge agreement kappa 0.75",
+    "caught 23 regressions before release",
+    "eval run under 9 minutes"
+   ]
+  },
+  {
+   "key": "agent_workflow",
+   "names": [
+    "Multi-step AI agent for operations",
+    "LangGraph workflow agent",
+    "tool-using assistant for back office"
+   ],
+   "skills": [
+    "Python",
+    "LLM",
+    "LangChain",
+    "Chatbot"
+   ],
+   "implied": [
+    "REST API",
+    "PostgreSQL"
+   ],
+   "industry": "real estate",
+   "client": "Beacon Partners",
+   "date": "2023-05-15",
+   "metrics_filled": [
+    "handling time per request down 47%",
+    "599 requests per week automated",
+    "zero unapproved writes in production"
+   ]
+  },
+  {
+   "key": "recsys",
+   "names": [
+    "Product recommendations",
+    "recommender system for an online store",
+    "personalised 'you may also like' engine"
+   ],
+   "skills": [
+    "Python",
+    "Recommendation Systems",
+    "scikit-learn"
+   ],
+   "implied": [
+    "SQL",
+    "AWS"
+   ],
+   "industry": "bookstore",
+   "client": "Signal Labs",
+   "date": "2023-06-14",
+   "metrics_filled": [
+    "click-through up 27%",
+    "revenue per session up 5%",
+    "22k SKUs"
+   ]
+  },
+  {
+   "key": "speech_notes",
+   "names": [
+    "Call transcription and summaries",
+    "speech-to-text meeting notes",
+    "voice call analytics"
+   ],
+   "skills": [
+    "Python",
+    "Speech",
+    "LLM"
+   ],
+   "implied": [
+    "AWS",
+    "FastAPI"
+   ],
+   "industry": "real estate",
+   "client": "Atlas Co.",
+   "date": "2023-10-07",
+   "metrics_filled": [
+    "6k calls per month transcribed",
+    "word error rate 6%",
+    "reps saved 39 minutes a day"
+   ]
+  },
+  {
+   "key": "sentiment_dash",
+   "names": [
+    "Review sentiment monitoring",
+    "aspect-based sentiment for reviews",
+    "voice-of-customer NLP"
+   ],
+   "skills": [
+    "Python",
+    "NLP",
+    "Data Visualization"
+   ],
+   "implied": [
+    "Hugging Face",
+    "SQL"
+   ],
+   "industry": "hospitality",
+   "client": "Lumen Health",
+   "date": "2024-04-26",
+   "metrics_filled": [
+    "54k reviews analysed",
+    "aspect accuracy 89%",
+    "issues spotted 2 weeks earlier"
+   ]
+  },
+  {
+   "key": "fraud_scoring",
+   "names": [
+    "Transaction fraud scoring",
+    "payments anomaly detection",
+    "fraud model for card payments"
+   ],
+   "skills": [
+    "Python",
+    "XGBoost",
+    "Statistics"
+   ],
+   "implied": [
+    "SQL",
+    "MLOps"
+   ],
+   "industry": "marketplace",
+   "client": "Signal Retail",
+   "date": "2024-06-06",
+   "metrics_filled": [
+    "fraud caught up 31%",
+    "false declines down 26%",
+    "latency under 45 ms"
+   ]
+  },
+  {
+   "key": "contract_review",
+   "names": [
+    "Contract clause extraction",
+    "legal document review assistant",
+    "LLM clause finder"
+   ],
+   "skills": [
+    "Python",
+    "LLM",
+    "RAG",
+    "NLP"
+   ],
+   "implied": [
+    "Vector DB",
+    "Testing"
+   ],
+   "industry": "real estate",
+   "client": "Beacon Group",
+   "date": "2024-10-06",
+   "metrics_filled": [
+    "review time per contract down 62%",
+    "clause recall 93%",
+    "1k contracts reviewed"
+   ]
+  },
+  {
+   "key": "lead_scoring",
+   "names": [
+    "B2B lead scoring",
+    "sales lead prioritisation model",
+    "propensity model for CRM"
+   ],
+   "skills": [
+    "Python",
+    "scikit-learn",
+    "Statistics"
+   ],
+   "implied": [
+    "SQL",
+    "pandas"
+   ],
+   "industry": "SaaS",
+   "client": "Lumen Health",
+   "date": "2025-03-23",
+   "metrics_filled": [
+    "conversion in the top quintile 4x baseline",
+    "pipeline up 18% in a quarter",
+    "22k leads scored"
+   ]
+  },
+  {
+   "key": "image_tagging",
+   "names": [
+    "Automatic image tagging",
+    "catalogue photo labelling",
+    "vision model for product attributes"
+   ],
+   "skills": [
+    "Python",
+    "Computer Vision",
+    "Hugging Face"
+   ],
+   "implied": [
+    "PyTorch",
+    "AWS"
+   ],
+   "industry": "fashion e-commerce",
+   "client": "Bright Health",
+   "date": "2025-04-28",
+   "metrics_filled": [
+    "tagging time down 81%",
+    "attribute accuracy 91%",
+    "131k images tagged"
+   ]
+  },
+  {
+   "key": "search_relevance",
+   "names": [
+    "Site search relevance",
+    "semantic product search",
+    "search ranking upgrade"
+   ],
+   "skills": [
+    "Python",
+    "RAG",
+    "Vector DB",
+    "NLP"
+   ],
+   "implied": [
+    "Redis",
+    "AWS"
+   ],
+   "industry": "e-commerce",
+   "client": "Juniper Partners",
+   "date": "2025-09-05",
+   "metrics_filled": [
+    "zero-result searches down 39%",
+    "search conversion up 12%",
+    "p95 latency 125 ms"
+   ]
+  },
+  {
+   "key": "chat_onboarding",
+   "names": [
+    "Onboarding chatbot",
+    "WhatsApp-style FAQ bot for customers",
+    "conversational onboarding assistant"
+   ],
+   "skills": [
+    "Chatbot",
+    "LLM",
+    "Python"
+   ],
+   "implied": [
+    "FastAPI",
+    "PostgreSQL"
+   ],
+   "industry": "insurance",
+   "client": "Kestrel Labs",
+   "date": "2025-11-14",
+   "metrics_filled": [
+    "onboarding completion up 15%",
+    "74% of questions resolved by the bot",
+    "CSAT 4.34/5"
+   ]
+  },
+  {
+   "key": "model_serving",
+   "names": [
+    "Model serving platform",
+    "MLOps pipeline for model deployment",
+    "batch and online inference service"
+   ],
+   "skills": [
+    "MLOps",
+    "Docker",
+    "Python"
+   ],
+   "implied": [
+    "Kubernetes",
+    "CI/CD"
+   ],
+   "industry": "fintech",
+   "client": "Saffron Labs",
+   "date": "2026-03-21",
+   "metrics_filled": [
+    "deploy time from days to 43 minutes",
+    "6 models in production",
+    "rollback in under 2 minutes"
+   ]
+  },
+  {
+   "key": "data_labelling",
+   "names": [
+    "Data labelling workflow",
+    "annotation pipeline for NLP data",
+    "weak supervision for labels"
+   ],
+   "skills": [
+    "Python",
+    "NLP",
+    "Statistics"
+   ],
+   "implied": [
+    "pandas",
+    "Testing"
+   ],
+   "industry": "research lab",
+   "client": "Orchid Health",
+   "date": "2026-08-21",
+   "metrics_filled": [
+    "labelled 81k documents",
+    "agreement kappa 0.75",
+    "labelling cost down 58%"
+   ]
+  }
+ ]
+}

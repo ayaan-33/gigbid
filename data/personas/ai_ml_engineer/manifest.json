@@ -1,0 +1,3331 @@
+{
+ "persona_id": "ai_ml_engineer",
+ "synthetic": true,
+ "items": [
+  {
+   "id": "ai_ml_engineer:case:support_rag",
+   "type": "case_study",
+   "project": "support_rag",
+   "title": "Support-desk answer engine",
+   "path": "case_studies/support_rag.md",
+   "date": "2020-10-13",
+   "client_industry": "SaaS",
+   "skills": [
+    "Python",
+    "RAG",
+    "LLM",
+    "Vector DB",
+    "FastAPI"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:case:invoice_extract",
+   "type": "case_study",
+   "project": "invoice_extract",
+   "title": "Invoice field extraction pipeline",
+   "path": "case_studies/invoice_extract.md",
+   "date": "2021-04-25",
+   "client_industry": "logistics",
+   "skills": [
+    "Python",
+    "LLM",
+    "NLP",
+    "FastAPI"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:case:churn_model",
+   "type": "case_study",
+   "project": "churn_model",
+   "title": "Subscription churn model",
+   "path": "case_studies/churn_model.md",
+   "date": "2021-05-11",
+   "client_industry": "fitness app",
+   "skills": [
+    "Python",
+    "scikit-learn",
+    "XGBoost",
+    "Statistics"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:case:ticket_classifier",
+   "type": "case_study",
+   "project": "ticket_classifier",
+   "title": "Ticket triage classifier",
+   "path": "case_studies/ticket_classifier.md",
+   "date": "2021-11-30",
+   "client_industry": "travel",
+   "skills": [
+    "Python",
+    "NLP",
+    "Hugging Face",
+    "Fine-tuning"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:case:demand_forecast",
+   "type": "case_study",
+   "project": "demand_forecast",
+   "title": "Store demand forecasting",
+   "path": "case_studies/demand_forecast.md",
+   "date": "2022-03-01",
+   "client_industry": "pharmacy chain",
+   "skills": [
+    "Python",
+    "Time Series",
+    "XGBoost"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:case:resume_matcher",
+   "type": "case_study",
+   "project": "resume_matcher",
+   "title": "Candidate-job matching engine",
+   "path": "case_studies/resume_matcher.md",
+   "date": "2022-07-15",
+   "client_industry": "HR tech",
+   "skills": [
+    "Python",
+    "NLP",
+    "Vector DB",
+    "RAG"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:case:defect_vision",
+   "type": "case_study",
+   "project": "defect_vision",
+   "title": "Visual defect detection",
+   "path": "case_studies/defect_vision.md",
+   "date": "2022-10-02",
+   "client_industry": "packaging",
+   "skills": [
+    "Python",
+    "Computer Vision",
+    "PyTorch"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:case:llm_eval",
+   "type": "case_study",
+   "project": "llm_eval",
+   "title": "LLM evaluation harness",
+   "path": "case_studies/llm_eval.md",
+   "date": "2022-12-09",
+   "client_industry": "edtech",
+   "skills": [
+    "Python",
+    "LLM",
+    "Testing"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:case:agent_workflow",
+   "type": "case_study",
+   "project": "agent_workflow",
+   "title": "Multi-step AI agent for operations",
+   "path": "case_studies/agent_workflow.md",
+   "date": "2023-05-15",
+   "client_industry": "real estate",
+   "skills": [
+    "Python",
+    "LLM",
+    "LangChain",
+    "Chatbot"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:case:recsys",
+   "type": "case_study",
+   "project": "recsys",
+   "title": "Product recommendations",
+   "path": "case_studies/recsys.md",
+   "date": "2023-06-14",
+   "client_industry": "bookstore",
+   "skills": [
+    "Python",
+    "Recommendation Systems",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:case:speech_notes",
+   "type": "case_study",
+   "project": "speech_notes",
+   "title": "Call transcription and summaries",
+   "path": "case_studies/speech_notes.md",
+   "date": "2023-10-07",
+   "client_industry": "real estate",
+   "skills": [
+    "Python",
+    "Speech",
+    "LLM"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:case:sentiment_dash",
+   "type": "case_study",
+   "project": "sentiment_dash",
+   "title": "Review sentiment monitoring",
+   "path": "case_studies/sentiment_dash.md",
+   "date": "2024-04-26",
+   "client_industry": "hospitality",
+   "skills": [
+    "Python",
+    "NLP",
+    "Data Visualization"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:case:fraud_scoring",
+   "type": "case_study",
+   "project": "fraud_scoring",
+   "title": "Transaction fraud scoring",
+   "path": "case_studies/fraud_scoring.md",
+   "date": "2024-06-06",
+   "client_industry": "marketplace",
+   "skills": [
+    "Python",
+    "XGBoost",
+    "Statistics"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:case:contract_review",
+   "type": "case_study",
+   "project": "contract_review",
+   "title": "Contract clause extraction",
+   "path": "case_studies/contract_review.md",
+   "date": "2024-10-06",
+   "client_industry": "real estate",
+   "skills": [
+    "Python",
+    "LLM",
+    "RAG",
+    "NLP"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:case:lead_scoring",
+   "type": "case_study",
+   "project": "lead_scoring",
+   "title": "B2B lead scoring",
+   "path": "case_studies/lead_scoring.md",
+   "date": "2025-03-23",
+   "client_industry": "SaaS",
+   "skills": [
+    "Python",
+    "scikit-learn",
+    "Statistics"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:case:image_tagging",
+   "type": "case_study",
+   "project": "image_tagging",
+   "title": "Automatic image tagging",
+   "path": "case_studies/image_tagging.md",
+   "date": "2025-04-28",
+   "client_industry": "fashion e-commerce",
+   "skills": [
+    "Python",
+    "Computer Vision",
+    "Hugging Face"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:case:search_relevance",
+   "type": "case_study",
+   "project": "search_relevance",
+   "title": "Site search relevance",
+   "path": "case_studies/search_relevance.md",
+   "date": "2025-09-05",
+   "client_industry": "e-commerce",
+   "skills": [
+    "Python",
+    "RAG",
+    "Vector DB",
+    "NLP"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:case:chat_onboarding",
+   "type": "case_study",
+   "project": "chat_onboarding",
+   "title": "Onboarding chatbot",
+   "path": "case_studies/chat_onboarding.md",
+   "date": "2025-11-14",
+   "client_industry": "insurance",
+   "skills": [
+    "Chatbot",
+    "LLM",
+    "Python"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:case:model_serving",
+   "type": "case_study",
+   "project": "model_serving",
+   "title": "Model serving platform",
+   "path": "case_studies/model_serving.md",
+   "date": "2026-03-21",
+   "client_industry": "fintech",
+   "skills": [
+    "MLOps",
+    "Docker",
+    "Python"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:case:data_labelling",
+   "type": "case_study",
+   "project": "data_labelling",
+   "title": "Data labelling workflow",
+   "path": "case_studies/data_labelling.md",
+   "date": "2026-08-21",
+   "client_industry": "research lab",
+   "skills": [
+    "Python",
+    "NLP",
+    "Statistics"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:cv",
+   "type": "cv",
+   "project": null,
+   "title": "CV",
+   "path": "cv.pdf",
+   "date": "2026-10-01",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "Computer Vision",
+    "Data Visualization",
+    "Docker",
+    "FastAPI",
+    "Fine-tuning",
+    "Hugging Face",
+    "LLM",
+    "LangChain",
+    "MLOps",
+    "NLP",
+    "PyTorch",
+    "Python",
+    "RAG",
+    "Recommendation Systems",
+    "Speech",
+    "Statistics",
+    "Testing",
+    "Time Series",
+    "Vector DB",
+    "XGBoost",
+    "scikit-learn"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:repo:support-rag",
+   "type": "repo",
+   "project": "support_rag",
+   "title": "support-rag",
+   "path": "repos/support-rag",
+   "date": "2020-10-13",
+   "client_industry": "SaaS",
+   "skills": [
+    "Docker",
+    "FastAPI",
+    "LLM",
+    "LangChain",
+    "Python",
+    "RAG",
+    "Vector DB"
+   ],
+   "readme_style": "clear",
+   "files": [
+    "Dockerfile",
+    "README.md",
+    "requirements.txt",
+    "src/main.py"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:repo:churn-model",
+   "type": "repo",
+   "project": "churn_model",
+   "title": "churn-model",
+   "path": "repos/churn-model",
+   "date": "2021-05-11",
+   "client_industry": "fitness app",
+   "skills": [
+    "Python",
+    "SQL",
+    "Statistics",
+    "XGBoost",
+    "pandas",
+    "scikit-learn"
+   ],
+   "readme_style": "clear",
+   "files": [
+    "README.md",
+    "requirements.txt",
+    "src/main.py"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:repo:demand-forecast",
+   "type": "repo",
+   "project": "demand_forecast",
+   "title": "demand-forecast",
+   "path": "repos/demand-forecast",
+   "date": "2022-03-01",
+   "client_industry": "pharmacy chain",
+   "skills": [
+    "Airflow",
+    "Python",
+    "Time Series",
+    "XGBoost",
+    "pandas"
+   ],
+   "readme_style": "vague",
+   "files": [
+    "README.md",
+    "requirements.txt",
+    "src/main.py"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:repo:defect-vision",
+   "type": "repo",
+   "project": "defect_vision",
+   "title": "defect-vision",
+   "path": "repos/defect-vision",
+   "date": "2022-10-02",
+   "client_industry": "packaging",
+   "skills": [
+    "Computer Vision",
+    "Docker",
+    "MLOps",
+    "PyTorch",
+    "Python"
+   ],
+   "readme_style": "clear",
+   "files": [
+    "Dockerfile",
+    "README.md",
+    "requirements.txt",
+    "src/main.py"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:repo:agent-workflow",
+   "type": "repo",
+   "project": "agent_workflow",
+   "title": "agent-workflow",
+   "path": "repos/agent-workflow",
+   "date": "2023-05-15",
+   "client_industry": "real estate",
+   "skills": [
+    "Chatbot",
+    "LLM",
+    "LangChain",
+    "PostgreSQL",
+    "Python",
+    "REST API"
+   ],
+   "readme_style": "clear",
+   "files": [
+    "README.md",
+    "requirements.txt",
+    "src/main.py"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:repo:speech-notes",
+   "type": "repo",
+   "project": "speech_notes",
+   "title": "speech-notes",
+   "path": "repos/speech-notes",
+   "date": "2023-10-07",
+   "client_industry": "real estate",
+   "skills": [
+    "AWS",
+    "FastAPI",
+    "LLM",
+    "Python",
+    "Speech"
+   ],
+   "readme_style": "clear",
+   "files": [
+    "README.md",
+    "requirements.txt",
+    "src/main.py"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:repo:fraud-scoring",
+   "type": "repo",
+   "project": "fraud_scoring",
+   "title": "fraud-scoring",
+   "path": "repos/fraud-scoring",
+   "date": "2024-06-06",
+   "client_industry": "marketplace",
+   "skills": [
+    "MLOps",
+    "Python",
+    "SQL",
+    "Statistics",
+    "XGBoost"
+   ],
+   "readme_style": "clear",
+   "files": [
+    "README.md",
+    "requirements.txt",
+    "src/main.py"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:repo:lead-scoring",
+   "type": "repo",
+   "project": "lead_scoring",
+   "title": "lead-scoring",
+   "path": "repos/lead-scoring",
+   "date": "2025-03-23",
+   "client_industry": "SaaS",
+   "skills": [
+    "Python",
+    "SQL",
+    "Statistics",
+    "pandas",
+    "scikit-learn"
+   ],
+   "readme_style": "clear",
+   "files": [
+    "README.md",
+    "requirements.txt",
+    "src/main.py"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:repo:search-relevance",
+   "type": "repo",
+   "project": "search_relevance",
+   "title": "search-relevance",
+   "path": "repos/search-relevance",
+   "date": "2025-09-05",
+   "client_industry": "e-commerce",
+   "skills": [
+    "AWS",
+    "NLP",
+    "Python",
+    "RAG",
+    "Redis",
+    "Vector DB"
+   ],
+   "readme_style": "clear",
+   "files": [
+    "README.md",
+    "requirements.txt",
+    "src/main.py"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:repo:model-serving",
+   "type": "repo",
+   "project": "model_serving",
+   "title": "model-serving",
+   "path": "repos/model-serving",
+   "date": "2026-03-21",
+   "client_industry": "fintech",
+   "skills": [
+    "CI/CD",
+    "Docker",
+    "Kubernetes",
+    "MLOps",
+    "Python"
+   ],
+   "readme_style": "vague",
+   "files": [
+    "Dockerfile",
+    "README.md",
+    "requirements.txt",
+    "src/main.py"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:review:llm_eval",
+   "type": "review",
+   "project": "llm_eval",
+   "date": "2022-12-09",
+   "client_industry": "edtech",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "ai_ml_engineer:review:resume_matcher",
+   "type": "review",
+   "project": "resume_matcher",
+   "date": "2022-07-15",
+   "client_industry": "HR tech",
+   "title": "Review (4\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "ai_ml_engineer:review:speech_notes",
+   "type": "review",
+   "project": "speech_notes",
+   "date": "2023-10-07",
+   "client_industry": "real estate",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "ai_ml_engineer:review:data_labelling",
+   "type": "review",
+   "project": "data_labelling",
+   "date": "2026-08-21",
+   "client_industry": "research lab",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "ai_ml_engineer:review:demand_forecast",
+   "type": "review",
+   "project": "demand_forecast",
+   "date": "2022-03-01",
+   "client_industry": "pharmacy chain",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "ai_ml_engineer:review:lead_scoring",
+   "type": "review",
+   "project": "lead_scoring",
+   "date": "2025-03-23",
+   "client_industry": "SaaS",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "ai_ml_engineer:review:sentiment_dash",
+   "type": "review",
+   "project": "sentiment_dash",
+   "date": "2024-04-26",
+   "client_industry": "hospitality",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "ai_ml_engineer:review:contract_review",
+   "type": "review",
+   "project": "contract_review",
+   "date": "2024-10-06",
+   "client_industry": "real estate",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "ai_ml_engineer:review:search_relevance",
+   "type": "review",
+   "project": "search_relevance",
+   "date": "2025-09-05",
+   "client_industry": "e-commerce",
+   "title": "Review (4\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "ai_ml_engineer:review:invoice_extract",
+   "type": "review",
+   "project": "invoice_extract",
+   "date": "2021-04-25",
+   "client_industry": "logistics",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "ai_ml_engineer:review:fraud_scoring",
+   "type": "review",
+   "project": "fraud_scoring",
+   "date": "2024-06-06",
+   "client_industry": "marketplace",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "ai_ml_engineer:review:recsys",
+   "type": "review",
+   "project": "recsys",
+   "date": "2023-06-14",
+   "client_industry": "bookstore",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "ai_ml_engineer:review:ticket_classifier",
+   "type": "review",
+   "project": "ticket_classifier",
+   "date": "2021-11-30",
+   "client_industry": "travel",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p000",
+   "type": "proposal",
+   "project": "invoice_extract",
+   "title": "Proposal: NLP Full-Stack for OpenAI project",
+   "path": "proposals.jsonl",
+   "date": "2026-02-18",
+   "client_industry": null,
+   "skills": [
+    "NLP",
+    "Python",
+    "TensorFlow"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "invoice_extract"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p001",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Question answering using ChatGpt",
+   "path": "proposals.jsonl",
+   "date": "2024-10-05",
+   "client_industry": null,
+   "skills": [
+    "Azure",
+    "LLM",
+    "NLP"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p002",
+   "type": "proposal",
+   "project": "sentiment_dash",
+   "title": "Proposal: AI Podio integration and automations",
+   "path": "proposals.jsonl",
+   "date": "2026-07-31",
+   "client_industry": null,
+   "skills": [
+    "Data Visualization",
+    "Lead Generation"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "sentiment_dash"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p003",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Create an AI model with super high quality paper texture",
+   "path": "proposals.jsonl",
+   "date": "2024-07-10",
+   "client_industry": null,
+   "skills": [
+    "LLM"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p004",
+   "type": "proposal",
+   "project": "agent_workflow",
+   "title": "Proposal: Android Frontend Debug - Java code anti-decompilation & avoi",
+   "path": "proposals.jsonl",
+   "date": "2024-09-24",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "Mobile"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "agent_workflow",
+    "chat_onboarding"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p005",
+   "type": "proposal",
+   "project": "defect_vision",
+   "title": "Proposal: Long-term MEAN Stack Developer to join our AI startup",
+   "path": "proposals.jsonl",
+   "date": "2025-10-15",
+   "client_industry": null,
+   "skills": [
+    "AWS",
+    "Angular",
+    "HTML/CSS",
+    "LLM",
+    "MongoDB",
+    "Node.js",
+    "REST API"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "defect_vision",
+    "llm_eval"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p006",
+   "type": "proposal",
+   "project": "support_rag",
+   "title": "Proposal: Machine Learning Expert Needed",
+   "path": "proposals.jsonl",
+   "date": "2025-05-07",
+   "client_industry": null,
+   "skills": [
+    "Python"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "support_rag",
+    "invoice_extract"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p007",
+   "type": "proposal",
+   "project": "support_rag",
+   "title": "Proposal: Python &amp; FastAPI Developer with Generative AI and Web sc",
+   "path": "proposals.jsonl",
+   "date": "2025-08-20",
+   "client_industry": null,
+   "skills": [
+    "Django",
+    "FastAPI",
+    "LLM",
+    "PyTorch",
+    "Python",
+    "TensorFlow",
+    "Web Scraping"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "support_rag"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p008",
+   "type": "proposal",
+   "project": "agent_workflow",
+   "title": "Proposal: Chat GPT Developer | Price done on experience",
+   "path": "proposals.jsonl",
+   "date": "2025-10-22",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "LLM"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "agent_workflow",
+    "chat_onboarding"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p009",
+   "type": "proposal",
+   "project": "support_rag",
+   "title": "Proposal: Turn Canva design into AI file. DEADLINE: WED., FEB 14 5pm C",
+   "path": "proposals.jsonl",
+   "date": "2025-10-29",
+   "client_industry": null,
+   "skills": [
+    "Graphic Design"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "support_rag",
+    "invoice_extract"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p010",
+   "type": "proposal",
+   "project": "ticket_classifier",
+   "title": "Proposal: ML expert with experience with ONNX specifically translating",
+   "path": "proposals.jsonl",
+   "date": "2025-12-06",
+   "client_industry": null,
+   "skills": [
+    "PyTorch",
+    "Python",
+    "TensorFlow"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "ticket_classifier"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p011",
+   "type": "proposal",
+   "project": "agent_workflow",
+   "title": "Proposal: No-Code Developer with GPT-3 Experience for Google Docs Plug",
+   "path": "proposals.jsonl",
+   "date": "2025-01-26",
+   "client_industry": null,
+   "skills": [
+    "REST API"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "agent_workflow"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p012",
+   "type": "proposal",
+   "project": "defect_vision",
+   "title": "Proposal: Looking for Experts in Video Analytics with Deep Learning",
+   "path": "proposals.jsonl",
+   "date": "2026-07-24",
+   "client_industry": null,
+   "skills": [
+    "Computer Vision",
+    "PyTorch",
+    "Python",
+    "WebSockets"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "defect_vision"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p013",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Data scientist to help find anomolies in financial transacti",
+   "path": "proposals.jsonl",
+   "date": "2024-04-30",
+   "client_industry": null,
+   "skills": [
+    "Statistics"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p014",
+   "type": "proposal",
+   "project": "defect_vision",
+   "title": "Proposal: AI Artist",
+   "path": "proposals.jsonl",
+   "date": "2025-12-23",
+   "client_industry": null,
+   "skills": [
+    "Computer Vision",
+    "Graphic Design",
+    "Python",
+    "TensorFlow"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "defect_vision"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p015",
+   "type": "proposal",
+   "project": "resume_matcher",
+   "title": "Proposal: GPT Document Analyser",
+   "path": "proposals.jsonl",
+   "date": "2025-12-04",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": [
+    "resume_matcher"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p016",
+   "type": "proposal",
+   "project": "invoice_extract",
+   "title": "Proposal: SaaS Chat Bot Developer Powered by OpenAI",
+   "path": "proposals.jsonl",
+   "date": "2024-07-21",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "LLM",
+    "NLP",
+    "Python",
+    "Stripe",
+    "UI/UX Design"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "invoice_extract"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p017",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Looking for AI developer to help create new AI design relate",
+   "path": "proposals.jsonl",
+   "date": "2025-04-28",
+   "client_industry": null,
+   "skills": [
+    "UI/UX Design"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p018",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: OpenAI API Developer for ChatGPT Fine-Tuning",
+   "path": "proposals.jsonl",
+   "date": "2024-08-24",
+   "client_industry": null,
+   "skills": [
+    "Fine-tuning",
+    "LLM",
+    "NLP",
+    "Python"
+   ],
+   "outcome": "won",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p019",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Build a drag and drop hexagonal map maker website page",
+   "path": "proposals.jsonl",
+   "date": "2024-10-21",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p020",
+   "type": "proposal",
+   "project": "llm_eval",
+   "title": "Proposal: Logistics regression expert",
+   "path": "proposals.jsonl",
+   "date": "2025-10-01",
+   "client_industry": null,
+   "skills": [
+    "Statistics",
+    "Testing",
+    "Time Series"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "llm_eval"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p021",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Manychat automation setup for IG with Chat GPT, Mailchimp + ",
+   "path": "proposals.jsonl",
+   "date": "2025-03-04",
+   "client_industry": null,
+   "skills": [
+    "LLM",
+    "Mobile",
+    "REST API",
+    "Shopify",
+    "Social Media"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p022",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Chatbot for Staffing",
+   "path": "proposals.jsonl",
+   "date": "2025-12-04",
+   "client_industry": null,
+   "skills": [
+    "Chatbot"
+   ],
+   "outcome": "replied",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p023",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Data Scientist Needed For Challenging Problem",
+   "path": "proposals.jsonl",
+   "date": "2026-06-13",
+   "client_industry": null,
+   "skills": [
+    "NLP",
+    "Python",
+    "Statistics",
+    "TensorFlow",
+    "scikit-learn"
+   ],
+   "outcome": "replied",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p024",
+   "type": "proposal",
+   "project": "fraud_scoring",
+   "title": "Proposal: Data Scientist",
+   "path": "proposals.jsonl",
+   "date": "2025-08-04",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Statistics"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "fraud_scoring"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p025",
+   "type": "proposal",
+   "project": "sentiment_dash",
+   "title": "Proposal: Azure ML basic; setup help",
+   "path": "proposals.jsonl",
+   "date": "2024-06-06",
+   "client_industry": null,
+   "skills": [
+    "Azure",
+    "NLP",
+    "Python",
+    "SQL"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "sentiment_dash"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p026",
+   "type": "proposal",
+   "project": "resume_matcher",
+   "title": "Proposal: GPT-3/Prompt engineering expert needed",
+   "path": "proposals.jsonl",
+   "date": "2026-04-12",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": [
+    "resume_matcher"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p027",
+   "type": "proposal",
+   "project": "support_rag",
+   "title": "Proposal: Q&A tool with Langchain and GPT3",
+   "path": "proposals.jsonl",
+   "date": "2026-04-25",
+   "client_industry": null,
+   "skills": [
+    "LangChain",
+    "Python",
+    "REST API",
+    "Testing",
+    "Vector DB"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "support_rag",
+    "agent_workflow"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p028",
+   "type": "proposal",
+   "project": "model_serving",
+   "title": "Proposal: Open AI integration with other external API services",
+   "path": "proposals.jsonl",
+   "date": "2026-09-07",
+   "client_industry": null,
+   "skills": [
+    "LLM",
+    "Node.js",
+    "Python",
+    "REST API"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "model_serving"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p029",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Fix my AI Chatbot Website (Gpt3)",
+   "path": "proposals.jsonl",
+   "date": "2026-04-17",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "Data Visualization",
+    "Django",
+    "HTML/CSS",
+    "JavaScript",
+    "NLP",
+    "Node.js",
+    "Python",
+    "REST API",
+    "React"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p030",
+   "type": "proposal",
+   "project": "ticket_classifier",
+   "title": "Proposal: Looking for ML .NET Expert",
+   "path": "proposals.jsonl",
+   "date": "2024-06-08",
+   "client_industry": null,
+   "skills": [
+    "PyTorch"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "ticket_classifier"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p031",
+   "type": "proposal",
+   "project": "support_rag",
+   "title": "Proposal: Senior AI/ML Engineer for Lead Role in Development Agency",
+   "path": "proposals.jsonl",
+   "date": "2024-04-15",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "Fine-tuning",
+    "Vector DB"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "support_rag",
+    "ticket_classifier"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p032",
+   "type": "proposal",
+   "project": "model_serving",
+   "title": "Proposal: Kesig7+1////////-jmdp-allMrJmdplinks2allid-realcon-Alldcbill",
+   "path": "proposals.jsonl",
+   "date": "2026-04-24",
+   "client_industry": null,
+   "skills": [
+    "Copywriting",
+    "SEO"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "model_serving"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p033",
+   "type": "proposal",
+   "project": "invoice_extract",
+   "title": "Proposal: AI for Business",
+   "path": "proposals.jsonl",
+   "date": "2025-11-01",
+   "client_industry": null,
+   "skills": [
+    "Computer Vision",
+    "Flask",
+    "NLP",
+    "Python"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "invoice_extract",
+    "ticket_classifier",
+    "resume_matcher"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p034",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Virtual Assistant Needed - Must Be Multi-Talented!",
+   "path": "proposals.jsonl",
+   "date": "2026-04-03",
+   "client_industry": null,
+   "skills": [
+    "LLM",
+    "Social Media",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p035",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Developer experienced with OpenAI embeddings API and creatin",
+   "path": "proposals.jsonl",
+   "date": "2026-08-13",
+   "client_industry": null,
+   "skills": [
+    "JavaScript",
+    "NLP",
+    "Python"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p036",
+   "type": "proposal",
+   "project": "demand_forecast",
+   "title": "Proposal: Machine Learning - Demand Forecasting",
+   "path": "proposals.jsonl",
+   "date": "2025-08-08",
+   "client_industry": null,
+   "skills": [
+    "Python",
+    "R",
+    "Time Series"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "demand_forecast",
+    "support_rag"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p037",
+   "type": "proposal",
+   "project": "contract_review",
+   "title": "Proposal: chatbot + Ai",
+   "path": "proposals.jsonl",
+   "date": "2024-05-18",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "NLP",
+    "Python",
+    "Testing"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "contract_review",
+    "data_labelling"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p038",
+   "type": "proposal",
+   "project": "support_rag",
+   "title": "Proposal: AI Specialist - Integration and Implementation of OpenAI's C",
+   "path": "proposals.jsonl",
+   "date": "2026-01-22",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "JavaScript",
+    "LLM",
+    "Python",
+    "REST API"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "support_rag",
+    "speech_notes",
+    "lead_scoring"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p039",
+   "type": "proposal",
+   "project": "lead_scoring",
+   "title": "Proposal: Implementing AI API to the e-commerce website",
+   "path": "proposals.jsonl",
+   "date": "2024-07-20",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": [
+    "lead_scoring"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p040",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Senior ChatGPT Developer Whatsapp WEB",
+   "path": "proposals.jsonl",
+   "date": "2024-12-09",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "LLM",
+    "REST API"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p041",
+   "type": "proposal",
+   "project": "speech_notes",
+   "title": "Proposal: ML/AI Engineer to build an AI-powered tool",
+   "path": "proposals.jsonl",
+   "date": "2026-01-06",
+   "client_industry": null,
+   "skills": [
+    "AWS",
+    "LLM"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "speech_notes",
+    "support_rag"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p042",
+   "type": "proposal",
+   "project": "churn_model",
+   "title": "Proposal: GoHighLevel Workflow &amp; Chatbot Automation",
+   "path": "proposals.jsonl",
+   "date": "2025-04-09",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "Testing"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "churn_model"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p043",
+   "type": "proposal",
+   "project": "invoice_extract",
+   "title": "Proposal: AI Engineer for Real-Time Transcription Server Development",
+   "path": "proposals.jsonl",
+   "date": "2024-11-01",
+   "client_industry": null,
+   "skills": [
+    "NLP",
+    "Next.js",
+    "Node.js",
+    "Python",
+    "REST API",
+    "Speech",
+    "TypeScript",
+    "WebSockets"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "invoice_extract"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p044",
+   "type": "proposal",
+   "project": "resume_matcher",
+   "title": "Proposal: Build a blockchain/coin that uses AI",
+   "path": "proposals.jsonl",
+   "date": "2024-04-18",
+   "client_industry": null,
+   "skills": [
+    "Blockchain",
+    "Python",
+    "REST API"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "resume_matcher"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p045",
+   "type": "proposal",
+   "project": "sentiment_dash",
+   "title": "Proposal: Need 100 fps on human body pose estimation with high accurac",
+   "path": "proposals.jsonl",
+   "date": "2026-08-01",
+   "client_industry": null,
+   "skills": [
+    "Computer Vision",
+    "PyTorch",
+    "Python"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "sentiment_dash"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p046",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: ML Ops Experimental Arch (PyTorch + HF Diffusers and various",
+   "path": "proposals.jsonl",
+   "date": "2025-12-09",
+   "client_industry": null,
+   "skills": [
+    "AWS",
+    "Computer Vision",
+    "Fine-tuning",
+    "MLOps",
+    "PyTorch",
+    "Python"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p047",
+   "type": "proposal",
+   "project": "invoice_extract",
+   "title": "Proposal: Notetaking, summarizing audio records from meetings",
+   "path": "proposals.jsonl",
+   "date": "2025-07-23",
+   "client_industry": null,
+   "skills": [
+    "LLM"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "invoice_extract",
+    "ticket_classifier"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p048",
+   "type": "proposal",
+   "project": "support_rag",
+   "title": "Proposal: chat GPT Python help and web scraping",
+   "path": "proposals.jsonl",
+   "date": "2024-11-09",
+   "client_industry": null,
+   "skills": [
+    "LLM",
+    "Python",
+    "Web Scraping"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "support_rag",
+    "invoice_extract",
+    "llm_eval"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p049",
+   "type": "proposal",
+   "project": "invoice_extract",
+   "title": "Proposal: Chat GPT Advice Bot for Kids",
+   "path": "proposals.jsonl",
+   "date": "2026-02-08",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "LLM",
+    "NLP"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "invoice_extract"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p050",
+   "type": "proposal",
+   "project": "agent_workflow",
+   "title": "Proposal: Design the UX/UI for an AI-powered chatbot using Figma",
+   "path": "proposals.jsonl",
+   "date": "2024-12-16",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "Mobile",
+    "UI/UX Design"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "agent_workflow"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p051",
+   "type": "proposal",
+   "project": "invoice_extract",
+   "title": "Proposal: OpenAi ChatBot customization",
+   "path": "proposals.jsonl",
+   "date": "2026-07-17",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "NLP"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "invoice_extract",
+    "ticket_classifier"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p052",
+   "type": "proposal",
+   "project": "invoice_extract",
+   "title": "Proposal: Data scientist needed to help automate financial processing.",
+   "path": "proposals.jsonl",
+   "date": "2024-10-10",
+   "client_industry": null,
+   "skills": [
+    "Computer Vision",
+    "NLP"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "invoice_extract",
+    "ticket_classifier"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p053",
+   "type": "proposal",
+   "project": "invoice_extract",
+   "title": "Proposal: Machine learning plus matlab developer needed",
+   "path": "proposals.jsonl",
+   "date": "2025-12-14",
+   "client_industry": null,
+   "skills": [
+    "Python",
+    "TensorFlow"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "invoice_extract",
+    "model_serving"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p054",
+   "type": "proposal",
+   "project": "defect_vision",
+   "title": "Proposal: Freelance Machine Learning Engineer for detecting and counti",
+   "path": "proposals.jsonl",
+   "date": "2025-01-06",
+   "client_industry": null,
+   "skills": [
+    "Computer Vision",
+    "Mobile",
+    "PyTorch",
+    "Python",
+    "scikit-learn"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "defect_vision"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p055",
+   "type": "proposal",
+   "project": "support_rag",
+   "title": "Proposal: AI website - mp3 voice split syllables",
+   "path": "proposals.jsonl",
+   "date": "2025-03-20",
+   "client_industry": null,
+   "skills": [
+    "Mobile",
+    "Python"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "support_rag",
+    "invoice_extract",
+    "churn_model"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p056",
+   "type": "proposal",
+   "project": "sentiment_dash",
+   "title": "Proposal: \u26d4 OpenAI + OCR + MERN stack: create a learning AI which can ",
+   "path": "proposals.jsonl",
+   "date": "2025-06-06",
+   "client_industry": null,
+   "skills": [
+    "Next.js",
+    "React"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "sentiment_dash"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p057",
+   "type": "proposal",
+   "project": "llm_eval",
+   "title": "Proposal: Cybersecurity expert needed for web builder platform using A",
+   "path": "proposals.jsonl",
+   "date": "2024-06-19",
+   "client_industry": null,
+   "skills": [
+    "Blockchain",
+    "Testing"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "llm_eval",
+    "contract_review",
+    "data_labelling"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p058",
+   "type": "proposal",
+   "project": "invoice_extract",
+   "title": "Proposal: Web Scrapping tool for extracting products",
+   "path": "proposals.jsonl",
+   "date": "2026-04-26",
+   "client_industry": null,
+   "skills": [
+    "LLM",
+    "Python",
+    "REST API"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "invoice_extract",
+    "sentiment_dash"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p059",
+   "type": "proposal",
+   "project": "chat_onboarding",
+   "title": "Proposal: Looking for Thai actors and actress for short video filming",
+   "path": "proposals.jsonl",
+   "date": "2025-03-28",
+   "client_industry": null,
+   "skills": [
+    "Social Media"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "chat_onboarding"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p060",
+   "type": "proposal",
+   "project": "invoice_extract",
+   "title": "Proposal: NLP Expert (AI ML NLP Supervised learning Expert)",
+   "path": "proposals.jsonl",
+   "date": "2025-07-12",
+   "client_industry": null,
+   "skills": [
+    "NLP",
+    "Python"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "invoice_extract"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p061",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Whatsapp Chatbot via ChatGPT - Web Interface",
+   "path": "proposals.jsonl",
+   "date": "2024-09-17",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "LLM",
+    "Python",
+    "REST API"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p062",
+   "type": "proposal",
+   "project": "image_tagging",
+   "title": "Proposal: Chatbot, Ai",
+   "path": "proposals.jsonl",
+   "date": "2024-06-15",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "Flask",
+    "JavaScript",
+    "MongoDB",
+    "NLP",
+    "Node.js",
+    "Python",
+    "REST API",
+    "UI/UX Design",
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "image_tagging"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p063",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Editing photos with Photoshop AI",
+   "path": "proposals.jsonl",
+   "date": "2024-06-11",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Graphic Design"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p064",
+   "type": "proposal",
+   "project": "churn_model",
+   "title": "Proposal: Deep learning expert with knowledge of GANs for making an ar",
+   "path": "proposals.jsonl",
+   "date": "2025-07-09",
+   "client_industry": null,
+   "skills": [
+    "Computer Vision",
+    "Python",
+    "TensorFlow"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "churn_model"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p065",
+   "type": "proposal",
+   "project": "defect_vision",
+   "title": "Proposal: Machine Learning Engineer",
+   "path": "proposals.jsonl",
+   "date": "2026-03-11",
+   "client_industry": null,
+   "skills": [
+    "Computer Vision",
+    "GCP",
+    "MLOps",
+    "Python",
+    "TensorFlow",
+    "scikit-learn"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "defect_vision"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p066",
+   "type": "proposal",
+   "project": "agent_workflow",
+   "title": "Proposal: Exciting Web Development Opportunity: Wix Developer with Edi",
+   "path": "proposals.jsonl",
+   "date": "2025-07-08",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "Graphic Design",
+    "HTML/CSS",
+    "JavaScript",
+    "LLM",
+    "UI/UX Design"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "agent_workflow"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p067",
+   "type": "proposal",
+   "project": "churn_model",
+   "title": "Proposal: B2B LinkedIn Marketer",
+   "path": "proposals.jsonl",
+   "date": "2024-12-28",
+   "client_industry": null,
+   "skills": [
+    "Copywriting",
+    "Lead Generation",
+    "Social Media"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "churn_model",
+    "lead_scoring"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p068",
+   "type": "proposal",
+   "project": "support_rag",
+   "title": "Proposal: Google Display Media Buyer (Search Arbitrage)",
+   "path": "proposals.jsonl",
+   "date": "2025-02-28",
+   "client_industry": null,
+   "skills": [
+    "Social Media"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "support_rag",
+    "churn_model"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p069",
+   "type": "proposal",
+   "project": "defect_vision",
+   "title": "Proposal: AI Specialist Needed for Customized Technical Support Chat a",
+   "path": "proposals.jsonl",
+   "date": "2026-08-23",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "Django",
+    "LLM",
+    "MLOps",
+    "REST API",
+    "WebSockets"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "defect_vision"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p070",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Ruby or Rails script for ChatGPT",
+   "path": "proposals.jsonl",
+   "date": "2025-10-05",
+   "client_industry": null,
+   "skills": [
+    "JavaScript",
+    "LLM"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p071",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Experienced Developer for OpenAI API",
+   "path": "proposals.jsonl",
+   "date": "2025-03-14",
+   "client_industry": null,
+   "skills": [
+    "LLM",
+    "NLP",
+    "Python",
+    "REST API"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p072",
+   "type": "proposal",
+   "project": "ticket_classifier",
+   "title": "Proposal: Fine-tuning Developer",
+   "path": "proposals.jsonl",
+   "date": "2024-06-06",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "Fine-tuning",
+    "Hugging Face",
+    "LLM"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "ticket_classifier"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p073",
+   "type": "proposal",
+   "project": "invoice_extract",
+   "title": "Proposal: Data Scientist for Media Buying Analysis \u00f0\u0178\u0161\u20ac",
+   "path": "proposals.jsonl",
+   "date": "2026-02-01",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": [
+    "invoice_extract"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p074",
+   "type": "proposal",
+   "project": "invoice_extract",
+   "title": "Proposal: Senoir ML / NLP Engineer",
+   "path": "proposals.jsonl",
+   "date": "2025-07-21",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "NLP",
+    "Python"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "invoice_extract",
+    "ticket_classifier",
+    "resume_matcher"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p075",
+   "type": "proposal",
+   "project": "llm_eval",
+   "title": "Proposal: Create an animated ChatGPT Clone/Simulator (HTML)",
+   "path": "proposals.jsonl",
+   "date": "2026-08-12",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "JavaScript",
+    "LLM"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "llm_eval"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p076",
+   "type": "proposal",
+   "project": "fraud_scoring",
+   "title": "Proposal: AI (Artificial Intelligence) to edit real estate photos",
+   "path": "proposals.jsonl",
+   "date": "2026-06-30",
+   "client_industry": null,
+   "skills": [
+    "Graphic Design",
+    "TensorFlow"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "fraud_scoring"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p077",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Data Scientist Needed to Analyze & Build Price Elasticity An",
+   "path": "proposals.jsonl",
+   "date": "2025-07-11",
+   "client_industry": null,
+   "skills": [
+    "Statistics"
+   ],
+   "outcome": "won",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p078",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Short Term Rental Arbitrage Property Research",
+   "path": "proposals.jsonl",
+   "date": "2025-07-26",
+   "client_industry": null,
+   "skills": [
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p079",
+   "type": "proposal",
+   "project": "invoice_extract",
+   "title": "Proposal: Developer Advocate for Healthcare AI Products",
+   "path": "proposals.jsonl",
+   "date": "2024-05-01",
+   "client_industry": null,
+   "skills": [
+    "NLP",
+    "Social Media"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "invoice_extract"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p080",
+   "type": "proposal",
+   "project": "agent_workflow",
+   "title": "Proposal: Updating a BotPress Chatbot workflow",
+   "path": "proposals.jsonl",
+   "date": "2026-08-14",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "Mobile",
+    "Node.js",
+    "PHP"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "agent_workflow",
+    "chat_onboarding"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p081",
+   "type": "proposal",
+   "project": "ticket_classifier",
+   "title": "Proposal: Machine Learning Engineer for Computer Vision Platform",
+   "path": "proposals.jsonl",
+   "date": "2026-09-11",
+   "client_industry": null,
+   "skills": [
+    "Computer Vision",
+    "FastAPI",
+    "Fine-tuning",
+    "Hugging Face",
+    "Kubernetes",
+    "MongoDB",
+    "PyTorch",
+    "Python"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "ticket_classifier",
+    "image_tagging"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p082",
+   "type": "proposal",
+   "project": "support_rag",
+   "title": "Proposal: Get help to test my OpenAi app locally on Insomnia",
+   "path": "proposals.jsonl",
+   "date": "2025-04-30",
+   "client_industry": null,
+   "skills": [
+    "Python"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "support_rag"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p083",
+   "type": "proposal",
+   "project": "data_labelling",
+   "title": "Proposal: Looking for a person who can work with medical images using ",
+   "path": "proposals.jsonl",
+   "date": "2024-12-09",
+   "client_industry": null,
+   "skills": [
+    "Computer Vision",
+    "Python"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "data_labelling",
+    "llm_eval",
+    "sentiment_dash"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p084",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Cisco Engineer (CCW experience is a bonus) experience needed",
+   "path": "proposals.jsonl",
+   "date": "2024-12-31",
+   "client_industry": null,
+   "skills": [
+    "LLM",
+    "Mobile"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p085",
+   "type": "proposal",
+   "project": "invoice_extract",
+   "title": "Proposal: AI call center",
+   "path": "proposals.jsonl",
+   "date": "2025-04-12",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "NLP",
+    "Speech"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "invoice_extract"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p086",
+   "type": "proposal",
+   "project": "support_rag",
+   "title": "Proposal: Service my ML Model and provide an API with App for Prod",
+   "path": "proposals.jsonl",
+   "date": "2026-04-18",
+   "client_industry": null,
+   "skills": [
+    "Python"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "support_rag"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p087",
+   "type": "proposal",
+   "project": "invoice_extract",
+   "title": "Proposal: AI programmer to instruct AI to only use a certain data set ",
+   "path": "proposals.jsonl",
+   "date": "2025-04-26",
+   "client_industry": null,
+   "skills": [
+    "Computer Vision",
+    "NLP",
+    "Python"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "invoice_extract",
+    "ticket_classifier"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p088",
+   "type": "proposal",
+   "project": "ticket_classifier",
+   "title": "Proposal: Redesign website and work on open ai fine tuning",
+   "path": "proposals.jsonl",
+   "date": "2026-03-21",
+   "client_industry": null,
+   "skills": [
+    "Fine-tuning",
+    "Graphic Design"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "ticket_classifier"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p089",
+   "type": "proposal",
+   "project": "defect_vision",
+   "title": "Proposal: QA Expert for Automation",
+   "path": "proposals.jsonl",
+   "date": "2025-10-26",
+   "client_industry": null,
+   "skills": [
+    "CI/CD",
+    "Testing"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "defect_vision"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p090",
+   "type": "proposal",
+   "project": "agent_workflow",
+   "title": "Proposal: GPT-3 and web guru",
+   "path": "proposals.jsonl",
+   "date": "2024-11-10",
+   "client_industry": null,
+   "skills": [
+    "Chatbot"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "agent_workflow",
+    "chat_onboarding"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p091",
+   "type": "proposal",
+   "project": "invoice_extract",
+   "title": "Proposal: Chat gpt based language learning chatbot",
+   "path": "proposals.jsonl",
+   "date": "2026-03-27",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "LLM",
+    "NLP",
+    "Python"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "invoice_extract"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p092",
+   "type": "proposal",
+   "project": "model_serving",
+   "title": "Proposal: Python AI ML develoler",
+   "path": "proposals.jsonl",
+   "date": "2026-07-12",
+   "client_industry": null,
+   "skills": [
+    "Python",
+    "TensorFlow"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "model_serving"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p093",
+   "type": "proposal",
+   "project": "support_rag",
+   "title": "Proposal: Real estate artificial intelligence",
+   "path": "proposals.jsonl",
+   "date": "2025-07-13",
+   "client_industry": null,
+   "skills": [
+    "Copywriting",
+    "Python"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "support_rag",
+    "invoice_extract",
+    "churn_model"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p094",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Revise Python Script For OpenAI Davinci-003 GPT Creation",
+   "path": "proposals.jsonl",
+   "date": "2025-05-27",
+   "client_industry": null,
+   "skills": [
+    "NLP",
+    "Python"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p095",
+   "type": "proposal",
+   "project": "recsys",
+   "title": "Proposal: Develop and setup timed whisper ai docker",
+   "path": "proposals.jsonl",
+   "date": "2025-03-06",
+   "client_industry": null,
+   "skills": [
+    "AWS",
+    "Docker",
+    "Python",
+    "SQL",
+    "Speech"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "recsys"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p096",
+   "type": "proposal",
+   "project": "invoice_extract",
+   "title": "Proposal: Machine learning coaching",
+   "path": "proposals.jsonl",
+   "date": "2024-09-08",
+   "client_industry": null,
+   "skills": [
+    "NLP",
+    "Python"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "invoice_extract",
+    "ticket_classifier",
+    "resume_matcher"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p097",
+   "type": "proposal",
+   "project": "churn_model",
+   "title": "Proposal: Help needed in training ML model on Vertex AI / GCP",
+   "path": "proposals.jsonl",
+   "date": "2024-10-03",
+   "client_industry": null,
+   "skills": [
+    "GCP",
+    "MLOps",
+    "PyTorch",
+    "Python",
+    "TensorFlow"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "churn_model",
+    "agent_workflow"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p098",
+   "type": "proposal",
+   "project": "agent_workflow",
+   "title": "Proposal: Intercom Chatbot Expert",
+   "path": "proposals.jsonl",
+   "date": "2024-11-30",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "NLP"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "agent_workflow",
+    "support_rag"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p099",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: GPT3 fine tuning",
+   "path": "proposals.jsonl",
+   "date": "2026-05-23",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "Fine-tuning",
+    "LLM",
+    "NLP",
+    "Social Media"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p100",
+   "type": "proposal",
+   "project": "invoice_extract",
+   "title": "Proposal: Chatbot Developer for Lead Management System",
+   "path": "proposals.jsonl",
+   "date": "2026-02-19",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "JavaScript",
+    "LLM",
+    "NLP",
+    "PyTorch",
+    "Python",
+    "TensorFlow"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "invoice_extract",
+    "ticket_classifier",
+    "agent_workflow"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p101",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: AI based website",
+   "path": "proposals.jsonl",
+   "date": "2025-12-09",
+   "client_industry": null,
+   "skills": [
+    "LLM"
+   ],
+   "outcome": "replied",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p102",
+   "type": "proposal",
+   "project": "defect_vision",
+   "title": "Proposal: AI Video Spokesperson",
+   "path": "proposals.jsonl",
+   "date": "2026-04-30",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": [
+    "defect_vision",
+    "model_serving",
+    "churn_model"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p103",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Structural Integrity Check for Garage Door Design",
+   "path": "proposals.jsonl",
+   "date": "2026-05-01",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "replied",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p104",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Chat GPT assistant",
+   "path": "proposals.jsonl",
+   "date": "2025-10-24",
+   "client_industry": null,
+   "skills": [
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p105",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Create a resume parser using ML",
+   "path": "proposals.jsonl",
+   "date": "2024-10-04",
+   "client_industry": null,
+   "skills": [
+    "NLP",
+    "Python",
+    "SQL"
+   ],
+   "outcome": "won",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p106",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Ai / Machine Learning Expert. experience in jewelry a strong",
+   "path": "proposals.jsonl",
+   "date": "2026-02-18",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p107",
+   "type": "proposal",
+   "project": "recsys",
+   "title": "Proposal: Create a Listing on Amazon FBA Brazil For Remote Fulfillment",
+   "path": "proposals.jsonl",
+   "date": "2024-06-24",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": [
+    "recsys"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p108",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Trainer need for Python developer /Data Analyst / Azure / Ja",
+   "path": "proposals.jsonl",
+   "date": "2024-05-01",
+   "client_industry": null,
+   "skills": [
+    "Azure",
+    "JavaScript",
+    "Python"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p109",
+   "type": "proposal",
+   "project": "churn_model",
+   "title": "Proposal: Update Competitive Financial Comparison Spreadsheet",
+   "path": "proposals.jsonl",
+   "date": "2025-06-08",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "churn_model",
+    "image_tagging"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p110",
+   "type": "proposal",
+   "project": "llm_eval",
+   "title": "Proposal: Excel specialists needed for market research analysis",
+   "path": "proposals.jsonl",
+   "date": "2025-03-18",
+   "client_industry": null,
+   "skills": [
+    "Excel"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "llm_eval"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p111",
+   "type": "proposal",
+   "project": "sentiment_dash",
+   "title": "Proposal: Professional Microsoft BI designer and analyst",
+   "path": "proposals.jsonl",
+   "date": "2026-02-01",
+   "client_industry": null,
+   "skills": [
+    "Data Visualization",
+    "ETL",
+    "Excel",
+    "Power BI",
+    "SQL"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "sentiment_dash",
+    "churn_model"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p112",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: SQL Relational Database",
+   "path": "proposals.jsonl",
+   "date": "2026-05-02",
+   "client_industry": null,
+   "skills": [
+    "SQL"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p113",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: ETL ODI developer",
+   "path": "proposals.jsonl",
+   "date": "2025-11-22",
+   "client_industry": null,
+   "skills": [
+    "ETL",
+    "SQL"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p114",
+   "type": "proposal",
+   "project": "contract_review",
+   "title": "Proposal: Inventory accountant to book entries and reconcile ledgers",
+   "path": "proposals.jsonl",
+   "date": "2026-06-13",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Shopify",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "contract_review"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p115",
+   "type": "proposal",
+   "project": "defect_vision",
+   "title": "Proposal: Economist specializes in survey data (using R)",
+   "path": "proposals.jsonl",
+   "date": "2025-04-24",
+   "client_industry": null,
+   "skills": [
+    "R",
+    "Statistics"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "defect_vision",
+    "ticket_classifier"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p116",
+   "type": "proposal",
+   "project": "fraud_scoring",
+   "title": "Proposal: Download data from public database",
+   "path": "proposals.jsonl",
+   "date": "2025-03-06",
+   "client_industry": null,
+   "skills": [
+    "Excel"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "fraud_scoring",
+    "resume_matcher"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p117",
+   "type": "proposal",
+   "project": "ticket_classifier",
+   "title": "Proposal: Thai Freelancer Needed: Web Scraping Expert for School Fee D",
+   "path": "proposals.jsonl",
+   "date": "2026-01-02",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Virtual Assistant",
+    "Web Scraping"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "ticket_classifier",
+    "support_rag",
+    "sentiment_dash"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p118",
+   "type": "proposal",
+   "project": "lead_scoring",
+   "title": "Proposal: Compile contact list",
+   "path": "proposals.jsonl",
+   "date": "2024-06-08",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Virtual Assistant"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "lead_scoring",
+    "chat_onboarding"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p119",
+   "type": "proposal",
+   "project": "demand_forecast",
+   "title": "Proposal: Customer acquisition for Ontario Craft Brewer",
+   "path": "proposals.jsonl",
+   "date": "2026-06-03",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "demand_forecast",
+    "fraud_scoring",
+    "model_serving"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p120",
+   "type": "proposal",
+   "project": "recsys",
+   "title": "Proposal: MariaDB Administration",
+   "path": "proposals.jsonl",
+   "date": "2024-12-20",
+   "client_industry": null,
+   "skills": [
+    "MySQL",
+    "SQL"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "recsys",
+    "defect_vision"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p121",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Data Entry",
+   "path": "proposals.jsonl",
+   "date": "2025-07-09",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "GraphQL",
+    "Lead Generation",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p122",
+   "type": "proposal",
+   "project": "agent_workflow",
+   "title": "Proposal: We are looking for a reliable Office Administrator.",
+   "path": "proposals.jsonl",
+   "date": "2024-06-14",
+   "client_industry": null,
+   "skills": [
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "agent_workflow",
+    "ticket_classifier"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p123",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Data Analyst Test Creation",
+   "path": "proposals.jsonl",
+   "date": "2024-12-21",
+   "client_industry": null,
+   "skills": [
+    "Excel"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p124",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Data scrapping on delivery partners for e-commerce businesse",
+   "path": "proposals.jsonl",
+   "date": "2024-05-03",
+   "client_industry": null,
+   "skills": [
+    "Excel"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p125",
+   "type": "proposal",
+   "project": "speech_notes",
+   "title": "Proposal: Linked Email profile and email Search / Data entry",
+   "path": "proposals.jsonl",
+   "date": "2026-06-29",
+   "client_industry": null,
+   "skills": [
+    "Lead Generation",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "speech_notes"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p126",
+   "type": "proposal",
+   "project": "sentiment_dash",
+   "title": "Proposal: Co2 calculations and fleete analysis (cars)",
+   "path": "proposals.jsonl",
+   "date": "2025-06-17",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Statistics"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "sentiment_dash",
+    "chat_onboarding",
+    "recsys"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p127",
+   "type": "proposal",
+   "project": "defect_vision",
+   "title": "Proposal: Cryptocurrency Investment Specialist",
+   "path": "proposals.jsonl",
+   "date": "2025-02-10",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "defect_vision",
+    "recsys"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p128",
+   "type": "proposal",
+   "project": "data_labelling",
+   "title": "Proposal: Data Analyst in R",
+   "path": "proposals.jsonl",
+   "date": "2026-06-06",
+   "client_industry": null,
+   "skills": [
+    "Data Visualization",
+    "Excel",
+    "R"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "data_labelling"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p129",
+   "type": "proposal",
+   "project": "lead_scoring",
+   "title": "Proposal: Social Media Graphic Designer (Instagram Tiles) - Cloth Diap",
+   "path": "proposals.jsonl",
+   "date": "2026-07-21",
+   "client_industry": null,
+   "skills": [
+    "Graphic Design",
+    "Social Media"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "lead_scoring",
+    "demand_forecast"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p130",
+   "type": "proposal",
+   "project": "ticket_classifier",
+   "title": "Proposal: Blockchain Programmer for New Website and Mobile App",
+   "path": "proposals.jsonl",
+   "date": "2024-09-28",
+   "client_industry": null,
+   "skills": [
+    "Blockchain",
+    "Mobile"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "ticket_classifier",
+    "recsys"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p131",
+   "type": "proposal",
+   "project": "model_serving",
+   "title": "Proposal: Part Time Salesperson",
+   "path": "proposals.jsonl",
+   "date": "2025-09-05",
+   "client_industry": null,
+   "skills": [
+    "Lead Generation"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "model_serving"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p132",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Building Wordpress website with payment and shipping and fun",
+   "path": "proposals.jsonl",
+   "date": "2026-09-13",
+   "client_industry": null,
+   "skills": [
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p133",
+   "type": "proposal",
+   "project": "ticket_classifier",
+   "title": "Proposal: Re-Do Book Cover",
+   "path": "proposals.jsonl",
+   "date": "2025-07-23",
+   "client_industry": null,
+   "skills": [
+    "Graphic Design"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "ticket_classifier"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p134",
+   "type": "proposal",
+   "project": "invoice_extract",
+   "title": "Proposal: Singaporean Inside Sales Representative",
+   "path": "proposals.jsonl",
+   "date": "2025-02-16",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Lead Generation",
+    "Social Media"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "invoice_extract"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p135",
+   "type": "proposal",
+   "project": "search_relevance",
+   "title": "Proposal: Senior Laravel Developer 30-40hrs week",
+   "path": "proposals.jsonl",
+   "date": "2024-05-16",
+   "client_industry": null,
+   "skills": [
+    "AWS",
+    "Angular",
+    "MySQL",
+    "PHP",
+    "Redis",
+    "Shopify"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "search_relevance",
+    "recsys"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p136",
+   "type": "proposal",
+   "project": "recsys",
+   "title": "Proposal: NET Developer",
+   "path": "proposals.jsonl",
+   "date": "2025-04-15",
+   "client_industry": null,
+   "skills": [
+    "AWS",
+    "HTML/CSS",
+    "JavaScript",
+    "SQL"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "recsys",
+    "churn_model"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p137",
+   "type": "proposal",
+   "project": "data_labelling",
+   "title": "Proposal: AGI Conversion - WooCommerce to BigCommerce",
+   "path": "proposals.jsonl",
+   "date": "2026-06-13",
+   "client_industry": null,
+   "skills": [
+    "WordPress"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "data_labelling",
+    "support_rag"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p138",
+   "type": "proposal",
+   "project": "lead_scoring",
+   "title": "Proposal: Full Stack / React Native developer needed to build mobile a",
+   "path": "proposals.jsonl",
+   "date": "2025-09-16",
+   "client_industry": null,
+   "skills": [
+    "AWS",
+    "JavaScript",
+    "Mobile",
+    "MongoDB",
+    "Python",
+    "REST API",
+    "UI/UX Design"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "lead_scoring"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p139",
+   "type": "proposal",
+   "project": "churn_model",
+   "title": "Proposal: greedy algorithm from xml fileand pup up the result on the m",
+   "path": "proposals.jsonl",
+   "date": "2025-08-09",
+   "client_industry": null,
+   "skills": [
+    "Python"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "churn_model",
+    "ticket_classifier"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p140",
+   "type": "proposal",
+   "project": "agent_workflow",
+   "title": "Proposal: Sales Support Project Manager 16Feb2023",
+   "path": "proposals.jsonl",
+   "date": "2024-06-20",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Lead Generation",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "agent_workflow"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p141",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Clone/Create Website",
+   "path": "proposals.jsonl",
+   "date": "2024-08-20",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "JavaScript",
+    "PHP",
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p142",
+   "type": "proposal",
+   "project": "churn_model",
+   "title": "Proposal: Online Presence Consultant",
+   "path": "proposals.jsonl",
+   "date": "2024-11-27",
+   "client_industry": null,
+   "skills": [
+    "SEO",
+    "Social Media"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "churn_model"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p143",
+   "type": "proposal",
+   "project": "churn_model",
+   "title": "Proposal: Set up Etsy shop and Shopify website",
+   "path": "proposals.jsonl",
+   "date": "2026-01-13",
+   "client_industry": null,
+   "skills": [
+    "Graphic Design",
+    "Shopify"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "churn_model",
+    "demand_forecast"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p144",
+   "type": "proposal",
+   "project": "agent_workflow",
+   "title": "Proposal: Serial Entrepreneur needs an assistant.",
+   "path": "proposals.jsonl",
+   "date": "2026-01-22",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Lead Generation",
+    "Social Media",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "agent_workflow"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p145",
+   "type": "proposal",
+   "project": "fraud_scoring",
+   "title": "Proposal: Hiring Business Development Manager",
+   "path": "proposals.jsonl",
+   "date": "2025-01-17",
+   "client_industry": null,
+   "skills": [
+    "Lead Generation"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "fraud_scoring",
+    "llm_eval"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p146",
+   "type": "proposal",
+   "project": "data_labelling",
+   "title": "Proposal: I need taxes filed for American business.",
+   "path": "proposals.jsonl",
+   "date": "2026-07-02",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": [
+    "data_labelling",
+    "resume_matcher"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p147",
+   "type": "proposal",
+   "project": "search_relevance",
+   "title": "Proposal: Writer with experience in go-to-market strategies & finance ",
+   "path": "proposals.jsonl",
+   "date": "2026-02-20",
+   "client_industry": null,
+   "skills": [
+    "Copywriting",
+    "SEO"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "search_relevance",
+    "llm_eval"
+   ]
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p148",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Appointment setter for agency",
+   "path": "proposals.jsonl",
+   "date": "2026-01-20",
+   "client_industry": null,
+   "skills": [
+    "Lead Generation",
+    "Social Media"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "ai_ml_engineer:proposal:p149",
+   "type": "proposal",
+   "project": "fraud_scoring",
+   "title": "Proposal: Lead Generation",
+   "path": "proposals.jsonl",
+   "date": "2024-06-29",
+   "client_industry": null,
+   "skills": [
+    "Lead Generation"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "fraud_scoring",
+    "recsys",
+    "resume_matcher"
+   ]
+  }
+ ]
+}

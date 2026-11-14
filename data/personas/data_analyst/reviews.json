@@ -1,0 +1,132 @@
+[
+ {
+  "id": "data_analyst:review:marketing_attribution",
+  "type": "review",
+  "project": "marketing_attribution",
+  "stars": 5,
+  "client_industry": "DTC brand",
+  "date": "2022-01-19",
+  "text": "Communication was excellent and the code is clean. Budget shifted 22% to better channels. A couple of revisions needed on the final report.",
+  "synthetic": true
+ },
+ {
+  "id": "data_analyst:review:tableau_ops",
+  "type": "review",
+  "project": "tableau_ops",
+  "stars": 5,
+  "client_industry": "call centre",
+  "date": "2023-04-19",
+  "text": "Delivered on time and explained every trade-off. Late orders down 17%.",
+  "synthetic": true
+ },
+ {
+  "id": "data_analyst:review:ecom_analytics",
+  "type": "review",
+  "project": "ecom_analytics",
+  "stars": 5,
+  "client_industry": "skincare brand",
+  "date": "2025-11-15",
+  "text": "Great to work with. The product and basket analysis is now part of our daily routine.",
+  "synthetic": true
+ },
+ {
+  "id": "data_analyst:review:survey_analysis",
+  "type": "review",
+  "project": "survey_analysis",
+  "stars": 5,
+  "client_industry": "consumer electronics",
+  "date": "2023-09-24",
+  "text": "Very solid work on the market research data analysis. 15k responses analysed. Would hire again.",
+  "synthetic": true
+ },
+ {
+  "id": "data_analyst:review:sql_optimisation",
+  "type": "review",
+  "project": "sql_optimisation",
+  "stars": 4,
+  "client_industry": "telecom",
+  "date": "2025-12-29",
+  "text": "Delivered on time and explained every trade-off. 12 queries tuned.",
+  "synthetic": true
+ },
+ {
+  "id": "data_analyst:review:ab_testing",
+  "type": "review",
+  "project": "ab_testing",
+  "stars": 5,
+  "client_industry": "SaaS",
+  "date": "2023-06-23",
+  "text": "Delivered on time and explained every trade-off. 27 experiments analysed.",
+  "synthetic": true
+ },
+ {
+  "id": "data_analyst:review:python_cleaning",
+  "type": "review",
+  "project": "python_cleaning",
+  "stars": 5,
+  "client_industry": "research group",
+  "date": "2024-08-23",
+  "text": "Very solid work on the CSV consolidation scripts. 1 million rows per run. Would hire again.",
+  "synthetic": true
+ },
+ {
+  "id": "data_analyst:review:sales_dashboard",
+  "type": "review",
+  "project": "sales_dashboard",
+  "stars": 5,
+  "client_industry": "auto parts",
+  "date": "2021-11-14",
+  "text": "Delivered on time and explained every trade-off. 5 spreadsheets retired.",
+  "synthetic": true
+ },
+ {
+  "id": "data_analyst:review:dbt_warehouse",
+  "type": "review",
+  "project": "dbt_warehouse",
+  "stars": 5,
+  "client_industry": "fintech",
+  "date": "2023-01-06",
+  "text": "Great to work with. The single source of truth for metrics is now part of our daily routine.",
+  "synthetic": true
+ },
+ {
+  "id": "data_analyst:review:geo_analysis",
+  "type": "review",
+  "project": "geo_analysis",
+  "stars": 5,
+  "client_industry": "gym franchise",
+  "date": "2024-12-29",
+  "text": "Communication was excellent and the code is clean. 5 regions mapped. A couple of revisions needed on the final report.",
+  "synthetic": true
+ },
+ {
+  "id": "data_analyst:review:finance_reporting",
+  "type": "review",
+  "project": "finance_reporting",
+  "stars": 3,
+  "client_industry": "clinic network",
+  "date": "2024-06-05",
+  "text": "Very solid work on the Management accounts reporting. 19 entities consolidated. Would hire again.",
+  "synthetic": true
+ },
+ {
+  "id": "data_analyst:review:airflow_reports",
+  "type": "review",
+  "project": "airflow_reports",
+  "stars": 4,
+  "client_industry": "logistics",
+  "date": "2025-04-05",
+  "text": "Delivered on time and explained every trade-off. 99% on-time delivery over 6 months.",
+  "synthetic": true
+ },
+ {
+  "id": "data_analyst:review:excel_automation",
+  "type": "review",
+  "project": "excel_automation",
+  "stars": 5,
+  "client_industry": "nonprofit",
+  "date": "2022-07-20",
+  "text": "Communication was excellent and the code is clean. Zero copy-paste errors in 8 months. A couple of revisions needed on the final report.",
+  "synthetic": true
+ }
+]

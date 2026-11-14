@@ -1,0 +1,5 @@
+boto3
+pgvector
+psycopg[binary]
+redis
+spacy

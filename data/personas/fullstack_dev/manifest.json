@@ -1,0 +1,3266 @@
+{
+ "persona_id": "fullstack_dev",
+ "synthetic": true,
+ "items": [
+  {
+   "id": "fullstack_dev:case:saas_dashboard",
+   "type": "case_study",
+   "project": "saas_dashboard",
+   "title": "Multi-tenant SaaS dashboard",
+   "path": "case_studies/saas_dashboard.md",
+   "date": "2019-12-28",
+   "client_industry": "property management",
+   "skills": [
+    "React",
+    "TypeScript",
+    "Next.js",
+    "PostgreSQL"
+   ]
+  },
+  {
+   "id": "fullstack_dev:case:ecommerce_store",
+   "type": "case_study",
+   "project": "ecommerce_store",
+   "title": "Headless e-commerce store",
+   "path": "case_studies/ecommerce_store.md",
+   "date": "2020-03-09",
+   "client_industry": "coffee roaster",
+   "skills": [
+    "Next.js",
+    "Shopify",
+    "React",
+    "Stripe"
+   ]
+  },
+  {
+   "id": "fullstack_dev:case:booking_app",
+   "type": "case_study",
+   "project": "booking_app",
+   "title": "Appointment booking system",
+   "path": "case_studies/booking_app.md",
+   "date": "2020-08-22",
+   "client_industry": "dental clinics",
+   "skills": [
+    "React",
+    "Node.js",
+    "PostgreSQL",
+    "REST API"
+   ]
+  },
+  {
+   "id": "fullstack_dev:case:realtime_chat",
+   "type": "case_study",
+   "project": "realtime_chat",
+   "title": "Real-time chat module",
+   "path": "case_studies/realtime_chat.md",
+   "date": "2021-03-21",
+   "client_industry": "edtech",
+   "skills": [
+    "WebSockets",
+    "Node.js",
+    "React",
+    "Redis"
+   ]
+  },
+  {
+   "id": "fullstack_dev:case:django_crm",
+   "type": "case_study",
+   "project": "django_crm",
+   "title": "Custom CRM in Django",
+   "path": "case_studies/django_crm.md",
+   "date": "2021-06-19",
+   "client_industry": "recruiting agency",
+   "skills": [
+    "Django",
+    "PostgreSQL",
+    "REST API"
+   ]
+  },
+  {
+   "id": "fullstack_dev:case:fastapi_backend",
+   "type": "case_study",
+   "project": "fastapi_backend",
+   "title": "FastAPI backend for a mobile app",
+   "path": "case_studies/fastapi_backend.md",
+   "date": "2021-10-07",
+   "client_industry": "language learning",
+   "skills": [
+    "FastAPI",
+    "PostgreSQL",
+    "REST API",
+    "Docker"
+   ]
+  },
+  {
+   "id": "fullstack_dev:case:wordpress_migration",
+   "type": "case_study",
+   "project": "wordpress_migration",
+   "title": "WordPress to Next.js migration",
+   "path": "case_studies/wordpress_migration.md",
+   "date": "2022-03-17",
+   "client_industry": "architecture studio",
+   "skills": [
+    "WordPress",
+    "Next.js",
+    "React"
+   ]
+  },
+  {
+   "id": "fullstack_dev:case:stripe_billing",
+   "type": "case_study",
+   "project": "stripe_billing",
+   "title": "Subscription billing integration",
+   "path": "case_studies/stripe_billing.md",
+   "date": "2022-08-13",
+   "client_industry": "online courses",
+   "skills": [
+    "Stripe",
+    "Node.js",
+    "TypeScript"
+   ]
+  },
+  {
+   "id": "fullstack_dev:case:admin_panel",
+   "type": "case_study",
+   "project": "admin_panel",
+   "title": "Internal admin panel",
+   "path": "case_studies/admin_panel.md",
+   "date": "2023-03-19",
+   "client_industry": "marketplace",
+   "skills": [
+    "React",
+    "TypeScript",
+    "GraphQL"
+   ]
+  },
+  {
+   "id": "fullstack_dev:case:landing_pages",
+   "type": "case_study",
+   "project": "landing_pages",
+   "title": "Marketing site and landing pages",
+   "path": "case_studies/landing_pages.md",
+   "date": "2023-08-20",
+   "client_industry": "fintech startup",
+   "skills": [
+    "Next.js",
+    "Tailwind CSS",
+    "HTML/CSS"
+   ]
+  },
+  {
+   "id": "fullstack_dev:case:supabase_mvp",
+   "type": "case_study",
+   "project": "supabase_mvp",
+   "title": "MVP on Supabase",
+   "path": "case_studies/supabase_mvp.md",
+   "date": "2023-10-29",
+   "client_industry": "community app",
+   "skills": [
+    "Supabase",
+    "React",
+    "TypeScript"
+   ]
+  },
+  {
+   "id": "fullstack_dev:case:vue_dashboard",
+   "type": "case_study",
+   "project": "vue_dashboard",
+   "title": "Vue.js reporting dashboard",
+   "path": "case_studies/vue_dashboard.md",
+   "date": "2024-04-05",
+   "client_industry": "agritech",
+   "skills": [
+    "Vue",
+    "JavaScript",
+    "REST API"
+   ]
+  },
+  {
+   "id": "fullstack_dev:case:laravel_api",
+   "type": "case_study",
+   "project": "laravel_api",
+   "title": "Laravel API modernisation",
+   "path": "case_studies/laravel_api.md",
+   "date": "2024-06-19",
+   "client_industry": "education",
+   "skills": [
+    "PHP",
+    "MySQL",
+    "REST API"
+   ]
+  },
+  {
+   "id": "fullstack_dev:case:ci_pipeline",
+   "type": "case_study",
+   "project": "ci_pipeline",
+   "title": "CI/CD and cloud deployment",
+   "path": "case_studies/ci_pipeline.md",
+   "date": "2025-02-02",
+   "client_industry": "media",
+   "skills": [
+    "AWS",
+    "Docker",
+    "CI/CD"
+   ]
+  },
+  {
+   "id": "fullstack_dev:case:marketplace_platform",
+   "type": "case_study",
+   "project": "marketplace_platform",
+   "title": "Two-sided marketplace platform",
+   "path": "case_studies/marketplace_platform.md",
+   "date": "2025-07-26",
+   "client_industry": "event staffing",
+   "skills": [
+    "Next.js",
+    "Node.js",
+    "Stripe",
+    "PostgreSQL"
+   ]
+  },
+  {
+   "id": "fullstack_dev:case:graphql_api",
+   "type": "case_study",
+   "project": "graphql_api",
+   "title": "GraphQL API layer",
+   "path": "case_studies/graphql_api.md",
+   "date": "2025-12-17",
+   "client_industry": "media",
+   "skills": [
+    "GraphQL",
+    "Node.js",
+    "TypeScript"
+   ]
+  },
+  {
+   "id": "fullstack_dev:case:accessibility_audit",
+   "type": "case_study",
+   "project": "accessibility_audit",
+   "title": "Accessibility remediation",
+   "path": "case_studies/accessibility_audit.md",
+   "date": "2026-01-13",
+   "client_industry": "university",
+   "skills": [
+    "React",
+    "HTML/CSS",
+    "Testing"
+   ]
+  },
+  {
+   "id": "fullstack_dev:case:file_uploads",
+   "type": "case_study",
+   "project": "file_uploads",
+   "title": "Large file upload service",
+   "path": "case_studies/file_uploads.md",
+   "date": "2026-07-18",
+   "client_industry": "insurance claims",
+   "skills": [
+    "AWS",
+    "Node.js",
+    "React"
+   ]
+  },
+  {
+   "id": "fullstack_dev:cv",
+   "type": "cv",
+   "project": null,
+   "title": "CV",
+   "path": "cv.pdf",
+   "date": "2026-10-01",
+   "client_industry": null,
+   "skills": [
+    "AWS",
+    "CI/CD",
+    "Django",
+    "Docker",
+    "FastAPI",
+    "GraphQL",
+    "HTML/CSS",
+    "JavaScript",
+    "MySQL",
+    "Next.js",
+    "Node.js",
+    "PHP",
+    "PostgreSQL",
+    "REST API",
+    "React",
+    "Redis",
+    "Shopify",
+    "Stripe",
+    "Supabase",
+    "Tailwind CSS",
+    "Testing",
+    "TypeScript",
+    "Vue",
+    "WebSockets",
+    "WordPress"
+   ]
+  },
+  {
+   "id": "fullstack_dev:repo:saas-dashboard",
+   "type": "repo",
+   "project": "saas_dashboard",
+   "title": "saas-dashboard",
+   "path": "repos/saas-dashboard",
+   "date": "2019-12-28",
+   "client_industry": "property management",
+   "skills": [
+    "Next.js",
+    "PostgreSQL",
+    "REST API",
+    "React",
+    "Tailwind CSS",
+    "TypeScript"
+   ],
+   "readme_style": "clear",
+   "files": [
+    "README.md",
+    "package.json",
+    "requirements.txt",
+    "src/main.py",
+    "src/nextjs.tsx",
+    "src/react.tsx",
+    "src/tailwind_css.tsx",
+    "src/typescript.tsx"
+   ]
+  },
+  {
+   "id": "fullstack_dev:repo:booking-app",
+   "type": "repo",
+   "project": "booking_app",
+   "title": "booking-app",
+   "path": "repos/booking-app",
+   "date": "2020-08-22",
+   "client_industry": "dental clinics",
+   "skills": [
+    "Node.js",
+    "PostgreSQL",
+    "REST API",
+    "React",
+    "TypeScript",
+    "WebSockets"
+   ],
+   "readme_style": "vague",
+   "files": [
+    "README.md",
+    "package.json",
+    "requirements.txt",
+    "src/main.py",
+    "src/nodejs.tsx",
+    "src/react.tsx",
+    "src/typescript.tsx",
+    "src/websockets.tsx"
+   ]
+  },
+  {
+   "id": "fullstack_dev:repo:django-crm",
+   "type": "repo",
+   "project": "django_crm",
+   "title": "django-crm",
+   "path": "repos/django-crm",
+   "date": "2021-06-19",
+   "client_industry": "recruiting agency",
+   "skills": [
+    "Celery",
+    "Django",
+    "Docker",
+    "PostgreSQL",
+    "REST API"
+   ],
+   "readme_style": "vague",
+   "files": [
+    "Dockerfile",
+    "README.md",
+    "requirements.txt",
+    "src/main.py"
+   ]
+  },
+  {
+   "id": "fullstack_dev:repo:wordpress-migration",
+   "type": "repo",
+   "project": "wordpress_migration",
+   "title": "wordpress-migration",
+   "path": "repos/wordpress-migration",
+   "date": "2022-03-17",
+   "client_industry": "architecture studio",
+   "skills": [
+    "HTML/CSS",
+    "Next.js",
+    "React",
+    "SEO",
+    "WordPress"
+   ],
+   "readme_style": "vague",
+   "files": [
+    "README.md",
+    "package.json",
+    "src/nextjs.tsx",
+    "src/react.tsx"
+   ]
+  },
+  {
+   "id": "fullstack_dev:repo:admin-panel",
+   "type": "repo",
+   "project": "admin_panel",
+   "title": "admin-panel",
+   "path": "repos/admin-panel",
+   "date": "2023-03-19",
+   "client_industry": "marketplace",
+   "skills": [
+    "GraphQL",
+    "Node.js",
+    "PostgreSQL",
+    "React",
+    "TypeScript"
+   ],
+   "readme_style": "vague",
+   "files": [
+    "README.md",
+    "package.json",
+    "requirements.txt",
+    "src/graphql.tsx",
+    "src/main.py",
+    "src/nodejs.tsx",
+    "src/react.tsx",
+    "src/typescript.tsx"
+   ]
+  },
+  {
+   "id": "fullstack_dev:repo:supabase-mvp",
+   "type": "repo",
+   "project": "supabase_mvp",
+   "title": "supabase-mvp",
+   "path": "repos/supabase-mvp",
+   "date": "2023-10-29",
+   "client_industry": "community app",
+   "skills": [
+    "PostgreSQL",
+    "React",
+    "Supabase",
+    "Tailwind CSS",
+    "TypeScript"
+   ],
+   "readme_style": "vague",
+   "files": [
+    "README.md",
+    "package.json",
+    "requirements.txt",
+    "src/main.py",
+    "src/react.tsx",
+    "src/supabase.tsx",
+    "src/tailwind_css.tsx",
+    "src/typescript.tsx"
+   ]
+  },
+  {
+   "id": "fullstack_dev:repo:laravel-api",
+   "type": "repo",
+   "project": "laravel_api",
+   "title": "laravel-api",
+   "path": "repos/laravel-api",
+   "date": "2024-06-19",
+   "client_industry": "education",
+   "skills": [
+    "Docker",
+    "MySQL",
+    "PHP",
+    "REST API",
+    "Testing"
+   ],
+   "readme_style": "vague",
+   "files": [
+    "Dockerfile",
+    "README.md",
+    "requirements.txt",
+    "src/main.py"
+   ]
+  },
+  {
+   "id": "fullstack_dev:repo:marketplace-platform",
+   "type": "repo",
+   "project": "marketplace_platform",
+   "title": "marketplace-platform",
+   "path": "repos/marketplace-platform",
+   "date": "2025-07-26",
+   "client_industry": "event staffing",
+   "skills": [
+    "Next.js",
+    "Node.js",
+    "PostgreSQL",
+    "Stripe",
+    "TypeScript",
+    "WebSockets"
+   ],
+   "readme_style": "vague",
+   "files": [
+    "README.md",
+    "package.json",
+    "requirements.txt",
+    "src/main.py",
+    "src/nextjs.tsx",
+    "src/nodejs.tsx",
+    "src/stripe.tsx",
+    "src/typescript.tsx",
+    "src/websockets.tsx"
+   ]
+  },
+  {
+   "id": "fullstack_dev:repo:accessibility-audit",
+   "type": "repo",
+   "project": "accessibility_audit",
+   "title": "accessibility-audit",
+   "path": "repos/accessibility-audit",
+   "date": "2026-01-13",
+   "client_industry": "university",
+   "skills": [
+    "HTML/CSS",
+    "JavaScript",
+    "React",
+    "Testing",
+    "TypeScript"
+   ],
+   "readme_style": "vague",
+   "files": [
+    "README.md",
+    "package.json",
+    "requirements.txt",
+    "src/main.py",
+    "src/react.tsx",
+    "src/typescript.tsx"
+   ]
+  },
+  {
+   "id": "fullstack_dev:review:django_crm",
+   "type": "review",
+   "project": "django_crm",
+   "date": "2021-06-19",
+   "client_industry": "recruiting agency",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "fullstack_dev:review:admin_panel",
+   "type": "review",
+   "project": "admin_panel",
+   "date": "2023-03-19",
+   "client_industry": "marketplace",
+   "title": "Review (3\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "fullstack_dev:review:vue_dashboard",
+   "type": "review",
+   "project": "vue_dashboard",
+   "date": "2024-04-05",
+   "client_industry": "agritech",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "fullstack_dev:review:supabase_mvp",
+   "type": "review",
+   "project": "supabase_mvp",
+   "date": "2023-10-29",
+   "client_industry": "community app",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "fullstack_dev:review:realtime_chat",
+   "type": "review",
+   "project": "realtime_chat",
+   "date": "2021-03-21",
+   "client_industry": "edtech",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "fullstack_dev:review:ecommerce_store",
+   "type": "review",
+   "project": "ecommerce_store",
+   "date": "2020-03-09",
+   "client_industry": "coffee roaster",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "fullstack_dev:review:stripe_billing",
+   "type": "review",
+   "project": "stripe_billing",
+   "date": "2022-08-13",
+   "client_industry": "online courses",
+   "title": "Review (3\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "fullstack_dev:review:landing_pages",
+   "type": "review",
+   "project": "landing_pages",
+   "date": "2023-08-20",
+   "client_industry": "fintech startup",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "fullstack_dev:review:accessibility_audit",
+   "type": "review",
+   "project": "accessibility_audit",
+   "date": "2026-01-13",
+   "client_industry": "university",
+   "title": "Review (4\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "fullstack_dev:review:saas_dashboard",
+   "type": "review",
+   "project": "saas_dashboard",
+   "date": "2019-12-28",
+   "client_industry": "property management",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "fullstack_dev:review:laravel_api",
+   "type": "review",
+   "project": "laravel_api",
+   "date": "2024-06-19",
+   "client_industry": "education",
+   "title": "Review (4\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "fullstack_dev:review:marketplace_platform",
+   "type": "review",
+   "project": "marketplace_platform",
+   "date": "2025-07-26",
+   "client_industry": "event staffing",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "fullstack_dev:review:graphql_api",
+   "type": "review",
+   "project": "graphql_api",
+   "date": "2025-12-17",
+   "client_industry": "media",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p000",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Looking for full time Drupal developer who had very good exp",
+   "path": "proposals.jsonl",
+   "date": "2024-10-11",
+   "client_industry": null,
+   "skills": [
+    "JavaScript",
+    "PHP"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p001",
+   "type": "proposal",
+   "project": "file_uploads",
+   "title": "Proposal: SEO Expert Needed for E-com Clothing Website",
+   "path": "proposals.jsonl",
+   "date": "2025-07-13",
+   "client_industry": null,
+   "skills": [
+    "Google Analytics",
+    "SEO",
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "file_uploads",
+    "realtime_chat"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p002",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Need Full-Stack Website Developer",
+   "path": "proposals.jsonl",
+   "date": "2026-04-23",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "JavaScript",
+    "PHP"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p003",
+   "type": "proposal",
+   "project": "vue_dashboard",
+   "title": "Proposal: customization of UI in bootstrap,Front-End Development",
+   "path": "proposals.jsonl",
+   "date": "2026-07-22",
+   "client_industry": null,
+   "skills": [
+    "Data Visualization",
+    "HTML/CSS",
+    "JavaScript",
+    "Node.js"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "vue_dashboard"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p004",
+   "type": "proposal",
+   "project": "saas_dashboard",
+   "title": "Proposal: Help complete a fabulous SAAS project.",
+   "path": "proposals.jsonl",
+   "date": "2025-02-04",
+   "client_industry": null,
+   "skills": [
+    "Graphic Design",
+    "REST API",
+    "Stripe",
+    "WordPress"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "saas_dashboard",
+    "ecommerce_store"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p005",
+   "type": "proposal",
+   "project": "realtime_chat",
+   "title": "Proposal: Add SEO to a website",
+   "path": "proposals.jsonl",
+   "date": "2025-07-28",
+   "client_industry": null,
+   "skills": [
+    "Copywriting",
+    "SEO",
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "realtime_chat"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p006",
+   "type": "proposal",
+   "project": "ecommerce_store",
+   "title": "Proposal: 3 Construct-3 games to be modified (HTML5 version)",
+   "path": "proposals.jsonl",
+   "date": "2026-06-05",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "HTML/CSS",
+    "Mobile"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "ecommerce_store",
+    "wordpress_migration"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p007",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Elementor Pro site",
+   "path": "proposals.jsonl",
+   "date": "2024-08-03",
+   "client_industry": null,
+   "skills": [
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p008",
+   "type": "proposal",
+   "project": "wordpress_migration",
+   "title": "Proposal: WordPress Divi",
+   "path": "proposals.jsonl",
+   "date": "2025-06-24",
+   "client_industry": null,
+   "skills": [
+    "Mobile",
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "wordpress_migration"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p009",
+   "type": "proposal",
+   "project": "ecommerce_store",
+   "title": "Proposal: Looking for a web designer to build an real estate website",
+   "path": "proposals.jsonl",
+   "date": "2026-09-09",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "ecommerce_store",
+    "wordpress_migration"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p010",
+   "type": "proposal",
+   "project": "vue_dashboard",
+   "title": "Proposal: SendGrid emails for a bubble.io app",
+   "path": "proposals.jsonl",
+   "date": "2024-05-15",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "JavaScript"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "vue_dashboard"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p011",
+   "type": "proposal",
+   "project": "wordpress_migration",
+   "title": "Proposal: WordPress Frontend and Backend fixes/maintenance",
+   "path": "proposals.jsonl",
+   "date": "2024-07-28",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "JavaScript",
+    "PHP",
+    "WordPress"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "wordpress_migration",
+    "vue_dashboard",
+    "accessibility_audit"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p012",
+   "type": "proposal",
+   "project": "accessibility_audit",
+   "title": "Proposal: Aqua Wise Development",
+   "path": "proposals.jsonl",
+   "date": "2026-06-26",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "JavaScript",
+    "MongoDB",
+    "Node.js",
+    "React"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "accessibility_audit"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p013",
+   "type": "proposal",
+   "project": "marketplace_platform",
+   "title": "Proposal: Looking for React Freelancer",
+   "path": "proposals.jsonl",
+   "date": "2026-01-01",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "JavaScript",
+    "Mobile",
+    "React",
+    "Testing"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "marketplace_platform"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p014",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Build an e-commerce shopify store with all essential functio",
+   "path": "proposals.jsonl",
+   "date": "2025-08-17",
+   "client_industry": null,
+   "skills": [
+    "Shopify"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p015",
+   "type": "proposal",
+   "project": "wordpress_migration",
+   "title": "Proposal: Drupal development for language-teaching website (Feb 2023)",
+   "path": "proposals.jsonl",
+   "date": "2024-11-24",
+   "client_industry": null,
+   "skills": [
+    "PHP"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "wordpress_migration",
+    "ecommerce_store"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p016",
+   "type": "proposal",
+   "project": "fastapi_backend",
+   "title": "Proposal: Website and content creation",
+   "path": "proposals.jsonl",
+   "date": "2026-06-19",
+   "client_industry": null,
+   "skills": [
+    "Copywriting",
+    "SEO",
+    "Social Media"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "fastapi_backend",
+    "landing_pages",
+    "realtime_chat"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p017",
+   "type": "proposal",
+   "project": "vue_dashboard",
+   "title": "Proposal: Looking for a Bigcommerce developer",
+   "path": "proposals.jsonl",
+   "date": "2026-06-25",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "JavaScript"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "vue_dashboard"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p018",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Theme Installation on Magento 2.4.3",
+   "path": "proposals.jsonl",
+   "date": "2025-12-05",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "PHP"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p019",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Need A Professional Web Developer",
+   "path": "proposals.jsonl",
+   "date": "2024-10-27",
+   "client_industry": null,
+   "skills": [
+    "Mobile",
+    "REST API",
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p020",
+   "type": "proposal",
+   "project": "wordpress_migration",
+   "title": "Proposal: Create 1 page website or landing page",
+   "path": "proposals.jsonl",
+   "date": "2024-04-23",
+   "client_industry": null,
+   "skills": [
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "wordpress_migration"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p021",
+   "type": "proposal",
+   "project": "realtime_chat",
+   "title": "Proposal: Go / Golang Caddy Server Module Back-End Development (Involv",
+   "path": "proposals.jsonl",
+   "date": "2025-07-21",
+   "client_industry": null,
+   "skills": [
+    "Redis",
+    "WebSockets"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "realtime_chat",
+    "booking_app",
+    "fastapi_backend"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p022",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Provide example of display labels on leaflet based on provid",
+   "path": "proposals.jsonl",
+   "date": "2024-08-12",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "JavaScript"
+   ],
+   "outcome": "replied",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p023",
+   "type": "proposal",
+   "project": "ecommerce_store",
+   "title": "Proposal: Shopify expert",
+   "path": "proposals.jsonl",
+   "date": "2026-01-10",
+   "client_industry": null,
+   "skills": [
+    "Shopify"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "ecommerce_store"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p024",
+   "type": "proposal",
+   "project": "vue_dashboard",
+   "title": "Proposal: Web platform developer intern",
+   "path": "proposals.jsonl",
+   "date": "2025-02-02",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "JavaScript",
+    "Mobile",
+    "MongoDB",
+    "MySQL",
+    "PostgreSQL"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "vue_dashboard",
+    "accessibility_audit"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p025",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Full Stack Maps Developer",
+   "path": "proposals.jsonl",
+   "date": "2024-06-19",
+   "client_industry": null,
+   "skills": [
+    "Flask",
+    "PostgreSQL",
+    "Python",
+    "REST API",
+    "React"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p026",
+   "type": "proposal",
+   "project": "wordpress_migration",
+   "title": "Proposal: Wordpress Page from Figma Design File",
+   "path": "proposals.jsonl",
+   "date": "2024-05-10",
+   "client_industry": null,
+   "skills": [
+    "UI/UX Design",
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "wordpress_migration"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p027",
+   "type": "proposal",
+   "project": "marketplace_platform",
+   "title": "Proposal: Add Features to Existing Angular App",
+   "path": "proposals.jsonl",
+   "date": "2025-12-11",
+   "client_industry": null,
+   "skills": [
+    "Angular",
+    "GCP",
+    "HTML/CSS",
+    "MongoDB",
+    "TypeScript"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "marketplace_platform"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p028",
+   "type": "proposal",
+   "project": "saas_dashboard",
+   "title": "Proposal: Our team Needs React Developer",
+   "path": "proposals.jsonl",
+   "date": "2024-11-04",
+   "client_industry": null,
+   "skills": [
+    "React"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "saas_dashboard"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p029",
+   "type": "proposal",
+   "project": "file_uploads",
+   "title": "Proposal: Wix Website updates",
+   "path": "proposals.jsonl",
+   "date": "2024-08-11",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "won",
+   "cited_projects": [
+    "file_uploads",
+    "accessibility_audit"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p030",
+   "type": "proposal",
+   "project": "wordpress_migration",
+   "title": "Proposal: Plasmic.app / Next.js Developer Needed!",
+   "path": "proposals.jsonl",
+   "date": "2024-08-07",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "JavaScript",
+    "Mobile",
+    "Next.js",
+    "Node.js",
+    "React",
+    "Shopify"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "wordpress_migration"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p031",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Full Stack Developer",
+   "path": "proposals.jsonl",
+   "date": "2025-08-03",
+   "client_industry": null,
+   "skills": [
+    "AWS",
+    "Node.js",
+    "REST API",
+    "Testing"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p032",
+   "type": "proposal",
+   "project": "ci_pipeline",
+   "title": "Proposal: React Native Developer",
+   "path": "proposals.jsonl",
+   "date": "2025-02-13",
+   "client_industry": null,
+   "skills": [
+    "JavaScript",
+    "Mobile",
+    "REST API",
+    "React",
+    "TypeScript"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "ci_pipeline"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p033",
+   "type": "proposal",
+   "project": "saas_dashboard",
+   "title": "Proposal: API Connection Between Big Commerce / Shopify",
+   "path": "proposals.jsonl",
+   "date": "2024-08-05",
+   "client_industry": null,
+   "skills": [
+    "REST API",
+    "Shopify"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "saas_dashboard",
+    "ecommerce_store"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p034",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Get, Store &amp; Update Data from External API",
+   "path": "proposals.jsonl",
+   "date": "2025-05-26",
+   "client_industry": null,
+   "skills": [
+    "MySQL",
+    "PHP",
+    "WordPress"
+   ],
+   "outcome": "replied",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p035",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: RN+ Java developer ( Full-stack)",
+   "path": "proposals.jsonl",
+   "date": "2024-09-09",
+   "client_industry": null,
+   "skills": [
+    "Mobile"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p036",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Google Data Studio",
+   "path": "proposals.jsonl",
+   "date": "2024-07-21",
+   "client_industry": null,
+   "skills": [
+    "Looker",
+    "Shopify"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p037",
+   "type": "proposal",
+   "project": "ecommerce_store",
+   "title": "Proposal: Conversion rate optimisation shopify",
+   "path": "proposals.jsonl",
+   "date": "2025-11-25",
+   "client_industry": null,
+   "skills": [
+    "Shopify"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "ecommerce_store"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p038",
+   "type": "proposal",
+   "project": "vue_dashboard",
+   "title": "Proposal: E-Learning Application Developer",
+   "path": "proposals.jsonl",
+   "date": "2025-12-12",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "HTML/CSS",
+    "JavaScript",
+    "Python"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "vue_dashboard",
+    "accessibility_audit"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p039",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Website for two businesses",
+   "path": "proposals.jsonl",
+   "date": "2024-05-27",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p040",
+   "type": "proposal",
+   "project": "wordpress_migration",
+   "title": "Proposal: We need an experienced Wordpress developer",
+   "path": "proposals.jsonl",
+   "date": "2024-06-21",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "JavaScript",
+    "PHP",
+    "WordPress"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "wordpress_migration"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p041",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Clone wp website",
+   "path": "proposals.jsonl",
+   "date": "2024-05-22",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "PHP",
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p042",
+   "type": "proposal",
+   "project": "wordpress_migration",
+   "title": "Proposal: Create a professional wordpress website of a law firm",
+   "path": "proposals.jsonl",
+   "date": "2026-08-17",
+   "client_industry": null,
+   "skills": [
+    "Graphic Design",
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "wordpress_migration"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p043",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Develop my website",
+   "path": "proposals.jsonl",
+   "date": "2026-05-26",
+   "client_industry": null,
+   "skills": [
+    "UI/UX Design"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p044",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Looking for PHP & MySQL Expert",
+   "path": "proposals.jsonl",
+   "date": "2024-08-25",
+   "client_industry": null,
+   "skills": [
+    "MySQL",
+    "PHP",
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p045",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Freelancer Needed to Correct Localization Error on Shopify W",
+   "path": "proposals.jsonl",
+   "date": "2026-05-12",
+   "client_industry": null,
+   "skills": [
+    "Shopify",
+    "Testing"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p046",
+   "type": "proposal",
+   "project": "saas_dashboard",
+   "title": "Proposal: Developer for task automation",
+   "path": "proposals.jsonl",
+   "date": "2026-06-08",
+   "client_industry": null,
+   "skills": [
+    "Data Visualization",
+    "REST API",
+    "WordPress"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "saas_dashboard"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p047",
+   "type": "proposal",
+   "project": "stripe_billing",
+   "title": "Proposal: Full stack developer needed for part-time project",
+   "path": "proposals.jsonl",
+   "date": "2025-03-04",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "JavaScript",
+    "PHP",
+    "REST API"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "stripe_billing",
+    "django_crm"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p048",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: eCommerce Website Redesign Specialist",
+   "path": "proposals.jsonl",
+   "date": "2026-05-18",
+   "client_industry": null,
+   "skills": [
+    "Mobile",
+    "Shopify",
+    "Testing",
+    "UI/UX Design"
+   ],
+   "outcome": "replied",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p049",
+   "type": "proposal",
+   "project": "supabase_mvp",
+   "title": "Proposal: Wordpress website",
+   "path": "proposals.jsonl",
+   "date": "2024-06-04",
+   "client_industry": null,
+   "skills": [
+    "Data Visualization",
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "supabase_mvp",
+    "ci_pipeline"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p050",
+   "type": "proposal",
+   "project": "vue_dashboard",
+   "title": "Proposal: Revolut API gateway developer",
+   "path": "proposals.jsonl",
+   "date": "2026-04-16",
+   "client_industry": null,
+   "skills": [
+    "JavaScript",
+    "REST API"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "vue_dashboard",
+    "saas_dashboard"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p051",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Building website in wordpress",
+   "path": "proposals.jsonl",
+   "date": "2026-02-17",
+   "client_industry": null,
+   "skills": [
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p052",
+   "type": "proposal",
+   "project": "wordpress_migration",
+   "title": "Proposal: Web Design",
+   "path": "proposals.jsonl",
+   "date": "2025-09-25",
+   "client_industry": null,
+   "skills": [
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "wordpress_migration"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p053",
+   "type": "proposal",
+   "project": "wordpress_migration",
+   "title": "Proposal: Website Designer",
+   "path": "proposals.jsonl",
+   "date": "2025-10-17",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "WordPress"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "wordpress_migration"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p054",
+   "type": "proposal",
+   "project": "vue_dashboard",
+   "title": "Proposal: Seeking game developer for web browser text based MMORPG",
+   "path": "proposals.jsonl",
+   "date": "2025-09-07",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "JavaScript",
+    "Python"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "vue_dashboard",
+    "accessibility_audit",
+    "ecommerce_store"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p055",
+   "type": "proposal",
+   "project": "booking_app",
+   "title": "Proposal: Custom woo-commerce top up site",
+   "path": "proposals.jsonl",
+   "date": "2026-05-01",
+   "client_industry": null,
+   "skills": [
+    "PHP",
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "booking_app",
+    "realtime_chat"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p056",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Software Architect | Experienced Leadership | Full Stack Eng",
+   "path": "proposals.jsonl",
+   "date": "2025-08-09",
+   "client_industry": null,
+   "skills": [
+    "JavaScript",
+    "Mobile",
+    "Python"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p057",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Urgently Required: Next.js / Node.js / GraphQL.js / WordPres",
+   "path": "proposals.jsonl",
+   "date": "2025-08-21",
+   "client_industry": null,
+   "skills": [
+    "GraphQL",
+    "JavaScript",
+    "Next.js",
+    "Node.js",
+    "REST API",
+    "React",
+    "Vue",
+    "WordPress"
+   ],
+   "outcome": "replied",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p058",
+   "type": "proposal",
+   "project": "wordpress_migration",
+   "title": "Proposal: Web Developer",
+   "path": "proposals.jsonl",
+   "date": "2025-02-26",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "JavaScript",
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "wordpress_migration",
+    "vue_dashboard"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p059",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Develop Full Stack Short Term Rental Website",
+   "path": "proposals.jsonl",
+   "date": "2024-09-30",
+   "client_industry": null,
+   "skills": [
+    "REST API",
+    "UI/UX Design",
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p060",
+   "type": "proposal",
+   "project": "marketplace_platform",
+   "title": "Proposal: Build a responsive WordPress blog from already existing UX/U",
+   "path": "proposals.jsonl",
+   "date": "2026-08-04",
+   "client_industry": null,
+   "skills": [
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "marketplace_platform"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p061",
+   "type": "proposal",
+   "project": "file_uploads",
+   "title": "Proposal: Get a template from website using pay pal",
+   "path": "proposals.jsonl",
+   "date": "2024-04-30",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": [
+    "file_uploads",
+    "realtime_chat",
+    "wordpress_migration"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p062",
+   "type": "proposal",
+   "project": "graphql_api",
+   "title": "Proposal: Passionate SQL Developer Needed for Team",
+   "path": "proposals.jsonl",
+   "date": "2024-12-29",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "MySQL",
+    "PHP",
+    "SQL",
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "graphql_api",
+    "laravel_api",
+    "fastapi_backend"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p063",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Devops engineer",
+   "path": "proposals.jsonl",
+   "date": "2025-07-29",
+   "client_industry": null,
+   "skills": [
+    "AWS",
+    "CI/CD",
+    "Docker",
+    "HTML/CSS",
+    "PHP",
+    "Testing",
+    "WordPress"
+   ],
+   "outcome": "replied",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p064",
+   "type": "proposal",
+   "project": "saas_dashboard",
+   "title": "Proposal: Sendgrid - Woocommerce integration",
+   "path": "proposals.jsonl",
+   "date": "2026-05-09",
+   "client_industry": null,
+   "skills": [
+    "Computer Vision",
+    "REST API",
+    "WordPress"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "saas_dashboard",
+    "booking_app"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p065",
+   "type": "proposal",
+   "project": "wordpress_migration",
+   "title": "Proposal: Update responsive WooCommerce site with payment functionalit",
+   "path": "proposals.jsonl",
+   "date": "2026-07-18",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "wordpress_migration",
+    "ecommerce_store"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p066",
+   "type": "proposal",
+   "project": "ecommerce_store",
+   "title": "Proposal: Online Barber Shop Appointment Platform",
+   "path": "proposals.jsonl",
+   "date": "2024-11-12",
+   "client_industry": null,
+   "skills": [
+    "MySQL",
+    "PHP",
+    "PostgreSQL",
+    "REST API",
+    "React",
+    "Stripe"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "ecommerce_store",
+    "laravel_api"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p067",
+   "type": "proposal",
+   "project": "landing_pages",
+   "title": "Proposal: E-commerce Manager",
+   "path": "proposals.jsonl",
+   "date": "2025-04-18",
+   "client_industry": null,
+   "skills": [
+    "Google Analytics",
+    "Shopify",
+    "Social Media"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "landing_pages",
+    "supabase_mvp"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p068",
+   "type": "proposal",
+   "project": "admin_panel",
+   "title": "Proposal: Looking for solution Architect",
+   "path": "proposals.jsonl",
+   "date": "2025-08-22",
+   "client_industry": null,
+   "skills": [
+    "AWS",
+    "CI/CD",
+    "Celery",
+    "Django",
+    "ETL",
+    "GraphQL",
+    "JavaScript",
+    "Mobile",
+    "PostgreSQL",
+    "Python",
+    "REST API",
+    "Testing"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "admin_panel"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p069",
+   "type": "proposal",
+   "project": "wordpress_migration",
+   "title": "Proposal: Finaliser quelques fonctionnalit\u00e9s d'un site annuaire WordPr",
+   "path": "proposals.jsonl",
+   "date": "2025-04-12",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "WordPress"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "wordpress_migration",
+    "ecommerce_store"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p070",
+   "type": "proposal",
+   "project": "realtime_chat",
+   "title": "Proposal: Booking System Development",
+   "path": "proposals.jsonl",
+   "date": "2025-10-02",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "JavaScript",
+    "Python"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "realtime_chat"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p071",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: image creation and saving process for MidJourney photos usin",
+   "path": "proposals.jsonl",
+   "date": "2026-02-01",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "JavaScript",
+    "Python",
+    "REST API"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p072",
+   "type": "proposal",
+   "project": "wordpress_migration",
+   "title": "Proposal: Website maintenance and update of ecommerce website. Woocomm",
+   "path": "proposals.jsonl",
+   "date": "2024-05-10",
+   "client_industry": null,
+   "skills": [
+    "MySQL",
+    "WordPress"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "wordpress_migration"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p073",
+   "type": "proposal",
+   "project": "ecommerce_store",
+   "title": "Proposal: Set up Loox review app in Shopify and import reviews",
+   "path": "proposals.jsonl",
+   "date": "2024-07-26",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Shopify"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "ecommerce_store"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p074",
+   "type": "proposal",
+   "project": "saas_dashboard",
+   "title": "Proposal: Create a platform/ system for HR company",
+   "path": "proposals.jsonl",
+   "date": "2025-12-14",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "MySQL",
+    "PHP"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "saas_dashboard"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p075",
+   "type": "proposal",
+   "project": "booking_app",
+   "title": "Proposal: Web and Mobile App Development (React Node Twilio)",
+   "path": "proposals.jsonl",
+   "date": "2025-12-02",
+   "client_industry": null,
+   "skills": [
+    "JavaScript",
+    "Mobile",
+    "MongoDB",
+    "Node.js",
+    "React"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "booking_app",
+    "realtime_chat"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p076",
+   "type": "proposal",
+   "project": "vue_dashboard",
+   "title": "Proposal: need help to learn JS on Lambda.",
+   "path": "proposals.jsonl",
+   "date": "2025-03-17",
+   "client_industry": null,
+   "skills": [
+    "AWS",
+    "HTML/CSS",
+    "JavaScript",
+    "Node.js"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "vue_dashboard"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p077",
+   "type": "proposal",
+   "project": "ecommerce_store",
+   "title": "Proposal: Amazon & Marketplace Expert | Mary Maxim",
+   "path": "proposals.jsonl",
+   "date": "2025-07-12",
+   "client_industry": null,
+   "skills": [
+    "SEO",
+    "Shopify"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "ecommerce_store",
+    "wordpress_migration"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p078",
+   "type": "proposal",
+   "project": "wordpress_migration",
+   "title": "Proposal: Modern Clean Website",
+   "path": "proposals.jsonl",
+   "date": "2025-11-03",
+   "client_industry": null,
+   "skills": [
+    "Graphic Design",
+    "HTML/CSS",
+    "SEO",
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "wordpress_migration"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p079",
+   "type": "proposal",
+   "project": "ecommerce_store",
+   "title": "Proposal: Build Shopify website",
+   "path": "proposals.jsonl",
+   "date": "2026-04-17",
+   "client_industry": null,
+   "skills": [
+    "Graphic Design",
+    "HTML/CSS",
+    "SEO",
+    "Shopify"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "ecommerce_store",
+    "wordpress_migration"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p080",
+   "type": "proposal",
+   "project": "saas_dashboard",
+   "title": "Proposal: Fix Issue with Shopify & Recharge",
+   "path": "proposals.jsonl",
+   "date": "2025-01-30",
+   "client_industry": null,
+   "skills": [
+    "REST API",
+    "Shopify"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "saas_dashboard",
+    "ecommerce_store"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p081",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Build Wix Website for Game Show Event Business",
+   "path": "proposals.jsonl",
+   "date": "2025-03-08",
+   "client_industry": null,
+   "skills": [
+    "Graphic Design",
+    "HTML/CSS"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p082",
+   "type": "proposal",
+   "project": "ecommerce_store",
+   "title": "Proposal: Shopify custom requirements",
+   "path": "proposals.jsonl",
+   "date": "2025-03-26",
+   "client_industry": null,
+   "skills": [
+    "Shopify",
+    "WordPress"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "ecommerce_store",
+    "wordpress_migration"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p083",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: One page DAO/Crypto Website",
+   "path": "proposals.jsonl",
+   "date": "2026-05-06",
+   "client_industry": null,
+   "skills": [
+    "Blockchain",
+    "Graphic Design",
+    "SEO"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p084",
+   "type": "proposal",
+   "project": "stripe_billing",
+   "title": "Proposal: New Website for Car Registrations Start Up",
+   "path": "proposals.jsonl",
+   "date": "2024-05-01",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": [
+    "stripe_billing"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p085",
+   "type": "proposal",
+   "project": "booking_app",
+   "title": "Proposal: Full-stack Developer needed for a series of web apps!",
+   "path": "proposals.jsonl",
+   "date": "2025-11-30",
+   "client_industry": null,
+   "skills": [
+    "AWS",
+    "GCP",
+    "HTML/CSS",
+    "JavaScript",
+    "Node.js",
+    "PostgreSQL",
+    "Python",
+    "React",
+    "UI/UX Design"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "booking_app"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p086",
+   "type": "proposal",
+   "project": "wordpress_migration",
+   "title": "Proposal: Remove Malware Wordpress Site",
+   "path": "proposals.jsonl",
+   "date": "2026-06-06",
+   "client_industry": null,
+   "skills": [
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "wordpress_migration"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p087",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Bubble Developer for Anime Art Generation Web App",
+   "path": "proposals.jsonl",
+   "date": "2026-07-12",
+   "client_industry": null,
+   "skills": [
+    "REST API"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p088",
+   "type": "proposal",
+   "project": "saas_dashboard",
+   "title": "Proposal: Need Help With 403 Error in GSC",
+   "path": "proposals.jsonl",
+   "date": "2025-12-27",
+   "client_industry": null,
+   "skills": [
+    "Testing",
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "saas_dashboard",
+    "graphql_api"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p089",
+   "type": "proposal",
+   "project": "wordpress_migration",
+   "title": "Proposal: Fix - Wordpress Main Navigation Header",
+   "path": "proposals.jsonl",
+   "date": "2025-10-24",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "JavaScript",
+    "PHP",
+    "WordPress"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "wordpress_migration",
+    "vue_dashboard"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p090",
+   "type": "proposal",
+   "project": "vue_dashboard",
+   "title": "Proposal: Google Chrome Extension Developer",
+   "path": "proposals.jsonl",
+   "date": "2025-11-28",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "JavaScript",
+    "PHP",
+    "REST API"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "vue_dashboard"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p091",
+   "type": "proposal",
+   "project": "realtime_chat",
+   "title": "Proposal: Chrome App Ninja for the weekend",
+   "path": "proposals.jsonl",
+   "date": "2026-08-12",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "JavaScript"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "realtime_chat"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p092",
+   "type": "proposal",
+   "project": "admin_panel",
+   "title": "Proposal: UIPath Developer",
+   "path": "proposals.jsonl",
+   "date": "2026-05-07",
+   "client_industry": null,
+   "skills": [
+    "GraphQL",
+    "Python"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "admin_panel",
+    "graphql_api"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p093",
+   "type": "proposal",
+   "project": "landing_pages",
+   "title": "Proposal: Low budget wordpress/ website developer",
+   "path": "proposals.jsonl",
+   "date": "2026-06-29",
+   "client_industry": null,
+   "skills": [
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "landing_pages",
+    "laravel_api"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p094",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Next.js developer needed",
+   "path": "proposals.jsonl",
+   "date": "2025-02-13",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "Next.js",
+    "Node.js",
+    "TypeScript"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p095",
+   "type": "proposal",
+   "project": "ecommerce_store",
+   "title": "Proposal: [$500] 2 bottom banners for offline status are displayed #36",
+   "path": "proposals.jsonl",
+   "date": "2026-01-10",
+   "client_industry": null,
+   "skills": [
+    "Mobile"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "ecommerce_store",
+    "stripe_billing"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p096",
+   "type": "proposal",
+   "project": "ecommerce_store",
+   "title": "Proposal: HubSpot CMS Website Consulting",
+   "path": "proposals.jsonl",
+   "date": "2026-06-04",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "ecommerce_store",
+    "wordpress_migration"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p097",
+   "type": "proposal",
+   "project": "accessibility_audit",
+   "title": "Proposal: Legal website help",
+   "path": "proposals.jsonl",
+   "date": "2026-03-04",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": [
+    "accessibility_audit"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p098",
+   "type": "proposal",
+   "project": "vue_dashboard",
+   "title": "Proposal: Senior Software Developer needed to trouble shoot site outag",
+   "path": "proposals.jsonl",
+   "date": "2026-03-13",
+   "client_industry": null,
+   "skills": [
+    "Azure",
+    "JavaScript",
+    "PHP"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "vue_dashboard",
+    "laravel_api"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p099",
+   "type": "proposal",
+   "project": "marketplace_platform",
+   "title": "Proposal: Programmatic AI SEO Expert for Shopify Ecom store, experienc",
+   "path": "proposals.jsonl",
+   "date": "2025-04-18",
+   "client_industry": null,
+   "skills": [
+    "SEO",
+    "Shopify"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "marketplace_platform",
+    "django_crm"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p100",
+   "type": "proposal",
+   "project": "ecommerce_store",
+   "title": "Proposal: Shopify Improvements",
+   "path": "proposals.jsonl",
+   "date": "2024-06-15",
+   "client_industry": null,
+   "skills": [
+    "JavaScript",
+    "Shopify",
+    "WordPress"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "ecommerce_store"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p101",
+   "type": "proposal",
+   "project": "admin_panel",
+   "title": "Proposal: Full Stack developer with hands on experience in React, Lara",
+   "path": "proposals.jsonl",
+   "date": "2024-08-20",
+   "client_industry": null,
+   "skills": [
+    "Docker",
+    "GraphQL",
+    "MySQL",
+    "PHP",
+    "PostgreSQL",
+    "React",
+    "TypeScript"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "admin_panel"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p102",
+   "type": "proposal",
+   "project": "wordpress_migration",
+   "title": "Proposal: WordPress expert for Loop customization",
+   "path": "proposals.jsonl",
+   "date": "2026-05-23",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "WordPress"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "wordpress_migration"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p103",
+   "type": "proposal",
+   "project": "wordpress_migration",
+   "title": "Proposal: I wanna rank my newly real estate services website and Googl",
+   "path": "proposals.jsonl",
+   "date": "2024-08-09",
+   "client_industry": null,
+   "skills": [
+    "Copywriting",
+    "SEO"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "wordpress_migration"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p104",
+   "type": "proposal",
+   "project": "graphql_api",
+   "title": "Proposal: Web Application Design",
+   "path": "proposals.jsonl",
+   "date": "2024-07-14",
+   "client_industry": null,
+   "skills": [
+    "Mobile"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "graphql_api"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p105",
+   "type": "proposal",
+   "project": "landing_pages",
+   "title": "Proposal: Looking for new Ads person for my websites",
+   "path": "proposals.jsonl",
+   "date": "2026-06-01",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": [
+    "landing_pages"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p106",
+   "type": "proposal",
+   "project": "accessibility_audit",
+   "title": "Proposal: Stripe shopify ACH integration",
+   "path": "proposals.jsonl",
+   "date": "2026-06-15",
+   "client_industry": null,
+   "skills": [
+    "AWS",
+    "PHP",
+    "REST API",
+    "Shopify",
+    "Stripe"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "accessibility_audit",
+    "file_uploads"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p107",
+   "type": "proposal",
+   "project": "vue_dashboard",
+   "title": "Proposal: theme for ecommerce website on Vuejs",
+   "path": "proposals.jsonl",
+   "date": "2026-07-09",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "JavaScript",
+    "Vue",
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "vue_dashboard",
+    "wordpress_migration",
+    "accessibility_audit"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p108",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Experienced Flutter developer",
+   "path": "proposals.jsonl",
+   "date": "2026-01-13",
+   "client_industry": null,
+   "skills": [
+    "Mobile"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p109",
+   "type": "proposal",
+   "project": "fastapi_backend",
+   "title": "Proposal: Immediate support for existing Xamarin C# Mobile app require",
+   "path": "proposals.jsonl",
+   "date": "2026-07-13",
+   "client_industry": null,
+   "skills": [
+    "Mobile",
+    "SQL",
+    "Testing"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "fastapi_backend",
+    "stripe_billing"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p110",
+   "type": "proposal",
+   "project": "graphql_api",
+   "title": "Proposal: Simple app to connect pharmacies",
+   "path": "proposals.jsonl",
+   "date": "2024-11-04",
+   "client_industry": null,
+   "skills": [
+    "Mobile"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "graphql_api",
+    "ecommerce_store"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p111",
+   "type": "proposal",
+   "project": "laravel_api",
+   "title": "Proposal: Historical Weather Data and Analysis",
+   "path": "proposals.jsonl",
+   "date": "2024-08-20",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Mobile",
+    "Statistics",
+    "Time Series",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "laravel_api",
+    "landing_pages"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p112",
+   "type": "proposal",
+   "project": "vue_dashboard",
+   "title": "Proposal: We are looking for an IOS developer to develop mobile applic",
+   "path": "proposals.jsonl",
+   "date": "2024-05-29",
+   "client_industry": null,
+   "skills": [
+    "JavaScript",
+    "Mobile"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "vue_dashboard",
+    "accessibility_audit"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p113",
+   "type": "proposal",
+   "project": "fastapi_backend",
+   "title": "Proposal: Test for Saudi Arabia",
+   "path": "proposals.jsonl",
+   "date": "2026-07-08",
+   "client_industry": null,
+   "skills": [
+    "Mobile",
+    "Testing"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "fastapi_backend",
+    "stripe_billing"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p114",
+   "type": "proposal",
+   "project": "booking_app",
+   "title": "Proposal: ASO specialist",
+   "path": "proposals.jsonl",
+   "date": "2025-12-14",
+   "client_industry": null,
+   "skills": [
+    "Mobile"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "booking_app"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p115",
+   "type": "proposal",
+   "project": "booking_app",
+   "title": "Proposal: Sr. Android Developer",
+   "path": "proposals.jsonl",
+   "date": "2024-05-13",
+   "client_industry": null,
+   "skills": [
+    "Mobile"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "booking_app",
+    "supabase_mvp"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p116",
+   "type": "proposal",
+   "project": "file_uploads",
+   "title": "Proposal: Mobile app with basic fonctionnalities",
+   "path": "proposals.jsonl",
+   "date": "2026-03-18",
+   "client_industry": null,
+   "skills": [
+    "Mobile"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "file_uploads",
+    "accessibility_audit",
+    "ci_pipeline"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p117",
+   "type": "proposal",
+   "project": "booking_app",
+   "title": "Proposal: Looking for a remake and re-design of Castle Crush. iOS and ",
+   "path": "proposals.jsonl",
+   "date": "2024-05-06",
+   "client_industry": null,
+   "skills": [
+    "Graphic Design",
+    "Mobile",
+    "WebSockets"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "booking_app"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p118",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Learn ARKit, SceneKit and RealityKit",
+   "path": "proposals.jsonl",
+   "date": "2026-06-17",
+   "client_industry": null,
+   "skills": [
+    "Mobile"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p119",
+   "type": "proposal",
+   "project": "wordpress_migration",
+   "title": "Proposal: Change the UI and design of an existing app in flutter",
+   "path": "proposals.jsonl",
+   "date": "2024-12-03",
+   "client_industry": null,
+   "skills": [
+    "Mobile"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "wordpress_migration"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p120",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Seeking Experienced Flutter Developer for an Online Lottery ",
+   "path": "proposals.jsonl",
+   "date": "2025-05-28",
+   "client_industry": null,
+   "skills": [
+    "GCP",
+    "Mobile",
+    "SQL",
+    "Testing"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p121",
+   "type": "proposal",
+   "project": "vue_dashboard",
+   "title": "Proposal: Android / Kotlin Developer - Fix 6 Pages - $20",
+   "path": "proposals.jsonl",
+   "date": "2025-12-13",
+   "client_industry": null,
+   "skills": [
+    "GCP",
+    "JavaScript",
+    "Mobile"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "vue_dashboard",
+    "accessibility_audit"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p122",
+   "type": "proposal",
+   "project": "admin_panel",
+   "title": "Proposal: Android application development freelancer needed",
+   "path": "proposals.jsonl",
+   "date": "2025-07-07",
+   "client_industry": null,
+   "skills": [
+    "Google Analytics",
+    "Mobile"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "admin_panel"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p123",
+   "type": "proposal",
+   "project": "stripe_billing",
+   "title": "Proposal: Mobile App - BLE Connected App Design",
+   "path": "proposals.jsonl",
+   "date": "2024-09-05",
+   "client_industry": null,
+   "skills": [
+    "Mobile",
+    "Node.js",
+    "Testing",
+    "UI/UX Design"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "stripe_billing",
+    "graphql_api"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p124",
+   "type": "proposal",
+   "project": "ci_pipeline",
+   "title": "Proposal: Need a React Native Developer (3-5 years experience)",
+   "path": "proposals.jsonl",
+   "date": "2026-07-21",
+   "client_industry": null,
+   "skills": [
+    "GCP",
+    "Mobile",
+    "React"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "ci_pipeline",
+    "vue_dashboard"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p125",
+   "type": "proposal",
+   "project": "accessibility_audit",
+   "title": "Proposal: Fighting game app",
+   "path": "proposals.jsonl",
+   "date": "2024-11-09",
+   "client_industry": null,
+   "skills": [
+    "Mobile"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "accessibility_audit",
+    "saas_dashboard"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p126",
+   "type": "proposal",
+   "project": "wordpress_migration",
+   "title": "Proposal: Design Engineer (Booths &amp; Kiosks)",
+   "path": "proposals.jsonl",
+   "date": "2025-07-15",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": [
+    "wordpress_migration"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p127",
+   "type": "proposal",
+   "project": "django_crm",
+   "title": "Proposal: Flutter, Strapi Devs",
+   "path": "proposals.jsonl",
+   "date": "2025-11-22",
+   "client_industry": null,
+   "skills": [
+    "Mobile",
+    "MongoDB",
+    "MySQL"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "django_crm"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p128",
+   "type": "proposal",
+   "project": "admin_panel",
+   "title": "Proposal: 3D-artist for a mobile application",
+   "path": "proposals.jsonl",
+   "date": "2025-03-24",
+   "client_industry": null,
+   "skills": [
+    "Mobile"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "admin_panel",
+    "graphql_api",
+    "saas_dashboard"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p129",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Crystal Report",
+   "path": "proposals.jsonl",
+   "date": "2026-06-19",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p130",
+   "type": "proposal",
+   "project": "wordpress_migration",
+   "title": "Proposal: Can you help",
+   "path": "proposals.jsonl",
+   "date": "2025-10-18",
+   "client_industry": null,
+   "skills": [
+    "SEO"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "wordpress_migration",
+    "landing_pages"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p131",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Linux Expert Needed",
+   "path": "proposals.jsonl",
+   "date": "2026-07-12",
+   "client_industry": null,
+   "skills": [
+    "Python"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p132",
+   "type": "proposal",
+   "project": "laravel_api",
+   "title": "Proposal: Need brute force unlock password for phantom wallet",
+   "path": "proposals.jsonl",
+   "date": "2024-08-22",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": [
+    "laravel_api"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p133",
+   "type": "proposal",
+   "project": "admin_panel",
+   "title": "Proposal: Amazon FBA Startup Consultant",
+   "path": "proposals.jsonl",
+   "date": "2025-09-12",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": [
+    "admin_panel"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p134",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Instagram assistant",
+   "path": "proposals.jsonl",
+   "date": "2025-09-04",
+   "client_industry": null,
+   "skills": [
+    "Graphic Design",
+    "Social Media"
+   ],
+   "outcome": "replied",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p135",
+   "type": "proposal",
+   "project": "ecommerce_store",
+   "title": "Proposal: Estamos \u00e0 procura de uma pessoa din\u00e2mica e comunicativa",
+   "path": "proposals.jsonl",
+   "date": "2025-07-31",
+   "client_industry": null,
+   "skills": [
+    "R"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "ecommerce_store"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p136",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Logo for Apartment Building",
+   "path": "proposals.jsonl",
+   "date": "2026-08-02",
+   "client_industry": null,
+   "skills": [
+    "Graphic Design"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p137",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Google Business Specialist",
+   "path": "proposals.jsonl",
+   "date": "2026-07-18",
+   "client_industry": null,
+   "skills": [
+    "Google Analytics",
+    "SEO"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p138",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Facebook ad specialist needed for product launch",
+   "path": "proposals.jsonl",
+   "date": "2026-04-17",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p139",
+   "type": "proposal",
+   "project": "graphql_api",
+   "title": "Proposal: Google Workspace - Voice and Mail",
+   "path": "proposals.jsonl",
+   "date": "2026-03-31",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": [
+    "graphql_api",
+    "ci_pipeline",
+    "laravel_api"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p140",
+   "type": "proposal",
+   "project": "django_crm",
+   "title": "Proposal: Freight Industry Sales Closer",
+   "path": "proposals.jsonl",
+   "date": "2026-05-28",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "django_crm"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p141",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Mortgage Virtual Assistant",
+   "path": "proposals.jsonl",
+   "date": "2024-12-08",
+   "client_industry": null,
+   "skills": [
+    "Social Media",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p142",
+   "type": "proposal",
+   "project": "landing_pages",
+   "title": "Proposal: Design microsoft word template",
+   "path": "proposals.jsonl",
+   "date": "2025-02-11",
+   "client_industry": null,
+   "skills": [
+    "Graphic Design"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "landing_pages",
+    "vue_dashboard"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p143",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Need KickStarter Crowdfunding Specialist for NEW PROJECT",
+   "path": "proposals.jsonl",
+   "date": "2026-06-04",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "fullstack_dev:proposal:p144",
+   "type": "proposal",
+   "project": "booking_app",
+   "title": "Proposal: Mechanical Design -Vending machine",
+   "path": "proposals.jsonl",
+   "date": "2025-05-30",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": [
+    "booking_app"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p145",
+   "type": "proposal",
+   "project": "accessibility_audit",
+   "title": "Proposal: Sales Master- Lead Generation and Outbound marketing",
+   "path": "proposals.jsonl",
+   "date": "2025-01-10",
+   "client_industry": null,
+   "skills": [
+    "Lead Generation",
+    "Social Media"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "accessibility_audit",
+    "supabase_mvp"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p146",
+   "type": "proposal",
+   "project": "wordpress_migration",
+   "title": "Proposal: Develop and deliver a marketing campaign for a financial ser",
+   "path": "proposals.jsonl",
+   "date": "2025-07-23",
+   "client_industry": null,
+   "skills": [
+    "Copywriting",
+    "Graphic Design",
+    "Lead Generation",
+    "SEO"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "wordpress_migration",
+    "landing_pages"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p147",
+   "type": "proposal",
+   "project": "accessibility_audit",
+   "title": "Proposal: Skilled Video Editor",
+   "path": "proposals.jsonl",
+   "date": "2026-03-05",
+   "client_industry": null,
+   "skills": [
+    "Social Media",
+    "Video Editing"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "accessibility_audit"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p148",
+   "type": "proposal",
+   "project": "saas_dashboard",
+   "title": "Proposal: Content creator.",
+   "path": "proposals.jsonl",
+   "date": "2026-09-08",
+   "client_industry": null,
+   "skills": [
+    "SEO",
+    "Social Media"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "saas_dashboard",
+    "fastapi_backend"
+   ]
+  },
+  {
+   "id": "fullstack_dev:proposal:p149",
+   "type": "proposal",
+   "project": "fastapi_backend",
+   "title": "Proposal: Designer needed to assist with customer facing content",
+   "path": "proposals.jsonl",
+   "date": "2024-08-26",
+   "client_industry": null,
+   "skills": [
+    "Graphic Design"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "fastapi_backend",
+    "ci_pipeline",
+    "saas_dashboard"
+   ]
+  }
+ ]
+}

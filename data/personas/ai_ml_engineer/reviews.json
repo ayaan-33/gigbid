@@ -1,0 +1,132 @@
+[
+ {
+  "id": "ai_ml_engineer:review:llm_eval",
+  "type": "review",
+  "project": "llm_eval",
+  "stars": 5,
+  "client_industry": "edtech",
+  "date": "2022-12-09",
+  "text": "Communication was excellent and the code is clean. Caught 23 regressions before release. A couple of revisions needed on the final report.",
+  "synthetic": true
+ },
+ {
+  "id": "ai_ml_engineer:review:resume_matcher",
+  "type": "review",
+  "project": "resume_matcher",
+  "stars": 4,
+  "client_industry": "HR tech",
+  "date": "2022-07-15",
+  "text": "Great to work with. The recruiting search with embeddings is now part of our daily routine.",
+  "synthetic": true
+ },
+ {
+  "id": "ai_ml_engineer:review:speech_notes",
+  "type": "review",
+  "project": "speech_notes",
+  "stars": 5,
+  "client_industry": "real estate",
+  "date": "2023-10-07",
+  "text": "Great to work with. The voice call analytics is now part of our daily routine.",
+  "synthetic": true
+ },
+ {
+  "id": "ai_ml_engineer:review:data_labelling",
+  "type": "review",
+  "project": "data_labelling",
+  "stars": 5,
+  "client_industry": "research lab",
+  "date": "2026-08-21",
+  "text": "Very solid work on the annotation pipeline for NLP data. Labelled 81k documents. Would hire again.",
+  "synthetic": true
+ },
+ {
+  "id": "ai_ml_engineer:review:demand_forecast",
+  "type": "review",
+  "project": "demand_forecast",
+  "stars": 5,
+  "client_industry": "pharmacy chain",
+  "date": "2022-03-01",
+  "text": "Great to work with. The inventory forecasting models is now part of our daily routine.",
+  "synthetic": true
+ },
+ {
+  "id": "ai_ml_engineer:review:lead_scoring",
+  "type": "review",
+  "project": "lead_scoring",
+  "stars": 5,
+  "client_industry": "SaaS",
+  "date": "2025-03-23",
+  "text": "Very solid work on the propensity model for CRM. Pipeline up 18% in a quarter. Would hire again.",
+  "synthetic": true
+ },
+ {
+  "id": "ai_ml_engineer:review:sentiment_dash",
+  "type": "review",
+  "project": "sentiment_dash",
+  "stars": 5,
+  "client_industry": "hospitality",
+  "date": "2024-04-26",
+  "text": "Delivered on time and explained every trade-off. Aspect accuracy 89%.",
+  "synthetic": true
+ },
+ {
+  "id": "ai_ml_engineer:review:contract_review",
+  "type": "review",
+  "project": "contract_review",
+  "stars": 5,
+  "client_industry": "real estate",
+  "date": "2024-10-06",
+  "text": "Great to work with. The Contract clause extraction is now part of our daily routine.",
+  "synthetic": true
+ },
+ {
+  "id": "ai_ml_engineer:review:search_relevance",
+  "type": "review",
+  "project": "search_relevance",
+  "stars": 4,
+  "client_industry": "e-commerce",
+  "date": "2025-09-05",
+  "text": "Great to work with. The Site search relevance is now part of our daily routine.",
+  "synthetic": true
+ },
+ {
+  "id": "ai_ml_engineer:review:invoice_extract",
+  "type": "review",
+  "project": "invoice_extract",
+  "stars": 5,
+  "client_industry": "logistics",
+  "date": "2021-04-25",
+  "text": "Delivered on time and explained every trade-off. Manual entry time cut by 73%.",
+  "synthetic": true
+ },
+ {
+  "id": "ai_ml_engineer:review:fraud_scoring",
+  "type": "review",
+  "project": "fraud_scoring",
+  "stars": 5,
+  "client_industry": "marketplace",
+  "date": "2024-06-06",
+  "text": "Great to work with. The Transaction fraud scoring is now part of our daily routine.",
+  "synthetic": true
+ },
+ {
+  "id": "ai_ml_engineer:review:recsys",
+  "type": "review",
+  "project": "recsys",
+  "stars": 5,
+  "client_industry": "bookstore",
+  "date": "2023-06-14",
+  "text": "Very solid work on the personalised 'you may also like' engine. Click-through up 27%. Would hire again.",
+  "synthetic": true
+ },
+ {
+  "id": "ai_ml_engineer:review:ticket_classifier",
+  "type": "review",
+  "project": "ticket_classifier",
+  "stars": 5,
+  "client_industry": "travel",
+  "date": "2021-11-30",
+  "text": "Delivered on time and explained every trade-off. Median triage delay down from 4 hours to minutes.",
+  "synthetic": true
+ }
+]

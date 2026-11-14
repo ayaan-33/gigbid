@@ -1,0 +1,132 @@
+[
+ {
+  "id": "fullstack_dev:review:django_crm",
+  "type": "review",
+  "project": "django_crm",
+  "stars": 5,
+  "client_industry": "recruiting agency",
+  "date": "2021-06-19",
+  "text": "Very solid work on the internal CRM replacement. Deal cycle visibility for 3 teams. Would hire again.",
+  "synthetic": true
+ },
+ {
+  "id": "fullstack_dev:review:admin_panel",
+  "type": "review",
+  "project": "admin_panel",
+  "stars": 3,
+  "client_industry": "marketplace",
+  "date": "2023-03-19",
+  "text": "Daniel understood our problem in the first call. Support handling time down 54%. Clear updates every few days.",
+  "synthetic": true
+ },
+ {
+  "id": "fullstack_dev:review:vue_dashboard",
+  "type": "review",
+  "project": "vue_dashboard",
+  "stars": 5,
+  "client_industry": "agritech",
+  "date": "2024-04-05",
+  "text": "Delivered on time and explained every trade-off. Refresh delay from minutes to seconds.",
+  "synthetic": true
+ },
+ {
+  "id": "fullstack_dev:review:supabase_mvp",
+  "type": "review",
+  "project": "supabase_mvp",
+  "stars": 5,
+  "client_industry": "community app",
+  "date": "2023-10-29",
+  "text": "Very solid work on the rapid prototype web app. Shipped in 5 weeks. Would hire again.",
+  "synthetic": true
+ },
+ {
+  "id": "fullstack_dev:review:realtime_chat",
+  "type": "review",
+  "project": "realtime_chat",
+  "stars": 5,
+  "client_industry": "edtech",
+  "date": "2021-03-21",
+  "text": "Very solid work on the Real-time chat module. Message latency p95 under 236 ms. Would hire again.",
+  "synthetic": true
+ },
+ {
+  "id": "fullstack_dev:review:ecommerce_store",
+  "type": "review",
+  "project": "ecommerce_store",
+  "stars": 5,
+  "client_industry": "coffee roaster",
+  "date": "2020-03-09",
+  "text": "Delivered on time and explained every trade-off. Mobile bounce rate down 19%.",
+  "synthetic": true
+ },
+ {
+  "id": "fullstack_dev:review:stripe_billing",
+  "type": "review",
+  "project": "stripe_billing",
+  "stars": 3,
+  "client_industry": "online courses",
+  "date": "2022-08-13",
+  "text": "Communication was excellent and the code is clean. 1k subscribers migrated. A couple of revisions needed on the final report.",
+  "synthetic": true
+ },
+ {
+  "id": "fullstack_dev:review:landing_pages",
+  "type": "review",
+  "project": "landing_pages",
+  "stars": 5,
+  "client_industry": "fintech startup",
+  "date": "2023-08-20",
+  "text": "Communication was excellent and the code is clean. Page build time from days to 2 hours. A couple of revisions needed on the final report.",
+  "synthetic": true
+ },
+ {
+  "id": "fullstack_dev:review:accessibility_audit",
+  "type": "review",
+  "project": "accessibility_audit",
+  "stars": 4,
+  "client_industry": "university",
+  "date": "2026-01-13",
+  "text": "Delivered on time and explained every trade-off. Keyboard-only task completion 96%.",
+  "synthetic": true
+ },
+ {
+  "id": "fullstack_dev:review:saas_dashboard",
+  "type": "review",
+  "project": "saas_dashboard",
+  "stars": 5,
+  "client_industry": "property management",
+  "date": "2019-12-28",
+  "text": "Very solid work on the Multi-tenant SaaS dashboard. Support tickets about the portal down 56%. Would hire again.",
+  "synthetic": true
+ },
+ {
+  "id": "fullstack_dev:review:laravel_api",
+  "type": "review",
+  "project": "laravel_api",
+  "stars": 4,
+  "client_industry": "education",
+  "date": "2024-06-19",
+  "text": "Great to work with. The Laravel API modernisation is now part of our daily routine.",
+  "synthetic": true
+ },
+ {
+  "id": "fullstack_dev:review:marketplace_platform",
+  "type": "review",
+  "project": "marketplace_platform",
+  "stars": 5,
+  "client_industry": "event staffing",
+  "date": "2025-07-26",
+  "text": "Very solid work on the services marketplace web app. Take rate automated at 12%. Would hire again.",
+  "synthetic": true
+ },
+ {
+  "id": "fullstack_dev:review:graphql_api",
+  "type": "review",
+  "project": "graphql_api",
+  "stars": 5,
+  "client_industry": "media",
+  "date": "2025-12-17",
+  "text": "Very solid work on the unified API for mobile and web. P95 128 ms. Would hire again.",
+  "synthetic": true
+ }
+]

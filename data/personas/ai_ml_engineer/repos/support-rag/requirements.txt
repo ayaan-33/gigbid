@@ -1,0 +1,6 @@
+fastapi
+langchain-core
+langgraph
+openai
+pgvector
+psycopg[binary]

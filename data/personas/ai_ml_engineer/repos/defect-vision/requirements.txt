@@ -1,0 +1,5 @@
+mlflow
+opencv-python
+timm
+torch
+torchvision

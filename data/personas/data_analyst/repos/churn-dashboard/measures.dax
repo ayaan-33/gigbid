@@ -1,0 +1,6 @@
+Revenue YoY % =
+VAR Curr = [Revenue]
+VAR Prev = CALCULATE([Revenue], SAMEPERIODLASTYEAR('Date'[Date]))
+RETURN DIVIDE(Curr - Prev, Prev)
+
+Target Attainment = DIVIDE([Revenue], [Target])

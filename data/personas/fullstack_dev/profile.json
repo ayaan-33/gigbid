@@ -1,0 +1,558 @@
+{
+ "persona_id": "fullstack_dev",
+ "name": "Daniel Reyes",
+ "headline": "Full-stack web developer: React/Next.js frontends, Python and Node backends",
+ "location": "Guadalajara, Mexico (remote, UTC-6)",
+ "years": 7,
+ "hourly_rate": 45,
+ "fixed_floor": 250,
+ "categories": [
+  "web_dev"
+ ],
+ "secondary": [
+  "mobile"
+ ],
+ "voice": "friendly, pragmatic, talks about shipping and maintainability",
+ "education": "BEng Software Engineering, Universidad de Guadalajara, 2017",
+ "synthetic": true,
+ "skills": [
+  "AWS",
+  "CI/CD",
+  "Django",
+  "Docker",
+  "FastAPI",
+  "GraphQL",
+  "HTML/CSS",
+  "JavaScript",
+  "MySQL",
+  "Next.js",
+  "Node.js",
+  "PHP",
+  "PostgreSQL",
+  "REST API",
+  "React",
+  "Redis",
+  "Shopify",
+  "Stripe",
+  "Supabase",
+  "Tailwind CSS",
+  "Testing",
+  "TypeScript",
+  "Vue",
+  "WebSockets",
+  "WordPress"
+ ],
+ "capabilities": [
+  "AWS",
+  "CI/CD",
+  "Celery",
+  "Django",
+  "Docker",
+  "FastAPI",
+  "GraphQL",
+  "HTML/CSS",
+  "JavaScript",
+  "Kubernetes",
+  "MySQL",
+  "Next.js",
+  "Node.js",
+  "PHP",
+  "PostgreSQL",
+  "REST API",
+  "React",
+  "Redis",
+  "SEO",
+  "Shopify",
+  "Stripe",
+  "Supabase",
+  "Tailwind CSS",
+  "Testing",
+  "TypeScript",
+  "Vue",
+  "WebSockets",
+  "WordPress"
+ ],
+ "category_skills": [
+  "Angular",
+  "Django",
+  "FastAPI",
+  "Flask",
+  "GraphQL",
+  "HTML/CSS",
+  "JavaScript",
+  "MongoDB",
+  "MySQL",
+  "Next.js",
+  "Node.js",
+  "PHP",
+  "PostgreSQL",
+  "REST API",
+  "React",
+  "Shopify",
+  "Stripe",
+  "Supabase",
+  "Tailwind CSS",
+  "TypeScript",
+  "Vue",
+  "WebSockets",
+  "WordPress"
+ ],
+ "projects": [
+  {
+   "key": "saas_dashboard",
+   "names": [
+    "Multi-tenant SaaS dashboard",
+    "B2B analytics web app",
+    "customer portal for a SaaS"
+   ],
+   "skills": [
+    "React",
+    "TypeScript",
+    "Next.js",
+    "PostgreSQL"
+   ],
+   "implied": [
+    "Tailwind CSS",
+    "REST API"
+   ],
+   "industry": "property management",
+   "client": "Lumen Co.",
+   "date": "2019-12-28",
+   "metrics_filled": [
+    "page load from 7s to under 1s",
+    "104 tenant companies",
+    "support tickets about the portal down 56%"
+   ]
+  },
+  {
+   "key": "ecommerce_store",
+   "names": [
+    "Headless e-commerce store",
+    "Shopify headless storefront",
+    "online shop rebuild"
+   ],
+   "skills": [
+    "Next.js",
+    "Shopify",
+    "React",
+    "Stripe"
+   ],
+   "implied": [
+    "TypeScript",
+    "HTML/CSS"
+   ],
+   "industry": "coffee roaster",
+   "client": "Tidal Partners",
+   "date": "2020-03-09",
+   "metrics_filled": [
+    "Lighthouse performance 94",
+    "conversion up 23%",
+    "mobile bounce rate down 19%"
+   ]
+  },
+  {
+   "key": "booking_app",
+   "names": [
+    "Appointment booking system",
+    "online scheduling app for clinics",
+    "reservations web app"
+   ],
+   "skills": [
+    "React",
+    "Node.js",
+    "PostgreSQL",
+    "REST API"
+   ],
+   "implied": [
+    "TypeScript",
+    "WebSockets"
+   ],
+   "industry": "dental clinics",
+   "client": "Summit Retail",
+   "date": "2020-08-22",
+   "metrics_filled": [
+    "no-shows down 21%",
+    "23 locations",
+    "phone bookings down 44%"
+   ]
+  },
+  {
+   "key": "realtime_chat",
+   "names": [
+    "Real-time chat module",
+    "in-app messaging with WebSockets",
+    "live support chat widget"
+   ],
+   "skills": [
+    "WebSockets",
+    "Node.js",
+    "React",
+    "Redis"
+   ],
+   "implied": [
+    "TypeScript",
+    "Docker"
+   ],
+   "industry": "edtech",
+   "client": "North Studio",
+   "date": "2021-03-21",
+   "metrics_filled": [
+    "22k concurrent connections tested",
+    "message latency p95 under 236 ms",
+    "off-platform contact attempts down 60%"
+   ]
+  },
+  {
+   "key": "django_crm",
+   "names": [
+    "Custom CRM in Django",
+    "sales pipeline web app",
+    "internal CRM replacement"
+   ],
+   "skills": [
+    "Django",
+    "PostgreSQL",
+    "REST API"
+   ],
+   "implied": [
+    "Celery",
+    "Docker"
+   ],
+   "industry": "recruiting agency",
+   "client": "Pine Logistics",
+   "date": "2021-06-19",
+   "metrics_filled": [
+    "79 daily users",
+    "deal cycle visibility for 3 teams",
+    "spreadsheet work cut 8 hours a week"
+   ]
+  },
+  {
+   "key": "fastapi_backend",
+   "names": [
+    "FastAPI backend for a mobile app",
+    "REST and GraphQL API service",
+    "API platform for an app startup"
+   ],
+   "skills": [
+    "FastAPI",
+    "PostgreSQL",
+    "REST API",
+    "Docker"
+   ],
+   "implied": [
+    "Redis",
+    "Testing"
+   ],
+   "industry": "language learning",
+   "client": "Willow Group",
+   "date": "2021-10-07",
+   "metrics_filled": [
+    "handled 7k requests per minute",
+    "p95 latency 85 ms",
+    "99% test coverage on core routes"
+   ]
+  },
+  {
+   "key": "wordpress_migration",
+   "names": [
+    "WordPress to Next.js migration",
+    "website rebuild and migration",
+    "CMS migration project"
+   ],
+   "skills": [
+    "WordPress",
+    "Next.js",
+    "React"
+   ],
+   "implied": [
+    "HTML/CSS",
+    "SEO"
+   ],
+   "industry": "architecture studio",
+   "client": "Kestrel Analytics",
+   "date": "2022-03-17",
+   "metrics_filled": [
+    "organic traffic kept within 1% after launch",
+    "load time down 67%",
+    "568 pages migrated"
+   ]
+  },
+  {
+   "key": "stripe_billing",
+   "names": [
+    "Subscription billing integration",
+    "Stripe payments and invoicing",
+    "SaaS billing system"
+   ],
+   "skills": [
+    "Stripe",
+    "Node.js",
+    "TypeScript"
+   ],
+   "implied": [
+    "PostgreSQL",
+    "Testing"
+   ],
+   "industry": "online courses",
+   "client": "Beacon Health",
+   "date": "2022-08-13",
+   "metrics_filled": [
+    "failed-payment recovery up 29%",
+    "finance time saved 15 hours a month",
+    "1k subscribers migrated"
+   ]
+  },
+  {
+   "key": "admin_panel",
+   "names": [
+    "Internal admin panel",
+    "operations back-office tool",
+    "admin dashboard for support team"
+   ],
+   "skills": [
+    "React",
+    "TypeScript",
+    "GraphQL"
+   ],
+   "implied": [
+    "Node.js",
+    "PostgreSQL"
+   ],
+   "industry": "marketplace",
+   "client": "Orchid Analytics",
+   "date": "2023-03-19",
+   "metrics_filled": [
+    "support handling time down 54%",
+    "direct database access removed for 20 staff",
+    "82 actions audited daily"
+   ]
+  },
+  {
+   "key": "landing_pages",
+   "names": [
+    "Marketing site and landing pages",
+    "conversion-focused landing pages",
+    "startup marketing website"
+   ],
+   "skills": [
+    "Next.js",
+    "Tailwind CSS",
+    "HTML/CSS"
+   ],
+   "implied": [
+    "SEO",
+    "TypeScript"
+   ],
+   "industry": "fintech startup",
+   "client": "Maple Partners",
+   "date": "2023-08-20",
+   "metrics_filled": [
+    "page build time from days to 2 hours",
+    "signup conversion up 8%",
+    "Core Web Vitals all green"
+   ]
+  },
+  {
+   "key": "supabase_mvp",
+   "names": [
+    "MVP on Supabase",
+    "startup MVP build",
+    "rapid prototype web app"
+   ],
+   "skills": [
+    "Supabase",
+    "React",
+    "TypeScript"
+   ],
+   "implied": [
+    "PostgreSQL",
+    "Tailwind CSS"
+   ],
+   "industry": "community app",
+   "client": "Bright Group",
+   "date": "2023-10-29",
+   "metrics_filled": [
+    "shipped in 5 weeks",
+    "1204 beta users",
+    "raised a pre-seed round after demos"
+   ]
+  },
+  {
+   "key": "vue_dashboard",
+   "names": [
+    "Vue.js reporting dashboard",
+    "Nuxt analytics frontend",
+    "Vue admin for IoT data"
+   ],
+   "skills": [
+    "Vue",
+    "JavaScript",
+    "REST API"
+   ],
+   "implied": [
+    "HTML/CSS",
+    "WebSockets"
+   ],
+   "industry": "agritech",
+   "client": "Lumen Health",
+   "date": "2024-04-05",
+   "metrics_filled": [
+    "751 devices on one screen",
+    "refresh delay from minutes to seconds",
+    "operator errors down 34%"
+   ]
+  },
+  {
+   "key": "laravel_api",
+   "names": [
+    "Laravel API modernisation",
+    "PHP backend refactor",
+    "legacy PHP app upgrade"
+   ],
+   "skills": [
+    "PHP",
+    "MySQL",
+    "REST API"
+   ],
+   "implied": [
+    "Docker",
+    "Testing"
+   ],
+   "industry": "education",
+   "client": "Summit Partners",
+   "date": "2024-06-19",
+   "metrics_filled": [
+    "deploys went from monthly to 2 per week",
+    "bug reports down 39%",
+    "87% coverage on billing code"
+   ]
+  },
+  {
+   "key": "ci_pipeline",
+   "names": [
+    "CI/CD and cloud deployment",
+    "AWS deployment pipeline",
+    "DevOps setup for a web app"
+   ],
+   "skills": [
+    "AWS",
+    "Docker",
+    "CI/CD"
+   ],
+   "implied": [
+    "Kubernetes",
+    "Testing"
+   ],
+   "industry": "media",
+   "client": "Harbor Analytics",
+   "date": "2025-02-02",
+   "metrics_filled": [
+    "deploy time 7 minutes",
+    "zero-downtime releases for 18 months",
+    "hosting cost down 18%"
+   ]
+  },
+  {
+   "key": "marketplace_platform",
+   "names": [
+    "Two-sided marketplace platform",
+    "services marketplace web app",
+    "freelance-style marketplace MVP"
+   ],
+   "skills": [
+    "Next.js",
+    "Node.js",
+    "Stripe",
+    "PostgreSQL"
+   ],
+   "implied": [
+    "WebSockets",
+    "TypeScript"
+   ],
+   "industry": "event staffing",
+   "client": "Signal Studio",
+   "date": "2025-07-26",
+   "metrics_filled": [
+    "4k completed bookings",
+    "take rate automated at 12%",
+    "time to match down 59%"
+   ]
+  },
+  {
+   "key": "graphql_api",
+   "names": [
+    "GraphQL API layer",
+    "Apollo federation gateway",
+    "unified API for mobile and web"
+   ],
+   "skills": [
+    "GraphQL",
+    "Node.js",
+    "TypeScript"
+   ],
+   "implied": [
+    "Redis",
+    "Testing"
+   ],
+   "industry": "media",
+   "client": "Willow Health",
+   "date": "2025-12-17",
+   "metrics_filled": [
+    "mobile payload size down 56%",
+    "API calls per screen from 7 to 1",
+    "p95 128 ms"
+   ]
+  },
+  {
+   "key": "accessibility_audit",
+   "names": [
+    "Accessibility remediation",
+    "WCAG fixes for a web app",
+    "a11y overhaul"
+   ],
+   "skills": [
+    "React",
+    "HTML/CSS",
+    "Testing"
+   ],
+   "implied": [
+    "TypeScript",
+    "JavaScript"
+   ],
+   "industry": "university",
+   "client": "Orchid Systems",
+   "date": "2026-01-13",
+   "metrics_filled": [
+    "218 issues fixed",
+    "audit passed at AA",
+    "keyboard-only task completion 96%"
+   ]
+  },
+  {
+   "key": "file_uploads",
+   "names": [
+    "Large file upload service",
+    "S3 direct uploads with processing",
+    "media pipeline for user uploads"
+   ],
+   "skills": [
+    "AWS",
+    "Node.js",
+    "React"
+   ],
+   "implied": [
+    "Celery",
+    "Docker"
+   ],
+   "industry": "insurance claims",
+   "client": "Kestrel Studio",
+   "date": "2026-07-18",
+   "metrics_filled": [
+    "upload failures down 89%",
+    "files up to 6 GB",
+    "39k uploads per month"
+   ]
+  }
+ ]
+}

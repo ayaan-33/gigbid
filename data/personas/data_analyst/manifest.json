@@ -1,0 +1,3187 @@
+{
+ "persona_id": "data_analyst",
+ "synthetic": true,
+ "items": [
+  {
+   "id": "data_analyst:case:sales_dashboard",
+   "type": "case_study",
+   "project": "sales_dashboard",
+   "title": "Sales performance dashboard",
+   "path": "case_studies/sales_dashboard.md",
+   "date": "2021-11-14",
+   "client_industry": "auto parts",
+   "skills": [
+    "Power BI",
+    "SQL",
+    "Excel",
+    "Data Visualization"
+   ]
+  },
+  {
+   "id": "data_analyst:case:marketing_attribution",
+   "type": "case_study",
+   "project": "marketing_attribution",
+   "title": "Marketing channel attribution",
+   "path": "case_studies/marketing_attribution.md",
+   "date": "2022-01-19",
+   "client_industry": "DTC brand",
+   "skills": [
+    "Google Analytics",
+    "SQL",
+    "Looker",
+    "Statistics"
+   ]
+  },
+  {
+   "id": "data_analyst:case:excel_automation",
+   "type": "case_study",
+   "project": "excel_automation",
+   "title": "Excel reporting automation",
+   "path": "case_studies/excel_automation.md",
+   "date": "2022-07-20",
+   "client_industry": "nonprofit",
+   "skills": [
+    "Excel",
+    "Data Visualization"
+   ]
+  },
+  {
+   "id": "data_analyst:case:cohort_retention",
+   "type": "case_study",
+   "project": "cohort_retention",
+   "title": "Cohort retention analysis",
+   "path": "case_studies/cohort_retention.md",
+   "date": "2022-08-19",
+   "client_industry": "subscription box",
+   "skills": [
+    "SQL",
+    "pandas",
+    "Statistics"
+   ]
+  },
+  {
+   "id": "data_analyst:case:dbt_warehouse",
+   "type": "case_study",
+   "project": "dbt_warehouse",
+   "title": "dbt data warehouse models",
+   "path": "case_studies/dbt_warehouse.md",
+   "date": "2023-01-06",
+   "client_industry": "fintech",
+   "skills": [
+    "dbt",
+    "SQL",
+    "Snowflake",
+    "ETL"
+   ]
+  },
+  {
+   "id": "data_analyst:case:tableau_ops",
+   "type": "case_study",
+   "project": "tableau_ops",
+   "title": "Operations KPI dashboard",
+   "path": "case_studies/tableau_ops.md",
+   "date": "2023-04-19",
+   "client_industry": "call centre",
+   "skills": [
+    "Tableau",
+    "SQL",
+    "Data Visualization"
+   ]
+  },
+  {
+   "id": "data_analyst:case:ab_testing",
+   "type": "case_study",
+   "project": "ab_testing",
+   "title": "A/B test analysis",
+   "path": "case_studies/ab_testing.md",
+   "date": "2023-06-23",
+   "client_industry": "SaaS",
+   "skills": [
+    "Statistics",
+    "SQL",
+    "Python"
+   ]
+  },
+  {
+   "id": "data_analyst:case:survey_analysis",
+   "type": "case_study",
+   "project": "survey_analysis",
+   "title": "Customer survey analysis",
+   "path": "case_studies/survey_analysis.md",
+   "date": "2023-09-24",
+   "client_industry": "consumer electronics",
+   "skills": [
+    "Excel",
+    "Statistics",
+    "Data Visualization"
+   ]
+  },
+  {
+   "id": "data_analyst:case:inventory_analysis",
+   "type": "case_study",
+   "project": "inventory_analysis",
+   "title": "Inventory and stock analysis",
+   "path": "case_studies/inventory_analysis.md",
+   "date": "2024-02-26",
+   "client_industry": "electronics retail",
+   "skills": [
+    "SQL",
+    "Excel",
+    "Power BI"
+   ]
+  },
+  {
+   "id": "data_analyst:case:finance_reporting",
+   "type": "case_study",
+   "project": "finance_reporting",
+   "title": "Management accounts reporting",
+   "path": "case_studies/finance_reporting.md",
+   "date": "2024-06-05",
+   "client_industry": "clinic network",
+   "skills": [
+    "Excel",
+    "Power BI",
+    "SQL"
+   ]
+  },
+  {
+   "id": "data_analyst:case:python_cleaning",
+   "type": "case_study",
+   "project": "python_cleaning",
+   "title": "Data cleaning pipeline in Python",
+   "path": "case_studies/python_cleaning.md",
+   "date": "2024-08-23",
+   "client_industry": "research group",
+   "skills": [
+    "Python",
+    "pandas",
+    "ETL"
+   ]
+  },
+  {
+   "id": "data_analyst:case:geo_analysis",
+   "type": "case_study",
+   "project": "geo_analysis",
+   "title": "Location and territory analysis",
+   "path": "case_studies/geo_analysis.md",
+   "date": "2024-12-29",
+   "client_industry": "gym franchise",
+   "skills": [
+    "SQL",
+    "Tableau",
+    "Statistics"
+   ]
+  },
+  {
+   "id": "data_analyst:case:airflow_reports",
+   "type": "case_study",
+   "project": "airflow_reports",
+   "title": "Scheduled reporting pipeline",
+   "path": "case_studies/airflow_reports.md",
+   "date": "2025-04-05",
+   "client_industry": "logistics",
+   "skills": [
+    "Airflow",
+    "SQL",
+    "Python"
+   ]
+  },
+  {
+   "id": "data_analyst:case:hr_analytics",
+   "type": "case_study",
+   "project": "hr_analytics",
+   "title": "HR attrition analytics",
+   "path": "case_studies/hr_analytics.md",
+   "date": "2025-07-09",
+   "client_industry": "retail chain",
+   "skills": [
+    "Power BI",
+    "Statistics",
+    "Excel"
+   ]
+  },
+  {
+   "id": "data_analyst:case:ecom_analytics",
+   "type": "case_study",
+   "project": "ecom_analytics",
+   "title": "Shopify store analytics",
+   "path": "case_studies/ecom_analytics.md",
+   "date": "2025-11-15",
+   "client_industry": "skincare brand",
+   "skills": [
+    "SQL",
+    "Google Analytics",
+    "Looker"
+   ]
+  },
+  {
+   "id": "data_analyst:case:sql_optimisation",
+   "type": "case_study",
+   "project": "sql_optimisation",
+   "title": "SQL query optimisation",
+   "path": "case_studies/sql_optimisation.md",
+   "date": "2025-12-29",
+   "client_industry": "telecom",
+   "skills": [
+    "SQL",
+    "ETL"
+   ]
+  },
+  {
+   "id": "data_analyst:case:churn_dashboard",
+   "type": "case_study",
+   "project": "churn_dashboard",
+   "title": "Customer churn dashboard",
+   "path": "case_studies/churn_dashboard.md",
+   "date": "2026-04-20",
+   "client_industry": "SaaS",
+   "skills": [
+    "Power BI",
+    "SQL",
+    "Statistics"
+   ]
+  },
+  {
+   "id": "data_analyst:case:pricing_analysis",
+   "type": "case_study",
+   "project": "pricing_analysis",
+   "title": "Pricing and discount analysis",
+   "path": "case_studies/pricing_analysis.md",
+   "date": "2026-07-29",
+   "client_industry": "hotel group",
+   "skills": [
+    "Statistics",
+    "Excel",
+    "SQL"
+   ]
+  },
+  {
+   "id": "data_analyst:cv",
+   "type": "cv",
+   "project": null,
+   "title": "CV",
+   "path": "cv.pdf",
+   "date": "2026-10-01",
+   "client_industry": null,
+   "skills": [
+    "Airflow",
+    "Data Visualization",
+    "ETL",
+    "Excel",
+    "Google Analytics",
+    "Looker",
+    "Power BI",
+    "Python",
+    "SQL",
+    "Snowflake",
+    "Statistics",
+    "Tableau",
+    "dbt",
+    "pandas"
+   ]
+  },
+  {
+   "id": "data_analyst:repo:sales-dashboard",
+   "type": "repo",
+   "project": "sales_dashboard",
+   "title": "sales-dashboard",
+   "path": "repos/sales-dashboard",
+   "date": "2021-11-14",
+   "client_industry": "auto parts",
+   "skills": [
+    "Data Visualization",
+    "ETL",
+    "Excel",
+    "Power BI",
+    "SQL",
+    "Statistics"
+   ],
+   "readme_style": "vague",
+   "files": [
+    "README.md",
+    "measures.dax",
+    "requirements.txt",
+    "src/main.py"
+   ]
+  },
+  {
+   "id": "data_analyst:repo:excel-automation",
+   "type": "repo",
+   "project": "excel_automation",
+   "title": "excel-automation",
+   "path": "repos/excel-automation",
+   "date": "2022-07-20",
+   "client_industry": "nonprofit",
+   "skills": [
+    "Data Visualization",
+    "ETL",
+    "Excel",
+    "SQL"
+   ],
+   "readme_style": "vague",
+   "files": [
+    "README.md",
+    "requirements.txt",
+    "src/main.py"
+   ]
+  },
+  {
+   "id": "data_analyst:repo:dbt-warehouse",
+   "type": "repo",
+   "project": "dbt_warehouse",
+   "title": "dbt-warehouse",
+   "path": "repos/dbt-warehouse",
+   "date": "2023-01-06",
+   "client_industry": "fintech",
+   "skills": [
+    "Airflow",
+    "ETL",
+    "SQL",
+    "Snowflake",
+    "Statistics",
+    "dbt"
+   ],
+   "readme_style": "clear",
+   "files": [
+    "README.md",
+    "models/fct_orders.sql",
+    "requirements.txt",
+    "src/main.py"
+   ]
+  },
+  {
+   "id": "data_analyst:repo:ab-testing",
+   "type": "repo",
+   "project": "ab_testing",
+   "title": "ab-testing",
+   "path": "repos/ab-testing",
+   "date": "2023-06-23",
+   "client_industry": "SaaS",
+   "skills": [
+    "Data Visualization",
+    "Python",
+    "SQL",
+    "Statistics",
+    "pandas"
+   ],
+   "readme_style": "clear",
+   "files": [
+    "README.md",
+    "requirements.txt",
+    "src/main.py"
+   ]
+  },
+  {
+   "id": "data_analyst:repo:inventory-analysis",
+   "type": "repo",
+   "project": "inventory_analysis",
+   "title": "inventory-analysis",
+   "path": "repos/inventory-analysis",
+   "date": "2024-02-26",
+   "client_industry": "electronics retail",
+   "skills": [
+    "ETL",
+    "Excel",
+    "Power BI",
+    "SQL",
+    "Statistics"
+   ],
+   "readme_style": "clear",
+   "files": [
+    "README.md",
+    "measures.dax",
+    "requirements.txt",
+    "src/main.py"
+   ]
+  },
+  {
+   "id": "data_analyst:repo:python-cleaning",
+   "type": "repo",
+   "project": "python_cleaning",
+   "title": "python-cleaning",
+   "path": "repos/python-cleaning",
+   "date": "2024-08-23",
+   "client_industry": "research group",
+   "skills": [
+    "ETL",
+    "Python",
+    "SQL",
+    "Testing",
+    "pandas"
+   ],
+   "readme_style": "clear",
+   "files": [
+    "README.md",
+    "requirements.txt",
+    "src/main.py"
+   ]
+  },
+  {
+   "id": "data_analyst:repo:airflow-reports",
+   "type": "repo",
+   "project": "airflow_reports",
+   "title": "airflow-reports",
+   "path": "repos/airflow-reports",
+   "date": "2025-04-05",
+   "client_industry": "logistics",
+   "skills": [
+    "Airflow",
+    "ETL",
+    "Python",
+    "SQL",
+    "pandas"
+   ],
+   "readme_style": "clear",
+   "files": [
+    "README.md",
+    "requirements.txt",
+    "src/main.py"
+   ]
+  },
+  {
+   "id": "data_analyst:repo:ecom-analytics",
+   "type": "repo",
+   "project": "ecom_analytics",
+   "title": "ecom-analytics",
+   "path": "repos/ecom-analytics",
+   "date": "2025-11-15",
+   "client_industry": "skincare brand",
+   "skills": [
+    "Excel",
+    "Google Analytics",
+    "Looker",
+    "SQL",
+    "Statistics"
+   ],
+   "readme_style": "clear",
+   "files": [
+    "README.md",
+    "requirements.txt",
+    "src/main.py"
+   ]
+  },
+  {
+   "id": "data_analyst:repo:churn-dashboard",
+   "type": "repo",
+   "project": "churn_dashboard",
+   "title": "churn-dashboard",
+   "path": "repos/churn-dashboard",
+   "date": "2026-04-20",
+   "client_industry": "SaaS",
+   "skills": [
+    "Excel",
+    "Power BI",
+    "Python",
+    "SQL",
+    "Statistics"
+   ],
+   "readme_style": "clear",
+   "files": [
+    "README.md",
+    "measures.dax",
+    "requirements.txt",
+    "src/main.py"
+   ]
+  },
+  {
+   "id": "data_analyst:review:marketing_attribution",
+   "type": "review",
+   "project": "marketing_attribution",
+   "date": "2022-01-19",
+   "client_industry": "DTC brand",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "data_analyst:review:tableau_ops",
+   "type": "review",
+   "project": "tableau_ops",
+   "date": "2023-04-19",
+   "client_industry": "call centre",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "data_analyst:review:ecom_analytics",
+   "type": "review",
+   "project": "ecom_analytics",
+   "date": "2025-11-15",
+   "client_industry": "skincare brand",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "data_analyst:review:survey_analysis",
+   "type": "review",
+   "project": "survey_analysis",
+   "date": "2023-09-24",
+   "client_industry": "consumer electronics",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "data_analyst:review:sql_optimisation",
+   "type": "review",
+   "project": "sql_optimisation",
+   "date": "2025-12-29",
+   "client_industry": "telecom",
+   "title": "Review (4\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "data_analyst:review:ab_testing",
+   "type": "review",
+   "project": "ab_testing",
+   "date": "2023-06-23",
+   "client_industry": "SaaS",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "data_analyst:review:python_cleaning",
+   "type": "review",
+   "project": "python_cleaning",
+   "date": "2024-08-23",
+   "client_industry": "research group",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "data_analyst:review:sales_dashboard",
+   "type": "review",
+   "project": "sales_dashboard",
+   "date": "2021-11-14",
+   "client_industry": "auto parts",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "data_analyst:review:dbt_warehouse",
+   "type": "review",
+   "project": "dbt_warehouse",
+   "date": "2023-01-06",
+   "client_industry": "fintech",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "data_analyst:review:geo_analysis",
+   "type": "review",
+   "project": "geo_analysis",
+   "date": "2024-12-29",
+   "client_industry": "gym franchise",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "data_analyst:review:finance_reporting",
+   "type": "review",
+   "project": "finance_reporting",
+   "date": "2024-06-05",
+   "client_industry": "clinic network",
+   "title": "Review (3\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "data_analyst:review:airflow_reports",
+   "type": "review",
+   "project": "airflow_reports",
+   "date": "2025-04-05",
+   "client_industry": "logistics",
+   "title": "Review (4\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "data_analyst:review:excel_automation",
+   "type": "review",
+   "project": "excel_automation",
+   "date": "2022-07-20",
+   "client_industry": "nonprofit",
+   "title": "Review (5\u2605)",
+   "path": "reviews.json",
+   "skills": []
+  },
+  {
+   "id": "data_analyst:proposal:p000",
+   "type": "proposal",
+   "project": "inventory_analysis",
+   "title": "Proposal: Linkedin Email address scraping",
+   "path": "proposals.jsonl",
+   "date": "2025-05-26",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Lead Generation"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "inventory_analysis"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p001",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Looking for a VA with great customer service skills",
+   "path": "proposals.jsonl",
+   "date": "2024-06-24",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p002",
+   "type": "proposal",
+   "project": "finance_reporting",
+   "title": "Proposal: Data Visualisation Expert Needed",
+   "path": "proposals.jsonl",
+   "date": "2025-02-22",
+   "client_industry": null,
+   "skills": [
+    "Data Visualization",
+    "Excel",
+    "JavaScript",
+    "Looker",
+    "Power BI",
+    "Python",
+    "R",
+    "Tableau"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "finance_reporting"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p003",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: Hiring VA (Will Train From Scratch) Twitter Drops &amp; IG",
+   "path": "proposals.jsonl",
+   "date": "2024-12-19",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Social Media"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "sales_dashboard"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p004",
+   "type": "proposal",
+   "project": "survey_analysis",
+   "title": "Proposal: R Studio Short Coding Assignment - URGENT",
+   "path": "proposals.jsonl",
+   "date": "2024-06-01",
+   "client_industry": null,
+   "skills": [
+    "R",
+    "Statistics"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "survey_analysis",
+    "pricing_analysis"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p005",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Part-time Online Job",
+   "path": "proposals.jsonl",
+   "date": "2026-03-23",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Virtual Assistant"
+   ],
+   "outcome": "replied",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p006",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: List of Private Hospital Units",
+   "path": "proposals.jsonl",
+   "date": "2026-03-04",
+   "client_industry": null,
+   "skills": [
+    "Excel"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p007",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: Scraping Youtube for content",
+   "path": "proposals.jsonl",
+   "date": "2025-10-18",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Web Scraping"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "sales_dashboard"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p008",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: Seeking a Keyword Research Assistant for YouTube Channel - L",
+   "path": "proposals.jsonl",
+   "date": "2024-09-23",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "SEO",
+    "Virtual Assistant"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "sales_dashboard",
+    "excel_automation"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p009",
+   "type": "proposal",
+   "project": "ab_testing",
+   "title": "Proposal: Talented and Enthusiastic Home Workers Needed",
+   "path": "proposals.jsonl",
+   "date": "2025-08-15",
+   "client_industry": null,
+   "skills": [
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "ab_testing",
+    "marketing_attribution"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p010",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: Find email addresses from an Excel sheet from all websites o",
+   "path": "proposals.jsonl",
+   "date": "2026-09-01",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "sales_dashboard"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p011",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: CockroachDB, RDBMS PostgreSQL Design / Refactor (no data in ",
+   "path": "proposals.jsonl",
+   "date": "2025-12-08",
+   "client_industry": null,
+   "skills": [
+    "MySQL",
+    "PostgreSQL",
+    "SQL"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "sales_dashboard"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p012",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: Build Selenium Test Suite & Test Cases",
+   "path": "proposals.jsonl",
+   "date": "2025-06-14",
+   "client_industry": null,
+   "skills": [
+    "CI/CD",
+    "Excel",
+    "Testing",
+    "Vue",
+    "Web Scraping"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "sales_dashboard"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p013",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: Download data from public database",
+   "path": "proposals.jsonl",
+   "date": "2026-09-02",
+   "client_industry": null,
+   "skills": [
+    "Excel"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "sales_dashboard",
+    "excel_automation",
+    "tableau_ops"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p014",
+   "type": "proposal",
+   "project": "churn_dashboard",
+   "title": "Proposal: Python Automation to for excel extract",
+   "path": "proposals.jsonl",
+   "date": "2026-06-17",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Python"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "churn_dashboard"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p015",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: General Virtual Assistant with Web Maintenance",
+   "path": "proposals.jsonl",
+   "date": "2025-12-02",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Lead Generation",
+    "Virtual Assistant"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "sales_dashboard"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p016",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: GA4 reporting setup and Google Ads settings review",
+   "path": "proposals.jsonl",
+   "date": "2024-05-17",
+   "client_industry": null,
+   "skills": [
+    "Google Analytics",
+    "Shopify"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p017",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Need assistant to clean up a simple list",
+   "path": "proposals.jsonl",
+   "date": "2026-03-12",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p018",
+   "type": "proposal",
+   "project": "ecom_analytics",
+   "title": "Proposal: Build Database That Connects To Our CRM &amp; Lookerstudio",
+   "path": "proposals.jsonl",
+   "date": "2024-12-07",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Looker"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "ecom_analytics"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p019",
+   "type": "proposal",
+   "project": "finance_reporting",
+   "title": "Proposal: improve Google PageSpeed Insight",
+   "path": "proposals.jsonl",
+   "date": "2024-07-10",
+   "client_industry": null,
+   "skills": [
+    "Statistics"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "finance_reporting"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p020",
+   "type": "proposal",
+   "project": "marketing_attribution",
+   "title": "Proposal: Python get data from google analytics.",
+   "path": "proposals.jsonl",
+   "date": "2026-06-15",
+   "client_industry": null,
+   "skills": [
+    "Google Analytics",
+    "Python"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "marketing_attribution",
+    "cohort_retention"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p021",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Python Data Scraping",
+   "path": "proposals.jsonl",
+   "date": "2026-05-23",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Python",
+    "Web Scraping"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p022",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: I am looking for people for the IT industry",
+   "path": "proposals.jsonl",
+   "date": "2024-07-11",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "SQL"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p023",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: Help organizing a google doc",
+   "path": "proposals.jsonl",
+   "date": "2025-06-18",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Social Media"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "sales_dashboard"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p024",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Migrate firebase firestore database to MySQL",
+   "path": "proposals.jsonl",
+   "date": "2026-01-11",
+   "client_industry": null,
+   "skills": [
+    "GCP",
+    "MySQL"
+   ],
+   "outcome": "replied",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p025",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: Data analysis",
+   "path": "proposals.jsonl",
+   "date": "2024-09-02",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Virtual Assistant"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "sales_dashboard",
+    "excel_automation",
+    "tableau_ops"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p026",
+   "type": "proposal",
+   "project": "python_cleaning",
+   "title": "Proposal: Experienced Master Data Management Professional",
+   "path": "proposals.jsonl",
+   "date": "2025-08-10",
+   "client_industry": null,
+   "skills": [
+    "SQL",
+    "Testing"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "python_cleaning"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p027",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Hiring Campaign Executives Agencies",
+   "path": "proposals.jsonl",
+   "date": "2025-02-01",
+   "client_industry": null,
+   "skills": [
+    "Computer Vision",
+    "Statistics",
+    "Testing"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p028",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: Recruiting Agencies with Data Analysts",
+   "path": "proposals.jsonl",
+   "date": "2025-08-25",
+   "client_industry": null,
+   "skills": [
+    "Computer Vision",
+    "Data Visualization",
+    "ETL",
+    "Excel",
+    "JavaScript",
+    "SQL",
+    "Statistics"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "sales_dashboard",
+    "marketing_attribution",
+    "excel_automation"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p029",
+   "type": "proposal",
+   "project": "python_cleaning",
+   "title": "Proposal: A custom report/dashboard creation on Power BI & Databox pla",
+   "path": "proposals.jsonl",
+   "date": "2025-04-09",
+   "client_industry": null,
+   "skills": [
+    "Data Visualization",
+    "Power BI",
+    "SQL"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "python_cleaning"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p030",
+   "type": "proposal",
+   "project": "python_cleaning",
+   "title": "Proposal: Mysql expert",
+   "path": "proposals.jsonl",
+   "date": "2024-08-01",
+   "client_industry": null,
+   "skills": [
+    "MySQL"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "python_cleaning"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p031",
+   "type": "proposal",
+   "project": "tableau_ops",
+   "title": "Proposal: I need a database architect to assist with designing an ODS,",
+   "path": "proposals.jsonl",
+   "date": "2024-05-13",
+   "client_industry": null,
+   "skills": [
+    "ETL",
+    "SQL",
+    "Tableau"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "tableau_ops"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p032",
+   "type": "proposal",
+   "project": "marketing_attribution",
+   "title": "Proposal: General Data Entry",
+   "path": "proposals.jsonl",
+   "date": "2024-09-30",
+   "client_industry": null,
+   "skills": [
+    "Virtual Assistant"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "marketing_attribution",
+    "tableau_ops",
+    "hr_analytics"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p033",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Trade data analysis",
+   "path": "proposals.jsonl",
+   "date": "2024-09-28",
+   "client_industry": null,
+   "skills": [
+    "Excel"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p034",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Data entry operator",
+   "path": "proposals.jsonl",
+   "date": "2025-11-27",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p035",
+   "type": "proposal",
+   "project": "marketing_attribution",
+   "title": "Proposal: Redise\u00f1ar mi tienda de textiles en Woocommerce",
+   "path": "proposals.jsonl",
+   "date": "2026-06-25",
+   "client_industry": null,
+   "skills": [
+    "Google Analytics",
+    "R",
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "marketing_attribution",
+    "survey_analysis"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p036",
+   "type": "proposal",
+   "project": "marketing_attribution",
+   "title": "Proposal: Google Analytics 4 reporting",
+   "path": "proposals.jsonl",
+   "date": "2026-08-10",
+   "client_industry": null,
+   "skills": [
+    "Data Visualization",
+    "Google Analytics"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "marketing_attribution"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p037",
+   "type": "proposal",
+   "project": "python_cleaning",
+   "title": "Proposal: Need help in sorting CSV file",
+   "path": "proposals.jsonl",
+   "date": "2026-05-12",
+   "client_industry": null,
+   "skills": [
+    "Data Visualization",
+    "HTML/CSS",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "python_cleaning"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p038",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Data Entry Project for New Beginner",
+   "path": "proposals.jsonl",
+   "date": "2026-01-17",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p039",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Data analyst/BI expert to help do a small task and provide a",
+   "path": "proposals.jsonl",
+   "date": "2024-08-24",
+   "client_industry": null,
+   "skills": [
+    "Google Analytics",
+    "Python",
+    "R",
+    "Statistics",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p040",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Google Analytics Merchant Data + Third party comparison (ans",
+   "path": "proposals.jsonl",
+   "date": "2026-03-07",
+   "client_industry": null,
+   "skills": [
+    "Google Analytics",
+    "Social Media"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p041",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: Power Pivot Analysis",
+   "path": "proposals.jsonl",
+   "date": "2025-02-15",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Looker",
+    "Power BI",
+    "SQL"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "sales_dashboard"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p042",
+   "type": "proposal",
+   "project": "ecom_analytics",
+   "title": "Proposal: Shopfy",
+   "path": "proposals.jsonl",
+   "date": "2025-06-01",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Google Analytics",
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "ecom_analytics"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p043",
+   "type": "proposal",
+   "project": "dbt_warehouse",
+   "title": "Proposal: Data entry - Email research",
+   "path": "proposals.jsonl",
+   "date": "2024-11-28",
+   "client_industry": null,
+   "skills": [
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "dbt_warehouse"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p044",
+   "type": "proposal",
+   "project": "tableau_ops",
+   "title": "Proposal: Product Identifier and eBay Lister",
+   "path": "proposals.jsonl",
+   "date": "2025-11-27",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": [
+    "tableau_ops",
+    "sales_dashboard"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p045",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: App sheet Specialist",
+   "path": "proposals.jsonl",
+   "date": "2026-03-20",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p046",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Microsoft Azure cloud pilot",
+   "path": "proposals.jsonl",
+   "date": "2024-08-09",
+   "client_industry": null,
+   "skills": [
+    "Azure",
+    "SQL"
+   ],
+   "outcome": "replied",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p047",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Research &amp; Compile NYC Metro Water Filtration Vendors (I",
+   "path": "proposals.jsonl",
+   "date": "2024-08-28",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Lead Generation"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p048",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: Simple Financial Model for Long Term Gains",
+   "path": "proposals.jsonl",
+   "date": "2025-10-10",
+   "client_industry": null,
+   "skills": [
+    "Excel"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "sales_dashboard",
+    "excel_automation",
+    "tableau_ops"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p049",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: HubSpot Platform Manager",
+   "path": "proposals.jsonl",
+   "date": "2025-04-21",
+   "client_industry": null,
+   "skills": [
+    "Data Visualization",
+    "Lead Generation"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p050",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Data Analyst",
+   "path": "proposals.jsonl",
+   "date": "2024-10-26",
+   "client_industry": null,
+   "skills": [
+    "Data Visualization",
+    "Excel"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p051",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Create Interactive Webpage and Dashboard",
+   "path": "proposals.jsonl",
+   "date": "2024-08-23",
+   "client_industry": null,
+   "skills": [
+    "Data Visualization",
+    "HTML/CSS",
+    "JavaScript"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p052",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Book Keeping",
+   "path": "proposals.jsonl",
+   "date": "2024-11-25",
+   "client_industry": null,
+   "skills": [
+    "Excel"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p053",
+   "type": "proposal",
+   "project": "marketing_attribution",
+   "title": "Proposal: GA4 Google Analytics Expert for Ecommerce Company",
+   "path": "proposals.jsonl",
+   "date": "2026-05-28",
+   "client_industry": null,
+   "skills": [
+    "Google Analytics",
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "marketing_attribution"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p054",
+   "type": "proposal",
+   "project": "marketing_attribution",
+   "title": "Proposal: Data analysis for market segmentation",
+   "path": "proposals.jsonl",
+   "date": "2025-05-15",
+   "client_industry": null,
+   "skills": [
+    "Computer Vision"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "marketing_attribution",
+    "ab_testing"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p055",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: Financial Data Analyst with excellent SQL Skills and Python ",
+   "path": "proposals.jsonl",
+   "date": "2025-04-29",
+   "client_industry": null,
+   "skills": [
+    "Python",
+    "SQL",
+    "Tableau"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "sales_dashboard"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p056",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Need Tableau (or other Data Visualisation tool) Report creat",
+   "path": "proposals.jsonl",
+   "date": "2024-06-08",
+   "client_industry": null,
+   "skills": [
+    "Data Visualization",
+    "Excel",
+    "Power BI",
+    "Python",
+    "SEO",
+    "Tableau"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p057",
+   "type": "proposal",
+   "project": "marketing_attribution",
+   "title": "Proposal: Embedding a Google Data Studio Dashboard on our Wix website ",
+   "path": "proposals.jsonl",
+   "date": "2026-05-15",
+   "client_industry": null,
+   "skills": [
+    "Data Visualization",
+    "Looker"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "marketing_attribution"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p058",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Send data in .csv format from tableau view to an external em",
+   "path": "proposals.jsonl",
+   "date": "2026-09-10",
+   "client_industry": null,
+   "skills": [
+    "Python",
+    "Tableau"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p059",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: Urgent: Financial Model Enhancement for Investor Presentatio",
+   "path": "proposals.jsonl",
+   "date": "2026-01-04",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Time Series"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "sales_dashboard",
+    "excel_automation"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p060",
+   "type": "proposal",
+   "project": "tableau_ops",
+   "title": "Proposal: Excel Expert",
+   "path": "proposals.jsonl",
+   "date": "2025-02-16",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Graphic Design"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "tableau_ops",
+    "geo_analysis"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p061",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: Power BI Expert Needed ASAP",
+   "path": "proposals.jsonl",
+   "date": "2026-08-03",
+   "client_industry": null,
+   "skills": [
+    "Data Visualization",
+    "Excel",
+    "Power BI",
+    "SQL"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "sales_dashboard",
+    "finance_reporting",
+    "hr_analytics"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p062",
+   "type": "proposal",
+   "project": "pricing_analysis",
+   "title": "Proposal: Computer project",
+   "path": "proposals.jsonl",
+   "date": "2025-02-10",
+   "client_industry": null,
+   "skills": [
+    "Graphic Design",
+    "Shopify",
+    "Social Media",
+    "Virtual Assistant"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "pricing_analysis"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p063",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: EV Mileage Estimation",
+   "path": "proposals.jsonl",
+   "date": "2024-05-06",
+   "client_industry": null,
+   "skills": [
+    "Data Visualization",
+    "Excel",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "sales_dashboard",
+    "excel_automation"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p064",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: Find targeted leads from my List",
+   "path": "proposals.jsonl",
+   "date": "2025-11-25",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Lead Generation",
+    "Virtual Assistant"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "sales_dashboard",
+    "excel_automation"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p065",
+   "type": "proposal",
+   "project": "cohort_retention",
+   "title": "Proposal: Superset Reporting Expert (Python, TypeScript)",
+   "path": "proposals.jsonl",
+   "date": "2026-03-07",
+   "client_industry": null,
+   "skills": [
+    "Python",
+    "TypeScript"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "cohort_retention",
+    "ab_testing",
+    "python_cleaning"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p066",
+   "type": "proposal",
+   "project": "excel_automation",
+   "title": "Proposal: Web Hosted Excel Model For Client Use",
+   "path": "proposals.jsonl",
+   "date": "2026-02-25",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "excel_automation"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p067",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: Real Estate Investor Needing Book Work Clean Up Done",
+   "path": "proposals.jsonl",
+   "date": "2024-08-11",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Virtual Assistant"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "sales_dashboard"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p068",
+   "type": "proposal",
+   "project": "marketing_attribution",
+   "title": "Proposal: Seo Expert onsite and offsite page speed optimization",
+   "path": "proposals.jsonl",
+   "date": "2025-12-12",
+   "client_industry": null,
+   "skills": [
+    "Copywriting",
+    "Google Analytics",
+    "SEO"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "marketing_attribution",
+    "ecom_analytics"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p069",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Excel data analysis",
+   "path": "proposals.jsonl",
+   "date": "2025-09-06",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Statistics"
+   ],
+   "outcome": "replied",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p070",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: Looking for a Google Sheets expert to help compare data and ",
+   "path": "proposals.jsonl",
+   "date": "2026-03-22",
+   "client_industry": null,
+   "skills": [
+    "Excel"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "sales_dashboard"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p071",
+   "type": "proposal",
+   "project": "churn_dashboard",
+   "title": "Proposal: Build Customized PDF Invoice report Odoo 15",
+   "path": "proposals.jsonl",
+   "date": "2026-03-07",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Python"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "churn_dashboard"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p072",
+   "type": "proposal",
+   "project": "marketing_attribution",
+   "title": "Proposal: Need an aso expert for an app",
+   "path": "proposals.jsonl",
+   "date": "2024-05-14",
+   "client_industry": null,
+   "skills": [
+    "Google Analytics",
+    "Mobile",
+    "SEO",
+    "Statistics"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "marketing_attribution",
+    "ecom_analytics"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p073",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: Excel Dashboard (Macros, VBA) for Asset Report",
+   "path": "proposals.jsonl",
+   "date": "2025-06-19",
+   "client_industry": null,
+   "skills": [
+    "Data Visualization",
+    "Excel"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "sales_dashboard",
+    "excel_automation"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p074",
+   "type": "proposal",
+   "project": "inventory_analysis",
+   "title": "Proposal: Data entry Entry expert",
+   "path": "proposals.jsonl",
+   "date": "2024-06-19",
+   "client_industry": null,
+   "skills": [
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "inventory_analysis",
+    "airflow_reports"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p075",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Create analysis of data in excel",
+   "path": "proposals.jsonl",
+   "date": "2026-07-18",
+   "client_industry": null,
+   "skills": [
+    "Data Visualization",
+    "Excel",
+    "Statistics",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p076",
+   "type": "proposal",
+   "project": "sql_optimisation",
+   "title": "Proposal: R or Python Programmer for Google Analytics 4 Data Analysis",
+   "path": "proposals.jsonl",
+   "date": "2024-10-14",
+   "client_industry": null,
+   "skills": [
+    "Google Analytics",
+    "Python",
+    "R"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "sql_optimisation"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p077",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Power BI Optimization Expert",
+   "path": "proposals.jsonl",
+   "date": "2026-07-31",
+   "client_industry": null,
+   "skills": [
+    "Data Visualization",
+    "Power BI"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p078",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: PowerApps within Teams",
+   "path": "proposals.jsonl",
+   "date": "2024-07-07",
+   "client_industry": null,
+   "skills": [
+    "Data Visualization"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "sales_dashboard"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p079",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Research Analyst for News Worthy Content Creation and Data A",
+   "path": "proposals.jsonl",
+   "date": "2025-10-05",
+   "client_industry": null,
+   "skills": [
+    "Social Media",
+    "Statistics"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p080",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Media Buyer for Successful Agency Willing to Manage Big Dail",
+   "path": "proposals.jsonl",
+   "date": "2026-04-16",
+   "client_industry": null,
+   "skills": [
+    "Data Visualization",
+    "Google Analytics",
+    "Social Media"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p081",
+   "type": "proposal",
+   "project": "marketing_attribution",
+   "title": "Proposal: Accounts Payable - Microsoft Dynamics 365 Data entry - Job2",
+   "path": "proposals.jsonl",
+   "date": "2026-07-07",
+   "client_industry": null,
+   "skills": [
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "marketing_attribution",
+    "cohort_retention"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p082",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Migration of Universal Analytics to Google Analytics 4 (GA4)",
+   "path": "proposals.jsonl",
+   "date": "2024-05-11",
+   "client_industry": null,
+   "skills": [
+    "Google Analytics"
+   ],
+   "outcome": "replied",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p083",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: teach power Bi",
+   "path": "proposals.jsonl",
+   "date": "2026-02-09",
+   "client_industry": null,
+   "skills": [
+    "Power BI",
+    "SQL",
+    "Tableau"
+   ],
+   "outcome": "replied",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p084",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: PowerBI developer",
+   "path": "proposals.jsonl",
+   "date": "2024-10-13",
+   "client_industry": null,
+   "skills": [
+    "Data Visualization",
+    "Excel",
+    "Power BI",
+    "SQL"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "sales_dashboard",
+    "finance_reporting"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p085",
+   "type": "proposal",
+   "project": "finance_reporting",
+   "title": "Proposal: Matlab data analysis project",
+   "path": "proposals.jsonl",
+   "date": "2025-05-02",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": [
+    "finance_reporting"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p086",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: Market Researcher Required in Taiwan",
+   "path": "proposals.jsonl",
+   "date": "2025-11-27",
+   "client_industry": null,
+   "skills": [
+    "Excel"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "sales_dashboard"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p087",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: B2b lead gen",
+   "path": "proposals.jsonl",
+   "date": "2025-01-03",
+   "client_industry": null,
+   "skills": [
+    "Excel"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "sales_dashboard"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p088",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: Grocery Store List - Texas",
+   "path": "proposals.jsonl",
+   "date": "2025-05-29",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Lead Generation"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "sales_dashboard",
+    "excel_automation"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p089",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: Data entry",
+   "path": "proposals.jsonl",
+   "date": "2025-05-07",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "sales_dashboard",
+    "excel_automation"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p090",
+   "type": "proposal",
+   "project": "airflow_reports",
+   "title": "Proposal: Housing Virtual Assistant",
+   "path": "proposals.jsonl",
+   "date": "2024-09-08",
+   "client_industry": null,
+   "skills": [
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "airflow_reports"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p091",
+   "type": "proposal",
+   "project": "geo_analysis",
+   "title": "Proposal: Climate change and Enviroment",
+   "path": "proposals.jsonl",
+   "date": "2025-10-29",
+   "client_industry": null,
+   "skills": [
+    "Data Visualization",
+    "Python",
+    "R",
+    "Tableau",
+    "Virtual Assistant"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "geo_analysis",
+    "cohort_retention"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p092",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Geospatial Data Analyst",
+   "path": "proposals.jsonl",
+   "date": "2026-03-04",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Python",
+    "R",
+    "SQL",
+    "pandas"
+   ],
+   "outcome": "won",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p093",
+   "type": "proposal",
+   "project": "survey_analysis",
+   "title": "Proposal: Migrate Wave Accounting to QBO with Data Entry and Ensure re",
+   "path": "proposals.jsonl",
+   "date": "2024-05-28",
+   "client_industry": null,
+   "skills": [
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "survey_analysis",
+    "excel_automation",
+    "python_cleaning"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p094",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: General Virtual Assistance",
+   "path": "proposals.jsonl",
+   "date": "2024-12-10",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Social Media",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "sales_dashboard"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p095",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Data Scraping",
+   "path": "proposals.jsonl",
+   "date": "2026-02-13",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Virtual Assistant",
+    "Web Scraping"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p096",
+   "type": "proposal",
+   "project": "survey_analysis",
+   "title": "Proposal: Google Analytics",
+   "path": "proposals.jsonl",
+   "date": "2024-06-05",
+   "client_industry": null,
+   "skills": [
+    "Data Visualization",
+    "Google Analytics",
+    "Shopify"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "survey_analysis",
+    "churn_dashboard",
+    "geo_analysis"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p097",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: Advanced Power Query",
+   "path": "proposals.jsonl",
+   "date": "2025-10-14",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Power BI"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "sales_dashboard"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p098",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Project-Based Data Entry Role for Social Media Contact Infor",
+   "path": "proposals.jsonl",
+   "date": "2025-12-15",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Lead Generation",
+    "Mobile",
+    "Social Media",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p099",
+   "type": "proposal",
+   "project": "marketing_attribution",
+   "title": "Proposal: Transition from UA to GA4 + debug event tracking issues",
+   "path": "proposals.jsonl",
+   "date": "2024-08-03",
+   "client_industry": null,
+   "skills": [
+    "Google Analytics"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "marketing_attribution"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p100",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: convert Excel calculations to PHP functionality and as well ",
+   "path": "proposals.jsonl",
+   "date": "2025-03-28",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "JavaScript",
+    "PHP"
+   ],
+   "outcome": "replied",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p101",
+   "type": "proposal",
+   "project": "marketing_attribution",
+   "title": "Proposal: Looking for Media Buyers to join a Dynamic Marketing Agency",
+   "path": "proposals.jsonl",
+   "date": "2024-05-11",
+   "client_industry": null,
+   "skills": [
+    "Data Visualization",
+    "Google Analytics",
+    "Lead Generation",
+    "Looker",
+    "Social Media"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "marketing_attribution",
+    "ecom_analytics"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p102",
+   "type": "proposal",
+   "project": "churn_dashboard",
+   "title": "Proposal: Cross-checking financial formulas in Excel and correcting mi",
+   "path": "proposals.jsonl",
+   "date": "2025-04-04",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Python"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "churn_dashboard"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p103",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: Data Entry Assistant",
+   "path": "proposals.jsonl",
+   "date": "2026-07-14",
+   "client_industry": null,
+   "skills": [
+    "Virtual Assistant"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "sales_dashboard",
+    "pricing_analysis",
+    "sql_optimisation"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p104",
+   "type": "proposal",
+   "project": "churn_dashboard",
+   "title": "Proposal: Need data scraped from website forebears.io",
+   "path": "proposals.jsonl",
+   "date": "2026-09-10",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Python",
+    "Virtual Assistant"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "churn_dashboard",
+    "pricing_analysis"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p105",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: Extract Emails from LinkedIn",
+   "path": "proposals.jsonl",
+   "date": "2026-01-24",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Lead Generation"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "sales_dashboard",
+    "excel_automation"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p106",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: Dot Net Azure Expert",
+   "path": "proposals.jsonl",
+   "date": "2024-06-21",
+   "client_industry": null,
+   "skills": [
+    "Azure",
+    "SQL"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "sales_dashboard"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p107",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: Data entry",
+   "path": "proposals.jsonl",
+   "date": "2025-12-10",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Testing",
+    "Virtual Assistant",
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "sales_dashboard"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p108",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Virtual EA (will train you to use ChatGPT as your assistant)",
+   "path": "proposals.jsonl",
+   "date": "2026-09-02",
+   "client_industry": null,
+   "skills": [
+    "LLM",
+    "Social Media",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p109",
+   "type": "proposal",
+   "project": "ab_testing",
+   "title": "Proposal: Ml algo",
+   "path": "proposals.jsonl",
+   "date": "2025-10-20",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": [
+    "ab_testing",
+    "ecom_analytics"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p110",
+   "type": "proposal",
+   "project": "cohort_retention",
+   "title": "Proposal: Migrate chatbot from Rasa to DialogFlow",
+   "path": "proposals.jsonl",
+   "date": "2024-05-07",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "Python"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "cohort_retention"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p111",
+   "type": "proposal",
+   "project": "pricing_analysis",
+   "title": "Proposal: \"What is\" article - What is data analysis article for data s",
+   "path": "proposals.jsonl",
+   "date": "2025-06-23",
+   "client_industry": null,
+   "skills": [
+    "Copywriting",
+    "SEO"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "pricing_analysis",
+    "hr_analytics",
+    "excel_automation"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p112",
+   "type": "proposal",
+   "project": "cohort_retention",
+   "title": "Proposal: OpenQA NLP on documents",
+   "path": "proposals.jsonl",
+   "date": "2025-10-24",
+   "client_industry": null,
+   "skills": [
+    "AWS",
+    "Fine-tuning",
+    "LLM",
+    "NLP",
+    "Python",
+    "RAG"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "cohort_retention"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p113",
+   "type": "proposal",
+   "project": "hr_analytics",
+   "title": "Proposal: AI CCTV Detector Model Vision",
+   "path": "proposals.jsonl",
+   "date": "2026-06-02",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "won",
+   "cited_projects": [
+    "hr_analytics",
+    "python_cleaning"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p114",
+   "type": "proposal",
+   "project": "inventory_analysis",
+   "title": "Proposal: Turn Canva design into AI file. DEADLINE: WED., FEB 14 5pm C",
+   "path": "proposals.jsonl",
+   "date": "2025-07-25",
+   "client_industry": null,
+   "skills": [
+    "Graphic Design"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "inventory_analysis",
+    "sql_optimisation",
+    "pricing_analysis"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p115",
+   "type": "proposal",
+   "project": "cohort_retention",
+   "title": "Proposal: Building an AI app for provide information and answers to st",
+   "path": "proposals.jsonl",
+   "date": "2026-08-14",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "Mobile",
+    "Python"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "cohort_retention"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p116",
+   "type": "proposal",
+   "project": "geo_analysis",
+   "title": "Proposal: AI voice over and video",
+   "path": "proposals.jsonl",
+   "date": "2026-08-15",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "replied",
+   "cited_projects": [
+    "geo_analysis"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p117",
+   "type": "proposal",
+   "project": "cohort_retention",
+   "title": "Proposal: Machine Learning on Video",
+   "path": "proposals.jsonl",
+   "date": "2026-04-07",
+   "client_industry": null,
+   "skills": [
+    "Python",
+    "TensorFlow"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "cohort_retention"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p118",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: AI driven system to analyse text data from reportings and jo",
+   "path": "proposals.jsonl",
+   "date": "2025-11-23",
+   "client_industry": null,
+   "skills": [
+    "NLP",
+    "Python",
+    "Social Media",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p119",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Machine Learning Engineer for MySQL Database Project",
+   "path": "proposals.jsonl",
+   "date": "2025-01-27",
+   "client_industry": null,
+   "skills": [
+    "MySQL",
+    "NLP",
+    "Python",
+    "SQL",
+    "TensorFlow",
+    "scikit-learn"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p120",
+   "type": "proposal",
+   "project": "cohort_retention",
+   "title": "Proposal: Chatgpt integration for graphic display calculator",
+   "path": "proposals.jsonl",
+   "date": "2026-07-27",
+   "client_industry": null,
+   "skills": [
+    "LLM",
+    "Python"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "cohort_retention"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p121",
+   "type": "proposal",
+   "project": "survey_analysis",
+   "title": "Proposal: Advanced Telegram Bot for Upwork Agency",
+   "path": "proposals.jsonl",
+   "date": "2026-01-21",
+   "client_industry": null,
+   "skills": [
+    "Chatbot"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "survey_analysis"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p122",
+   "type": "proposal",
+   "project": "inventory_analysis",
+   "title": "Proposal: Create Slack bot",
+   "path": "proposals.jsonl",
+   "date": "2025-04-08",
+   "client_industry": null,
+   "skills": [
+    "Chatbot",
+    "JavaScript",
+    "Node.js"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "inventory_analysis",
+    "dbt_warehouse"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p123",
+   "type": "proposal",
+   "project": "cohort_retention",
+   "title": "Proposal: Matlab Machine Learning (ML) &amp; Artificial Intelligence (",
+   "path": "proposals.jsonl",
+   "date": "2025-06-01",
+   "client_industry": null,
+   "skills": [
+    "Python"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "cohort_retention"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p124",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: Logistics regression expert",
+   "path": "proposals.jsonl",
+   "date": "2026-02-06",
+   "client_industry": null,
+   "skills": [
+    "Statistics",
+    "Testing",
+    "Time Series"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "sales_dashboard"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p125",
+   "type": "proposal",
+   "project": "survey_analysis",
+   "title": "Proposal: Smartlead.ai Cold Email List",
+   "path": "proposals.jsonl",
+   "date": "2026-08-17",
+   "client_industry": null,
+   "skills": [
+    "Lead Generation"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "survey_analysis"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p126",
+   "type": "proposal",
+   "project": "pricing_analysis",
+   "title": "Proposal: AI E-learning system",
+   "path": "proposals.jsonl",
+   "date": "2024-05-25",
+   "client_industry": null,
+   "skills": [
+    "Python"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "pricing_analysis",
+    "excel_automation"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p127",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Revise a quiz in Formwise.ai",
+   "path": "proposals.jsonl",
+   "date": "2025-07-14",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p128",
+   "type": "proposal",
+   "project": "cohort_retention",
+   "title": "Proposal: NLP expert needed for section detection, NER, topic detectio",
+   "path": "proposals.jsonl",
+   "date": "2024-08-09",
+   "client_industry": null,
+   "skills": [
+    "Computer Vision",
+    "Data Visualization",
+    "Hugging Face",
+    "NLP",
+    "Python",
+    "Time Series",
+    "pandas"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "cohort_retention",
+    "ab_testing",
+    "survey_analysis"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p129",
+   "type": "proposal",
+   "project": "ab_testing",
+   "title": "Proposal: Wi-Fi Direct (P2P) in an Open-Source Board Game on Android",
+   "path": "proposals.jsonl",
+   "date": "2025-10-29",
+   "client_industry": null,
+   "skills": [
+    "Mobile"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "ab_testing",
+    "airflow_reports"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p130",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Develop .NET Web API &amp; React Web App for Offshore (Oil) ",
+   "path": "proposals.jsonl",
+   "date": "2026-08-24",
+   "client_industry": null,
+   "skills": [
+    "Azure",
+    "React"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p131",
+   "type": "proposal",
+   "project": "churn_dashboard",
+   "title": "Proposal: Lead Generation for Marketing Company",
+   "path": "proposals.jsonl",
+   "date": "2026-07-23",
+   "client_industry": null,
+   "skills": [
+    "Lead Generation"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "churn_dashboard",
+    "hr_analytics"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p132",
+   "type": "proposal",
+   "project": "python_cleaning",
+   "title": "Proposal: Administrative Assistant with Strong Marketing & Schedule Or",
+   "path": "proposals.jsonl",
+   "date": "2025-12-11",
+   "client_industry": null,
+   "skills": [
+    "Social Media",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "python_cleaning",
+    "dbt_warehouse",
+    "cohort_retention"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p133",
+   "type": "proposal",
+   "project": "finance_reporting",
+   "title": "Proposal: Make a website",
+   "path": "proposals.jsonl",
+   "date": "2025-01-15",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": [
+    "finance_reporting",
+    "marketing_attribution"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p134",
+   "type": "proposal",
+   "project": "inventory_analysis",
+   "title": "Proposal: Reel for a",
+   "path": "proposals.jsonl",
+   "date": "2025-10-07",
+   "client_industry": null,
+   "skills": [
+    "Social Media"
+   ],
+   "outcome": "won",
+   "cited_projects": [
+    "inventory_analysis",
+    "sql_optimisation",
+    "ab_testing"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p135",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: WordPress speed optimisation",
+   "path": "proposals.jsonl",
+   "date": "2026-09-12",
+   "client_industry": null,
+   "skills": [
+    "HTML/CSS",
+    "JavaScript",
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p136",
+   "type": "proposal",
+   "project": "survey_analysis",
+   "title": "Proposal: Vertrieb unserer Dienstleistung f\u00fcr die Webseiten-Erstellung",
+   "path": "proposals.jsonl",
+   "date": "2026-03-14",
+   "client_industry": null,
+   "skills": [
+    "Lead Generation",
+    "R"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "survey_analysis"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p137",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Looking for Etsy expert for audit and help with ads",
+   "path": "proposals.jsonl",
+   "date": "2024-04-26",
+   "client_industry": null,
+   "skills": [
+    "SEO"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p138",
+   "type": "proposal",
+   "project": "ecom_analytics",
+   "title": "Proposal: Wodpress blog post not visible on google",
+   "path": "proposals.jsonl",
+   "date": "2025-01-19",
+   "client_industry": null,
+   "skills": [
+    "Copywriting",
+    "SEO",
+    "WordPress"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "ecom_analytics"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p139",
+   "type": "proposal",
+   "project": "python_cleaning",
+   "title": "Proposal: Sourcing German speaking Business Development Representative",
+   "path": "proposals.jsonl",
+   "date": "2026-09-15",
+   "client_industry": null,
+   "skills": [
+    "Lead Generation"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "python_cleaning"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p140",
+   "type": "proposal",
+   "project": "airflow_reports",
+   "title": "Proposal: Website Development",
+   "path": "proposals.jsonl",
+   "date": "2025-05-09",
+   "client_industry": null,
+   "skills": [
+    "Copywriting",
+    "HTML/CSS"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "airflow_reports"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p141",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Need iOS Developer for Small Task.",
+   "path": "proposals.jsonl",
+   "date": "2024-05-18",
+   "client_industry": null,
+   "skills": [
+    "Mobile"
+   ],
+   "outcome": "ignored",
+   "cited_projects": []
+  },
+  {
+   "id": "data_analyst:proposal:p142",
+   "type": "proposal",
+   "project": "geo_analysis",
+   "title": "Proposal: Amazon FBA Private Label Virtual Assistant",
+   "path": "proposals.jsonl",
+   "date": "2025-03-31",
+   "client_industry": null,
+   "skills": [
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "geo_analysis",
+    "inventory_analysis",
+    "survey_analysis"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p143",
+   "type": "proposal",
+   "project": "inventory_analysis",
+   "title": "Proposal: Create WordPress Code Verification Website with Separate Dat",
+   "path": "proposals.jsonl",
+   "date": "2024-06-07",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Graphic Design",
+    "HTML/CSS",
+    "JavaScript",
+    "Mobile",
+    "MySQL",
+    "PHP",
+    "REST API",
+    "WordPress"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "inventory_analysis",
+    "sales_dashboard",
+    "excel_automation"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p144",
+   "type": "proposal",
+   "project": "tableau_ops",
+   "title": "Proposal: Videographer in Orlando needed March 6th",
+   "path": "proposals.jsonl",
+   "date": "2025-06-19",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": [
+    "tableau_ops"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p145",
+   "type": "proposal",
+   "project": "python_cleaning",
+   "title": "Proposal: Extracting Data from Klaviyo (ETL)",
+   "path": "proposals.jsonl",
+   "date": "2025-05-30",
+   "client_industry": null,
+   "skills": [
+    "ETL",
+    "GCP",
+    "Python"
+   ],
+   "outcome": "replied",
+   "cited_projects": [
+    "python_cleaning"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p146",
+   "type": "proposal",
+   "project": "airflow_reports",
+   "title": "Proposal: Salesforce Developer/Consultant",
+   "path": "proposals.jsonl",
+   "date": "2026-08-14",
+   "client_industry": null,
+   "skills": [
+    "REST API"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "airflow_reports",
+    "pricing_analysis"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p147",
+   "type": "proposal",
+   "project": "excel_automation",
+   "title": "Proposal: Appointment Setter For Leads",
+   "path": "proposals.jsonl",
+   "date": "2026-08-05",
+   "client_industry": null,
+   "skills": [
+    "Excel",
+    "Lead Generation",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "excel_automation",
+    "dbt_warehouse"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p148",
+   "type": "proposal",
+   "project": "sales_dashboard",
+   "title": "Proposal: Real Estate Virtual Assistant",
+   "path": "proposals.jsonl",
+   "date": "2026-01-22",
+   "client_industry": null,
+   "skills": [
+    "Graphic Design",
+    "Social Media",
+    "Virtual Assistant"
+   ],
+   "outcome": "ignored",
+   "cited_projects": [
+    "sales_dashboard",
+    "dbt_warehouse"
+   ]
+  },
+  {
+   "id": "data_analyst:proposal:p149",
+   "type": "proposal",
+   "project": null,
+   "title": "Proposal: Wayfair expert is needed",
+   "path": "proposals.jsonl",
+   "date": "2026-06-24",
+   "client_industry": null,
+   "skills": [],
+   "outcome": "ignored",
+   "cited_projects": []
+  }
+ ]
+}

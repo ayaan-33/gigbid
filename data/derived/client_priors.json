@@ -1,0 +1,40 @@
+{
+ "payment_verified_rate": 0.6614,
+ "client_spent": {
+  "n": 29705,
+  "p10": 100.0,
+  "p25": 600.0,
+  "median": 3000.0,
+  "p75": 20000.0,
+  "p90": 70000.0
+ },
+ "client_spent_zero_rate": 0.4667,
+ "client_rating": {
+  "n": 17571,
+  "p10": 4.34,
+  "p25": 4.7,
+  "median": 4.89,
+  "p75": 4.97,
+  "p90": 4.99
+ },
+ "applicants": {
+  "n": 51194,
+  "p10": 3.0,
+  "p25": 7.0,
+  "median": 12.0,
+  "p75": 35.0,
+  "p90": 35.0
+ },
+ "connects_cost": {
+  "1": 3611,
+  "2": 11512,
+  "4": 15050,
+  "6": 19194,
+  "8": 6929
+ },
+ "experience_level": {
+  "intermediate": 0.5344,
+  "expert": 0.3713,
+  "entry level": 0.0942
+ }
+}

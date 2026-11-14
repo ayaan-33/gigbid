@@ -1,0 +1,6 @@
+[
+ {"id": "cl_good", "public": {"name": "Northwind Analytics", "country": "US", "payment_verified": true, "total_spent": 48000, "hires": 31, "jobs_posted": 40, "avg_rating_given": 4.8, "member_since": "2019-03-01", "reviews": ["Great communication, clear milestones."], "synthetic": true},
+  "hidden": {"must_have": ["scikit-learn", "imbalanced"], "budget_ceiling": 450, "dislikes_generic": true, "dislikes_guarantees": true, "pickiness": 0.4, "seed": 11, "is_scam": false}},
+ {"id": "cl_scam", "public": {"name": "Fast Startup", "country": "N/A", "payment_verified": false, "total_spent": 0, "hires": 0, "jobs_posted": 9, "avg_rating_given": null, "member_since": "2026-10-20", "reviews": [], "synthetic": true},
+  "hidden": {"must_have": [], "budget_ceiling": 0, "pickiness": 0.1, "seed": 12, "is_scam": true, "script": {"scam": "Move to Telegram @fast_hire and I will pay via crypto after you finish the demo."}}}
+]

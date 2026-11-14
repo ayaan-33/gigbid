@@ -1,0 +1,521 @@
+{
+ "persona_id": "data_analyst",
+ "name": "Priya Nair",
+ "headline": "Data analyst: SQL, dashboards and decision-ready reporting",
+ "location": "Kochi, India (remote, UTC+5:30)",
+ "years": 5,
+ "hourly_rate": 35,
+ "fixed_floor": 150,
+ "categories": [
+  "data_analysis"
+ ],
+ "secondary": [
+  "ai_ml"
+ ],
+ "voice": "calm, structured, business outcomes first, explains numbers plainly",
+ "education": "BSc Statistics, University of Kerala, 2020; Google Data Analytics Certificate",
+ "synthetic": true,
+ "skills": [
+  "Airflow",
+  "Data Visualization",
+  "ETL",
+  "Excel",
+  "Google Analytics",
+  "Looker",
+  "Power BI",
+  "Python",
+  "SQL",
+  "Snowflake",
+  "Statistics",
+  "Tableau",
+  "dbt",
+  "pandas"
+ ],
+ "capabilities": [
+  "Airflow",
+  "Data Visualization",
+  "ETL",
+  "Excel",
+  "Google Analytics",
+  "Looker",
+  "Power BI",
+  "Python",
+  "R",
+  "SQL",
+  "Snowflake",
+  "Statistics",
+  "Tableau",
+  "Testing",
+  "dbt",
+  "pandas"
+ ],
+ "category_skills": [
+  "Airflow",
+  "Data Visualization",
+  "ETL",
+  "Excel",
+  "Google Analytics",
+  "Looker",
+  "Power BI",
+  "R",
+  "SQL",
+  "Snowflake",
+  "Statistics",
+  "Tableau",
+  "dbt",
+  "pandas"
+ ],
+ "projects": [
+  {
+   "key": "sales_dashboard",
+   "names": [
+    "Sales performance dashboard",
+    "Power BI sales reporting",
+    "regional revenue dashboard"
+   ],
+   "skills": [
+    "Power BI",
+    "SQL",
+    "Excel",
+    "Data Visualization"
+   ],
+   "implied": [
+    "ETL",
+    "Statistics"
+   ],
+   "industry": "auto parts",
+   "client": "Harbor Logistics",
+   "date": "2021-11-14",
+   "metrics_filled": [
+    "reporting time from 4 days to same-day",
+    "56 managers using it weekly",
+    "5 spreadsheets retired"
+   ]
+  },
+  {
+   "key": "marketing_attribution",
+   "names": [
+    "Marketing channel attribution",
+    "campaign ROI analysis",
+    "GA4 and ads performance reporting"
+   ],
+   "skills": [
+    "Google Analytics",
+    "SQL",
+    "Looker",
+    "Statistics"
+   ],
+   "implied": [
+    "ETL",
+    "Data Visualization"
+   ],
+   "industry": "DTC brand",
+   "client": "Pine Analytics",
+   "date": "2022-01-19",
+   "metrics_filled": [
+    "budget shifted 22% to better channels",
+    "cost per acquisition down 13%",
+    "9 channels tracked"
+   ]
+  },
+  {
+   "key": "excel_automation",
+   "names": [
+    "Excel reporting automation",
+    "VBA and Power Query workflow",
+    "spreadsheet clean-up and automation"
+   ],
+   "skills": [
+    "Excel",
+    "Data Visualization"
+   ],
+   "implied": [
+    "ETL",
+    "SQL"
+   ],
+   "industry": "nonprofit",
+   "client": "Signal Group",
+   "date": "2022-07-20",
+   "metrics_filled": [
+    "monthly close prep from 16 hours to under 2",
+    "zero copy-paste errors in 8 months",
+    "11 source files consolidated"
+   ]
+  },
+  {
+   "key": "cohort_retention",
+   "names": [
+    "Cohort retention analysis",
+    "customer lifetime value study",
+    "subscription retention deep-dive"
+   ],
+   "skills": [
+    "SQL",
+    "pandas",
+    "Statistics"
+   ],
+   "implied": [
+    "Data Visualization",
+    "Python"
+   ],
+   "industry": "subscription box",
+   "client": "Beacon Partners",
+   "date": "2022-08-19",
+   "metrics_filled": [
+    "identified a 15% higher-churn onboarding segment",
+    "LTV estimates within 7% of actuals",
+    "31 monthly cohorts"
+   ]
+  },
+  {
+   "key": "dbt_warehouse",
+   "names": [
+    "dbt data warehouse models",
+    "analytics engineering with dbt",
+    "single source of truth for metrics"
+   ],
+   "skills": [
+    "dbt",
+    "SQL",
+    "Snowflake",
+    "ETL"
+   ],
+   "implied": [
+    "Airflow",
+    "Statistics"
+   ],
+   "industry": "fintech",
+   "client": "Tidal Partners",
+   "date": "2023-01-06",
+   "metrics_filled": [
+    "115 dbt models",
+    "251 data tests",
+    "metric disputes in meetings basically ended"
+   ]
+  },
+  {
+   "key": "tableau_ops",
+   "names": [
+    "Operations KPI dashboard",
+    "Tableau dashboard for operations",
+    "warehouse ops reporting"
+   ],
+   "skills": [
+    "Tableau",
+    "SQL",
+    "Data Visualization"
+   ],
+   "implied": [
+    "Excel",
+    "ETL"
+   ],
+   "industry": "call centre",
+   "client": "Copper Co.",
+   "date": "2023-04-19",
+   "metrics_filled": [
+    "late orders down 17%",
+    "5 sites on one dashboard",
+    "refresh every 49 minutes"
+   ]
+  },
+  {
+   "key": "ab_testing",
+   "names": [
+    "A/B test analysis",
+    "experiment design and readouts",
+    "pricing page experiment analysis"
+   ],
+   "skills": [
+    "Statistics",
+    "SQL",
+    "Python"
+   ],
+   "implied": [
+    "pandas",
+    "Data Visualization"
+   ],
+   "industry": "SaaS",
+   "client": "Orchid Partners",
+   "date": "2023-06-23",
+   "metrics_filled": [
+    "27 experiments analysed",
+    "test duration cut 26% with better sizing",
+    "a 6% conversion lift validated"
+   ]
+  },
+  {
+   "key": "survey_analysis",
+   "names": [
+    "Customer survey analysis",
+    "NPS and survey insights",
+    "market research data analysis"
+   ],
+   "skills": [
+    "Excel",
+    "Statistics",
+    "Data Visualization"
+   ],
+   "implied": [
+    "pandas",
+    "R"
+   ],
+   "industry": "consumer electronics",
+   "client": "Granite Studio",
+   "date": "2023-09-24",
+   "metrics_filled": [
+    "15k responses analysed",
+    "3 key drivers identified",
+    "NPS up 14 points after fixes"
+   ]
+  },
+  {
+   "key": "inventory_analysis",
+   "names": [
+    "Inventory and stock analysis",
+    "slow-moving stock report",
+    "ABC inventory classification"
+   ],
+   "skills": [
+    "SQL",
+    "Excel",
+    "Power BI"
+   ],
+   "implied": [
+    "Statistics",
+    "ETL"
+   ],
+   "industry": "electronics retail",
+   "client": "Willow Health",
+   "date": "2024-02-26",
+   "metrics_filled": [
+    "slow stock reduced 27%",
+    "2k SKUs classified",
+    "working capital freed $57k"
+   ]
+  },
+  {
+   "key": "finance_reporting",
+   "names": [
+    "Management accounts reporting",
+    "monthly finance dashboard",
+    "P&L and cash-flow reporting"
+   ],
+   "skills": [
+    "Excel",
+    "Power BI",
+    "SQL"
+   ],
+   "implied": [
+    "ETL",
+    "Data Visualization"
+   ],
+   "industry": "clinic network",
+   "client": "Signal Group",
+   "date": "2024-06-05",
+   "metrics_filled": [
+    "reporting lag from 5 weeks to 3 days",
+    "19 entities consolidated",
+    "variance flags caught 5 billing errors"
+   ]
+  },
+  {
+   "key": "python_cleaning",
+   "names": [
+    "Data cleaning pipeline in Python",
+    "CSV consolidation scripts",
+    "automated data quality checks"
+   ],
+   "skills": [
+    "Python",
+    "pandas",
+    "ETL"
+   ],
+   "implied": [
+    "SQL",
+    "Testing"
+   ],
+   "industry": "research group",
+   "client": "Willow Partners",
+   "date": "2024-08-23",
+   "metrics_filled": [
+    "cleaning time down 81%",
+    "1 million rows per run",
+    "duplicate records down 88%"
+   ]
+  },
+  {
+   "key": "geo_analysis",
+   "names": [
+    "Location and territory analysis",
+    "store catchment mapping",
+    "geospatial sales analysis"
+   ],
+   "skills": [
+    "SQL",
+    "Tableau",
+    "Statistics"
+   ],
+   "implied": [
+    "Python",
+    "Data Visualization"
+   ],
+   "industry": "gym franchise",
+   "client": "Signal Labs",
+   "date": "2024-12-29",
+   "metrics_filled": [
+    "25 candidate sites scored",
+    "new-site revenue 12% above prior openings",
+    "5 regions mapped"
+   ]
+  },
+  {
+   "key": "airflow_reports",
+   "names": [
+    "Scheduled reporting pipeline",
+    "Airflow-orchestrated daily reports",
+    "automated KPI emails"
+   ],
+   "skills": [
+    "Airflow",
+    "SQL",
+    "Python"
+   ],
+   "implied": [
+    "ETL",
+    "pandas"
+   ],
+   "industry": "logistics",
+   "client": "Signal Partners",
+   "date": "2025-04-05",
+   "metrics_filled": [
+    "99% on-time delivery over 6 months",
+    "25 reports automated",
+    "manual work cut 12 hours a week"
+   ]
+  },
+  {
+   "key": "hr_analytics",
+   "names": [
+    "HR attrition analytics",
+    "people analytics dashboard",
+    "employee turnover analysis"
+   ],
+   "skills": [
+    "Power BI",
+    "Statistics",
+    "Excel"
+   ],
+   "implied": [
+    "SQL",
+    "Data Visualization"
+   ],
+   "industry": "retail chain",
+   "client": "Juniper Labs",
+   "date": "2025-07-09",
+   "metrics_filled": [
+    "attrition down 5 points in a year",
+    "4k employees covered",
+    "3 drivers acted on"
+   ]
+  },
+  {
+   "key": "ecom_analytics",
+   "names": [
+    "Shopify store analytics",
+    "e-commerce KPI reporting",
+    "product and basket analysis"
+   ],
+   "skills": [
+    "SQL",
+    "Google Analytics",
+    "Looker"
+   ],
+   "implied": [
+    "Excel",
+    "Statistics"
+   ],
+   "industry": "skincare brand",
+   "client": "Granite Labs",
+   "date": "2025-11-15",
+   "metrics_filled": [
+    "average order value up 6% from bundles",
+    "4 data sources unified",
+    "daily review time down to 7 minutes"
+   ]
+  },
+  {
+   "key": "sql_optimisation",
+   "names": [
+    "SQL query optimisation",
+    "reporting database tuning",
+    "slow report fix"
+   ],
+   "skills": [
+    "SQL",
+    "ETL"
+   ],
+   "implied": [
+    "Snowflake",
+    "Statistics"
+   ],
+   "industry": "telecom",
+   "client": "Beacon Partners",
+   "date": "2025-12-29",
+   "metrics_filled": [
+    "report runtime from 3 hours to 8 minutes",
+    "12 queries tuned",
+    "warehouse credits down 36%"
+   ]
+  },
+  {
+   "key": "churn_dashboard",
+   "names": [
+    "Customer churn dashboard",
+    "retention KPI reporting",
+    "churn risk report for CS team"
+   ],
+   "skills": [
+    "Power BI",
+    "SQL",
+    "Statistics"
+   ],
+   "implied": [
+    "Python",
+    "Excel"
+   ],
+   "industry": "SaaS",
+   "client": "Orchid Systems",
+   "date": "2026-04-20",
+   "metrics_filled": [
+    "at-risk accounts flagged 3 weeks earlier",
+    "retention up 3 points",
+    "8k accounts scored"
+   ]
+  },
+  {
+   "key": "pricing_analysis",
+   "names": [
+    "Pricing and discount analysis",
+    "price elasticity study",
+    "promotion effectiveness analysis"
+   ],
+   "skills": [
+    "Statistics",
+    "Excel",
+    "SQL"
+   ],
+   "implied": [
+    "Python",
+    "R"
+   ],
+   "industry": "hotel group",
+   "client": "Bright Retail",
+   "date": "2026-07-29",
+   "metrics_filled": [
+    "margin up 3.9 points",
+    "4 promotions stopped",
+    "33 price points tested"
+   ]
+  }
+ ]
+}

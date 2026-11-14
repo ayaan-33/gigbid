@@ -1,0 +1,134 @@
+# GigBid runtime configuration.
+# Every model, budget, threshold and business rule lives here (never in code) so a
+# platform policy change is absorbed by editing this file + prompts only.
+# ${VAR:default} is expanded from the environment by agent/settings.py.
+
+marketplace:
+  mode: ${MARKETPLACE_MODE:gigsim}          # gigsim | upwork_live
+  max_requests_per_minute: 20               # stays under GigSim's 30 rpm/token limit
+  live_poll_interval_minutes: 240           # live Upwork: at most every 4h (RUNBOOK justifies)
+  gigsim_poll_interval_minutes: 30
+
+# Two open-weight profiles (free only). A `paid` profile is intentionally absent:
+# this project uses no paid APIs. Every node's model is chosen here, never in code.
+models:
+  profile: ${MODEL_PROFILE:open}
+  profiles:
+    open:                                    # deployed link: hosted open models on Groq free tier
+      provider: groq
+      base_url: https://api.groq.com/openai/v1
+      api_key_env: GROQ_API_KEY
+      small: openai/gpt-oss-20b
+      large: openai/gpt-oss-120b
+      fallback_small: qwen/qwen3.8-27b
+      injection_guard: meta-llama/llama-prompt-guard-2-86m
+      # Groq list prices (USD per 1M tokens). We run on the FREE tier, so actual spend is $0;
+      # these list prices are used only to report a comparable "cost if paid" figure.
+      prices_usd_per_mtok:
+        openai/gpt-oss-20b: {input: 0.075, output: 0.30}
+        openai/gpt-oss-120b: {input: 0.15, output: 0.60}
+        qwen/qwen3.8-27b: {input: 0.29, output: 0.59}
+    open_local:                              # laptop: Ollama on Apple M3 16GB
+      provider: ollama
+      base_url: ${OLLAMA_BASE_URL:http://localhost:11434}/v1
+      api_key_env: null
+      small: qwen3:4b
+      large: qwen3:4b
+      fallback_small: qwen3:4b
+      prices_usd_per_mtok: {}
+  nodes:                                     # tier per node: small = cheap/frequent, large = quality
+    scout: small
+    analyst: small
+    risk_assessor: small
+    fit_matcher: small
+    decision: small
+    pricing: small
+    writer: large
+    verifier: small
+    critic: large
+    compliance: small
+    intent: small
+    client_liaison: large
+    judge: large
+    simulated_client: small
+    data_generator: large
+  temperature:
+    default: 0.2
+    writer: 0.6
+    data_generator: 0.8
+  request_timeout_s: 60
+  max_retries: 2
+  embeddings: nomic-ai/nomic-embed-text-v1.5
+  embedding_dim: 768
+  reranker: BAAI/bge-reranker-v2-m3-int8     # int8 ONNX build of bge-reranker-v2-m3 (CPU)
+  reranker_fallback: Xenova/ms-marco-MiniLM-L-6-v2
+
+rag:
+  variant: ${RAG_VARIANT:v3_rerank}          # final value set from evals/results/rag_variants.json
+  top_k: 5
+  candidate_k: 30
+  chunk_tokens: 350
+  chunk_overlap: 50
+  rrf_k: 60
+  outcome_boost: {won: 0.25, replied: 0.12, ignored: -0.10}
+  corrective_min_score: 0.35
+  corrective_max_requeries: 2
+
+budgets:
+  max_graph_steps: 40
+  max_revisions: 2                           # Critic may send back at most twice
+  max_tokens_per_job: 30000
+  max_tokens_per_conversation_turn: 12000
+  declared_p95_latency_s:
+    job_analysed: 25
+    proposal: 60
+  declared_cost_usd:
+    job_analysed: 0.002
+    proposal: 0.006
+
+thresholds:
+  minimum_fit_score: 0.55
+  watch_fit_score: 0.40
+  maximum_risk_score: 0.60
+  scam_risk_score: 0.80
+  min_supported_claim_ratio: 0.85
+  proposal_max_words: 260
+  proposal_min_words: 90
+
+connects:
+  weekly_budget_default: 80
+  value_per_connect_usd: 0.15                # bid if expected value >= connects * this
+  min_expected_win_prob: 0.05
+
+# Platform policy (mirrors data/policy_pack). Version bumps here absorb change requests.
+policy:
+  version: 1
+  forbid_off_platform_contact: true
+  forbid_guarantees: true
+  forbid_unpaid_trial_work: true
+  require_ai_disclosure: false
+  connects_surcharge:
+    enabled: false
+    proposals_threshold: 20
+    extra_connects: 4
+
+memory:
+  style:
+    min_occurrences: 3                       # an edit pattern must appear in >=3 ...
+    window: 10                               # ... of the user's last 10 edits
+  outcome:
+    min_outcomes: 5                          # >=5 outcomes in a category
+    min_lift: 0.10                           # and >=10pt reply-rate lift over the category baseline
+
+autonomy:
+  default_level: suggest                     # suggest | auto_skip   (auto-send does not exist)
+  auto_skip_below_fit: 0.30
+
+guardrails:
+  injection_classifier: true
+  spotlight_untrusted: true
+  mask_pii_in_logs: true
+
+worker:
+  max_concurrent_jobs: 3
+  job_timeout_s: 300

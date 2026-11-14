@@ -1,0 +1,35 @@
+# secrets
+.env
+.env.*
+!.env.example
+*.pem
+secrets/
+# python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+# node
+node_modules/
+.next/
+apps/web/test-results/
+apps/web/playwright-report/
+apps/web/blob-report/
+# build
+dist/
+build/
+# data: raw downloads + generated artefacts are reproducible, never committed
+data/raw/
+data/processed/
+evals/datasets/hidden/
+.cache/
+*.sqlite
+*.db
+# OS
+.DS_Store
+
+# hidden test set never enters the repo
+data/gigsim_seed_hidden/
