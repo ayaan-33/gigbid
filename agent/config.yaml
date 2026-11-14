@@ -132,3 +132,33 @@ guardrails:
 worker:
   max_concurrent_jobs: 3
   job_timeout_s: 300
+
+upwork_live:
+  tool_map: null              # null = adapter defaults (mcp_servers/marketplace/adapters/upwork_live.py);
+                              # override here if Upwork renames a tool: {search_jobs: [new_name], ...}
+
+mcp:
+  transport: ${MCP_TRANSPORT:http}   # http (MultiServerMCPClient) | inprocess (tests, evals)
+  timeout_s: 30
+  max_retries: 2
+  servers:
+    portfolio: ${PORTFOLIO_MCP_URL:http://localhost:8091/mcp}
+    marketplace: ${MARKETPLACE_MCP_URL:http://localhost:8092/mcp}
+    workspace: ${WORKSPACE_MCP_URL:http://localhost:8093/mcp}
+  # A6: each agent gets only the tools it needs, filtered by name
+  allowlists:
+    scout: {marketplace: [search_jobs, get_job, list_events, marketplace_status]}
+    analyst: {}
+    risk_assessor: {marketplace: [get_job, get_client_history]}
+    fit_matcher: {portfolio: [search_evidence, list_skills, get_case_study]}
+    pricing: {marketplace: [get_market_stats, get_connects_balance, get_client_history, get_policy]}
+    writer: {portfolio: [search_evidence, get_case_study]}
+    verifier: {portfolio: [search_evidence]}
+    critic: {portfolio: [search_evidence]}
+    compliance: {}
+    client_liaison:
+      marketplace: [list_conversations, list_messages, send_message]
+      workspace: [find_free_slots, create_interview_hold, create_email_draft]
+      portfolio: [search_evidence]
+    submitter: {marketplace: [create_proposal_draft, submit_proposal, get_connects_balance, marketplace_status]}
+    pipeline_sync: {marketplace: [list_events, list_conversations, marketplace_status]}
