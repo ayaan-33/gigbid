@@ -1,0 +1,26 @@
+{
+ "persona": "ai_ml_engineer",
+ "n_jobs": 20,
+ "candidates_per_requirement": 15,
+ "doc_chars": 700,
+ "models": {
+  "Xenova/ms-marco-MiniLM-L-6-v2": {
+   "recall@5": 0.3425,
+   "p50_job_s": 0.622,
+   "p95_job_s": 1.048,
+   "ms_per_pair": 13.3
+  },
+  "jinaai/jina-reranker-v1-turbo-en": {
+   "recall@5": 0.2925,
+   "p50_job_s": 0.802,
+   "p95_job_s": 1.344,
+   "ms_per_pair": 17.1
+  },
+  "BAAI/bge-reranker-v2-m3-int8": {
+   "recall@5": 0.3625,
+   "p50_job_s": 6.352,
+   "p95_job_s": 10.59,
+   "ms_per_pair": 137.2
+  }
+ }
+}

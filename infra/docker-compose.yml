@@ -1,0 +1,111 @@
+# GigBid: `docker compose -f infra/docker-compose.yml up` runs everything locally.
+# `--profile local` adds Ollama for the open_local model profile (laptop); the deployed VM uses
+# hosted open models (Groq free tier) and can add Ollama as a fallback.
+name: gigbid
+
+x-app-env: &app-env
+  env_file: ../.env
+  environment:
+    DATABASE_URL: postgresql://gigbid:gigbid@postgres:5432/gigbid
+    REDIS_URL: redis://redis:6379/0
+    GIGSIM_BASE_URL: http://gigsim:8081
+    PORTFOLIO_MCP_URL: http://mcp-portfolio:8091/mcp
+    MARKETPLACE_MCP_URL: http://mcp-marketplace:8092/mcp
+    WORKSPACE_MCP_URL: http://mcp-workspace:8093/mcp
+    OLLAMA_BASE_URL: http://ollama:11434
+    MCP_TRANSPORT: http
+    HF_HOME: /models
+    FASTEMBED_CACHE_PATH: /models/fastembed
+  volumes:
+    - appcache:/app/.cache
+    - models:/models
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: gigbid
+      POSTGRES_PASSWORD: gigbid
+      POSTGRES_DB: gigbid
+    ports: ["5432:5432"]
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U gigbid"]
+      interval: 5s
+      retries: 20
+
+  redis:
+    image: redis:7-alpine
+    ports: ["6379:6379"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      retries: 20
+
+  gigsim:
+    build: {context: .., dockerfile: infra/docker/gigsim.Dockerfile}
+    env_file: ../.env
+    environment:
+      GIGSIM_DB: /data/gigsim.sqlite
+      GIGSIM_SEED_DIR: /app/data/gigsim_seed
+    volumes: [gigsimdata:/data]
+    ports: ["8081:8081"]
+
+  mcp-portfolio:
+    build: {context: .., dockerfile: infra/docker/python.Dockerfile}
+    command: ["python", "-m", "mcp_servers.portfolio.server"]
+    <<: *app-env
+    ports: ["8091:8091"]
+
+  mcp-marketplace:
+    build: {context: .., dockerfile: infra/docker/python.Dockerfile}
+    command: ["python", "-m", "mcp_servers.marketplace.server"]
+    <<: *app-env
+    depends_on: [gigsim]
+    ports: ["8092:8092"]
+
+  mcp-workspace:
+    build: {context: .., dockerfile: infra/docker/python.Dockerfile}
+    command: ["python", "-m", "mcp_servers.workspace.server"]
+    <<: *app-env
+    ports: ["8093:8093"]
+
+  api:
+    build: {context: .., dockerfile: infra/docker/python.Dockerfile}
+    command: ["uvicorn", "apps.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+    <<: *app-env
+    depends_on:
+      postgres: {condition: service_healthy}
+      redis: {condition: service_healthy}
+      mcp-portfolio: {condition: service_started}
+      mcp-marketplace: {condition: service_started}
+      mcp-workspace: {condition: service_started}
+    ports: ["8000:8000"]
+
+  worker:
+    build: {context: .., dockerfile: infra/docker/python.Dockerfile}
+    command: ["arq", "worker.main.WorkerSettings"]
+    <<: *app-env
+    depends_on:
+      postgres: {condition: service_healthy}
+      redis: {condition: service_healthy}
+
+  web:
+    build: {context: ../apps/web, dockerfile: ../../infra/docker/web.Dockerfile}
+    environment:
+      API_INTERNAL_URL: http://api:8000
+    depends_on: [api]
+    ports: ["3000:3000"]
+
+  ollama:
+    image: ollama/ollama:latest
+    profiles: [local]
+    volumes: [ollama:/root/.ollama]
+    ports: ["11434:11434"]
+
+volumes:
+  pgdata: {}
+  gigsimdata: {}
+  appcache: {}
+  models: {}
+  ollama: {}

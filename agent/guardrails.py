@@ -12,7 +12,8 @@ _PATTERNS = [
     ("card", re.compile(r"\b(?:\d[ -]?){13,19}\b")),
     ("iban", re.compile(r"\b[A-Z]{2}\d{2}[A-Z0-9]{11,30}\b")),
     ("crypto", re.compile(r"\b(0x[a-fA-F0-9]{40}|[13][a-km-zA-HJ-NP-Z1-9]{25,34}|bc1[a-z0-9]{25,60})\b")),
-    ("phone", re.compile(r"(?<![\w.])\+?\d[\d\s().-]{7,}\d(?![\w.])")),
+    # phones need a leading + or separators; dotted IPs / versions / ports are not phones
+    ("phone", re.compile(r"(?<![\w.:])(?:\+\d{1,3}[\s.-]?\(?\d{2,4}\)?[\s.-]?\d{3,4}[\s.-]?\d{3,4}|\(?\d{3}\)?[\s-]\d{3}[\s-]\d{4})(?![\w.])")),
     ("handle", re.compile(r"(?i)\b(telegram|whatsapp|skype|signal|wechat)\s*[:@]?\s*@?[\w.+-]{3,}")),
 ]
 SECRET_KEYS = re.compile(r"(?i)(token|secret|password|api[_-]?key|authorization|cookie)")

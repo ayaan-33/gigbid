@@ -20,8 +20,10 @@ models:
       api_key_env: GROQ_API_KEY
       small: openai/gpt-oss-20b
       large: openai/gpt-oss-120b
-      fallback_small: qwen/qwen3.8-27b
+      fallback_small: qwen/qwen3.8-27b       # 1k output tokens/min on free tier: small outputs only
+      fallback_large: openai/gpt-oss-20b
       injection_guard: meta-llama/llama-prompt-guard-2-86m
+      tokens_per_minute: 7500                # Groq free tier: 8k TPM per model (client-side pacing)
       # Groq list prices (USD per 1M tokens). We run on the FREE tier, so actual spend is $0;
       # these list prices are used only to report a comparable "cost if paid" figure.
       prices_usd_per_mtok:
@@ -35,6 +37,7 @@ models:
       small: qwen3:4b
       large: qwen3:4b
       fallback_small: qwen3:4b
+      fallback_large: qwen3:4b
       prices_usd_per_mtok: {}
   nodes:                                     # tier per node: small = cheap/frequent, large = quality
     scout: small
@@ -57,22 +60,39 @@ models:
     writer: 0.6
     data_generator: 0.8
   request_timeout_s: 60
+  rate_limit_wait_budget_s: 90             # total time a call may wait on provider 429s
+  max_output_tokens:                       # explicit caps keep requests inside free-tier limits
+    default: 900
+    analyst: 900
+    risk_assessor: 600
+    writer: 1400
+    verifier: 1200
+    critic: 700
+    compliance: 1400
+    intent: 300
+    client_liaison: 500
+    judge: 500
   max_retries: 2
   embeddings: nomic-ai/nomic-embed-text-v1.5
   embedding_dim: 768
-  reranker: BAAI/bge-reranker-v2-m3-int8     # int8 ONNX build of bge-reranker-v2-m3 (CPU)
+  # chosen by evals/results/reranker_bench.json: within 0.02 Recall@5 of bge-reranker-v2-m3 at 1/10 the latency
+  reranker: Xenova/ms-marco-MiniLM-L-6-v2
   reranker_fallback: Xenova/ms-marco-MiniLM-L-6-v2
+  reranker_quality: BAAI/bge-reranker-v2-m3-int8   # measured alternative (10x slower on CPU)
 
 rag:
   variant: ${RAG_VARIANT:v3_rerank}          # final value set from evals/results/rag_variants.json
   top_k: 5
   candidate_k: 30
+  rerank_k: 15                               # candidates sent to the cross-encoder
+  rerank_doc_chars: 700
   chunk_tokens: 350
   chunk_overlap: 50
   rrf_k: 60
   outcome_boost: {won: 0.25, replied: 0.12, ignored: -0.10}
   corrective_min_score: 0.35
   corrective_max_requeries: 2
+  max_proposals_in_top_k: 2
 
 budgets:
   max_graph_steps: 40
@@ -162,3 +182,12 @@ mcp:
       portfolio: [search_evidence]
     submitter: {marketplace: [create_proposal_draft, submit_proposal, get_connects_balance, marketplace_status]}
     pipeline_sync: {marketplace: [list_events, list_conversations, marketplace_status]}
+
+nodes:
+  max_attempts: 2
+  timeouts:                 # seconds; every node is bounded
+    default: 120
+    writer: 180
+    critic: 120
+    fit_matcher: 120
+    client_liaison: 150

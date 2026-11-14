@@ -16,6 +16,7 @@ import contextvars
 import hashlib
 import json
 import os
+import re
 import sqlite3
 import time
 from dataclasses import dataclass, field
@@ -93,9 +94,9 @@ def _profile() -> dict[str, Any]:
 
 def model_for(node: str, fallback: bool = False) -> str:
     prof = _profile()
-    if fallback:
-        return prof["fallback_small"]
     tier = cfg(f"models.nodes.{node}", "small")
+    if fallback:
+        return prof.get(f"fallback_{tier}") or prof["fallback_small"]
     return prof[tier]
 
 
@@ -164,6 +165,35 @@ class LLMError(RuntimeError):
     pass
 
 
+class TokenRateLimiter:
+    """Client-side pacing per model (free tiers: ~8k tokens/min). Reserves an estimate before a
+    call so concurrent graph runs queue politely instead of hammering the provider into 429s."""
+
+    def __init__(self) -> None:
+        self.window: dict[str, list[tuple[float, int]]] = {}
+        self.lock = asyncio.Lock()
+
+    async def acquire(self, model: str, tokens: int) -> None:
+        limit = int(cfg(f"models.profiles.{profile_name()}.tokens_per_minute", 0) or 0)
+        if not limit:
+            return
+        tokens = min(tokens, limit)
+        while True:
+            async with self.lock:
+                now = time.monotonic()
+                w = [(t, n) for t, n in self.window.get(model, []) if now - t < 60]
+                used = sum(n for _, n in w)
+                if used + tokens <= limit:
+                    w.append((now, tokens))
+                    self.window[model] = w
+                    return
+                wait = 60 - (now - w[0][0]) + 0.05 if w else 1.0
+            await asyncio.sleep(min(wait, 10))
+
+
+RATE = TokenRateLimiter()
+
+
 async def complete(
     node: str,
     system: str,
@@ -176,8 +206,11 @@ async def complete(
     """One chat completion with bounded retries, fallback model, cache and accounting."""
     msgs: list[BaseMessage] = [SystemMessage(system), HumanMessage(user)]
     attempts = cfg("models.max_retries", 2) + 1
+    max_tokens = max_tokens or cfg(f"models.max_output_tokens.{node}", cfg("models.max_output_tokens.default", 900))
     last_err: Exception | None = None
-    for attempt in range(attempts + 1):
+    rate_waited = 0.0
+    attempt = 0
+    while attempt <= attempts:
         use_fallback = attempt == attempts  # final attempt goes to the fallback model
         model = model_for(node, fallback=use_fallback)
         cache = _get_cache()
@@ -185,20 +218,26 @@ async def complete(
         if cache and (hit := cache.get(ck)) is not None:
             _record(node, model, 0, 0, 0.0, cached=True)
             return hit
-        kwargs: dict[str, Any] = {}
+        kwargs: dict[str, Any] = {"max_tokens": max_tokens}
         if temperature is not None:
             kwargs["temperature"] = temperature
-        if max_tokens:
-            kwargs["max_tokens"] = max_tokens
         if json_mode:
             kwargs["model_kwargs"] = {"response_format": {"type": "json_object"}}
         llm = chat_model(node, fallback=use_fallback, **kwargs)
+        await RATE.acquire(model, (len(system) + len(user)) // 4 + max_tokens)
         t0 = time.perf_counter()
         try:
             resp: AIMessage = await llm.ainvoke(msgs, config={"run_name": node, "tags": [node]})
         except Exception as e:  # noqa: BLE001 - rate limits, 5xx, timeouts
             last_err = e
+            wait = _retry_after(e)
+            # a provider-told rate-limit wait is not a failure: honour it (within a budget)
+            if wait is not None and rate_waited + wait <= cfg("models.rate_limit_wait_budget_s", 90):
+                rate_waited += wait
+                await asyncio.sleep(wait)
+                continue
             await asyncio.sleep(min(2**attempt + 0.25 * attempt, 20))
+            attempt += 1
             continue
         dt = time.perf_counter() - t0
         um = resp.usage_metadata or {}
@@ -208,6 +247,22 @@ async def complete(
             cache.set(ck, text)
         return text
     raise LLMError(f"{node}: all attempts failed: {last_err}")
+
+
+_RETRY = re.compile(r"try again in (?:(\d+)m)?([\d.]+)s", re.I)
+
+
+def _retry_after(e: Exception) -> float | None:
+    """Seconds the provider asked us to wait on a 429 (None if not a rate limit)."""
+    msg = str(e)
+    if "429" not in msg and "rate limit" not in msg.lower():
+        return None
+    if "Request too large" in msg:
+        return None  # waiting will not help; fall through to the fallback model
+    m = _RETRY.search(msg)
+    if not m:
+        return 5.0
+    return float(m.group(1) or 0) * 60 + float(m.group(2)) + 0.5
 
 
 def _record(node: str, model: str, inp: int, out: int, dt: float, cached: bool = False) -> None:

@@ -11,6 +11,7 @@ Flags
   contextual   chunks indexed with a generated context line (index built with it)   (V6)
   hyde         query with a hypothetical ideal proposal paragraph                    (V7)
   corrective   grade evidence, re-query when weak, refuse to claim when none         (V8, see v8_corrective)
+  diversify    at most N past proposals in the top-k (tuning component, ablated)
 """
 
 from __future__ import annotations
@@ -38,6 +39,7 @@ class Flags:
     contextual: bool = False
     hyde: bool = False
     corrective: bool = False
+    diversify: bool = False  # cap past proposals in the top-k (proof > phrasing)
 
 
 @dataclass
@@ -132,8 +134,10 @@ class Pipeline:
             fused = _rrf([dense, sparse], self.rrf_k)
             cands = sorted(fused.values(), key=lambda t: -t[1])[: self.cand_k]
         if f.rerank and cands:
-            scores = rerank(text, [(c.context + "\n" + c.text)[:1500] for c, _ in cands])
-            cands = sorted(zip([c for c, _ in cands], scores, strict=True), key=lambda t: -t[1])
+            top = cands[: cfg("rag.rerank_k", 15)]
+            n = cfg("rag.rerank_doc_chars", 700)
+            scores = rerank(text, [(c.context + "\n" + c.text)[:n] for c, _ in top])
+            cands = sorted(zip([c for c, _ in top], scores, strict=True), key=lambda t: -t[1]) + cands[len(top):]
         return cands
 
     def _boost(self, persona: str, scored: list[tuple[Chunk, float]]) -> list[tuple[Chunk, float]]:
@@ -201,7 +205,22 @@ class Pipeline:
                         h.requirement_ids.append(rid)
                     h.score = max(h.score, s)
         hits = [best[e] for e in order]
+        if self.flags.diversify:
+            hits = _diversify(hits, k, max_proposals=cfg("rag.max_proposals_in_top_k", 2))
         return hits[: max(k, 10)]
+
+
+def _diversify(hits: list[EvidenceHit], k: int, max_proposals: int) -> list[EvidenceHit]:
+    """Keep at most `max_proposals` past proposals inside the top-k; the rest move down. Past
+    proposals show phrasing that worked; case studies, repos and reviews prove the work."""
+    top, rest, n_prop = [], [], 0
+    for h in hits:
+        if len(top) < k and (h.type != "proposal" or n_prop < max_proposals):
+            top.append(h)
+            n_prop += h.type == "proposal"
+        else:
+            rest.append(h)
+    return top + rest
 
 
 def _dedupe(xs: list[str]) -> list[str]:
