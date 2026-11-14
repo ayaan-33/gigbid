@@ -15,6 +15,7 @@ reached through `ToolBox(agent)`:
 from __future__ import annotations
 
 import asyncio
+import contextvars as _cv
 import json
 import os
 import random
@@ -70,13 +71,26 @@ class Caller:
 
 
 # Execution trace (kept apart from graph state and long-term memory): every tool call made in
-# the current run. The graph copies these into the `tool_events` table and Langfuse.
-_calls: list[CallRecord] = []
+# the current run. Per-run (context variable), so concurrent graph runs never mix their traces.
+_calls_var: _cv.ContextVar[list[CallRecord] | None] = _cv.ContextVar("mcp_calls", default=None)
+_global_calls: list[CallRecord] = []  # fallback outside a run (tests, scripts)
+
+
+def start_call_log() -> list[CallRecord]:
+    log: list[CallRecord] = []
+    _calls_var.set(log)
+    return log
+
+
+def _calls() -> list[CallRecord]:
+    log = _calls_var.get()
+    return log if log is not None else _global_calls
 
 
 def drain_calls() -> list[CallRecord]:
-    out = list(_calls)
-    _calls.clear()
+    log = _calls()
+    out = list(log)
+    log.clear()
     return out
 
 
@@ -145,7 +159,7 @@ class ToolBox:
         for attempt in range(self.retries + 1):
             try:
                 result = await asyncio.wait_for(self._call_once(server, tool, args), self.timeout)
-                _calls.append(CallRecord(self.agent, server, tool, args, True, round(time.perf_counter() - t0, 3),
+                _calls().append(CallRecord(self.agent, server, tool, args, True, round(time.perf_counter() - t0, 3),
                                          result_preview=json.dumps(result, default=str)[:300]))
                 return result
             except ToolError as e:
@@ -153,7 +167,7 @@ class ToolBox:
                 if "MARKETPLACE_UNAVAILABLE" in msg:
                     last = msg
                     break  # adapter already retried with backoff; don't hammer it
-                _calls.append(CallRecord(self.agent, server, tool, args, False, round(time.perf_counter() - t0, 3), msg[:300]))
+                _calls().append(CallRecord(self.agent, server, tool, args, False, round(time.perf_counter() - t0, 3), msg[:300]))
                 raise
             except (TimeoutError, ConnectionError, OSError) as e:
                 last = f"{type(e).__name__}: {e}"
@@ -163,7 +177,7 @@ class ToolBox:
                 else:
                     raise
             await asyncio.sleep(min(8, 0.5 * 2**attempt) * (0.5 + random.random() / 2))
-        _calls.append(CallRecord(self.agent, server, tool, args, False, round(time.perf_counter() - t0, 3), last[:300]))
+        _calls().append(CallRecord(self.agent, server, tool, args, False, round(time.perf_counter() - t0, 3), last[:300]))
         raise Degraded(server, last)
 
     async def _call_once(self, server: str, tool: str, args: dict[str, Any]) -> Any:

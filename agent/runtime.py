@@ -21,7 +21,7 @@ from typing import Any
 from langgraph.types import Command
 
 from agent.llm import start_ledger
-from agent.mcp_client import drain_calls
+from agent.mcp_client import drain_calls, start_call_log
 from agent.tracing import langfuse_handler, trace_metadata, trace_url
 
 _stack: AsyncExitStack | None = None
@@ -135,6 +135,7 @@ def _config(thread_id: str, user_id: str, kind: str) -> dict:
 async def _drive(kind: str, thread_id: str, user_id: str, inp: Any) -> dict:
     g = graph(kind)
     led = start_ledger()
+    start_call_log()
     t0 = time.perf_counter()
     await publish(thread_id, user_id, {"type": "run_start", "kind": kind})
     final: dict = {}

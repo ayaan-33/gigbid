@@ -1,0 +1,59 @@
+{
+ "metric_definitions": "(documented in the report):\n  Recall@5  = |top5 \u2229 gold| / min(5, |gold|)       (capped so a perfect top-5 scores 1.0)\n  MRR       = 1 / rank of the first gold item (0 if none in top 10)\n  nDCG@10   = binary-relevance DCG@10 / ideal DCG@10 with min(10, |gold|) relevant items\nOnly `bid` jobs (the ones a proposal is written for) have gold evidence.",
+ "variants": {
+  "v3_rerank": {
+   "ai_ml_engineer": {
+    "n": 96,
+    "recall@5": 0.2108,
+    "mrr": 0.349,
+    "ndcg@10": 0.2167,
+    "p50_latency_s": 0.648,
+    "p95_latency_s": 1.058
+   },
+   "all": {
+    "recall@5": 0.2108,
+    "mrr": 0.349,
+    "ndcg@10": 0.2167,
+    "n": 96,
+    "recall@5_4plus_requirements": 0.2333,
+    "n_4plus_requirements": 36
+   }
+  },
+  "v5_multivector": {
+   "ai_ml_engineer": {
+    "n": 96,
+    "recall@5": 0.3106,
+    "mrr": 0.5371,
+    "ndcg@10": 0.3279,
+    "p50_latency_s": 0.679,
+    "p95_latency_s": 1.111
+   },
+   "all": {
+    "recall@5": 0.3106,
+    "mrr": 0.5371,
+    "ndcg@10": 0.3279,
+    "n": 96,
+    "recall@5_4plus_requirements": 0.3333,
+    "n_4plus_requirements": 36
+   }
+  },
+  "v6_contextual": {
+   "ai_ml_engineer": {
+    "n": 96,
+    "recall@5": 0.1991,
+    "mrr": 0.3694,
+    "ndcg@10": 0.2253,
+    "p50_latency_s": 0.764,
+    "p95_latency_s": 1.257
+   },
+   "all": {
+    "recall@5": 0.1991,
+    "mrr": 0.3694,
+    "ndcg@10": 0.2253,
+    "n": 96,
+    "recall@5_4plus_requirements": 0.2056,
+    "n_4plus_requirements": 36
+   }
+  }
+ }
+}

@@ -1,0 +1,243 @@
+{
+ "metric_definitions": "(documented in the report):\n  Recall@5  = |top5 \u2229 gold| / min(5, |gold|)       (capped so a perfect top-5 scores 1.0)\n  MRR       = 1 / rank of the first gold item (0 if none in top 10)\n  nDCG@10   = binary-relevance DCG@10 / ideal DCG@10 with min(10, |gold|) relevant items\nOnly `bid` jobs (the ones a proposal is written for) have gold evidence.",
+ "variants": {
+  "v0_naive": {
+   "ai_ml_engineer": {
+    "n": 96,
+    "recall@5": 0.1271,
+    "mrr": 0.2299,
+    "ndcg@10": 0.1209,
+    "p50_latency_s": 0.0,
+    "p95_latency_s": 0.0
+   },
+   "fullstack_dev": {
+    "n": 96,
+    "recall@5": 0.1038,
+    "mrr": 0.2283,
+    "ndcg@10": 0.0983,
+    "p50_latency_s": 0.0,
+    "p95_latency_s": 0.0
+   },
+   "data_analyst": {
+    "n": 96,
+    "recall@5": 0.0941,
+    "mrr": 0.2054,
+    "ndcg@10": 0.1056,
+    "p50_latency_s": 0.0,
+    "p95_latency_s": 0.0
+   },
+   "all": {
+    "recall@5": 0.1083,
+    "mrr": 0.2212,
+    "ndcg@10": 0.1083,
+    "n": 288,
+    "recall@5_4plus_requirements": 0.1476,
+    "n_4plus_requirements": 84
+   }
+  },
+  "v1_decompose": {
+   "ai_ml_engineer": {
+    "n": 96,
+    "recall@5": 0.2019,
+    "mrr": 0.3795,
+    "ndcg@10": 0.1964,
+    "p50_latency_s": 0.0,
+    "p95_latency_s": 0.0
+   },
+   "fullstack_dev": {
+    "n": 96,
+    "recall@5": 0.2064,
+    "mrr": 0.4871,
+    "ndcg@10": 0.2398,
+    "p50_latency_s": 0.0,
+    "p95_latency_s": 0.0
+   },
+   "data_analyst": {
+    "n": 96,
+    "recall@5": 0.154,
+    "mrr": 0.3047,
+    "ndcg@10": 0.1559,
+    "p50_latency_s": 0.0,
+    "p95_latency_s": 0.001
+   },
+   "all": {
+    "recall@5": 0.1874,
+    "mrr": 0.3904,
+    "ndcg@10": 0.1973,
+    "n": 288,
+    "recall@5_4plus_requirements": 0.2325,
+    "n_4plus_requirements": 84
+   }
+  },
+  "v2_hybrid": {
+   "ai_ml_engineer": {
+    "n": 96,
+    "recall@5": 0.1587,
+    "mrr": 0.326,
+    "ndcg@10": 0.1746,
+    "p50_latency_s": 0.001,
+    "p95_latency_s": 0.002
+   },
+   "fullstack_dev": {
+    "n": 96,
+    "recall@5": 0.2444,
+    "mrr": 0.4639,
+    "ndcg@10": 0.2465,
+    "p50_latency_s": 0.001,
+    "p95_latency_s": 0.002
+   },
+   "data_analyst": {
+    "n": 96,
+    "recall@5": 0.1852,
+    "mrr": 0.3275,
+    "ndcg@10": 0.1899,
+    "p50_latency_s": 0.001,
+    "p95_latency_s": 0.003
+   },
+   "all": {
+    "recall@5": 0.1961,
+    "mrr": 0.3724,
+    "ndcg@10": 0.2037,
+    "n": 288,
+    "recall@5_4plus_requirements": 0.2373,
+    "n_4plus_requirements": 84
+   }
+  },
+  "v3_rerank": {
+   "ai_ml_engineer": {
+    "n": 96,
+    "recall@5": 0.2108,
+    "mrr": 0.349,
+    "ndcg@10": 0.2167,
+    "p50_latency_s": 1.766,
+    "p95_latency_s": 3.354
+   },
+   "fullstack_dev": {
+    "n": 96,
+    "recall@5": 0.2436,
+    "mrr": 0.4506,
+    "ndcg@10": 0.247,
+    "p50_latency_s": 2.193,
+    "p95_latency_s": 3.442
+   },
+   "data_analyst": {
+    "n": 96,
+    "recall@5": 0.2069,
+    "mrr": 0.3762,
+    "ndcg@10": 0.2031,
+    "p50_latency_s": 1.639,
+    "p95_latency_s": 3.316
+   },
+   "all": {
+    "recall@5": 0.2204,
+    "mrr": 0.3919,
+    "ndcg@10": 0.2223,
+    "n": 288,
+    "recall@5_4plus_requirements": 0.2587,
+    "n_4plus_requirements": 84
+   }
+  },
+  "v4_outcome": {
+   "ai_ml_engineer": {
+    "n": 96,
+    "recall@5": 0.2052,
+    "mrr": 0.399,
+    "ndcg@10": 0.2277,
+    "p50_latency_s": 2.429,
+    "p95_latency_s": 3.971
+   },
+   "fullstack_dev": {
+    "n": 96,
+    "recall@5": 0.2132,
+    "mrr": 0.3922,
+    "ndcg@10": 0.2275,
+    "p50_latency_s": 1.989,
+    "p95_latency_s": 3.089
+   },
+   "data_analyst": {
+    "n": 96,
+    "recall@5": 0.2222,
+    "mrr": 0.3562,
+    "ndcg@10": 0.2461,
+    "p50_latency_s": 1.631,
+    "p95_latency_s": 3.179
+   },
+   "all": {
+    "recall@5": 0.2135,
+    "mrr": 0.3825,
+    "ndcg@10": 0.2338,
+    "n": 288,
+    "recall@5_4plus_requirements": 0.2833,
+    "n_4plus_requirements": 84
+   }
+  },
+  "v5_multivector": {
+   "ai_ml_engineer": {
+    "n": 96,
+    "recall@5": 0.3106,
+    "mrr": 0.5371,
+    "ndcg@10": 0.3279,
+    "p50_latency_s": 2.188,
+    "p95_latency_s": 3.381
+   },
+   "fullstack_dev": {
+    "n": 96,
+    "recall@5": 0.2976,
+    "mrr": 0.4505,
+    "ndcg@10": 0.2817,
+    "p50_latency_s": 2.135,
+    "p95_latency_s": 3.26
+   },
+   "data_analyst": {
+    "n": 96,
+    "recall@5": 0.3602,
+    "mrr": 0.4764,
+    "ndcg@10": 0.3549,
+    "p50_latency_s": 1.563,
+    "p95_latency_s": 3.073
+   },
+   "all": {
+    "recall@5": 0.3228,
+    "mrr": 0.488,
+    "ndcg@10": 0.3215,
+    "n": 288,
+    "recall@5_4plus_requirements": 0.3579,
+    "n_4plus_requirements": 84
+   }
+  },
+  "v8_corrective": {
+   "ai_ml_engineer": {
+    "n": 96,
+    "recall@5": 0.1741,
+    "mrr": 0.2762,
+    "ndcg@10": 0.1592,
+    "p50_latency_s": 3.082,
+    "p95_latency_s": 8.333
+   },
+   "fullstack_dev": {
+    "n": 96,
+    "recall@5": 0.0861,
+    "mrr": 0.159,
+    "ndcg@10": 0.0925,
+    "p50_latency_s": 3.012,
+    "p95_latency_s": 5.182
+   },
+   "data_analyst": {
+    "n": 96,
+    "recall@5": 0.1734,
+    "mrr": 0.3094,
+    "ndcg@10": 0.1844,
+    "p50_latency_s": 1.986,
+    "p95_latency_s": 4.942
+   },
+   "all": {
+    "recall@5": 0.1446,
+    "mrr": 0.2482,
+    "ndcg@10": 0.1454,
+    "n": 288,
+    "recall@5_4plus_requirements": 0.1714,
+    "n_4plus_requirements": 84
+   }
+  }
+ }
+}

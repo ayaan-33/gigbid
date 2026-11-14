@@ -55,11 +55,17 @@ models:
     judge: large
     simulated_client: small
     data_generator: large
+    contextual: small
   temperature:
     default: 0.2
     writer: 0.6
     data_generator: 0.8
   request_timeout_s: 60
+  reasoning_effort:                        # gpt-oss only; hidden reasoning tokens count against free limits
+    default: low
+    writer: medium
+    critic: medium
+    judge: medium
   rate_limit_wait_budget_s: 90             # total time a call may wait on provider 429s
   max_output_tokens:                       # explicit caps keep requests inside free-tier limits
     default: 900

@@ -1,0 +1,107 @@
+{
+ "metric_definitions": "(documented in the report):\n  Recall@5  = |top5 \u2229 gold| / min(5, |gold|)       (capped so a perfect top-5 scores 1.0)\n  MRR       = 1 / rank of the first gold item (0 if none in top 10)\n  nDCG@10   = binary-relevance DCG@10 / ideal DCG@10 with min(10, |gold|) relevant items\nOnly `bid` jobs (the ones a proposal is written for) have gold evidence.",
+ "variants": {
+  "v3_rerank": {
+   "ai_ml_engineer": {
+    "n": 30,
+    "recall@5": 0.2483,
+    "mrr": 0.3667,
+    "ndcg@10": 0.2315,
+    "p50_latency_s": 0.711,
+    "p95_latency_s": 1.148
+   },
+   "fullstack_dev": {
+    "n": 30,
+    "recall@5": 0.2372,
+    "mrr": 0.4975,
+    "ndcg@10": 0.2497,
+    "p50_latency_s": 0.717,
+    "p95_latency_s": 1.057
+   },
+   "data_analyst": {
+    "n": 30,
+    "recall@5": 0.2344,
+    "mrr": 0.4072,
+    "ndcg@10": 0.2217,
+    "p50_latency_s": 0.541,
+    "p95_latency_s": 0.81
+   },
+   "all": {
+    "recall@5": 0.24,
+    "mrr": 0.4238,
+    "ndcg@10": 0.2343,
+    "n": 90,
+    "recall@5_4plus_requirements": 0.2692,
+    "n_4plus_requirements": 26
+   }
+  },
+  "v5_multivector": {
+   "ai_ml_engineer": {
+    "n": 30,
+    "recall@5": 0.3683,
+    "mrr": 0.5542,
+    "ndcg@10": 0.3739,
+    "p50_latency_s": 0.701,
+    "p95_latency_s": 1.135
+   },
+   "fullstack_dev": {
+    "n": 30,
+    "recall@5": 0.3889,
+    "mrr": 0.5037,
+    "ndcg@10": 0.3303,
+    "p50_latency_s": 0.718,
+    "p95_latency_s": 1.064
+   },
+   "data_analyst": {
+    "n": 30,
+    "recall@5": 0.39,
+    "mrr": 0.5149,
+    "ndcg@10": 0.3886,
+    "p50_latency_s": 0.532,
+    "p95_latency_s": 0.812
+   },
+   "all": {
+    "recall@5": 0.3824,
+    "mrr": 0.5242,
+    "ndcg@10": 0.3643,
+    "n": 90,
+    "recall@5_4plus_requirements": 0.4769,
+    "n_4plus_requirements": 26
+   }
+  },
+  "v7_hyde": {
+   "ai_ml_engineer": {
+    "n": 30,
+    "recall@5": 0.2217,
+    "mrr": 0.3627,
+    "ndcg@10": 0.2256,
+    "p50_latency_s": 1.179,
+    "p95_latency_s": 1.61
+   },
+   "fullstack_dev": {
+    "n": 30,
+    "recall@5": 0.2217,
+    "mrr": 0.5031,
+    "ndcg@10": 0.2435,
+    "p50_latency_s": 1.167,
+    "p95_latency_s": 1.488
+   },
+   "data_analyst": {
+    "n": 30,
+    "recall@5": 0.2033,
+    "mrr": 0.4094,
+    "ndcg@10": 0.2131,
+    "p50_latency_s": 0.865,
+    "p95_latency_s": 1.224
+   },
+   "all": {
+    "recall@5": 0.2156,
+    "mrr": 0.4251,
+    "ndcg@10": 0.2274,
+    "n": 90,
+    "recall@5_4plus_requirements": 0.2231,
+    "n_4plus_requirements": 26
+   }
+  }
+ }
+}

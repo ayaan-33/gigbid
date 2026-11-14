@@ -165,6 +165,9 @@ class LLMError(RuntimeError):
     pass
 
 
+_FAKE = None
+
+
 class TokenRateLimiter:
     """Client-side pacing per model (free tiers: ~8k tokens/min). Reserves an estimate before a
     call so concurrent graph runs queue politely instead of hammering the provider into 429s."""
@@ -204,6 +207,12 @@ async def complete(
     max_tokens: int | None = None,
 ) -> str:
     """One chat completion with bounded retries, fallback model, cache and accounting."""
+    if os.getenv("GIGBID_FAKE_LLM") == "1":  # CI / Playwright only
+        from agent.testing import FakeLLM
+
+        global _FAKE
+        _FAKE = _FAKE or FakeLLM()
+        return await _FAKE(node, system, user, json_mode=json_mode, temperature=temperature, max_tokens=max_tokens)
     msgs: list[BaseMessage] = [SystemMessage(system), HumanMessage(user)]
     attempts = cfg("models.max_retries", 2) + 1
     max_tokens = max_tokens or cfg(f"models.max_output_tokens.{node}", cfg("models.max_output_tokens.default", 900))
@@ -221,8 +230,14 @@ async def complete(
         kwargs: dict[str, Any] = {"max_tokens": max_tokens}
         if temperature is not None:
             kwargs["temperature"] = temperature
+        mk: dict[str, Any] = {}
         if json_mode:
-            kwargs["model_kwargs"] = {"response_format": {"type": "json_object"}}
+            mk["response_format"] = {"type": "json_object"}
+        effort = cfg(f"models.reasoning_effort.{node}", cfg("models.reasoning_effort.default"))
+        if effort and "gpt-oss" in model:
+            kwargs["reasoning_effort"] = effort  # gpt-oss: fewer hidden reasoning tokens on cheap nodes
+        if mk:
+            kwargs["model_kwargs"] = mk
         llm = chat_model(node, fallback=use_fallback, **kwargs)
         await RATE.acquire(model, (len(system) + len(user)) // 4 + max_tokens)
         t0 = time.perf_counter()

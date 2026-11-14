@@ -16,7 +16,8 @@ _PATTERNS = [
     ("phone", re.compile(r"(?<![\w.:])(?:\+\d{1,3}[\s.-]?\(?\d{2,4}\)?[\s.-]?\d{3,4}[\s.-]?\d{3,4}|\(?\d{3}\)?[\s-]\d{3}[\s-]\d{4})(?![\w.])")),
     ("handle", re.compile(r"(?i)\b(telegram|whatsapp|skype|signal|wechat)\s*[:@]?\s*@?[\w.+-]{3,}")),
 ]
-SECRET_KEYS = re.compile(r"(?i)(token|secret|password|api[_-]?key|authorization|cookie)")
+# secret-looking KEYS (access_token, api_key, password...) but not counters like "tokens"
+SECRET_KEYS = re.compile(r"(?i)(^|[_-])(token|secret|password|passwd|api[_-]?key|authorization|cookie|bearer)$")
 
 
 def mask_pii(text: str) -> str:

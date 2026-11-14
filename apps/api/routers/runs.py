@@ -89,7 +89,7 @@ async def stream(thread_id: str, request: Request, uid: str = CurrentUser) -> Ev
                     last_id = i
                     yield {"event": "node", "id": str(i), "data": json.dumps(e, default=str)}
 
-    return EventSourceResponse(gen())
+    return EventSourceResponse(gen(), headers={"Cache-Control": "no-cache, no-transform", "X-Accel-Buffering": "no"})
 
 
 @router.get("/{thread_id}/history")
