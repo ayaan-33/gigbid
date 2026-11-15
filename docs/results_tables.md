@@ -40,6 +40,13 @@ Dev set (600 jobs): F1 0.34 at the initial fit threshold 0.55 → sweep → thre
 
 ### Single agent vs supervisor vs graph (R&D C)
 
+Model: `openai/gpt-oss-120b` (open)
+
+| System | Jobs | Bid/skip accuracy | Scam recall | Unsupported claims / proposal | Compliance violations left in text | Violations caught | GigSim reply rate | Tokens / job | p95 latency (s) |
+|---|---|---|---|---|---|---|---|---|---|
+| react | 6 | 0.5 | 0 | 0 | 0 | 0 | — | 1553.5 | 600 |
+| supervisor | 6 | 0.5 | 0 | 0 | 0 | 0 | — | 330.7 | 307.8 |
+| graph | 6 | 1 | 1 | 0 | 0 | 0 | — | 5919.8 | 431.9 |
 Model: `qwen3:4b` (open_local)
 
 | System | Jobs | Bid/skip accuracy | Scam recall | Unsupported claims / proposal | Compliance violations left in text | Violations caught | GigSim reply rate | Tokens / job | p95 latency (s) |

@@ -81,7 +81,7 @@ memory are separate:
 **MCP surface (Part A).** All marketplace access goes through **one port** (`marketplace_port.py`)
 with GigSim and live-Upwork adapters (R1). Only our Marketplace MCP server uses it. The servers:
 - **Portfolio** (read-only: 3 tools, 5 resource templates, 4 prompts; published as
-  `gigbid-portfolio-mcp`).
+  `ayaan33-gigbid-portfolio-mcp`).
 - **Marketplace:** 10 reads and 3 idempotent writes, with `dry_run`, Bearer auth, per-user rate
   limits and a hash-chained audit log.
 - **Workspace:** slots, holds and email drafts.

@@ -1,4 +1,26 @@
-# Deploy GigBid on Oracle Cloud (Always Free)
+# Deploy GigBid
+
+## Option A (used for the live demo): one container + free Cloudflare tunnel
+
+No account and no card. The whole stack (Postgres, Redis, GigSim, 3 MCP servers, API, worker,
+web) runs in **one container** built from `infra/hf/Dockerfile`, and `cloudflared` gives it a
+public HTTPS URL.
+
+```bash
+./scripts/deploy/live_local.sh
+```
+
+It prints `LIVE: https://<random>.trycloudflare.com`. Keep the host on and awake. The URL changes
+if the tunnel restarts; run the script again and share the new URL. Stop it with
+`./scripts/deploy/live_local.sh stop`.
+
+The same image runs on any Docker host with 4 GB of RAM, so it can move to a VM later unchanged
+(`docker run -p 7860:7860 --env-file .env gigbid-space`). We also tried a Hugging Face Docker
+Space (`scripts/deploy/hf_space.py`), but those now need a paid PRO plan, even on the free CPU
+tier.
+
+## Option B: Oracle Cloud Always Free VM (multi-container, Caddy HTTPS)
+
 
 Everything here is free: an Oracle **Always Free** VM, free **sslip.io** DNS, free **Let's Encrypt**
 HTTPS (automatic through Caddy) and the free **Groq** tier for open models. About 45 minutes.

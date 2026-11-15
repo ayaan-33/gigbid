@@ -189,15 +189,16 @@ def rqc_text() -> str:
         parts.append("")
     if not parts:
         return "_multi-agent comparison pending_"
-    parts.append("**Reading it.** The samples are small (6 jobs), so the differences are indicative only. Three patterns held:\n"
-                 "1. **The supervisor invents claims.** It was the only system that left unsupported claims in its proposals; "
-                 "its sub-agents pass prose, not typed evidence, so the writer cannot cite what it never received.\n"
-                 "2. **The graph's guarantees are structural.** Its scam handling, verification and compliance checks don't depend on "
-                 "the model choosing to call a tool. Its cost is latency: it makes the most calls, so on a 4B local model it "
-                 "hit the time cap on 4 of 6 jobs, including the scam (a timeout, not a wrong call: it never returned a decision). Its zero token count on the local run reflects jobs that timed out before reporting usage.\n"
-                 "3. **The single ReAct agent is cheapest but least controllable.** It skipped every good-fit job, because nothing "
-                 "forces it to gather evidence before deciding.\n\n"
-                 "We kept the graph for its auditability, typed handoffs and approval interrupts; the 600-job decision eval in §3 "
+    parts.append("**Reading it.** Both samples are small (6 jobs each), so treat the numbers as indicative. The pattern is consistent:\n"
+                 "1. **On Groq (`gpt-oss-120b`), only the graph finished every job:** 6/6 correct decisions, the scam caught, 0 errors. "
+                 "The prebuilt baselines failed on reliability, not intelligence. The single ReAct agent looped until the 600 s cap on 5 of 6 jobs, "
+                 "and the supervisor hit provider errors (`400 Tool choice is none, but model called a tool`) or timeouts on 3. Neither caught the scam.\n"
+                 "2. **The supervisor invents claims.** On the local model it was the only system that left unsupported claims in its proposals. "
+                 "Its sub-agents pass prose, not typed evidence, so the writer cannot cite what it never received.\n"
+                 "3. **The graph's cost is calls and latency.** It uses the most tokens per job, and on a 4B local model it hit the time cap on 4 of 6 jobs, "
+                 "including the scam (a timeout, not a wrong call). Its guarantees (risk floor, claim verification, Compliance Guard, approval interrupt) "
+                 "are structural, so they don't depend on the model choosing to call a tool.\n\n"
+                 "We kept the graph for its reliability, auditability, typed handoffs and approval interrupts. The 600-job decision eval in §3 "
                  "measures its decision path at scale (F1 0.938 on the hidden set).")
     return "\n".join(parts)
 

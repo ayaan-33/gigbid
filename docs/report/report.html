@@ -98,7 +98,7 @@ memory are separate:
 <p><strong>MCP surface (Part A).</strong> All marketplace access goes through <strong>one port</strong> (<code>marketplace_port.py</code>)
 with GigSim and live-Upwork adapters (R1). Only our Marketplace MCP server uses it. The servers:
 - <strong>Portfolio</strong> (read-only: 3 tools, 5 resource templates, 4 prompts; published as
-  <code>gigbid-portfolio-mcp</code>).
+  <code>ayaan33-gigbid-portfolio-mcp</code>).
 - <strong>Marketplace:</strong> 10 reads and 3 idempotent writes, with <code>dry_run</code>, Bearer auth, per-user rate
   limits and a hash-chained audit log.
 - <strong>Workspace:</strong> slots, holds and email drafts.</p>
@@ -327,6 +327,53 @@ or a bid above the client's hidden ceiling. Retrieval decides what the writer <e
 reacts to the first two sentences.</p>
 <p><strong>Shipped:</strong> <code>v5_norerank</code> (ADR 0004).</p>
 <h2>5. R&amp;D question C: single agent vs prebuilt supervisor vs our graph</h2>
+<p><strong>Groq run (<code>openai/gpt-oss-120b</code>, 6 jobs, the same model for all three systems).</strong> Errors are jobs that hit the 600 s per-job cap or a provider error; they count as wrong decisions.</p>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Bid/skip accuracy</th>
+<th>Scam recall</th>
+<th>Unsupported claims / proposal</th>
+<th>Violations left</th>
+<th>Tokens / job</th>
+<th>p95 latency (s)</th>
+<th>Errors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>react</td>
+<td>0.5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1553.5</td>
+<td>600</td>
+<td>5</td>
+</tr>
+<tr>
+<td>supervisor</td>
+<td>0.5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>330.7</td>
+<td>307.8</td>
+<td>3</td>
+</tr>
+<tr>
+<td>graph</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>5919.8</td>
+<td>431.9</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
 <p><strong>local run (<code>qwen3:4b</code>, 6 jobs, the same model for all three systems).</strong> Errors are jobs that hit the 600 s per-job cap or a provider error; they count as wrong decisions.</p>
 <table>
 <thead>
@@ -374,11 +421,11 @@ reacts to the first two sentences.</p>
 </tr>
 </tbody>
 </table>
-<p><strong>Reading it.</strong> The samples are small (6 jobs), so the differences are indicative only. Three patterns held:
-1. <strong>The supervisor invents claims.</strong> It was the only system that left unsupported claims in its proposals; its sub-agents pass prose, not typed evidence, so the writer cannot cite what it never received.
-2. <strong>The graph's guarantees are structural.</strong> Its scam handling, verification and compliance checks don't depend on the model choosing to call a tool. Its cost is latency: it makes the most calls, so on a 4B local model it hit the time cap on 4 of 6 jobs, including the scam (a timeout, not a wrong call: it never returned a decision). Its zero token count on the local run reflects jobs that timed out before reporting usage.
-3. <strong>The single ReAct agent is cheapest but least controllable.</strong> It skipped every good-fit job, because nothing forces it to gather evidence before deciding.</p>
-<p>We kept the graph for its auditability, typed handoffs and approval interrupts; the 600-job decision eval in §3 measures its decision path at scale (F1 0.938 on the hidden set).</p>
+<p><strong>Reading it.</strong> Both samples are small (6 jobs each), so treat the numbers as indicative. The pattern is consistent:
+1. <strong>On Groq (<code>gpt-oss-120b</code>), only the graph finished every job:</strong> 6/6 correct decisions, the scam caught, 0 errors. The prebuilt baselines failed on reliability, not intelligence. The single ReAct agent looped until the 600 s cap on 5 of 6 jobs, and the supervisor hit provider errors (<code>400 Tool choice is none, but model called a tool</code>) or timeouts on 3. Neither caught the scam.
+2. <strong>The supervisor invents claims.</strong> On the local model it was the only system that left unsupported claims in its proposals. Its sub-agents pass prose, not typed evidence, so the writer cannot cite what it never received.
+3. <strong>The graph's cost is calls and latency.</strong> It uses the most tokens per job, and on a 4B local model it hit the time cap on 4 of 6 jobs, including the scam (a timeout, not a wrong call). Its guarantees (risk floor, claim verification, Compliance Guard, approval interrupt) are structural, so they don't depend on the model choosing to call a tool.</p>
+<p>We kept the graph for its reliability, auditability, typed handoffs and approval interrupts. The 600-job decision eval in §3 measures its decision path at scale (F1 0.938 on the hidden set).</p>
 <h2>6. The change request</h2>
 <ul>
 <li><strong>What changed.</strong> GigSim policy v2 adds +4 Connects on jobs with 20 or more proposals, and makes
@@ -884,7 +931,73 @@ proposal.</p>
 </tbody>
 </table>
 <h3>Single agent vs supervisor vs graph (R&amp;D C)</h3>
-<p>Model: <code>qwen3:4b</code> (open_local)</p>
+<p>Model: <code>openai/gpt-oss-120b</code> (open)</p>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Jobs</th>
+<th>Bid/skip accuracy</th>
+<th>Scam recall</th>
+<th>Unsupported claims / proposal</th>
+<th>Compliance violations left in text</th>
+<th>Violations caught</th>
+<th>GigSim reply rate</th>
+<th>Tokens / job</th>
+<th>p95 latency (s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>react</td>
+<td>6</td>
+<td>0.5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>—</td>
+<td>1553.5</td>
+<td>600</td>
+</tr>
+<tr>
+<td>supervisor</td>
+<td>6</td>
+<td>0.5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>—</td>
+<td>330.7</td>
+<td>307.8</td>
+</tr>
+<tr>
+<td>graph</td>
+<td>6</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>—</td>
+<td>5919.8</td>
+<td>431.9</td>
+</tr>
+<tr>
+<td>Model: <code>qwen3:4b</code> (open_local)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <table>
 <thead>
 <tr>

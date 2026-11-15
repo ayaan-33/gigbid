@@ -6,7 +6,7 @@ everything.**
 ![30-second demo](docs/images/demo.gif)
 
 **Live app:** `https://<DOMAIN>`. A reviewer login is shared privately.
-**Demo video (3 min):** `<link>` · **Technical write-up:** `<link>` · **Portfolio MCP on PyPI:** `uvx gigbid-portfolio-mcp`
+**Demo video (3 min):** `<link>` · **Technical write-up:** `<link>` · **Portfolio MCP on PyPI:** `uvx ayaan33-gigbid-portfolio-mcp`
 
 GigBid is a team of LangGraph agents that:
 1. **Scout** saved searches on a schedule and de-duplicate new jobs.
@@ -101,6 +101,13 @@ Dev set (600 jobs): F1 0.34 at the initial fit threshold 0.55 → sweep → thre
 
 ### Single agent vs supervisor vs graph (R&D C)
 
+Model: `openai/gpt-oss-120b` (open)
+
+| System | Jobs | Bid/skip accuracy | Scam recall | Unsupported claims / proposal | Compliance violations left in text | Violations caught | GigSim reply rate | Tokens / job | p95 latency (s) |
+|---|---|---|---|---|---|---|---|---|---|
+| react | 6 | 0.5 | 0 | 0 | 0 | 0 | — | 1553.5 | 600 |
+| supervisor | 6 | 0.5 | 0 | 0 | 0 | 0 | — | 330.7 | 307.8 |
+| graph | 6 | 1 | 1 | 0 | 0 | 0 | — | 5919.8 | 431.9 |
 Model: `qwen3:4b` (open_local)
 
 | System | Jobs | Bid/skip accuracy | Scam recall | Unsupported claims / proposal | Compliance violations left in text | Violations caught | GigSim reply rate | Tokens / job | p95 latency (s) |
@@ -154,10 +161,10 @@ Only 4 proposals completed (free-tier rate limits and a network outage cut the r
 
 ## Public traces
 - See [docs/TRACES.md](docs/TRACES.md) (skipped scam, approved proposal, Critic loop, crash and resume)
-- Skipped scam: `<langfuse link>`
-- Approved proposal: `<langfuse link>`
-- Critic loop: `<langfuse link>`
-- Crash and resume: `<langfuse link>`
+- Skipped scam: https://cloud.langfuse.com/project/cmwg77zqn0119ad0jshvuwwkz/sessions/bid-u_review-job_00044-acb34b
+- Approved proposal: https://cloud.langfuse.com/project/cmwg77zqn0119ad0jshvuwwkz/sessions/bid-u_review-job_00154-c38c14
+- Critic loop (round 1 sent back 3/10, round 2 passed 9/10): https://cloud.langfuse.com/project/cmwg77zqn0119ad0jshvuwwkz/sessions/bid-u_review-job_00145-0483d1
+- Crash and resume (`kill -9` while awaiting approval, approve clicked twice, exactly 1 submission): same session, https://cloud.langfuse.com/project/cmwg77zqn0119ad0jshvuwwkz/sessions/bid-u_review-job_00145-0483d1
 
 ## Run it
 

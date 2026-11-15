@@ -12,5 +12,4 @@ cost and latency.
 | **Crash and resume**: the same thread; the API was killed with `kill -9` while the approval was pending, restarted, the approve was clicked twice, and exactly 1 proposal was submitted (6 Connects) | `bid-u_review-job_00145-0483d1` (3 traces: initial run, resume, duplicate resume) | https://cloud.langfuse.com/project/cmwg77zqn0119ad0jshvuwwkz/sessions/bid-u_review-job_00145-0483d1 |
 | Dead-letter example (failure analysis #13): an LLM node timed out under free-tier pacing | `bid-u_review-job_00063-e336f0` | https://cloud.langfuse.com/project/cmwg77zqn0119ad0jshvuwwkz/sessions/bid-u_review-job_00063-e336f0 |
 
-**To make them public:** open each session in Langfuse, then click **Share → Public**, and paste the
-link into `README.md` (see `docs/YOUR_TASKS.md`, step 4).
+All three sessions above are **public**: the links open without a Langfuse login.

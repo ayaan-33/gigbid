@@ -1,5 +1,5 @@
 [project]
-name = "gigbid-portfolio-mcp"
+name = "ayaan33-gigbid-portfolio-mcp"
 version = "1.0.0"
 description = "MCP server that lets an AI assistant search YOUR freelance portfolio for evidence (case studies, repos, reviews, past proposals) and cite it."
 readme = "README.md"
@@ -12,7 +12,7 @@ dependencies = [
 ]
 
 [project.scripts]
-gigbid-portfolio-mcp = "mcp_servers.portfolio.server:main"
+ayaan33-gigbid-portfolio-mcp = "mcp_servers.portfolio.server:main"
 
 [build-system]
 requires = ["hatchling"]

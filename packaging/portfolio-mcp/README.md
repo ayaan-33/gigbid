@@ -1,4 +1,4 @@
-# gigbid-portfolio-mcp
+# ayaan33-gigbid-portfolio-mcp
 
 An MCP server that lets Claude Desktop, Cursor or any MCP host **search your freelance portfolio
 for evidence**: case studies, code repositories, client reviews and past proposals with their
@@ -38,13 +38,13 @@ my-portfolio/            <- GIGBID_PORTFOLIO_DIR
 ## Run it
 
 ```bash
-uvx gigbid-portfolio-mcp            # stdio, for MCP hosts
+uvx ayaan33-gigbid-portfolio-mcp            # stdio, for MCP hosts
 ```
 
 Or with Docker / HTTP (Streamable HTTP at `/mcp`, Bearer token required):
 
 ```bash
-MCP_BEARER_TOKEN=change-me uvx gigbid-portfolio-mcp --http
+MCP_BEARER_TOKEN=change-me uvx ayaan33-gigbid-portfolio-mcp --http
 ```
 
 ### Claude Desktop (`claude_desktop_config.json`)
@@ -54,7 +54,7 @@ MCP_BEARER_TOKEN=change-me uvx gigbid-portfolio-mcp --http
   "mcpServers": {
     "portfolio": {
       "command": "uvx",
-      "args": ["gigbid-portfolio-mcp"],
+      "args": ["ayaan33-gigbid-portfolio-mcp"],
       "env": { "GIGBID_PORTFOLIO_DIR": "/Users/you/my-portfolio", "PORTFOLIO_PERSONA": "me" }
     }
   }

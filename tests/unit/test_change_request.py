@@ -53,3 +53,13 @@ async def test_policy_v2_after_two_line_config_change(graph_env, fake_llm, monke
     assert "policy is v2" not in p["price_quote"]["rationale"]
     done = await g.ainvoke(Command(resume={"action": "approve", "user_id": "u1"}), {"configurable": {"thread_id": "cr2"}})
     assert done["status"] == "submitted" and done["submission"]["connects_spent"] == 16
+
+
+async def test_unknown_fit_is_never_skipped():
+    """A degraded Fit Matcher (score None) must not be turned into a 'poor fit' skip."""
+    from agent.nodes.decide_price import decide
+    state = {"job": {"budget": {"type": "fixed", "max": 5000}}, "risk_report": {"score": 0.0},
+             "fit_report": {"score": None}, "persona": "ai_ml_engineer"}
+    out = await decide(state)
+    assert out["decision"]["action"] == "watch"
+    assert "unknown" in out["status_reason"]

@@ -1,0 +1,69 @@
+{
+ "model": "openai/gpt-oss-120b",
+ "profile": "open",
+ "summary": {
+  "react": {
+   "n": 6,
+   "bid_skip_accuracy": 0.5,
+   "scam_recall": 0.0,
+   "unsupported_claims_per_proposal": 0.0,
+   "compliance_violations_left": 0,
+   "compliance_violations_caught": 0,
+   "gigsim_reply_rate": null,
+   "n_submitted": 0,
+   "tokens_per_job": 1553.5,
+   "p50_latency_s": 600.0,
+   "p95_latency_s": 600.0,
+   "errors": 5,
+   "tool_call_validation_errors": 0,
+   "by_job_type": {
+    "fit": 0.0,
+    "lowfit": 1.0,
+    "scam": 1.0,
+    "underpriced": 1.0
+   }
+  },
+  "supervisor": {
+   "n": 6,
+   "bid_skip_accuracy": 0.5,
+   "scam_recall": 0.0,
+   "unsupported_claims_per_proposal": 0.0,
+   "compliance_violations_left": 0,
+   "compliance_violations_caught": 0,
+   "gigsim_reply_rate": null,
+   "n_submitted": 0,
+   "tokens_per_job": 330.7,
+   "p50_latency_s": 155.41,
+   "p95_latency_s": 307.75,
+   "errors": 3,
+   "tool_call_validation_errors": 0,
+   "by_job_type": {
+    "fit": 0.0,
+    "lowfit": 1.0,
+    "scam": 1.0,
+    "underpriced": 1.0
+   }
+  },
+  "graph": {
+   "n": 6,
+   "bid_skip_accuracy": 1.0,
+   "scam_recall": 1.0,
+   "unsupported_claims_per_proposal": 0.0,
+   "compliance_violations_left": 0,
+   "compliance_violations_caught": 0,
+   "gigsim_reply_rate": null,
+   "n_submitted": 0,
+   "tokens_per_job": 5919.8,
+   "p50_latency_s": 198.22,
+   "p95_latency_s": 431.91,
+   "errors": 0,
+   "tool_call_validation_errors": 0,
+   "by_job_type": {
+    "fit": 1.0,
+    "lowfit": 1.0,
+    "scam": 1.0,
+    "underpriced": 1.0
+   }
+  }
+ }
+}

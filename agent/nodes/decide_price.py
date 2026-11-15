@@ -40,6 +40,11 @@ async def decide(state: dict) -> dict:
     elif bmax and bmax < floor:
         action, conf = "skip", 0.85
         reasons.append(f"budget {bmax} below the freelancer's floor {floor}")
+    elif fit.get("score") is None:
+        # Fit could not be measured (portfolio server degraded): never treat "unknown" as "poor fit".
+        # Park it in watch with a clear reason; the sweep re-queues degraded runs once it recovers.
+        action, conf = "watch", 0.3
+        reasons.append("fit unknown (portfolio unavailable); held for re-analysis, not skipped")
     elif fit.get("score", 0) >= t["minimum_fit_score"]:
         action, conf = "bid", min(0.95, 0.5 + fit["score"] / 2)
         reasons.append(f"fit {fit['score']} >= {t['minimum_fit_score']}")

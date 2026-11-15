@@ -42,7 +42,11 @@ The repo is local only so far.
 4. Turn on GitHub Actions if asked: open the repo → **Actions** tab → **I understand my workflows,
    enable them**. CI runs lint, tests, Playwright, Docker builds, gitleaks and the smoke eval.
 
-## 3. Deploy to the Oracle Cloud free VM (about 45 minutes)
+## 3. Go live (about 5 minutes)
+
+Run `./scripts/deploy/live_local.sh` and copy the `LIVE:` URL it prints. Keep the Mac on and awake. (Oracle VM alternative below.)
+
+### Oracle Cloud free VM alternative (about 45 minutes)
 
 Follow `docs/DEPLOY.md` step by step: create the VM, open ports 80/443, run `setup_vm.sh`, fill
 `.env`, then `docker compose up`.
@@ -93,7 +97,7 @@ curl -s https://<DOMAIN>/api/panel/results > evals/results/panel_results.json
    ```bash
    cd "/Users/ayaan/Documents/Agentic AI /Assignment 2/gigbid/packaging/portfolio-mcp" && ./build.sh && uv publish --token "$(read -rs -p 'PyPI token: ' T; echo $T)"
    ```
-4. Check it works: `uvx gigbid-portfolio-mcp --help`, or see https://pypi.org/project/gigbid-portfolio-mcp/.
+4. Check it works: `uvx ayaan33-gigbid-portfolio-mcp --help`, or see https://pypi.org/project/ayaan33-gigbid-portfolio-mcp/.
 
 ## 8. Post the technical write-up (about 15 minutes)
 
