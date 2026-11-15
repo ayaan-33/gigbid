@@ -1,0 +1,4 @@
+{"variant": "v0_naive", "persona": "ai_ml_engineer", "job_id": "job_00027", "unsupported_before": 3, "unsupported_after": 0, "claims": 10, "judge_overall": 3, "replied": true, "latency_s": 229.38, "cost_usd": 0.000926, "tokens": 3217}
+{"variant": "v0_naive", "persona": "ai_ml_engineer", "job_id": "job_00029", "unsupported_before": 2, "unsupported_after": 0, "claims": 8, "judge_overall": 1, "replied": true, "latency_s": 194.16, "cost_usd": 0.000893, "tokens": 3127}
+{"variant": "v5_norerank", "persona": "fullstack_dev", "job_id": "job_00234", "unsupported_before": 1, "unsupported_after": 0, "claims": 7, "judge_overall": 4, "replied": false, "latency_s": 364.48, "cost_usd": 0.000969, "tokens": 3543}
+{"variant": "v0_naive", "persona": "data_analyst", "job_id": "job_00427", "unsupported_before": 2, "unsupported_after": 0, "claims": 8, "judge_overall": 3, "replied": true, "latency_s": 213.74, "cost_usd": 0.000904, "tokens": 3191}

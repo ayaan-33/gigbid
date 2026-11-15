@@ -93,6 +93,9 @@ def _profile() -> dict[str, Any]:
 
 
 def model_for(node: str, fallback: bool = False) -> str:
+    override = os.getenv(f"MODEL_OVERRIDE_{node.upper()}") or os.getenv("MODEL_OVERRIDE_ALL")  # experiments only
+    if override and not fallback:
+        return override
     prof = _profile()
     tier = cfg(f"models.nodes.{node}", "small")
     if fallback:
@@ -108,6 +111,9 @@ def price(model: str, inp: int, out: int) -> float:
 
 
 def chat_model(node: str, fallback: bool = False, **overrides: Any) -> ChatOpenAI:
+    cap = os.getenv("MAX_OUTPUT_OVERRIDE_ALL")
+    if cap and "max_tokens" not in overrides:
+        overrides["max_tokens"] = int(cap)
     prof = _profile()
     key_env = prof.get("api_key_env")
     api_key = os.getenv(key_env, "") if key_env else "ollama"
@@ -117,7 +123,7 @@ def chat_model(node: str, fallback: bool = False, **overrides: Any) -> ChatOpenA
         base_url=prof["base_url"],
         api_key=api_key or "missing-key",
         temperature=overrides.pop("temperature", temp),
-        timeout=cfg("models.request_timeout_s", 60),
+        timeout=float(os.getenv("REQUEST_TIMEOUT_S") or cfg("models.request_timeout_s", 60)),
         max_retries=0,  # we own retries (bounded, with backoff + fallback)
         **overrides,
     )
@@ -216,6 +222,9 @@ async def complete(
     msgs: list[BaseMessage] = [SystemMessage(system), HumanMessage(user)]
     attempts = cfg("models.max_retries", 2) + 1
     max_tokens = max_tokens or cfg(f"models.max_output_tokens.{node}", cfg("models.max_output_tokens.default", 900))
+    cap = os.getenv(f"MAX_OUTPUT_OVERRIDE_{node.upper()}") or os.getenv("MAX_OUTPUT_OVERRIDE_ALL")
+    if cap:  # experiments on low-output-limit free models
+        max_tokens = min(max_tokens, int(cap))
     last_err: Exception | None = None
     rate_waited = 0.0
     attempt = 0
@@ -251,6 +260,8 @@ async def complete(
                 rate_waited += wait
                 await asyncio.sleep(wait)
                 continue
+            if "Error code: 400" in str(e):
+                break  # a malformed-request / JSON-mode 400 will not succeed on retry
             await asyncio.sleep(min(2**attempt + 0.25 * attempt, 20))
             attempt += 1
             continue
@@ -307,7 +318,7 @@ async def structured(node: str, system: str, user: str, schema: type[T], **kw: A
     sys = (
         f"{system}\n\nRespond with ONE JSON object only, matching this JSON schema:\n{schema_hint}"
     )
-    raw = await complete(node, sys, user, json_mode=True, **kw)
+    raw = await _json_or_text(node, sys, user, **kw)
     try:
         return schema.model_validate(_extract_json(raw))
     except (ValueError, ValidationError) as e:
@@ -315,5 +326,17 @@ async def structured(node: str, system: str, user: str, schema: type[T], **kw: A
             f"{user}\n\nYour previous answer was invalid ({str(e)[:400]}). "
             "Return only the corrected JSON object."
         )
-        raw = await complete(node, sys, repair, json_mode=True, **kw)
+        raw = await _json_or_text(node, sys, repair, **kw)
         return schema.model_validate(_extract_json(raw))
+
+
+async def _json_or_text(node: str, system: str, user: str, **kw: Any) -> str:
+    """JSON mode first; if the provider's JSON mode itself fails ("Failed to generate/validate
+    JSON", HTTP 400), retry in plain-text mode and let _extract_json parse/repair the object."""
+    try:
+        return await complete(node, system, user, json_mode=True, **kw)
+    except LLMError as e:
+        msg = str(e).lower()
+        if "json" not in msg and "400" not in msg:
+            raise
+        return await complete(node, system, user, json_mode=False, **kw)

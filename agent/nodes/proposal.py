@@ -133,7 +133,10 @@ async def verifier(state: dict) -> dict:
         except Exception:  # noqa: BLE001
             return []
 
-    text, report = await verify_claims_async(draft["cover_letter"], pack.get, search, use_llm="batch")
+    import os
+
+    mode = os.getenv("GIGBID_VERIFY_MODE", "batch")  # batch (LLM) | heuristic (experiments, CI)
+    text, report = await verify_claims_async(draft["cover_letter"], pack.get, search, use_llm=("batch" if mode == "batch" else False))
     answers = []
     for a in draft.get("screening_answers", []):
         a_text, a_rep = await verify_claims_async(a["answer"], pack.get, search, use_llm=False)
@@ -211,7 +214,11 @@ async def compliance(state: dict, *, key: str = "draft") -> dict:
                                               fix="rewritten"))
     rules = "\n".join(f"- {r}" for r in _policy_text())
     p = load_prompt("compliance")
+    import os
+
     try:
+        if os.getenv("GIGBID_COMPLIANCE_LLM", "1") == "0":
+            raise RuntimeError("LLM compliance pass disabled (rules only)")
         llm = await structured("compliance", p.render(policy_version=cfg("policy.version", 1), policy_rules=rules),
                                f"TEXT:\n{cleaned}", ComplianceVerdict)
         for v in llm.violations:

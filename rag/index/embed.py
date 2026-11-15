@@ -29,14 +29,14 @@ def _db() -> sqlite3.Connection:
 def _model():
     from fastembed import TextEmbedding
 
-    return TextEmbedding(cfg("models.embeddings"), threads=int(os.getenv("EMBED_THREADS", "4")))
+    return TextEmbedding(cfg("models.embeddings"), threads=int(os.getenv("EMBED_THREADS", "2")))
 
 
 @cache
 def _reranker(name: str | None = None):
     from fastembed.rerank.cross_encoder import TextCrossEncoder
 
-    return TextCrossEncoder(name or cfg("models.reranker"))
+    return TextCrossEncoder(name or cfg("models.reranker"), threads=int(os.getenv("RERANK_THREADS", "4")))
 
 
 def _prefix(kind: str) -> str:

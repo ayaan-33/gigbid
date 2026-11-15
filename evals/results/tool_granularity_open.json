@@ -1,0 +1,1518 @@
+{
+ "model": "openai/gpt-oss-20b",
+ "profile": "open",
+ "tasks": 40,
+ "designs": {
+  "fine": {
+   "n_tools": 26,
+   "tool_selection_accuracy": 0.825,
+   "argument_accuracy": 0.825,
+   "tokens_per_task": 880.4,
+   "p50_latency_s": 0.914,
+   "rows": [
+    {
+     "task": "Find open jobs about RAG chatbots.",
+     "op": "search_jobs",
+     "called": "search_jobs_by_keyword",
+     "args": {
+      "keyword": "RAG chatbots"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 820,
+     "latency_s": 0.546
+    },
+    {
+     "task": "Look for Power BI dashboard gigs.",
+     "op": "search_jobs",
+     "called": "search_jobs_by_keyword",
+     "args": {
+      "keyword": "Power BI dashboard"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 812,
+     "latency_s": 0.183
+    },
+    {
+     "task": "Any new Next.js projects posted?",
+     "op": "search_jobs",
+     "called": "search_jobs_by_keyword",
+     "args": {
+      "keyword": "Next.js"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 826,
+     "latency_s": 0.544
+    },
+    {
+     "task": "Search the marketplace for churn prediction work.",
+     "op": "search_jobs",
+     "called": "search_jobs_by_keyword",
+     "args": {
+      "keyword": "churn prediction"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 829,
+     "latency_s": 0.56
+    },
+    {
+     "task": "Show me Stripe integration jobs.",
+     "op": "search_jobs",
+     "called": "search_jobs_by_keyword",
+     "args": {
+      "keyword": "Stripe integration"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 809,
+     "latency_s": 59.002
+    },
+    {
+     "task": "Open job job_00073 so I can read it.",
+     "op": "get_job",
+     "called": "get_job_description",
+     "args": {
+      "job_id": "job_00073"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 825,
+     "latency_s": 0.485
+    },
+    {
+     "task": "What exactly does job_00004 ask for?",
+     "op": "get_job",
+     "called": "get_job_description",
+     "args": {
+      "job_id": "job_00004"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 824,
+     "latency_s": 0.211
+    },
+    {
+     "task": "Pull up the full post for job_00118.",
+     "op": "get_job",
+     "called": "get_job_description",
+     "args": {
+      "job_id": "job_00118"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 823,
+     "latency_s": 0.205
+    },
+    {
+     "task": "Is client cl_job_00044 payment-verified and how much have they spent?",
+     "op": "get_client_history",
+     "called": "get_client_payment_status",
+     "args": {
+      "client_id": "cl_job_00044"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 1426,
+     "latency_s": 59.676
+    },
+    {
+     "task": "Check the hiring history of client cl_job_00200.",
+     "op": "get_client_history",
+     "called": "search_won_proposals",
+     "args": {
+      "query": "cl_job_00200"
+     },
+     "tool_ok": false,
+     "args_ok": false,
+     "tokens": 925,
+     "latency_s": 0.688
+    },
+    {
+     "task": "Has client cl_job_00104 left reviews for freelancers?",
+     "op": "get_client_history",
+     "called": "get_client_reviews",
+     "args": {
+      "client_id": "cl_job_00104"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 940,
+     "latency_s": 0.613
+    },
+    {
+     "task": "How many Connects do I have left?",
+     "op": "get_connects_balance",
+     "called": "get_connects_balance",
+     "args": {
+      "": ""
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 807,
+     "latency_s": 0.52
+    },
+    {
+     "task": "Can I afford to bid this week? Check my Connects.",
+     "op": "get_connects_balance",
+     "called": "get_connects_balance",
+     "args": {
+      "": ""
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 815,
+     "latency_s": 57.462
+    },
+    {
+     "task": "What do fixed-price ai_ml jobs usually pay?",
+     "op": "get_market_stats",
+     "called": "get_fixed_price_stats",
+     "args": {
+      "category": "ai_ml"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 837,
+     "latency_s": 1.296
+    },
+    {
+     "task": "Typical hourly rates for web_dev jobs?",
+     "op": "get_market_stats",
+     "called": "get_hourly_rate_stats",
+     "args": {
+      "category": "web_dev"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 838,
+     "latency_s": 0.395
+    },
+    {
+     "task": "Median budget for data_analysis fixed-price work?",
+     "op": "get_market_stats",
+     "called": "get_fixed_price_stats",
+     "args": {
+      "category": "data_analysis"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 868,
+     "latency_s": 0.965
+    },
+    {
+     "task": "What are the platform's current rules?",
+     "op": "get_policy",
+     "called": "get_policy",
+     "args": {
+      "": ""
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 800,
+     "latency_s": 57.124
+    },
+    {
+     "task": "Did the marketplace change its policy recently?",
+     "op": "get_policy",
+     "called": "get_policy",
+     "args": {
+      "": ""
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 813,
+     "latency_s": 1.541
+    },
+    {
+     "task": "Show my client conversations.",
+     "op": "list_conversations",
+     "called": "list_conversations",
+     "args": {
+      "": ""
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 802,
+     "latency_s": 0.611
+    },
+    {
+     "task": "Which clients have written to me?",
+     "op": "list_conversations",
+     "called": "list_conversations",
+     "args": {
+      "cursor": 0
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 848,
+     "latency_s": 0.419
+    },
+    {
+     "task": "Read the messages in conversation conv_dd4fdca65f9c.",
+     "op": "list_messages",
+     "called": "list_messages",
+     "args": {
+      "conversation_id": "conv_dd4fdca65f9c"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 819,
+     "latency_s": 57.847
+    },
+    {
+     "task": "What did the client say in conv_877531ebdf78?",
+     "op": "list_messages",
+     "called": "list_messages",
+     "args": {
+      "conversation_id": "conv_877531ebdf78"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 859,
+     "latency_s": 1.184
+    },
+    {
+     "task": "What events happened on my proposals since event 40?",
+     "op": "list_events",
+     "called": "list_events",
+     "args": {
+      "since_id": 40
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 819,
+     "latency_s": 0.366
+    },
+    {
+     "task": "Is the marketplace up right now?",
+     "op": "marketplace_status",
+     "called": "marketplace_status",
+     "args": {},
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 807,
+     "latency_s": 0.906
+    },
+    {
+     "task": "Find portfolio evidence that I have done hybrid search with BM25.",
+     "op": "search_evidence",
+     "called": "search_repos",
+     "args": {
+      "query": "BM25 hybrid search"
+     },
+     "tool_ok": false,
+     "args_ok": false,
+     "tokens": 855,
+     "latency_s": 57.555
+    },
+    {
+     "task": "Do I have proof of deploying models with Docker?",
+     "op": "search_evidence",
+     "called": "search_case_studies",
+     "args": {
+      "query": "Docker"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 909,
+     "latency_s": 1.411
+    },
+    {
+     "task": "Find past work on fraud detection for fintech clients.",
+     "op": "search_evidence",
+     "called": "search_won_proposals",
+     "args": {
+      "query": "fraud detection fintech"
+     },
+     "tool_ok": false,
+     "args_ok": false,
+     "tokens": 834,
+     "latency_s": 0.216
+    },
+    {
+     "task": "Which of my projects show time-series forecasting?",
+     "op": "search_evidence",
+     "called": "search_repos",
+     "args": {
+      "query": "time-series forecasting"
+     },
+     "tool_ok": false,
+     "args_ok": false,
+     "tokens": 1262,
+     "latency_s": 1.312
+    },
+    {
+     "task": "Find evidence of Stripe webhooks in my portfolio.",
+     "op": "search_evidence",
+     "called": "search_repos",
+     "args": {
+      "query": "Stripe webhook"
+     },
+     "tool_ok": false,
+     "args_ok": false,
+     "tokens": 851,
+     "latency_s": 56.861
+    },
+    {
+     "task": "Show past proposals of mine that won for dashboard jobs.",
+     "op": "search_evidence",
+     "called": "search_won_proposals",
+     "args": {
+      "query": "dashboard"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 852,
+     "latency_s": 1.534
+    },
+    {
+     "task": "Find client reviews that mention communication.",
+     "op": "search_evidence",
+     "called": "search_reviews",
+     "args": {
+      "query": "communication"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 818,
+     "latency_s": 0.371
+    },
+    {
+     "task": "Show code repositories where I used FastAPI.",
+     "op": "search_evidence",
+     "called": "search_repos",
+     "args": {
+      "query": "FastAPI"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 843,
+     "latency_s": 0.922
+    },
+    {
+     "task": "Open my case study ai_ml_engineer:case:support_rag.",
+     "op": "get_case_study",
+     "called": "get_case_study",
+     "args": {
+      "id": "ai_ml_engineer:case:support_rag"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 840,
+     "latency_s": 57.585
+    },
+    {
+     "task": "I need the full write-up of ai_ml_engineer:case:churn_model.",
+     "op": "get_case_study",
+     "called": "search_case_studies",
+     "args": {
+      "query": "ai_ml_engineer:case:churn_model"
+     },
+     "tool_ok": false,
+     "args_ok": false,
+     "tokens": 856,
+     "latency_s": 1.662
+    },
+    {
+     "task": "Which skills does my portfolio prove?",
+     "op": "list_skills",
+     "called": "search_repos",
+     "args": {
+      "query": "portfolio"
+     },
+     "tool_ok": false,
+     "args_ok": false,
+     "tokens": 862,
+     "latency_s": 0.459
+    },
+    {
+     "task": "List my evidenced skills with counts.",
+     "op": "list_skills",
+     "called": "list_skills",
+     "args": {
+      "": ""
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 855,
+     "latency_s": 0.485
+    },
+    {
+     "task": "When am I free for a 30-minute call this week?",
+     "op": "find_free_slots",
+     "called": "find_free_slots",
+     "args": {
+      "duration_min": 30
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 829,
+     "latency_s": 57.273
+    },
+    {
+     "task": "Find three free 60-minute slots for an interview.",
+     "op": "find_free_slots",
+     "called": "find_free_slots",
+     "args": {
+      "duration_min": 60
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 800,
+     "latency_s": 1.138
+    },
+    {
+     "task": "Draft an email to the client confirming Tuesday's interview.",
+     "op": "create_email_draft",
+     "called": "create_email_draft",
+     "args": {
+      "body": "Hello [Client Name],\n\nI hope you\u2019re doing well. I\u2019m writing to confirm our interview scheduled for Tuesday, [Date], at [Time]. We\u2019ll meet at [Location] (or via [Platform] if virtual). Please let me know if anything changes or if you need any additional information.\n\nLooking forward to speaking with you.\n\nBest regards,\n[Your Name]",
+      "subject": "Confirmation of Tuesday's Interview",
+      "to_label": "Client Name"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 1046,
+     "latency_s": 1.34
+    },
+    {
+     "task": "Put a tentative hold in my calendar for the client call.",
+     "op": "create_interview_hold",
+     "called": "create_interview_hold",
+     "args": {
+      "end": "2026-11-15T10:30:00Z",
+      "start": "2026-11-15T10:00:00Z",
+      "title": "Client Call"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 1312,
+     "latency_s": 0.739
+    }
+   ]
+  },
+  "coarse": {
+   "n_tools": 3,
+   "tool_selection_accuracy": 0.95,
+   "argument_accuracy": 0.85,
+   "tokens_per_task": 504.6,
+   "p50_latency_s": 0.576,
+   "rows": [
+    {
+     "task": "Find open jobs about RAG chatbots.",
+     "op": "search_jobs",
+     "called": "marketplace",
+     "args": {
+      "action": "search_jobs",
+      "query": "RAG chatbots"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 456,
+     "latency_s": 0.552
+    },
+    {
+     "task": "Look for Power BI dashboard gigs.",
+     "op": "search_jobs",
+     "called": "marketplace",
+     "args": {
+      "action": "search_jobs",
+      "query": "Power BI dashboard gigs"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 446,
+     "latency_s": 56.339
+    },
+    {
+     "task": "Any new Next.js projects posted?",
+     "op": "search_jobs",
+     "called": "marketplace",
+     "args": {
+      "action": "search_jobs",
+      "query": "Next.js"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 512,
+     "latency_s": 0.583
+    },
+    {
+     "task": "Search the marketplace for churn prediction work.",
+     "op": "search_jobs",
+     "called": "marketplace",
+     "args": {
+      "action": "search_jobs",
+      "query": "churn prediction"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 457,
+     "latency_s": 0.552
+    },
+    {
+     "task": "Show me Stripe integration jobs.",
+     "op": "search_jobs",
+     "called": "marketplace",
+     "args": {
+      "action": "search_jobs",
+      "query": "Stripe integration"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 466,
+     "latency_s": 1.069
+    },
+    {
+     "task": "Open job job_00073 so I can read it.",
+     "op": "get_job",
+     "called": "marketplace",
+     "args": {
+      "action": "get_job",
+      "id": "job_00073"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 448,
+     "latency_s": 0.394
+    },
+    {
+     "task": "What exactly does job_00004 ask for?",
+     "op": "get_job",
+     "called": "marketplace",
+     "args": {
+      "action": "get_job",
+      "id": "job_00004"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 461,
+     "latency_s": 0.553
+    },
+    {
+     "task": "Pull up the full post for job_00118.",
+     "op": "get_job",
+     "called": "marketplace",
+     "args": {
+      "action": "get_job",
+      "id": "job_00118"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 433,
+     "latency_s": 0.154
+    },
+    {
+     "task": "Is client cl_job_00044 payment-verified and how much have they spent?",
+     "op": "get_client_history",
+     "called": "marketplace",
+     "args": {
+      "action": "get_client_history",
+      "id": "cl_job_00044"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 498,
+     "latency_s": 0.411
+    },
+    {
+     "task": "Check the hiring history of client cl_job_00200.",
+     "op": "get_client_history",
+     "called": "marketplace",
+     "args": {
+      "action": "get_client_history",
+      "id": "cl_job_00200"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 464,
+     "latency_s": 56.279
+    },
+    {
+     "task": "Has client cl_job_00104 left reviews for freelancers?",
+     "op": "get_client_history",
+     "called": "marketplace",
+     "args": {
+      "action": "get_job",
+      "id": "cl_job_00104"
+     },
+     "tool_ok": true,
+     "args_ok": false,
+     "tokens": 533,
+     "latency_s": 0.559
+    },
+    {
+     "task": "How many Connects do I have left?",
+     "op": "get_connects_balance",
+     "called": "marketplace",
+     "args": {
+      "action": "get_connects_balance"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 448,
+     "latency_s": 0.368
+    },
+    {
+     "task": "Can I afford to bid this week? Check my Connects.",
+     "op": "get_connects_balance",
+     "called": "marketplace",
+     "args": {
+      "action": "get_connects_balance"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 442,
+     "latency_s": 1.412
+    },
+    {
+     "task": "What do fixed-price ai_ml jobs usually pay?",
+     "op": "get_market_stats",
+     "called": "marketplace",
+     "args": {
+      "action": "search_jobs",
+      "budget_type": "fixed-price",
+      "category": "ai_ml"
+     },
+     "tool_ok": true,
+     "args_ok": false,
+     "tokens": 475,
+     "latency_s": 0.427
+    },
+    {
+     "task": "Typical hourly rates for web_dev jobs?",
+     "op": "get_market_stats",
+     "called": "marketplace",
+     "args": {
+      "action": "search_jobs",
+      "category": "web_dev"
+     },
+     "tool_ok": true,
+     "args_ok": false,
+     "tokens": 476,
+     "latency_s": 0.569
+    },
+    {
+     "task": "Median budget for data_analysis fixed-price work?",
+     "op": "get_market_stats",
+     "called": "marketplace",
+     "args": {
+      "action": "get_market_stats",
+      "budget_type": "fixed-price",
+      "category": "data_analysis"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 501,
+     "latency_s": 0.227
+    },
+    {
+     "task": "What are the platform's current rules?",
+     "op": "get_policy",
+     "called": "marketplace",
+     "args": {
+      "action": "get_policy"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 461,
+     "latency_s": 0.528
+    },
+    {
+     "task": "Did the marketplace change its policy recently?",
+     "op": "get_policy",
+     "called": "marketplace",
+     "args": {
+      "action": "get_policy"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 442,
+     "latency_s": 56.092
+    },
+    {
+     "task": "Show my client conversations.",
+     "op": "list_conversations",
+     "called": "marketplace",
+     "args": {
+      "action": "list_conversations"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 460,
+     "latency_s": 0.552
+    },
+    {
+     "task": "Which clients have written to me?",
+     "op": "list_conversations",
+     "called": "marketplace",
+     "args": {
+      "action": "list_conversations"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 486,
+     "latency_s": 0.613
+    },
+    {
+     "task": "Read the messages in conversation conv_dd4fdca65f9c.",
+     "op": "list_messages",
+     "called": "marketplace",
+     "args": {
+      "action": "list_messages",
+      "id": "conv_dd4fdca65f9c"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 499,
+     "latency_s": 1.046
+    },
+    {
+     "task": "What did the client say in conv_877531ebdf78?",
+     "op": "list_messages",
+     "called": "marketplace",
+     "args": {
+      "action": "list_messages",
+      "id": "conv_877531ebdf78"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 500,
+     "latency_s": 0.714
+    },
+    {
+     "task": "What events happened on my proposals since event 40?",
+     "op": "list_events",
+     "called": "marketplace",
+     "args": {
+      "action": "list_events",
+      "since_id": 40
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 446,
+     "latency_s": 0.23
+    },
+    {
+     "task": "Is the marketplace up right now?",
+     "op": "marketplace_status",
+     "called": "marketplace",
+     "args": {
+      "action": "status"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 443,
+     "latency_s": 0.5
+    },
+    {
+     "task": "Find portfolio evidence that I have done hybrid search with BM25.",
+     "op": "search_evidence",
+     "called": "portfolio",
+     "args": {
+      "action": "search",
+      "query": "hybrid search BM25"
+     },
+     "tool_ok": true,
+     "args_ok": false,
+     "tokens": 524,
+     "latency_s": 0.591
+    },
+    {
+     "task": "Do I have proof of deploying models with Docker?",
+     "op": "search_evidence",
+     "called": "portfolio",
+     "args": {
+      "action": "search",
+      "query": "Docker"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 525,
+     "latency_s": 55.494
+    },
+    {
+     "task": "Find past work on fraud detection for fintech clients.",
+     "op": "search_evidence",
+     "called": "portfolio",
+     "args": {
+      "action": "search",
+      "query": "fraud detection fintech"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 449,
+     "latency_s": 0.468
+    },
+    {
+     "task": "Which of my projects show time-series forecasting?",
+     "op": "search_evidence",
+     "called": "portfolio",
+     "args": {
+      "action": "search",
+      "query": "time-series forecasting",
+      "type": "project"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 559,
+     "latency_s": 0.775
+    },
+    {
+     "task": "Find evidence of Stripe webhooks in my portfolio.",
+     "op": "search_evidence",
+     "called": "portfolio",
+     "args": {
+      "action": "search",
+      "query": "Stripe webhooks"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 452,
+     "latency_s": 1.214
+    },
+    {
+     "task": "Show past proposals of mine that won for dashboard jobs.",
+     "op": "search_evidence",
+     "called": "marketplace",
+     "args": {
+      "action": "get_client_history",
+      "id": null
+     },
+     "tool_ok": false,
+     "args_ok": false,
+     "tokens": 913,
+     "latency_s": 1.068
+    },
+    {
+     "task": "Find client reviews that mention communication.",
+     "op": "search_evidence",
+     "called": "marketplace",
+     "args": {
+      "action": "get_client_history",
+      "id": null
+     },
+     "tool_ok": false,
+     "args_ok": false,
+     "tokens": 744,
+     "latency_s": 0.592
+    },
+    {
+     "task": "Show code repositories where I used FastAPI.",
+     "op": "search_evidence",
+     "called": "portfolio",
+     "args": {
+      "action": "search",
+      "query": "FastAPI"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 489,
+     "latency_s": 0.463
+    },
+    {
+     "task": "Open my case study ai_ml_engineer:case:support_rag.",
+     "op": "get_case_study",
+     "called": "portfolio",
+     "args": {
+      "action": "get_case_study",
+      "id": "ai_ml_engineer:case:support_rag"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 469,
+     "latency_s": 0.457
+    },
+    {
+     "task": "I need the full write-up of ai_ml_engineer:case:churn_model.",
+     "op": "get_case_study",
+     "called": "portfolio",
+     "args": {
+      "action": "get_case_study",
+      "id": "ai_ml_engineer:case:churn_model"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 490,
+     "latency_s": 55.225
+    },
+    {
+     "task": "Which skills does my portfolio prove?",
+     "op": "list_skills",
+     "called": "portfolio",
+     "args": {
+      "action": "list_skills"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 437,
+     "latency_s": 0.457
+    },
+    {
+     "task": "List my evidenced skills with counts.",
+     "op": "list_skills",
+     "called": "portfolio",
+     "args": {
+      "action": "list_skills"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 499,
+     "latency_s": 0.883
+    },
+    {
+     "task": "When am I free for a 30-minute call this week?",
+     "op": "find_free_slots",
+     "called": "workspace",
+     "args": {
+      "action": "free_slots",
+      "duration_min": 30
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 435,
+     "latency_s": 0.948
+    },
+    {
+     "task": "Find three free 60-minute slots for an interview.",
+     "op": "find_free_slots",
+     "called": "workspace",
+     "args": {
+      "action": "free_slots",
+      "duration_min": 60
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 432,
+     "latency_s": 0.607
+    },
+    {
+     "task": "Draft an email to the client confirming Tuesday's interview.",
+     "op": "create_email_draft",
+     "called": "workspace",
+     "args": {
+      "action": "email_draft",
+      "body": "Dear [Client Name],\n\nI hope this message finds you well. I am writing to confirm our interview scheduled for Tuesday, [Date], at [Time]. Please let me know if this time still works for you or if any adjustments are needed.\n\nThank you, and I look forward to speaking with you.\n\nBest regards,\n[Your Name]",
+      "subject": "Confirmation of Tuesday's Interview"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 969,
+     "latency_s": 1.118
+    },
+    {
+     "task": "Put a tentative hold in my calendar for the client call.",
+     "op": "create_interview_hold",
+     "called": "workspace",
+     "args": {
+      "action": "hold",
+      "duration_min": 60
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 544,
+     "latency_s": 0.256
+    }
+   ]
+  },
+  "best": {
+   "n_tools": 16,
+   "tool_selection_accuracy": 0.925,
+   "argument_accuracy": 0.925,
+   "tokens_per_task": 905.1,
+   "p50_latency_s": 1.333,
+   "rows": [
+    {
+     "task": "Find open jobs about RAG chatbots.",
+     "op": "search_jobs",
+     "called": "search_jobs",
+     "args": {
+      "query": "RAG chatbot"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 903,
+     "latency_s": 55.784
+    },
+    {
+     "task": "Look for Power BI dashboard gigs.",
+     "op": "search_jobs",
+     "called": "search_jobs",
+     "args": {
+      "category": "data_analysis",
+      "query": "Power BI dashboard"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 945,
+     "latency_s": 1.198
+    },
+    {
+     "task": "Any new Next.js projects posted?",
+     "op": "search_jobs",
+     "called": "search_jobs",
+     "args": {
+      "query": "Next.js"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 923,
+     "latency_s": 1.03
+    },
+    {
+     "task": "Search the marketplace for churn prediction work.",
+     "op": "search_jobs",
+     "called": "search_jobs",
+     "args": {
+      "query": "churn prediction"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 909,
+     "latency_s": 1.568
+    },
+    {
+     "task": "Show me Stripe integration jobs.",
+     "op": "search_jobs",
+     "called": "search_jobs",
+     "args": {
+      "query": "Stripe integration"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 914,
+     "latency_s": 56.219
+    },
+    {
+     "task": "Open job job_00073 so I can read it.",
+     "op": "get_job",
+     "called": "get_job",
+     "args": {
+      "job_id": "job_00073"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 919,
+     "latency_s": 1.332
+    },
+    {
+     "task": "What exactly does job_00004 ask for?",
+     "op": "get_job",
+     "called": "get_job",
+     "args": {
+      "job_id": "job_00004"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 928,
+     "latency_s": 1.33
+    },
+    {
+     "task": "Pull up the full post for job_00118.",
+     "op": "get_job",
+     "called": "get_job",
+     "args": {
+      "job_id": "job_00118"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 909,
+     "latency_s": 1.248
+    },
+    {
+     "task": "Is client cl_job_00044 payment-verified and how much have they spent?",
+     "op": "get_client_history",
+     "called": "get_client_history",
+     "args": {
+      "client_id": "cl_job_00044"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 919,
+     "latency_s": 56.311
+    },
+    {
+     "task": "Check the hiring history of client cl_job_00200.",
+     "op": "get_client_history",
+     "called": "get_client_history",
+     "args": {
+      "client_id": "cl_job_00200"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 914,
+     "latency_s": 1.173
+    },
+    {
+     "task": "Has client cl_job_00104 left reviews for freelancers?",
+     "op": "get_client_history",
+     "called": "get_client_history",
+     "args": {
+      "client_id": "cl_job_00104"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 936,
+     "latency_s": 0.954
+    },
+    {
+     "task": "How many Connects do I have left?",
+     "op": "get_connects_balance",
+     "called": "get_connects_balance",
+     "args": {
+      "": ""
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 898,
+     "latency_s": 1.597
+    },
+    {
+     "task": "Can I afford to bid this week? Check my Connects.",
+     "op": "get_connects_balance",
+     "called": "get_connects_balance",
+     "args": {},
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 899,
+     "latency_s": 56.111
+    },
+    {
+     "task": "What do fixed-price ai_ml jobs usually pay?",
+     "op": "get_market_stats",
+     "called": "get_market_stats",
+     "args": {
+      "budget_type": "fixed",
+      "category": "ai_ml"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 930,
+     "latency_s": 1.28
+    },
+    {
+     "task": "Typical hourly rates for web_dev jobs?",
+     "op": "get_market_stats",
+     "called": "get_market_stats",
+     "args": {
+      "budget_type": "hourly",
+      "category": "web_dev"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 948,
+     "latency_s": 1.233
+    },
+    {
+     "task": "Median budget for data_analysis fixed-price work?",
+     "op": "get_market_stats",
+     "called": "get_market_stats",
+     "args": {
+      "budget_type": "fixed",
+      "category": "data_analysis"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 954,
+     "latency_s": 1.53
+    },
+    {
+     "task": "What are the platform's current rules?",
+     "op": "get_policy",
+     "called": "get_policy",
+     "args": {
+      "": ""
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 893,
+     "latency_s": 56.144
+    },
+    {
+     "task": "Did the marketplace change its policy recently?",
+     "op": "get_policy",
+     "called": "get_policy",
+     "args": {
+      "": ""
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 923,
+     "latency_s": 1.212
+    },
+    {
+     "task": "Show my client conversations.",
+     "op": "list_conversations",
+     "called": null,
+     "args": null,
+     "tool_ok": false,
+     "args_ok": false,
+     "tokens": 0,
+     "latency_s": 1.239
+    },
+    {
+     "task": "Which clients have written to me?",
+     "op": "list_conversations",
+     "called": null,
+     "args": null,
+     "tool_ok": false,
+     "args_ok": false,
+     "tokens": 0,
+     "latency_s": 1.638
+    },
+    {
+     "task": "Read the messages in conversation conv_dd4fdca65f9c.",
+     "op": "list_messages",
+     "called": "list_messages",
+     "args": {
+      "conversation_id": "conv_dd4fdca65f9c"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 913,
+     "latency_s": 55.689
+    },
+    {
+     "task": "What did the client say in conv_877531ebdf78?",
+     "op": "list_messages",
+     "called": "list_messages",
+     "args": {
+      "conversation_id": "conv_877531ebdf78"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 935,
+     "latency_s": 1.48
+    },
+    {
+     "task": "What events happened on my proposals since event 40?",
+     "op": "list_events",
+     "called": "list_events",
+     "args": {
+      "since_id": 40
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 903,
+     "latency_s": 1.094
+    },
+    {
+     "task": "Is the marketplace up right now?",
+     "op": "marketplace_status",
+     "called": "marketplace_status",
+     "args": {
+      "": ""
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 893,
+     "latency_s": 1.586
+    },
+    {
+     "task": "Find portfolio evidence that I have done hybrid search with BM25.",
+     "op": "search_evidence",
+     "called": "search_evidence",
+     "args": {
+      "requirement": "hybrid search with BM25"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 923,
+     "latency_s": 55.816
+    },
+    {
+     "task": "Do I have proof of deploying models with Docker?",
+     "op": "search_evidence",
+     "called": "search_evidence",
+     "args": {
+      "outcome": null,
+      "requirement": "deploying models with Docker",
+      "type": null
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 982,
+     "latency_s": 1.569
+    },
+    {
+     "task": "Find past work on fraud detection for fintech clients.",
+     "op": "search_evidence",
+     "called": "search_evidence",
+     "args": {
+      "outcome": null,
+      "requirement": "fraud detection",
+      "type": null
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 963,
+     "latency_s": 1.129
+    },
+    {
+     "task": "Which of my projects show time-series forecasting?",
+     "op": "search_evidence",
+     "called": "search_evidence",
+     "args": {
+      "requirement": "time-series forecasting"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 931,
+     "latency_s": 1.301
+    },
+    {
+     "task": "Find evidence of Stripe webhooks in my portfolio.",
+     "op": "search_evidence",
+     "called": "search_evidence",
+     "args": {
+      "requirement": "Stripe webhooks"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 927,
+     "latency_s": 56.544
+    },
+    {
+     "task": "Show past proposals of mine that won for dashboard jobs.",
+     "op": "search_evidence",
+     "called": "search_evidence",
+     "args": {
+      "outcome": "won",
+      "requirement": "dashboard",
+      "type": "proposal"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 994,
+     "latency_s": 0.888
+    },
+    {
+     "task": "Find client reviews that mention communication.",
+     "op": "search_evidence",
+     "called": "list_conversations",
+     "args": {},
+     "tool_ok": false,
+     "args_ok": false,
+     "tokens": 1406,
+     "latency_s": 1.977
+    },
+    {
+     "task": "Show code repositories where I used FastAPI.",
+     "op": "search_evidence",
+     "called": "search_evidence",
+     "args": {
+      "requirement": "FastAPI",
+      "type": "repo"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 942,
+     "latency_s": 1.066
+    },
+    {
+     "task": "Open my case study ai_ml_engineer:case:support_rag.",
+     "op": "get_case_study",
+     "called": "get_case_study",
+     "args": {
+      "id": "ai_ml_engineer:case:support_rag"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 927,
+     "latency_s": 55.657
+    },
+    {
+     "task": "I need the full write-up of ai_ml_engineer:case:churn_model.",
+     "op": "get_case_study",
+     "called": "get_case_study",
+     "args": {
+      "id": "ai_ml_engineer:case:churn_model"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 953,
+     "latency_s": 3.017
+    },
+    {
+     "task": "Which skills does my portfolio prove?",
+     "op": "list_skills",
+     "called": "list_skills",
+     "args": {
+      "": ""
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 893,
+     "latency_s": 0.424
+    },
+    {
+     "task": "List my evidenced skills with counts.",
+     "op": "list_skills",
+     "called": "list_skills",
+     "args": {
+      "": ""
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 919,
+     "latency_s": 0.691
+    },
+    {
+     "task": "When am I free for a 30-minute call this week?",
+     "op": "find_free_slots",
+     "called": "find_free_slots",
+     "args": {
+      "duration_min": 30
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 924,
+     "latency_s": 59.54
+    },
+    {
+     "task": "Find three free 60-minute slots for an interview.",
+     "op": "find_free_slots",
+     "called": "find_free_slots",
+     "args": {
+      "duration_min": 60
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 905,
+     "latency_s": 1.333
+    },
+    {
+     "task": "Draft an email to the client confirming Tuesday's interview.",
+     "op": "create_email_draft",
+     "called": "create_email_draft",
+     "args": {
+      "body": "Hi [Client Name],\n\nThank you for scheduling the interview. I\u2019m writing to confirm that we\u2019ll meet on Tuesday, [Date], at [Time] (your time zone). The interview will take place via [Zoom/Teams/Phone] and I\u2019ll send the link shortly.\n\nIf anything changes or you need to reschedule, please let me know. I look forward to speaking with you.\n\nBest regards,\n[Your Name]",
+      "subject": "Interview Confirmation for Tuesday",
+      "to_label": "client_email"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 1084,
+     "latency_s": 0.712
+    },
+    {
+     "task": "Put a tentative hold in my calendar for the client call.",
+     "op": "create_interview_hold",
+     "called": "create_interview_hold",
+     "args": {
+      "end": "2026-11-15T10:30:00Z",
+      "start": "2026-11-15T10:00:00Z",
+      "title": "Client Call"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 1323,
+     "latency_s": 0.877
+    }
+   ]
+  }
+ }
+}

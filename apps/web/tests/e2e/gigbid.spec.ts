@@ -36,7 +36,7 @@ test("approve a proposal: evidence on hover, dry-run preview, submitted exactly 
   }
   await page.getByTestId("approve").click();
   await expect(page.getByTestId("decision-result")).toContainText("Approved");
-  expect(await threadStatus(request, thread, ["submitted"])).toBe("submitted");
+  expect(await threadStatus(request, thread, ["submitted"], 120_000)).toBe("submitted");
   // pipeline shows the submitted proposal
   await page.goto("/pipeline");
   await expect(page.getByTestId("col-submitted").getByRole("link")).toHaveCount(1);

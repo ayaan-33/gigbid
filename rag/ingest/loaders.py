@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import re
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
@@ -21,9 +22,20 @@ from pypdf import PdfReader
 from scripts.data.taxonomy import extract_skills
 
 ROOT = Path(__file__).resolve().parents[2]
-PERSONA_DIR = ROOT / "data" / "personas"
+# GIGBID_PORTFOLIO_DIR lets the published Portfolio MCP server read ANY freelancer's folder
+PERSONA_DIR = Path(os.getenv("GIGBID_PORTFOLIO_DIR", ROOT / "data" / "personas"))
 CODE_EXT = {".py", ".ts", ".tsx", ".js", ".sql", ".dax", ".vue"}
 CONFIG_FILES = {"requirements.txt", "package.json", "Dockerfile"}
+
+
+def _rel(path: Path) -> str:
+    """Source path for citations: relative to the portfolio folder (works for any location)."""
+    for base in (PERSONA_DIR, ROOT):
+        try:
+            return str(Path(path).resolve().relative_to(Path(base).resolve()))
+        except ValueError:
+            continue
+    return Path(path).name
 
 
 @dataclass
@@ -112,7 +124,7 @@ def load_case_study(pid: str, path: Path) -> list[Chunk]:
                 text=f"{meta['title']} — {head}\n{part}" if head else part, title=meta["title"],
                 project=meta["project"], skills=sorted(set(meta["skills"]) | set(extract_skills(part))),
                 date=meta["date"], client_industry=meta["client_industry"], view="summary" if i <= 1 else "prose",
-                source=str(path.relative_to(ROOT)),
+                source=_rel(path),
             ))
     return out
 
@@ -127,7 +139,7 @@ def load_cv(pid: str, path: Path) -> list[Chunk]:
         for j, w in enumerate(split_words(part, 180, 30)):
             out.append(Chunk(chunk_id=f"{pid}:cv#{i}.{j}", evidence_id=f"{pid}:cv", persona=pid, type="cv",
                              text=w, title="CV", skills=extract_skills(w), date="2026-10-01",
-                             source=str(path.relative_to(ROOT))))
+                             source=_rel(path)))
     return out
 
 
@@ -140,7 +152,7 @@ def load_repo(pid: str, repo_dir: Path, meta: dict) -> list[Chunk]:
         out.append(Chunk(chunk_id=f"{eid}#readme", evidence_id=eid, persona=pid, type="repo", text=t,
                          title=meta["title"], project=meta["project"], skills=extract_skills(t), date=meta["date"],
                          client_industry=meta.get("client_industry"), view="readme",
-                         source=str(readme.relative_to(ROOT))))
+                         source=_rel(readme)))
     for f in sorted(repo_dir.rglob("*")):
         if not f.is_file() or f.name == "README.md":
             continue
@@ -153,7 +165,7 @@ def load_repo(pid: str, repo_dir: Path, meta: dict) -> list[Chunk]:
             out.append(Chunk(chunk_id=f"{eid}#{f.relative_to(repo_dir)}:{k}", evidence_id=eid, persona=pid, type="repo",
                              text=text, title=meta["title"], project=meta["project"], skills=extract_skills(text),
                              date=meta["date"], client_industry=meta.get("client_industry"), view="code",
-                             source=str(f.relative_to(ROOT))))
+                             source=_rel(f)))
     return out
 
 
@@ -163,7 +175,7 @@ def load_reviews(pid: str, path: Path) -> list[Chunk]:
         out.append(Chunk(chunk_id=f"{r['id']}#0", evidence_id=r["id"], persona=pid, type="review",
                          text=f"Client review ({r['stars']}/5, {r['client_industry']}): {r['text']}",
                          title=f"Review {r['stars']}/5", project=r["project"], skills=extract_skills(r["text"]),
-                         date=r["date"], client_industry=r["client_industry"], source=str(path.relative_to(ROOT))))
+                         date=r["date"], client_industry=r["client_industry"], source=_rel(path)))
     return out
 
 
@@ -177,12 +189,35 @@ def load_proposals(pid: str, path: Path) -> list[Chunk]:
                          text=f"Past proposal for '{p['job_title']}' (outcome: {p['outcome']}):\n{p['text']}",
                          title=p["job_title"][:80], project=(p["cited_projects"] or [None])[0],
                          skills=sorted(set(p["job_skills"]) | set(extract_skills(p["text"]))), date=p["date"],
-                         outcome=p["outcome"], source=str(path.relative_to(ROOT))))
+                         outcome=p["outcome"], source=_rel(path)))
     return out
+
+
+def build_manifest(base: Path, pid: str) -> dict:
+    """Create manifest.json for a hand-made portfolio folder (case_studies/*.md, cv.pdf, repos/*,
+    reviews.json, proposals.jsonl). Front-matter in case studies is optional."""
+    items = []
+    for f in sorted((base / "case_studies").glob("*.md")) if (base / "case_studies").exists() else []:
+        raw = f.read_text(encoding="utf-8")
+        if not raw.startswith("---"):
+            title = next((ln.lstrip("# ").strip() for ln in raw.splitlines() if ln.startswith("#")), f.stem)
+            meta = {"id": f"{pid}:case:{f.stem}", "type": "case_study", "project": f.stem, "title": title,
+                    "client_industry": None, "date": None, "skills": extract_skills(raw)}
+            f.write_text("---\n" + json.dumps(meta) + "\n---\n" + raw, encoding="utf-8")
+        items.append({"id": f"{pid}:case:{f.stem}", "type": "case_study", "project": f.stem, "path": f"case_studies/{f.name}"})
+    for d in sorted((base / "repos").iterdir()) if (base / "repos").exists() else []:
+        if d.is_dir():
+            items.append({"id": f"{pid}:repo:{d.name}", "type": "repo", "project": d.name, "title": d.name,
+                          "path": f"repos/{d.name}", "date": None, "client_industry": None, "skills": []})
+    m = {"persona_id": pid, "items": items}
+    (base / "manifest.json").write_text(json.dumps(m, indent=1))
+    return m
 
 
 def load_persona(pid: str, root: Path | None = None) -> list[Chunk]:
     base = (root or PERSONA_DIR) / pid
+    if not (base / "manifest.json").exists():
+        build_manifest(base, pid)
     manifest = {m["id"]: m for m in json.loads((base / "manifest.json").read_text())["items"]}
     chunks: list[Chunk] = []
     for f in sorted((base / "case_studies").glob("*.md")):

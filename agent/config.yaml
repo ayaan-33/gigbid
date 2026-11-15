@@ -63,9 +63,8 @@ models:
   request_timeout_s: 60
   reasoning_effort:                        # gpt-oss only; hidden reasoning tokens count against free limits
     default: low
-    writer: medium
-    critic: medium
-    judge: medium
+    writer: medium                           # critic/judge stay low: medium reasoning can consume
+                                             # the whole output budget and leave no visible JSON
   rate_limit_wait_budget_s: 90             # total time a call may wait on provider 429s
   max_output_tokens:                       # explicit caps keep requests inside free-tier limits
     default: 900
@@ -87,7 +86,7 @@ models:
   reranker_quality: BAAI/bge-reranker-v2-m3-int8   # measured alternative (10x slower on CPU)
 
 rag:
-  variant: ${RAG_VARIANT:v3_rerank}          # final value set from evals/results/rag_variants.json
+  variant: ${RAG_VARIANT:v5_norerank}        # shipped by ablation: evals/results/ablation.json (ADR 0004)
   top_k: 5
   candidate_k: 30
   rerank_k: 15                               # candidates sent to the cross-encoder
@@ -113,8 +112,8 @@ budgets:
     proposal: 0.006
 
 thresholds:
-  minimum_fit_score: 0.55
-  watch_fit_score: 0.40
+  minimum_fit_score: 0.25                    # chosen by evals/results/threshold_sweep.json (ADR 0005)
+  watch_fit_score: 0.18
   maximum_risk_score: 0.60
   scam_risk_score: 0.80
   min_supported_claim_ratio: 0.85
@@ -128,11 +127,11 @@ connects:
 
 # Platform policy (mirrors data/policy_pack). Version bumps here absorb change requests.
 policy:
-  version: 1
+  version: 2                                  # change request: GigSim policy v2 (2026-11-02)
   forbid_off_platform_contact: true
   forbid_guarantees: true
   forbid_unpaid_trial_work: true
-  require_ai_disclosure: false
+  require_ai_disclosure: true               # change request: v2 requires an AI-assistance disclosure
   connects_surcharge:
     enabled: false
     proposals_threshold: 20
@@ -192,8 +191,10 @@ mcp:
 nodes:
   max_attempts: 2
   timeouts:                 # seconds; every node is bounded
-    default: 120
-    writer: 180
-    critic: 120
+    default: 240                 # free tier: pacing + provider retry-after waits under concurrency
+    writer: 240
+    critic: 150
+    verifier: 240                # may wait on free-tier retry-after hints (rate_limit_wait_budget_s)
+    compliance: 200
     fit_matcher: 120
     client_liaison: 150

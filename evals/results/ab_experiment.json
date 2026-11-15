@@ -1,0 +1,31 @@
+{
+ "arms": {
+  "A": "evidence_first",
+  "B": "question_led"
+ },
+ "writer_model": "qwen/qwen3.8-27b",
+ "grader": "GigSim heuristic (seeded)",
+ "n_jobs": 24,
+ "unpaired": {
+  "rate_A": 0.4167,
+  "rate_B": 0.5833,
+  "diff": -0.1667,
+  "ci95": [
+   -0.4456,
+   0.1123
+  ],
+  "z": -1.155,
+  "p_value_z": 0.2482,
+  "p_value_fisher": 0.3868,
+  "n_per_arm_for_80pct_power": 140
+ },
+ "paired_mcnemar": {
+  "A_only": 0,
+  "B_only": 4,
+  "p_value": 0.125
+ },
+ "mean_grade": {
+  "evidence_first": 0.5888,
+  "question_led": 0.644
+ }
+}

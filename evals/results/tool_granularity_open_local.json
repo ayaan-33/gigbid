@@ -1,0 +1,183 @@
+{
+ "model": "qwen3:4b",
+ "profile": "open_local",
+ "tasks": 4,
+ "designs": {
+  "fine": {
+   "n_tools": 26,
+   "tool_selection_accuracy": 1.0,
+   "argument_accuracy": 1.0,
+   "tokens_per_task": 1659.2,
+   "p50_latency_s": 23.867,
+   "rows": [
+    {
+     "task": "Find open jobs about RAG chatbots.",
+     "op": "search_jobs",
+     "called": "search_jobs_by_keyword",
+     "args": {
+      "keyword": "RAG chatbots"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 1644,
+     "latency_s": 19.955
+    },
+    {
+     "task": "Look for Power BI dashboard gigs.",
+     "op": "search_jobs",
+     "called": "search_jobs_by_keyword",
+     "args": {
+      "keyword": "Power BI dashboard"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 1601,
+     "latency_s": 22.299
+    },
+    {
+     "task": "Any new Next.js projects posted?",
+     "op": "search_jobs",
+     "called": "search_jobs_by_keyword",
+     "args": {
+      "keyword": "Next.js"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 1652,
+     "latency_s": 25.434
+    },
+    {
+     "task": "Search the marketplace for churn prediction work.",
+     "op": "search_jobs",
+     "called": "search_jobs_by_keyword",
+     "args": {
+      "keyword": "churn prediction"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 1740,
+     "latency_s": 34.044
+    }
+   ]
+  },
+  "coarse": {
+   "n_tools": 3,
+   "tool_selection_accuracy": 0.75,
+   "argument_accuracy": 0.75,
+   "tokens_per_task": 1116.5,
+   "p50_latency_s": 41.838,
+   "rows": [
+    {
+     "task": "Find open jobs about RAG chatbots.",
+     "op": "search_jobs",
+     "called": "marketplace",
+     "args": {
+      "query": "RAG chatbots",
+      "action": "search_jobs"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 1140,
+     "latency_s": 46.606
+    },
+    {
+     "task": "Look for Power BI dashboard gigs.",
+     "op": "search_jobs",
+     "called": "marketplace",
+     "args": {
+      "action": "search_jobs",
+      "query": "Power BI dashboard"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 1078,
+     "latency_s": 37.069
+    },
+    {
+     "task": "Any new Next.js projects posted?",
+     "op": "search_jobs",
+     "called": "portfolio",
+     "args": {
+      "action": "search",
+      "query": "Next.js",
+      "type": "repo"
+     },
+     "tool_ok": false,
+     "args_ok": false,
+     "tokens": 1337,
+     "latency_s": 53.642
+    },
+    {
+     "task": "Search the marketplace for churn prediction work.",
+     "op": "search_jobs",
+     "called": "marketplace",
+     "args": {
+      "action": "search_jobs",
+      "query": "churn prediction"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 911,
+     "latency_s": 25.625
+    }
+   ]
+  },
+  "best": {
+   "n_tools": 16,
+   "tool_selection_accuracy": 1.0,
+   "argument_accuracy": 1.0,
+   "tokens_per_task": 1618.5,
+   "p50_latency_s": 29.99,
+   "rows": [
+    {
+     "task": "Find open jobs about RAG chatbots.",
+     "op": "search_jobs",
+     "called": "search_jobs",
+     "args": {
+      "query": "RAG chatbots"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 1480,
+     "latency_s": 27.66
+    },
+    {
+     "task": "Look for Power BI dashboard gigs.",
+     "op": "search_jobs",
+     "called": "search_jobs",
+     "args": {
+      "query": "Power BI dashboard"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 1548,
+     "latency_s": 28.043
+    },
+    {
+     "task": "Any new Next.js projects posted?",
+     "op": "search_jobs",
+     "called": "search_jobs",
+     "args": {
+      "query": "Next.js"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 1884,
+     "latency_s": 52.937
+    },
+    {
+     "task": "Search the marketplace for churn prediction work.",
+     "op": "search_jobs",
+     "called": "search_jobs",
+     "args": {
+      "query": "churn prediction"
+     },
+     "tool_ok": true,
+     "args_ok": true,
+     "tokens": 1562,
+     "latency_s": 31.938
+    }
+   ]
+  }
+ }
+}

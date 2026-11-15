@@ -1,0 +1,263 @@
+{
+ "data_analyst:proposal:p012": {
+  "relevance": 2,
+  "specificity": 1,
+  "personalisation": 1,
+  "clarity": 2,
+  "credibility": 1,
+  "overall": 1,
+  "reason": "The proposal mentions Selenium but offers no concrete experience with Vue.js, migration, or phased work. It lacks specific past project details, metrics, or references, making it generic and unpersonalized. While readable, it provides no evidence to back its claims, resulting in low credibility and overall suitability."
+ },
+ "ai_ml_engineer:proposal:p040": {
+  "relevance": 3,
+  "specificity": 1,
+  "personalisation": 1,
+  "clarity": 2,
+  "credibility": 1,
+  "overall": 1,
+  "reason": "The proposal mentions relevant technologies but provides no concrete examples, numbers, or past work, feels generic and not tailored to the specific WhatsApp Business use case, and lacks evidence to support credibility. It is brief and vague, resulting in low scores across most criteria."
+ },
+ "fullstack_dev:proposal:p111": {
+  "relevance": 2,
+  "specificity": 1,
+  "personalisation": 1,
+  "clarity": 3,
+  "credibility": 1,
+  "overall": 1,
+  "reason": "The proposal barely addresses the core task of gathering hourly historical weather data and building a predictive model. It offers generic claims with no concrete examples, numbers, or relevant experience, appears templated, and provides no verifiable evidence of capability. While readable, it lacks the detail needed to assess suitability, resulting in a low overall score."
+ },
+ "fullstack_dev:proposal:p101": {
+  "relevance": 3,
+  "specificity": 2,
+  "personalisation": 2,
+  "clarity": 3,
+  "credibility": 2,
+  "overall": 2,
+  "reason": "The proposal mentions some relevant tech (Docker, GraphQL, MySQL) but omits key required skills like React and Laravel. It gives a single vague past project with minimal detail, showing low specificity. The text feels generic, lacking clear customization to the job posting. While readable, it doesn\u2019t address all screening points (e.g., rate, availability). Claims are unsubstantiated, reducing credibility. Overall, the proposal is unlikely to earn a reply."
+ },
+ "data_analyst:proposal:p076": {
+  "relevance": 3,
+  "specificity": 2,
+  "personalisation": 2,
+  "clarity": 3,
+  "credibility": 2,
+  "overall": 2,
+  "reason": "The proposal mentions relevant skills (R/Python, GA4) but is very brief and generic. It provides only one vague past example without concrete details or numbers related to the requested tasks. Personalisation to the specific job is minimal, and credibility is limited by lack of evidence. Clarity is acceptable but overall the proposal lacks depth, so it scores low overall."
+ },
+ "fullstack_dev:proposal:p109": {
+  "relevance": 2,
+  "specificity": 1,
+  "personalisation": 1,
+  "clarity": 3,
+  "credibility": 2,
+  "overall": 2,
+  "reason": "The proposal mentions mobile development but does not reference Xamarin, clean architecture, EF, or the specific tech stack, so relevance is weak. It provides no concrete past work details or metrics related to similar projects, making specificity and credibility low. It reads like a generic template with no personalization to the job description. The text is readable, but overly brief and repetitive, giving a modest clarity score. Overall, it would not merit a reply."
+ },
+ "ai_ml_engineer:proposal:p088": {
+  "relevance": 2,
+  "specificity": 2,
+  "personalisation": 2,
+  "clarity": 2,
+  "credibility": 2,
+  "overall": 2,
+  "reason": "The proposal mentions fine\u2011tuning and design, which loosely matches the job, but it lacks detail on payment/user account work. It provides no concrete metrics or examples beyond a vague travel client reference, repeats generic statements, and shows little tailoring to the specific requirements. The writing is readable but overly brief and repetitive, and the credibility is low due to lack of evidence. Overall, it would not merit a reply."
+ },
+ "data_analyst:proposal:p105": {
+  "relevance": 3,
+  "specificity": 2,
+  "personalisation": 2,
+  "clarity": 3,
+  "credibility": 2,
+  "overall": 2,
+  "reason": "The proposal mentions lead\u2011gen and Excel, so it is loosely relevant, but it offers no concrete examples, metrics, or tailored details for the LinkedIn email\u2011scraping task. It reads like a generic template, lacks depth, and provides no verifiable evidence of past success, resulting in low scores on specificity, personalisation and credibility. Clarity is acceptable but overall the proposal is weak, so a low overall rating."
+ },
+ "ai_ml_engineer:proposal:p105": {
+  "relevance": 4,
+  "specificity": 2,
+  "personalisation": 2,
+  "clarity": 3,
+  "credibility": 2,
+  "overall": 2,
+  "reason": "The proposal is relevant to the resume parser task and mentions appropriate technologies, but it lacks concrete examples, metrics, or past project details, making it low on specificity and credibility. It reads like a generic template without personalization to the client\u2019s specific needs, though it is clear and concise. Overall, it would not strongly motivate a reply."
+ },
+ "ai_ml_engineer:proposal:p065": {
+  "relevance": 2,
+  "specificity": 2,
+  "personalisation": 2,
+  "clarity": 3,
+  "credibility": 3,
+  "overall": 2,
+  "reason": "The proposal is poorly aligned with the job\u2019s focus on recommendation systems for self\u2011esteem learning; it talks about computer vision instead. It gives one specific past project with a performance metric, but that work isn\u2019t relevant. Personalisation is minimal \u2013 no reference to the e\u2011learning platform, children, or gamification. The text is clear and concise, though perhaps too brief. Credibility is moderate \u2013 the claim of an image classifier with a throughput figure is plausible but unsupported. Overall, the fit is weak, so a low score."
+ },
+ "data_analyst:proposal:p054": {
+  "relevance": 1,
+  "specificity": 2,
+  "personalisation": 1,
+  "clarity": 2,
+  "credibility": 2,
+  "overall": 1,
+  "reason": "The proposal does not address the core tasks of factor and cluster analysis, mentions unrelated work (GA4 reporting, computer vision), lacks specific experience with market segmentation methods, feels generic and not tailored to the job, and provides no concrete evidence supporting its claims."
+ },
+ "fullstack_dev:proposal:p046": {
+  "relevance": 2,
+  "specificity": 2,
+  "personalisation": 2,
+  "clarity": 3,
+  "credibility": 3,
+  "overall": 2,
+  "reason": "The proposal barely addresses the specific automation workflow required (translation, batch processing, LinkedIn posting). It mentions WordPress and REST API but lacks concrete experience with the exact tasks. Past work is mentioned vaguely with a single metric, offering little detail or numbers relevant to this job. Personalisation is minimal\u2014only a generic question and a brief reference to the job title. The text is readable but too brief to demonstrate a clear plan. Credibility is moderate; the claim of reducing support tickets is plausible but unsupported. Overall, the proposal scores low on relevance and specificity, leading to a low overall rating."
+ },
+ "fullstack_dev:proposal:p104": {
+  "relevance": 3,
+  "specificity": 2,
+  "personalisation": 2,
+  "clarity": 3,
+  "credibility": 2,
+  "overall": 2,
+  "reason": "The proposal is loosely relevant but lacks concrete details, numbers, or tailored discussion of the client\u2019s needs. It reads like a generic pitch with minimal personalization and limited evidence of past success, making it low on specificity and credibility. While clear and concise, it doesn\u2019t provide enough justification to merit a strong reply."
+ },
+ "fullstack_dev:proposal:p014": {
+  "relevance": 3,
+  "specificity": 1,
+  "personalisation": 1,
+  "clarity": 2,
+  "credibility": 1,
+  "overall": 2,
+  "reason": "The proposal mentions Shopify, so it is relevant, but it is extremely generic with no concrete examples, metrics, or past work, showing almost no specificity. It reads like a template and lacks any personalization to the client\u2019s specific needs. While it is short and readable, it omits required details and provides no evidence of credibility. Overall, it would not merit a reply."
+ },
+ "data_analyst:proposal:p069": {
+  "relevance": 3,
+  "specificity": 1,
+  "personalisation": 1,
+  "clarity": 2,
+  "credibility": 1,
+  "overall": 1,
+  "reason": "The proposal mentions Excel and statistics, so it is marginally relevant, but it provides no concrete examples, numbers, or past work (specificity). It reads like a generic template without any personalization to the job. While it is short and readable, it lacks detail and fails to answer any screening questions. No evidence or references are given, making the credibility low. Overall, it would not merit a response."
+ },
+ "ai_ml_engineer:proposal:p087": {
+  "relevance": 2,
+  "specificity": 2,
+  "personalisation": 2,
+  "clarity": 3,
+  "credibility": 3,
+  "overall": 2,
+  "reason": "The proposal mentions AI and Python but focuses on unrelated past projects (PDF extraction, NLP classifier) and does not demonstrate experience with visual art generation. Numbers are given but not relevant to the task. Personalisation is minimal \u2013 no reference to the artist\u2019s style or specific dataset constraints. The text is clear and readable, and the credibility of past work is plausible, but overall the fit and specificity are weak, making a reply unlikely."
+ },
+ "ai_ml_engineer:proposal:p082": {
+  "relevance": 3,
+  "specificity": 2,
+  "personalisation": 2,
+  "clarity": 3,
+  "credibility": 2,
+  "overall": 2,
+  "reason": "The proposal mentions chatbot experience, which is somewhat relevant, but it lacks any reference to testing with Insomnia or deployment specifics. It provides a vague metric without evidence, uses generic salutations, and offers little concrete detail about past work or how it will meet the job\u2019s requirements. While readable, the lack of personalization and substantiation reduces credibility, leading to a low overall score."
+ },
+ "fullstack_dev:proposal:p004": {
+  "relevance": 3,
+  "specificity": 3,
+  "personalisation": 2,
+  "clarity": 4,
+  "credibility": 3,
+  "overall": 3,
+  "reason": "The proposal touches on relevant topics (API, Stripe) and asks a tailored question, showing some relevance and clarity. It provides a few specific past results, but lacks depth on the exact tech stack (Outseta, Elementor, no-code tools) and detailed automation experience. Personalisation is limited, and credibility rests on unverified metrics. Overall it\u2019s a decent but not standout fit."
+ },
+ "data_analyst:proposal:p107": {
+  "relevance": 2,
+  "specificity": 1,
+  "personalisation": 1,
+  "clarity": 2,
+  "credibility": 2,
+  "overall": 2,
+  "reason": "The proposal is generic and does not address the specific WordPress/WooCommerce icon import tasks. It lacks concrete examples, numbers, or relevant experience, shows little personalization, and provides minimal detail, making it low credibility and unlikely to be replied to."
+ },
+ "fullstack_dev:proposal:p051": {
+  "relevance": 3,
+  "specificity": 1,
+  "personalisation": 1,
+  "clarity": 3,
+  "credibility": 1,
+  "overall": 1,
+  "reason": "The proposal mentions WordPress and a generic workflow, so it is somewhat relevant, but it lacks any concrete examples, numbers, or past work to demonstrate capability. It reads like a template with no personalization to the adult\u2011site context, timeline, or budget. While the text is clear and concise, it provides no evidence of credibility, making it unlikely to be chosen."
+ },
+ "data_analyst:proposal:p143": {
+  "relevance": 2,
+  "specificity": 2,
+  "personalisation": 1,
+  "clarity": 2,
+  "credibility": 2,
+  "overall": 2,
+  "reason": "The proposal mentions WordPress but provides no concrete plan for code verification, separate database, audit logs, or brand management. Past work cited is unrelated to the required functionality, and the examples lack detail or relevance. The text feels generic and not tailored to the job, offering no specifics on implementation, timeline, or technology stack. While readable, it does not answer any screening questions or demonstrate credible, job\u2011specific experience, resulting in low scores across all criteria."
+ },
+ "ai_ml_engineer:proposal:p006": {
+  "relevance": 2,
+  "specificity": 2,
+  "personalisation": 1,
+  "clarity": 3,
+  "credibility": 2,
+  "overall": 2,
+  "reason": "The proposal barely addresses the specific requirements (octave convolution, DNN/CNN) and offers generic past work without relevant details. It lacks concrete numbers or evidence tied to the requested skills, shows little personalization to the job, and repeats boilerplate statements. While readable, its credibility is weak and overall it would not merit a reply."
+ },
+ "data_analyst:proposal:p061": {
+  "relevance": 3,
+  "specificity": 2,
+  "personalisation": 2,
+  "clarity": 3,
+  "credibility": 2,
+  "overall": 2,
+  "reason": "The proposal mentions Power BI experience and some past dashboard work, so it is somewhat relevant, but lacks pharma experience and specific details. It provides only vague metrics (time reductions) without concrete numbers or evidence, making it low on specificity and credibility. Personalisation is minimal \u2013 a generic greeting and no reference to the client\u2019s industry or location. The text is readable but short and does not answer any screening questions, so clarity is moderate. Overall, the proposal is unlikely to earn a reply."
+ },
+ "fullstack_dev:proposal:p017": {
+  "relevance": 2,
+  "specificity": 2,
+  "personalisation": 2,
+  "clarity": 3,
+  "credibility": 2,
+  "overall": 2,
+  "reason": "The proposal mentions generic front\u2011end skills but does not demonstrate any specific Bigcommerce experience, which is the core requirement. It provides no concrete past results, metrics, or portfolio links, making the claims unsubstantiated. The text is generic and repeats phrases, showing little tailoring to the job. While readable, the lack of detail and evidence reduces its credibility and relevance, resulting in a low overall score."
+ },
+ "ai_ml_engineer:proposal:p009": {
+  "relevance": 2,
+  "specificity": 1,
+  "personalisation": 1,
+  "clarity": 2,
+  "credibility": 2,
+  "overall": 1,
+  "reason": "The proposal is generic and does not address the specific task of converting a Canva design to an AI file with the required dimensions, colors, and stamp details. It provides unrelated examples, lacks concrete evidence of relevant experience, and shows no personalization to the job description. Consequently, it scores low on all criteria and would not merit a reply."
+ },
+ "data_analyst:proposal:p117": {
+  "relevance": 2,
+  "specificity": 2,
+  "personalisation": 2,
+  "clarity": 3,
+  "credibility": 3,
+  "overall": 2,
+  "reason": "The proposal shows minimal relevance to the video object\u2011tracking task, offering only generic ML experience and an unrelated subscription\u2011retention example. It lacks concrete details, metrics, or past work on video or object detection, making it low on specificity. Personalisation is weak; aside from a generic opening question, it does not address the specific requirements. The text is readable and concise, giving it a moderate clarity score, and the credibility claim (LTV within 7%) is plausible but unsupported, so credibility is modest. Overall the proposal would not be pursued."
+ },
+ "fullstack_dev:proposal:p003": {
+  "relevance": 2,
+  "specificity": 1,
+  "personalisation": 1,
+  "clarity": 2,
+  "credibility": 2,
+  "overall": 2,
+  "reason": "The proposal mentions Bootstrap UI changes but quickly veers into unrelated Vue admin work, offering no concrete examples, metrics, or portfolio links. It reads like a generic template, repeats phrases, and fails to answer the screening question about success criteria. The lack of specific evidence makes the credibility low, resulting in a low overall score."
+ },
+ "data_analyst:proposal:p101": {
+  "relevance": 2,
+  "specificity": 3,
+  "personalisation": 2,
+  "clarity": 3,
+  "credibility": 3,
+  "overall": 2,
+  "reason": "The proposal mentions some relevant experience (GA4 reporting, budget shifts, AOV improvements) but does not directly address core media\u2011buying duties, funnel building, or dashboard creation required by the job. It offers a few numbers, yet they are unrelated to media buying. The text feels generic and repeats phrases, showing little tailoring to the agency. While readable, it lacks depth and concrete evidence of media\u2011buying success, resulting in low overall suitability."
+ },
+ "ai_ml_engineer:proposal:p054": {
+  "relevance": 3,
+  "specificity": 2,
+  "personalisation": 2,
+  "clarity": 2,
+  "credibility": 2,
+  "overall": 2,
+  "reason": "The proposal mentions relevant technologies (computer vision, mobile, PyTorch) but is very generic and does not answer the specific questions about hours, rates, milestones, or model choices. It lacks concrete past work details, numbers, or evidence, making it low on specificity and credibility. Personalisation is minimal and the response is not clear or complete, resulting in a low overall rating."
+ }
+}

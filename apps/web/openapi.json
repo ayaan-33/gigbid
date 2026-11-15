@@ -1517,6 +1517,97 @@
      }
     }
    }
+  },
+  "/api/panel/pairs": {
+   "get": {
+    "tags": [
+     "panel"
+    ],
+    "summary": "Pairs",
+    "operationId": "pairs_api_panel_pairs_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "items": {
+          "$ref": "#/components/schemas/PanelPair"
+         },
+         "type": "array",
+         "title": "Response Pairs Api Panel Pairs Get"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/panel/vote": {
+   "post": {
+    "tags": [
+     "panel"
+    ],
+    "summary": "Vote",
+    "operationId": "vote_api_panel_vote_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/VoteIn"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "additionalProperties": true,
+         "type": "object",
+         "title": "Response Vote Api Panel Vote Post"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/panel/results": {
+   "get": {
+    "tags": [
+     "panel"
+    ],
+    "summary": "Results",
+    "operationId": "results_api_panel_results_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "additionalProperties": true,
+         "type": "object",
+         "title": "Response Results Api Panel Results Get"
+        }
+       }
+      }
+     }
+    }
+   }
   }
  },
  "components": {
@@ -2250,6 +2341,39 @@
     ],
     "title": "OnboardingIn"
    },
+   "PanelPair": {
+    "properties": {
+     "pair_id": {
+      "type": "string",
+      "title": "Pair Id"
+     },
+     "job_title": {
+      "type": "string",
+      "title": "Job Title"
+     },
+     "job_description": {
+      "type": "string",
+      "title": "Job Description"
+     },
+     "left": {
+      "type": "string",
+      "title": "Left"
+     },
+     "right": {
+      "type": "string",
+      "title": "Right"
+     }
+    },
+    "type": "object",
+    "required": [
+     "pair_id",
+     "job_title",
+     "job_description",
+     "left",
+     "right"
+    ],
+    "title": "PanelPair"
+   },
    "PendingApproval": {
     "properties": {
      "thread_id": {
@@ -2931,6 +3055,37 @@
      "type"
     ],
     "title": "ValidationError"
+   },
+   "VoteIn": {
+    "properties": {
+     "voter": {
+      "type": "string",
+      "maxLength": 60,
+      "minLength": 2,
+      "title": "Voter"
+     },
+     "pair_id": {
+      "type": "string",
+      "maxLength": 120,
+      "title": "Pair Id"
+     },
+     "choice": {
+      "type": "string",
+      "enum": [
+       "left",
+       "right",
+       "tie"
+      ],
+      "title": "Choice"
+     }
+    },
+    "type": "object",
+    "required": [
+     "voter",
+     "pair_id",
+     "choice"
+    ],
+    "title": "VoteIn"
    }
   }
  }

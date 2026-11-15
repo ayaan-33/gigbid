@@ -68,6 +68,14 @@ def list_skills(ctx: Context | None = None) -> list[SkillSummary]:
 resources.register(mcp, service, persona_of)
 prompts.register(mcp)
 
+def main() -> None:
+    """`gigbid-portfolio-mcp` entry point: stdio by default (Claude Desktop / Cursor), --http to serve."""
+    if "--http" in sys.argv:
+        serve(mcp, int(os.getenv("PORTFOLIO_MCP_PORT", "8091")))
+    else:
+        mcp.run("stdio")
+
+
 if __name__ == "__main__":
     if "--stdio" in sys.argv:
         mcp.run("stdio")

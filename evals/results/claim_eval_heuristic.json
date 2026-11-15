@@ -1,0 +1,17 @@
+{
+ "mode": "heuristic",
+ "drafts": 30,
+ "claims": 90,
+ "unsupported_before": 30,
+ "unsupported_after": 6,
+ "fabricated_kept": 0,
+ "tampered_kept_unchanged": 2,
+ "unsupported_rate_before": 0.6667,
+ "unsupported_or_wrong_after_per_proposal": 0.2,
+ "unsupported_before_per_proposal": 2.0,
+ "label_accuracy": {
+  "supported": 1.0,
+  "partly_supported": 0.9,
+  "unsupported": 1.0
+ }
+}

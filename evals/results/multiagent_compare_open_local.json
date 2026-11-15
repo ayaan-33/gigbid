@@ -1,0 +1,69 @@
+{
+ "model": "qwen3:4b",
+ "profile": "open_local",
+ "summary": {
+  "react": {
+   "n": 6,
+   "bid_skip_accuracy": 0.5,
+   "scam_recall": 1.0,
+   "unsupported_claims_per_proposal": 0.0,
+   "compliance_violations_left": 0,
+   "compliance_violations_caught": 0,
+   "gigsim_reply_rate": null,
+   "n_submitted": 0,
+   "tokens_per_job": 9145.2,
+   "p50_latency_s": 340.28,
+   "p95_latency_s": 440.55,
+   "errors": 1,
+   "tool_call_validation_errors": 0,
+   "by_job_type": {
+    "fit": 0.0,
+    "lowfit": 1.0,
+    "scam": 1.0,
+    "underpriced": 1.0
+   }
+  },
+  "supervisor": {
+   "n": 6,
+   "bid_skip_accuracy": 0.6667,
+   "scam_recall": 0.0,
+   "unsupported_claims_per_proposal": 1.667,
+   "compliance_violations_left": 0,
+   "compliance_violations_caught": 0,
+   "gigsim_reply_rate": 0.3333,
+   "n_submitted": 3,
+   "tokens_per_job": 9298,
+   "p50_latency_s": 536.68,
+   "p95_latency_s": 600.01,
+   "errors": 2,
+   "tool_call_validation_errors": 0,
+   "by_job_type": {
+    "fit": 0.667,
+    "lowfit": 0.0,
+    "scam": 1.0,
+    "underpriced": 1.0
+   }
+  },
+  "graph": {
+   "n": 6,
+   "bid_skip_accuracy": 0.5,
+   "scam_recall": 0.0,
+   "unsupported_claims_per_proposal": 0.0,
+   "compliance_violations_left": 0,
+   "compliance_violations_caught": 0,
+   "gigsim_reply_rate": null,
+   "n_submitted": 0,
+   "tokens_per_job": 0,
+   "p50_latency_s": 600.01,
+   "p95_latency_s": 600.01,
+   "errors": 4,
+   "tool_call_validation_errors": 0,
+   "by_job_type": {
+    "fit": 0.0,
+    "lowfit": 1.0,
+    "scam": 1.0,
+    "underpriced": 1.0
+   }
+  }
+ }
+}

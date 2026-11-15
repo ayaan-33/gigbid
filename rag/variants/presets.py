@@ -12,4 +12,6 @@ PRESETS: dict[str, Flags] = {
     "v6_contextual": Flags(decompose=True, hybrid=True, rerank=True, contextual=True),
     "v7_hyde": Flags(decompose=True, hybrid=True, rerank=True, hyde=True),
     "v8_corrective": Flags(decompose=True, hybrid=True, rerank=True, corrective=True),
+    # shipped: the ablation winner (evals/results/ablation.json, ADR 0004)
+    "v5_norerank": Flags(decompose=True, hybrid=True, rerank=False, multivector=True),
 }

@@ -9,9 +9,13 @@ from agent.nodes.common import profile, tools
 from agent.settings import cfg
 
 
-def connects_cost(job: dict) -> int:
-    """Connects cost under the CURRENT policy (config). Policy v2 adds a surcharge on crowded jobs."""
+def connects_cost(job: dict, marketplace_reports_cost: bool = True) -> int:
+    """Connects cost to bid. The marketplace's own figure is authoritative (GigSim prices jobs under
+    its CURRENT policy, surcharge included), so it is never adjusted twice. The config surcharge is
+    only applied when a marketplace does not report the cost (e.g. some live listings)."""
     base = int(job.get("connects_cost") or 0)
+    if marketplace_reports_cost and base:
+        return base
     s = cfg("policy.connects_surcharge", {}) or {}
     if s.get("enabled") and int(job.get("proposals_count") or 0) >= int(s.get("proposals_threshold", 20)):
         base += int(s.get("extra_connects", 4))
@@ -66,6 +70,8 @@ async def price(state: dict) -> dict:
     stats = await tb.call("get_market_stats", {"category": job.get("category"), "budget_type": unit})
     balance = (await tb.call("get_connects_balance", {})).get("balance", 0)
     cost = connects_cost(job)
+    policy = await tb.call("get_policy", {})
+    drift = int(policy.get("version", 1)) > int(cfg("policy.version", 1))
     if unit == "hourly":
         floor = persona["hourly_rate"]
         lo, hi = budget.get("min") or floor * 0.8, budget.get("max") or floor * 1.3
@@ -92,6 +98,9 @@ async def price(state: dict) -> dict:
     if spent + cost > weekly:
         worth = False
         rationale += " Weekly Connects budget would be exceeded."
+    if drift:
+        rationale += (f" WARNING: marketplace policy is v{policy.get('version')} but GigBid is configured for "
+                      f"v{cfg('policy.version', 1)} (update agent/config.yaml -> policy).")
     q = PriceQuote(amount=round(amount, 2), unit=unit, market_p25=stats.get("p25"), market_median=stats.get("median"),
                    market_p75=stats.get("p75"), user_floor=floor, connects_cost=cost, expected_win_prob=round(win, 3),
                    connects_worth_it=worth, rationale=rationale)

@@ -23,7 +23,7 @@ dependencies = [
   "langchain-core>=0.3",
   "langchain-openai>=0.3",
   "langchain-mcp-adapters>=0.1.9",
-  "mcp>=1.13",
+  "mcp>=1.13,<2",
   # Data / storage
   "sqlalchemy[asyncio]>=2.0",
   "asyncpg>=0.29",
@@ -78,6 +78,9 @@ extend-exclude = ["apps/web", "data"]
 select = ["E", "F", "I", "B", "UP", "ASYNC"]
 ignore = ["E501", "B008"]
 
+[tool.ruff.lint.per-file-ignores]
+"evals/**" = ["E741", "ASYNC230"]
+
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
 asyncio_default_fixture_loop_scope = "function"
@@ -85,4 +88,9 @@ testpaths = ["tests", "mcp_servers"]
 markers = [
   "integration: needs running services (postgres, gigsim)",
   "llm: calls an LLM (skipped in CI unless cached)",
+]
+
+[dependency-groups]
+dev = [
+    "markdown>=3.11.3",
 ]

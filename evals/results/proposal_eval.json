@@ -1,0 +1,26 @@
+{
+ "writer_model": "qwen/qwen3.8-27b",
+ "judge_model": "qwen/qwen3.8-27b",
+ "variants": {
+  "v0_naive": {
+   "n": 3,
+   "unsupported_claims_per_proposal_before": 2.333,
+   "unsupported_claims_per_proposal": 0,
+   "judge_score": 2.333,
+   "gigsim_reply_rate": 1.0,
+   "p95_latency_s": 213.74,
+   "cost_per_proposal_usd": 0.00091,
+   "tokens_per_proposal": 3178
+  },
+  "v5_norerank": {
+   "n": 1,
+   "unsupported_claims_per_proposal_before": 1,
+   "unsupported_claims_per_proposal": 0,
+   "judge_score": 4,
+   "gigsim_reply_rate": 0.0,
+   "p95_latency_s": 364.48,
+   "cost_per_proposal_usd": 0.00097,
+   "tokens_per_proposal": 3543
+  }
+ }
+}

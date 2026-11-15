@@ -33,3 +33,8 @@ evals/datasets/hidden/
 
 # hidden test set never enters the repo
 data/gigsim_seed_hidden/
+apps/web/tsconfig.tsbuildinfo
+
+# package build artefacts
+packaging/portfolio-mcp/src/
+packaging/portfolio-mcp/dist/

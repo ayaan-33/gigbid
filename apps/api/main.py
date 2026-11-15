@@ -13,7 +13,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from agent import runtime
 from agent.guardrails import mask_pii
 from apps.api import db
-from apps.api.routers import approvals, auth, jobs, pipeline, runs, settings
+from apps.api.routers import approvals, auth, jobs, panel, pipeline, runs, settings
 
 
 class PiiMaskingFilter(logging.Filter):
@@ -84,5 +84,5 @@ async def health() -> dict[str, str]:
     return {"status": "ok", "service": "gigbid-api"}
 
 
-for r in (auth.router, jobs.router, approvals.router, runs.router, pipeline.router, settings.router):
+for r in (auth.router, jobs.router, approvals.router, runs.router, pipeline.router, settings.router, panel.router):
     app.include_router(r)

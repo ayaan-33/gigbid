@@ -1,0 +1,171 @@
+{
+ "best": "v5_multivector",
+ "jobs_per_persona": 30,
+ "rows": {
+  "best (V5)": {
+   "ai_ml_engineer": {
+    "recall@5": 0.3683,
+    "mrr": 0.5542,
+    "ndcg@10": 0.3739
+   },
+   "fullstack_dev": {
+    "recall@5": 0.3889,
+    "mrr": 0.5037,
+    "ndcg@10": 0.3303
+   },
+   "data_analyst": {
+    "recall@5": 0.39,
+    "mrr": 0.5149,
+    "ndcg@10": 0.3886
+   },
+   "all": {
+    "recall@5": 0.3824,
+    "ndcg@10": 0.3643,
+    "recall@5_4plus_req": 0.4769,
+    "n_4plus": 26
+   }
+  },
+  "- multivector (=V3)": {
+   "ai_ml_engineer": {
+    "recall@5": 0.2483,
+    "mrr": 0.3667,
+    "ndcg@10": 0.2315
+   },
+   "fullstack_dev": {
+    "recall@5": 0.2372,
+    "mrr": 0.4975,
+    "ndcg@10": 0.2497
+   },
+   "data_analyst": {
+    "recall@5": 0.2344,
+    "mrr": 0.4072,
+    "ndcg@10": 0.2217
+   },
+   "all": {
+    "recall@5": 0.24,
+    "ndcg@10": 0.2343,
+    "recall@5_4plus_req": 0.2692,
+    "n_4plus": 26
+   }
+  },
+  "- rerank": {
+   "ai_ml_engineer": {
+    "recall@5": 0.38,
+    "mrr": 0.4837,
+    "ndcg@10": 0.3706
+   },
+   "fullstack_dev": {
+    "recall@5": 0.4006,
+    "mrr": 0.7327,
+    "ndcg@10": 0.4203
+   },
+   "data_analyst": {
+    "recall@5": 0.43,
+    "mrr": 0.5722,
+    "ndcg@10": 0.4275
+   },
+   "all": {
+    "recall@5": 0.4035,
+    "ndcg@10": 0.4061,
+    "recall@5_4plus_req": 0.5154,
+    "n_4plus": 26
+   }
+  },
+  "- hybrid (dense only)": {
+   "ai_ml_engineer": {
+    "recall@5": 0.2867,
+    "mrr": 0.4644,
+    "ndcg@10": 0.2834
+   },
+   "fullstack_dev": {
+    "recall@5": 0.25,
+    "mrr": 0.446,
+    "ndcg@10": 0.2467
+   },
+   "data_analyst": {
+    "recall@5": 0.2667,
+    "mrr": 0.4199,
+    "ndcg@10": 0.3372
+   },
+   "all": {
+    "recall@5": 0.2678,
+    "ndcg@10": 0.2891,
+    "recall@5_4plus_req": 0.4077,
+    "n_4plus": 26
+   }
+  },
+  "- decomposition (whole post)": {
+   "ai_ml_engineer": {
+    "recall@5": 0.2783,
+    "mrr": 0.4157,
+    "ndcg@10": 0.2671
+   },
+   "fullstack_dev": {
+    "recall@5": 0.28,
+    "mrr": 0.4086,
+    "ndcg@10": 0.2628
+   },
+   "data_analyst": {
+    "recall@5": 0.3733,
+    "mrr": 0.436,
+    "ndcg@10": 0.3873
+   },
+   "all": {
+    "recall@5": 0.3106,
+    "ndcg@10": 0.3058,
+    "recall@5_4plus_req": 0.3923,
+    "n_4plus": 26
+   }
+  },
+  "+ outcome boost": {
+   "ai_ml_engineer": {
+    "recall@5": 0.3,
+    "mrr": 0.487,
+    "ndcg@10": 0.2718
+   },
+   "fullstack_dev": {
+    "recall@5": 0.2,
+    "mrr": 0.3014,
+    "ndcg@10": 0.1827
+   },
+   "data_analyst": {
+    "recall@5": 0.2467,
+    "mrr": 0.3629,
+    "ndcg@10": 0.2624
+   },
+   "all": {
+    "recall@5": 0.2489,
+    "ndcg@10": 0.239,
+    "recall@5_4plus_req": 0.3923,
+    "n_4plus": 26
+   }
+  },
+  "+ diversify": {
+   "ai_ml_engineer": {
+    "recall@5": 0.3683,
+    "mrr": 0.5542,
+    "ndcg@10": 0.3739
+   },
+   "fullstack_dev": {
+    "recall@5": 0.3889,
+    "mrr": 0.5037,
+    "ndcg@10": 0.3303
+   },
+   "data_analyst": {
+    "recall@5": 0.39,
+    "mrr": 0.5149,
+    "ndcg@10": 0.3886
+   },
+   "all": {
+    "recall@5": 0.3824,
+    "ndcg@10": 0.3643,
+    "recall@5_4plus_req": 0.4769,
+    "n_4plus": 26
+   }
+  }
+ },
+ "v8_unsupported_requirement_share": {
+  "fit": 0.7167,
+  "lowfit": 0.9
+ }
+}

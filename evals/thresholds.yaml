@@ -1,0 +1,11 @@
+# CI smoke-eval gates (eval.yml). A PR fails if any metric crosses its threshold.
+# Set from the measured dev baseline minus a small margin; tighten as the system improves.
+decision:
+  bid_skip_f1_min: 0.80          # dev F1 0.944 at the shipped threshold (threshold_sweep.json) minus margin for a 30-job sample
+  scam_recall_min: 0.90
+  scam_precision_min: 0.85
+claims:
+  unsupported_after_per_proposal_max: 0.35
+  fabricated_kept_max: 0
+retrieval:
+  recall_at_5_min: 0.25          # shipped variant on the smoke jobs

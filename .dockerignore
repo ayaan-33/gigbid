@@ -1,0 +1,13 @@
+.git
+.venv
+.env
+.env.*
+!.env.example
+.cache
+data/raw
+data/processed
+data/gigsim_seed_hidden
+evals/datasets/hidden
+apps/web
+**/__pycache__
+**/*.pyc

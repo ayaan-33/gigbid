@@ -1,0 +1,33 @@
+# Production overrides for the public VM:
+#   docker compose -f infra/docker-compose.yml -f infra/docker-compose.prod.yml up -d --build
+# Only Caddy (80/443) is exposed; every other service is internal to the compose network.
+services:
+  caddy:
+    image: caddy:2.8-alpine
+    restart: unless-stopped
+    ports: ["80:80", "443:443"]
+    environment:
+      DOMAIN: ${DOMAIN:?set DOMAIN, e.g. 1-2-3-4.sslip.io}
+    volumes:
+      - ./caddy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on: [web]
+  postgres: {restart: unless-stopped, ports: !reset []}
+  redis: {restart: unless-stopped, ports: !reset []}
+  gigsim: {restart: unless-stopped, ports: !reset [], environment: {GIGSIM_GRADER: llm}}
+  mcp-portfolio: {restart: unless-stopped, ports: !reset []}
+  mcp-marketplace: {restart: unless-stopped, ports: !reset []}
+  mcp-workspace: {restart: unless-stopped, ports: !reset []}
+  api:
+    restart: unless-stopped
+    ports: !reset []
+    deploy: {resources: {limits: {memory: 4g}}}
+  worker:
+    restart: unless-stopped
+    deploy: {resources: {limits: {memory: 4g}}}
+  web: {restart: unless-stopped, ports: !reset []}
+
+volumes:
+  caddy_data: {}
+  caddy_config: {}

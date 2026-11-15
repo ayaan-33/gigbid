@@ -56,3 +56,24 @@ def test_claim_supported_ratio():
 
 def test_health():
     assert TestClient(app).get("/health").json()["status"] == "ok"
+
+
+async def test_structured_falls_back_when_provider_json_mode_fails(monkeypatch):
+    """Groq's JSON mode sometimes returns HTTP 400 'Failed to generate JSON': retry as plain text."""
+    from pydantic import BaseModel
+
+    calls = []
+
+    async def fake(node, system, user, *, json_mode=False, temperature=None, max_tokens=None):
+        calls.append(json_mode)
+        if json_mode:
+            raise llm.LLMError("writer: all attempts failed: Error code: 400 - Failed to generate JSON.")
+        return 'Sure: {"x": 1}'
+
+    monkeypatch.setattr(llm, "complete", fake)
+
+    class M(BaseModel):
+        x: int
+
+    assert (await llm.structured("writer", "s", "u", M)).x == 1
+    assert calls == [True, False]

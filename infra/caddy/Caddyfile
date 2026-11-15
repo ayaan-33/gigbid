@@ -1,0 +1,17 @@
+# Automatic HTTPS (Let's Encrypt) for the public URL. DOMAIN comes from the environment, e.g.
+#   DOMAIN=129-146-10-20.sslip.io   (free wildcard DNS that maps to the VM's public IP)
+{$DOMAIN} {
+	encode zstd gzip {
+		match {
+			not path /api/runs/*/stream
+		}
+	}
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options nosniff
+		Referrer-Policy strict-origin-when-cross-origin
+	}
+	reverse_proxy web:3000 {
+		flush_interval -1
+	}
+}

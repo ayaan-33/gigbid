@@ -101,12 +101,16 @@ async def record_result(user_id: str, kind: str, res: dict, job_id: str | None =
 # --------------------------------------------------------------------------- runs
 
 
-async def run_bid(user_id: str, job_id: str) -> dict:
+async def run_bid(user_id: str, job_id: str, force: bool = False) -> dict:
+    """Idempotent: a job already analysed (or waiting for approval / submitted) is not re-run
+    unless forced, so a worker restart or a duplicate enqueue never double-analyses."""
     s = await user_settings(user_id)
     async with db.engine().connect() as c:
         row = (await c.execute(select(db.jobs).where(and_(db.jobs.c.user_id == user_id, db.jobs.c.job_id == job_id)))).mappings().first()
     if not row:
         raise KeyError(job_id)
+    if not force and row["thread_id"] and row["status"] not in ("new", "analysing", "queued_degraded"):
+        return {"thread_id": row["thread_id"], "status": row["status"], "skipped_reason": "already analysed"}
     job = dict(row["data"])
     tid = row["thread_id"] if row["thread_id"] and row["status"] in ("queued_degraded",) else None
     res = await runtime.start_bid(job, user_id=user_id, persona=s["persona"], settings=s,
@@ -155,8 +159,13 @@ async def dispatch(task: str, **kw: Any) -> str:
         from arq.connections import RedisSettings
 
         pool = await create_pool(RedisSettings.from_dsn(os.getenv("REDIS_URL", "redis://localhost:6379/0")))
-        await pool.enqueue_job(task, _job_id=kw.pop("_job_id", None), **kw)
-        return job_id
+        # deterministic job ids de-duplicate identical work (e.g. two clicks on "analyse")
+        dedupe = kw.pop("_job_id", None) or {"run_bid": lambda: f"run_bid:{kw['user_id']}:{kw['job_id']}",
+                                             "resume_thread": lambda: f"resume:{kw['thread_id']}",
+                                             "run_conversation": lambda: f"conv:{kw['user_id']}:{kw['conversation_id']}"}.get(task, lambda: None)()
+        await pool.enqueue_job(task, _job_id=dedupe, **kw)
+        await pool.aclose()
+        return dedupe or job_id
     fn = {"run_bid": run_bid, "resume_thread": resume_thread, "run_conversation": run_conversation,
           "scout_user": scout_user, "sync_pipeline": sync_pipeline}[task]
 

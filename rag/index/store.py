@@ -146,6 +146,8 @@ def get_index(personas: list[str] | None = None) -> PortfolioIndex:
     global _GLOBAL
     if _GLOBAL is None:
         _GLOBAL = PortfolioIndex()
-        for p in personas or sorted(x.name for x in Path(PERSONA_DIR).iterdir() if (x / "manifest.json").exists()):
+        found = sorted(x.name for x in Path(PERSONA_DIR).iterdir()
+                       if x.is_dir() and any((x / n).exists() for n in ("manifest.json", "case_studies", "cv.pdf", "repos")))
+        for p in personas or found:
             _GLOBAL.build(p)
     return _GLOBAL

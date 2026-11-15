@@ -1,0 +1,37 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	load(load)
+	classify(classify)
+	find_slots(find_slots)
+	draft_reply(draft_reply)
+	check(check)
+	reply_approval(reply_approval)
+	send(send)
+	update_pipeline(update_pipeline)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> load;
+	check -.-> __end__;
+	check -.-> reply_approval;
+	classify -.-> __end__;
+	classify -.-> draft_reply;
+	classify -.-> find_slots;
+	classify -.-> update_pipeline;
+	draft_reply -.-> __end__;
+	draft_reply -.-> check;
+	find_slots -.-> __end__;
+	find_slots -.-> draft_reply;
+	load -.-> __end__;
+	load -.-> classify;
+	reply_approval -.-> __end__;
+	reply_approval -.-> send;
+	send --> __end__;
+	update_pipeline --> __end__;
+	reply_approval -.-> reply_approval;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc

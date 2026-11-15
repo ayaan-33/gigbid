@@ -169,6 +169,8 @@ async def verify_claims_async(
             batch_err = f"llm unavailable ({type(e).__name__}); heuristic used"
     for n, sentence in enumerate(sentences):
         if n not in gathered:
+            if _FRAGMENT.match(sentence):  # stray split fragments like "At." are dropped, not kept
+                continue
             claims.append(Claim(text=sentence, label=ClaimLabel.not_a_claim))
             kept_sentences.append(sentence)
             continue
@@ -212,6 +214,9 @@ async def verify_claims_async(
         unsupported_after=sum(1 for c in real if c.label == ClaimLabel.unsupported and c.action == "kept"),
     )
     return _rejoin(draft, kept_sentences), report
+
+
+_FRAGMENT = re.compile(r"^\W*\w{0,3}\W*$")
 
 
 def _rejoin(original: str, sentences: list[str]) -> str:

@@ -63,7 +63,7 @@ async def analyse(job_id: str, uid: str = CurrentUser) -> dict:
     """(Re)run the bid graph for a job in the worker; progress streams to /api/runs/{thread}/stream."""
     async with db.engine().begin() as c:
         await c.execute(update(db.jobs).where(and_(db.jobs.c.user_id == uid, db.jobs.c.job_id == job_id)).values(status="analysing"))
-    return {"queued": await services.dispatch("run_bid", user_id=uid, job_id=job_id)}
+    return {"queued": await services.dispatch("run_bid", user_id=uid, job_id=job_id, force=True)}
 
 
 @router.post("/{job_id}/skip")

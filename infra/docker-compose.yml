@@ -14,6 +14,8 @@ x-app-env: &app-env
     WORKSPACE_MCP_URL: http://mcp-workspace:8093/mcp
     OLLAMA_BASE_URL: http://ollama:11434
     MCP_TRANSPORT: http
+    WORKER_MODE: arq
+    APP_ENV: production
     HF_HOME: /models
     FASTEMBED_CACHE_PATH: /models/fastembed
   volumes:
@@ -45,6 +47,10 @@ services:
   gigsim:
     build: {context: .., dockerfile: infra/docker/gigsim.Dockerfile}
     env_file: ../.env
+    healthcheck:
+      test: ["CMD", "curl", "-sf", "localhost:8081/health"]
+      interval: 10s
+      retries: 30
     environment:
       GIGSIM_DB: /data/gigsim.sqlite
       GIGSIM_SEED_DIR: /app/data/gigsim_seed
@@ -52,27 +58,30 @@ services:
     ports: ["8081:8081"]
 
   mcp-portfolio:
-    build: {context: .., dockerfile: infra/docker/python.Dockerfile}
+    build: {context: .., dockerfile: infra/docker/mcp.Dockerfile}
     command: ["python", "-m", "mcp_servers.portfolio.server"]
     <<: *app-env
     ports: ["8091:8091"]
 
   mcp-marketplace:
-    build: {context: .., dockerfile: infra/docker/python.Dockerfile}
+    build: {context: .., dockerfile: infra/docker/mcp.Dockerfile}
     command: ["python", "-m", "mcp_servers.marketplace.server"]
     <<: *app-env
     depends_on: [gigsim]
     ports: ["8092:8092"]
 
   mcp-workspace:
-    build: {context: .., dockerfile: infra/docker/python.Dockerfile}
+    build: {context: .., dockerfile: infra/docker/mcp.Dockerfile}
     command: ["python", "-m", "mcp_servers.workspace.server"]
     <<: *app-env
     ports: ["8093:8093"]
 
   api:
-    build: {context: .., dockerfile: infra/docker/python.Dockerfile}
-    command: ["uvicorn", "apps.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+    build: {context: .., dockerfile: infra/docker/api.Dockerfile}
+    healthcheck:
+      test: ["CMD", "curl", "-sf", "localhost:8000/health"]
+      interval: 10s
+      retries: 30
     <<: *app-env
     depends_on:
       postgres: {condition: service_healthy}
@@ -83,8 +92,7 @@ services:
     ports: ["8000:8000"]
 
   worker:
-    build: {context: .., dockerfile: infra/docker/python.Dockerfile}
-    command: ["arq", "worker.main.WorkerSettings"]
+    build: {context: .., dockerfile: infra/docker/worker.Dockerfile}
     <<: *app-env
     depends_on:
       postgres: {condition: service_healthy}
