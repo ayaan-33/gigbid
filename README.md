@@ -6,7 +6,7 @@ everything.**
 ![30-second demo](docs/images/demo.gif)
 
 **Live app:** https://gigbid-ayaan.koreacentral.cloudapp.azure.com (Azure VM, always on). A reviewer login is shared privately.
-**Demo video (3 min):** `<link>` · **Technical write-up:** `<link>` · **Portfolio MCP on PyPI:** `uvx ayaan33-gigbid-portfolio-mcp`
+**Demo video (3 min):** `<link>` · **Technical write-up:** [My retrieval upgrades didn't stack](https://medium.com/@i230041/my-retrieval-upgrades-didnt-stack-b144474e02cc) · **Portfolio MCP on PyPI:** [ayaan33-gigbid-portfolio-mcp](https://pypi.org/project/ayaan33-gigbid-portfolio-mcp/) (`uvx ayaan33-gigbid-portfolio-mcp`)
 
 GigBid is a team of LangGraph agents that:
 1. **Scout** saved searches on a schedule and de-duplicate new jobs.
