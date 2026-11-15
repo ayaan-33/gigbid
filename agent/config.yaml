@@ -21,7 +21,7 @@ models:
       small: openai/gpt-oss-20b
       large: openai/gpt-oss-120b
       fallback_small: qwen/qwen3.8-27b       # 1k output tokens/min on free tier: small outputs only
-      fallback_large: openai/gpt-oss-20b
+      fallback_large: qwen/qwen3.8-27b       # own daily quota: a 120b failure no longer lands on an exhausted 20b
       injection_guard: meta-llama/llama-prompt-guard-2-86m
       tokens_per_minute: 7500                # Groq free tier: 8k TPM per model (client-side pacing)
       # Groq list prices (USD per 1M tokens). We run on the FREE tier, so actual spend is $0;
@@ -155,8 +155,8 @@ guardrails:
   mask_pii_in_logs: true
 
 worker:
-  max_concurrent_jobs: 3
-  job_timeout_s: 300
+  max_concurrent_jobs: 2                 # free-tier Groq (8k tokens/min): fewer parallel runs = fewer 429s
+  job_timeout_s: 900                     # a paced run takes 3-5 min on the free tier; 300 s cut runs off
 
 upwork_live:
   tool_map: null              # null = adapter defaults (mcp_servers/marketplace/adapters/upwork_live.py);

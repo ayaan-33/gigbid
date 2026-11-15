@@ -32,6 +32,18 @@ start mcp-workspace python -m mcp_servers.workspace.server
 for p in 8081 8091 8092 8093; do for i in $(seq 1 180); do curl -sf "127.0.0.1:$p/health" >/dev/null && break; sleep 1; done; done
 start api uvicorn apps.api.main:app --host 127.0.0.1 --port 8000 --proxy-headers --forwarded-allow-ips='*'
 for i in $(seq 1 180); do curl -sf 127.0.0.1:8000/health >/dev/null && break; sleep 1; done
+# Warm the portfolio index before any agent runs, so the first Fit Matcher calls don't time out.
+python - <<'PY' || true
+import asyncio
+from agent.mcp_client import ToolBox
+async def warm():
+    for _ in range(20):
+        try:
+            await ToolBox("fit_matcher").call("search_evidence", {"requirement": "python", "k": 1}); print("portfolio index warm"); return
+        except Exception as e:  # noqa: BLE001
+            print("warming portfolio index...", type(e).__name__); await asyncio.sleep(10)
+asyncio.run(warm())
+PY
 [ "$WORKER_MODE" = "arq" ] && start worker arq worker.main.WorkerSettings
 echo "GigBid services up:"; for p in 8081 8091 8092 8093 8000; do echo "  $p $(curl -s -o /dev/null -w '%{http_code}' 127.0.0.1:$p/health)"; done
 # Stream service logs to the Space's log view, then run the web app in the foreground on 7860.
