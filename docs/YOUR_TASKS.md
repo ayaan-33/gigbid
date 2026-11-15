@@ -42,16 +42,16 @@ The repo is local only so far.
 4. Turn on GitHub Actions if asked: open the repo → **Actions** tab → **I understand my workflows,
    enable them**. CI runs lint, tests, Playwright, Docker builds, gitleaks and the smoke eval.
 
-## 3. Go live (about 5 minutes)
+## 3. Go live: done
 
-Run `./scripts/deploy/live_local.sh` and copy the `LIVE:` URL it prints. Keep the Mac on and awake. (Oracle VM alternative below.)
+Live at https://gigbid-ayaan.koreacentral.cloudapp.azure.com (Azure for Students VM, always on). Stop the VM after grades are out so the credit isn't used up: `az vm deallocate -g gigbid-rg -n gigbid`.
 
 ### Oracle Cloud free VM alternative (about 45 minutes)
 
 Follow `docs/DEPLOY.md` step by step: create the VM, open ports 80/443, run `setup_vm.sh`, fill
 `.env`, then `docker compose up`.
 
-Then open `https://<DOMAIN>/panel` once to check it loads. You'll share that link with classmates
+Then open `https://gigbid-ayaan.koreacentral.cloudapp.azure.com/panel` once to check it loads. You'll share that link with classmates
 in step 5.
 
 ## 4. Make 3–4 Langfuse traces public (about 5 minutes)
@@ -70,12 +70,12 @@ in step 5.
 
 Send classmates this message, with your deployed URL:
 
-> Could you help with my AI course project? Open https://<DOMAIN>/panel, enter any nickname, and for 24 pairs pick the proposal you'd reply to as a client (about 10 min). Thanks!
+> Could you help with my AI course project? Open https://gigbid-ayaan.koreacentral.cloudapp.azure.com/panel, enter any nickname, and for 24 pairs pick the proposal you'd reply to as a client (about 10 min). Thanks!
 
-Results appear live at `https://<DOMAIN>/api/panel/results`. Before writing the final report
+Results appear live at `https://gigbid-ayaan.koreacentral.cloudapp.azure.com/api/panel/results`. Before writing the final report
 numbers, save them:
 ```bash
-curl -s https://<DOMAIN>/api/panel/results > evals/results/panel_results.json
+curl -s https://gigbid-ayaan.koreacentral.cloudapp.azure.com/api/panel/results > evals/results/panel_results.json
 ```
 
 ## 6. Connect your Upwork account in live mode (optional, about 10 minutes)
@@ -113,7 +113,7 @@ Upload it as **Unlisted** on YouTube, then put the link in `README.md`.
 ## 10. Submit on Google Classroom
 
 Attach or link the following:
-- [ ] the deployed URL (`https://<DOMAIN>`);
+- [ ] the deployed URL (`https://gigbid-ayaan.koreacentral.cloudapp.azure.com`);
 - [ ] the **reviewer login in a private comment**: `REVIEWER_EMAIL` plus the `REVIEWER_PASSWORD`
       from the VM's `.env`;
 - [ ] the public GitHub repo link (made public in step 2.3);

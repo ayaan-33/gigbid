@@ -5,7 +5,7 @@ everything.**
 
 ![30-second demo](docs/images/demo.gif)
 
-**Live app:** `https://<DOMAIN>`. A reviewer login is shared privately.
+**Live app:** https://gigbid-ayaan.koreacentral.cloudapp.azure.com (Azure VM, always on). A reviewer login is shared privately.
 **Demo video (3 min):** `<link>` · **Technical write-up:** `<link>` · **Portfolio MCP on PyPI:** `uvx ayaan33-gigbid-portfolio-mcp`
 
 GigBid is a team of LangGraph agents that:

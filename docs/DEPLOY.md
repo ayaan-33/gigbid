@@ -1,6 +1,26 @@
 # Deploy GigBid
 
-## Option A (used for the live demo): one container + free Cloudflare tunnel
+**Live deployment:** https://gigbid-ayaan.koreacentral.cloudapp.azure.com. An Azure for Students VM (Standard_B2s_v2: 2 vCPU, 8 GB, Korea Central;
+no card needed) runs the single-container image (`infra/hf/Dockerfile`) behind Caddy, which gets the
+Let's Encrypt HTTPS certificate automatically. Both containers use `--restart unless-stopped`, so
+they come back after a reboot.
+
+```bash
+az vm create -g gigbid-rg -n gigbid -l koreacentral --image Ubuntu2404 --size Standard_B2s_v2 \
+  --admin-username azureuser --generate-ssh-keys --public-ip-sku Standard \
+  --public-ip-address-dns-name gigbid-ayaan --os-disk-size-gb 64
+az vm open-port -g gigbid-rg -n gigbid --port 80,443 --priority 900
+# on the VM: install Docker, clone the repo, build, run
+docker build -f infra/hf/Dockerfile -t gigbid-space .
+docker run -d --name gigbid --restart unless-stopped --env-file ~/gigbid.env -e SPACE_HOST=<fqdn> -p 127.0.0.1:7860:7860 gigbid-space
+docker run -d --name caddy --restart unless-stopped --network host -v caddy_data:/data caddy:2.8-alpine \
+  caddy reverse-proxy --from <fqdn> --to localhost:7860
+```
+
+Update after a new commit: `cd gigbid && git pull && docker build -f infra/hf/Dockerfile -t gigbid-space . && docker rm -f gigbid && <docker run … as above>`.
+
+
+## Option A (laptop demo only): one container + free tunnel
 
 No account and no card. The whole stack (Postgres, Redis, GigSim, 3 MCP servers, API, worker,
 web) runs in **one container** built from `infra/hf/Dockerfile`, and `cloudflared` gives it a
