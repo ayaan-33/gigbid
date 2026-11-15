@@ -53,7 +53,9 @@ jobs:
       - run: uv sync --frozen --extra dev
       - name: Cache embedding/reranker models
         uses: actions/cache@v4
-        with: { path: ~/.cache/fastembed, key: fastembed-${{ hashFiles('agent/config.yaml') }} }
+        with:
+          path: ~/.cache/fastembed
+          key: fastembed-${{ hashFiles('agent/config.yaml') }}
       - run: uv run pytest -q tests/unit mcp_servers tests/contract
         env: { FASTEMBED_CACHE_PATH: ~/.cache/fastembed }
 
